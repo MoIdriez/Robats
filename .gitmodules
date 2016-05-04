@@ -1,0 +1,6 @@
+[submodule "RobatsEngine/src/CrazyFlieEngine/libcflie"]
+	path = RobatsEngine/src/CrazyFlieEngine/libcflie
+	url = https://github.com/fairlight1337/libcflie.git
+[submodule "RobatsEngine/src/CrazyFlieEngine/src/cflie"]
+	path = RobatsEngine/src/CrazyFlieEngine/src/cflie
+	url = https://github.com/fairlight1337/libcflie.git

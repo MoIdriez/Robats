@@ -1,0 +1,425 @@
+18:00:09 **** Build of configuration Debug for project RobatsEngine ****
+make all 
+Building file: ../src/ArduinoEngine/CrazyLibrary/CCRTPPacket.cpp
+Invoking: GCC C++ Compiler
+g++ -I/home/midries/Projects/libcflie/include/cflie -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/ArduinoEngine/CrazyLibrary/CCRTPPacket.d" -MT"src/ArduinoEngine/CrazyLibrary/CCRTPPacket.o" -o "src/ArduinoEngine/CrazyLibrary/CCRTPPacket.o" "../src/ArduinoEngine/CrazyLibrary/CCRTPPacket.cpp"
+../src/ArduinoEngine/CrazyLibrary/CCRTPPacket.cpp:1:37: fatal error: ../CrazyLib/CCRTPPacket.h: No such file or directory
+ #include "../CrazyLib/CCRTPPacket.h"
+                                     ^
+compilation terminated.
+make: *** [src/ArduinoEngine/CrazyLibrary/CCRTPPacket.o] Error 1
+18:01:13 **** Incremental Build of configuration Debug for project RobatsEngine ****
+make all 
+Building file: ../src/RobatsEngine.cpp
+Invoking: GCC C++ Compiler
+g++ -I/home/midries/Projects/libcflie/include/cflie -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/RobatsEngine.d" -MT"src/RobatsEngine.o" -o "src/RobatsEngine.o" "../src/RobatsEngine.cpp"
+../src/RobatsEngine.cpp:12:30: fatal error: cflie/CCrazyflie.h: No such file or directory
+ #include <cflie/CCrazyflie.h>
+                              ^
+compilation terminated.
+make: *** [src/RobatsEngine.o] Error 1
+18:01:24 **** Clean-only build of configuration Debug for project RobatsEngine ****
+make clean 
+rm -rf  ./src/RobatsEngine.o  ./src/RobatsEngine.d  RobatsEngine
+ 
+18:01:24 **** Incremental Build of configuration Debug for project RobatsEngine ****
+make all 
+Building file: ../src/RobatsEngine.cpp
+Invoking: GCC C++ Compiler
+g++ -I/home/midries/Projects/libcflie/include/cflie -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/RobatsEngine.d" -MT"src/RobatsEngine.o" -o "src/RobatsEngine.o" "../src/RobatsEngine.cpp"
+../src/RobatsEngine.cpp:12:30: fatal error: cflie/CCrazyflie.h: No such file or directory
+ #include <cflie/CCrazyflie.h>
+                              ^
+compilation terminated.
+make: *** [src/RobatsEngine.o] Error 1
+18:01:36 **** Incremental Build of configuration Debug for project RobatsEngine ****
+make all 
+Building file: ../src/RobatsEngine.cpp
+Invoking: GCC C++ Compiler
+g++ -I/home/midries/Projects/libcflie/include/cflie -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/RobatsEngine.d" -MT"src/RobatsEngine.o" -o "src/RobatsEngine.o" "../src/RobatsEngine.cpp"
+../src/RobatsEngine.cpp:12:30: fatal error: cflie/CCrazyflie.h: No such file or directory
+ #include <cflie/CCrazyflie.h>
+                              ^
+compilation terminated.
+make: *** [src/RobatsEngine.o] Error 1
+18:01:45 **** Incremental Build of configuration Debug for project RobatsEngine ****
+make all 
+Building file: ../src/RobatsEngine.cpp
+Invoking: GCC C++ Compiler
+g++ -I/home/midries/Projects/libcflie/include/cflie -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/RobatsEngine.d" -MT"src/RobatsEngine.o" -o "src/RobatsEngine.o" "../src/RobatsEngine.cpp"
+../src/RobatsEngine.cpp:12:30: fatal error: cflie/CCrazyflie.h: No such file or directory
+ #include <cflie/CCrazyflie.h>
+                              ^
+compilation terminated.
+make: *** [src/RobatsEngine.o] Error 1
+18:06:36 **** Incremental Build of configuration Debug for project RobatsEngine ****
+make all 
+Building file: ../src/RobatsEngine.cpp
+Invoking: GCC C++ Compiler
+g++ -I/home/midries/Projects/libcflie/include/cflie -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/RobatsEngine.d" -MT"src/RobatsEngine.o" -o "src/RobatsEngine.o" "../src/RobatsEngine.cpp"
+../src/RobatsEngine.cpp:12:30: fatal error: cflie/CCrazyflie.h: No such file or directory
+ #include <cflie/CCrazyflie.h>
+                              ^
+compilation terminated.
+make: *** [src/RobatsEngine.o] Error 1
+18:06:44 **** Clean-only build of configuration Debug for project RobatsEngine ****
+make clean 
+rm -rf  ./src/RobatsEngine.o  ./src/RobatsEngine.d  RobatsEngine
+ 
+18:06:49 **** Build of configuration Debug for project RobatsEngine ****
+make all 
+Building file: ../src/RobatsEngine.cpp
+Invoking: GCC C++ Compiler
+g++ -I/home/midries/Projects/libcflie/include/cflie -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/RobatsEngine.d" -MT"src/RobatsEngine.o" -o "src/RobatsEngine.o" "../src/RobatsEngine.cpp"
+../src/RobatsEngine.cpp:12:30: fatal error: cflie/CCrazyflie.h: No such file or directory
+ #include <cflie/CCrazyflie.h>
+                              ^
+compilation terminated.
+make: *** [src/RobatsEngine.o] Error 1
+18:08:24 **** Incremental Build of configuration Debug for project RobatsEngine ****
+make all 
+Building file: ../src/RobatsEngine.cpp
+Invoking: GCC C++ Compiler
+g++ -I/home/midries/Projects/libcflie/include/cflie -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/RobatsEngine.d" -MT"src/RobatsEngine.o" -o "src/RobatsEngine.o" "../src/RobatsEngine.cpp"
+../src/RobatsEngine.cpp:12:30: fatal error: cflie/CCrazyflie.h: No such file or directory
+ #include <cflie/CCrazyflie.h>
+                              ^
+compilation terminated.
+make: *** [src/RobatsEngine.o] Error 1
+18:10:36 **** Clean-only build of configuration Debug for project RobatsEngine ****
+make clean 
+rm -rf  ./src/RobatsEngine.o  ./src/RobatsEngine.d  RobatsEngine
+ 
+18:10:39 **** Build of configuration Debug for project RobatsEngine ****
+make all 
+Building file: ../src/RobatsEngine.cpp
+Invoking: GCC C++ Compiler
+g++ -I/home/midries/Projects/libcflie/include/cflie -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/RobatsEngine.d" -MT"src/RobatsEngine.o" -o "src/RobatsEngine.o" "../src/RobatsEngine.cpp"
+../src/RobatsEngine.cpp:12:30: fatal error: cflie/CCrazyflie.h: No such file or directory
+ #include <cflie/CCrazyflie.h>
+                              ^
+compilation terminated.
+make: *** [src/RobatsEngine.o] Error 1
+09:18:36 **** Incremental Build of configuration Debug for project RobatsEngine ****
+make all 
+Building file: ../src/RobatsEngine.cpp
+Invoking: GCC C++ Compiler
+g++ -I/home/midries/Projects/libcflie/include/cflie -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/RobatsEngine.d" -MT"src/RobatsEngine.o" -o "src/RobatsEngine.o" "../src/RobatsEngine.cpp"
+../src/RobatsEngine.cpp:12:30: fatal error: cflie/CCrazyflie.h: No such file or directory
+ #include <cflie/CCrazyflie.h>
+                              ^
+compilation terminated.
+make: *** [src/RobatsEngine.o] Error 1
+09:18:43 **** Clean-only build of configuration Debug for project RobatsEngine ****
+make clean 
+rm -rf  ./src/RobatsEngine.o  ./src/RobatsEngine.d  RobatsEngine
+ 
+09:18:49 **** Build of configuration Debug for project RobatsEngine ****
+make all 
+Building file: ../src/RobatsEngine.cpp
+Invoking: GCC C++ Compiler
+g++ -I/home/midries/Projects/libcflie/include/cflie -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/RobatsEngine.d" -MT"src/RobatsEngine.o" -o "src/RobatsEngine.o" "../src/RobatsEngine.cpp"
+../src/RobatsEngine.cpp:12:30: fatal error: cflie/CCrazyflie.h: No such file or directory
+ #include <cflie/CCrazyflie.h>
+                              ^
+compilation terminated.
+make: *** [src/RobatsEngine.o] Error 1
+10:24:54 **** Incremental Build of configuration Debug for project RobatsEngine ****
+make all 
+Building file: ../src/RobatsEngine.cpp
+Invoking: GCC C++ Compiler
+g++ -I/home/midries/Projects/libcflie/include/cflie -include/home/midries/Projects/libcflie/include/cflie/CCrazyflie.h -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/RobatsEngine.d" -MT"src/RobatsEngine.o" -o "src/RobatsEngine.o" "../src/RobatsEngine.cpp"
+../src/RobatsEngine.cpp:12:30: fatal error: cflie/CCrazyflie.h: No such file or directory
+ #include <cflie/CCrazyflie.h>
+                              ^
+compilation terminated.
+make: *** [src/RobatsEngine.o] Error 1
+10:25:26 **** Incremental Build of configuration Debug for project RobatsEngine ****
+make all 
+Building file: ../src/RobatsEngine.cpp
+Invoking: GCC C++ Compiler
+g++ -I/home/midries/Projects/libcflie/include/cflie -include/home/midries/Projects/libcflie/include/cflie/CCrazyflie.h -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/RobatsEngine.d" -MT"src/RobatsEngine.o" -o "src/RobatsEngine.o" "../src/RobatsEngine.cpp"
+../src/RobatsEngine.cpp:12:30: fatal error: cflie/CCrazyflie.h: No such file or directory
+ #include <cflie/CCrazyflie.h>
+                              ^
+compilation terminated.
+make: *** [src/RobatsEngine.o] Error 1
+10:25:36 **** Clean-only build of configuration Debug for project RobatsEngine ****
+make clean 
+rm -rf  ./src/RobatsEngine.o  ./src/RobatsEngine.d  RobatsEngine
+ 
+10:25:41 **** Build of configuration Debug for project RobatsEngine ****
+make all 
+Building file: ../src/RobatsEngine.cpp
+Invoking: GCC C++ Compiler
+g++ -I/home/midries/Projects/libcflie/include/cflie -include/home/midries/Projects/libcflie/include/cflie/CCrazyflie.h -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/RobatsEngine.d" -MT"src/RobatsEngine.o" -o "src/RobatsEngine.o" "../src/RobatsEngine.cpp"
+../src/RobatsEngine.cpp:12:30: fatal error: cflie/CCrazyflie.h: No such file or directory
+ #include <cflie/CCrazyflie.h>
+                              ^
+compilation terminated.
+make: *** [src/RobatsEngine.o] Error 1
+10:26:49 **** Incremental Build of configuration Debug for project RobatsEngine ****
+make all 
+Building file: ../src/RobatsEngine.cpp
+Invoking: GCC C++ Compiler
+g++ -I/home/midries/Projects/libcflie/include/cflie -include/home/midries/Projects/libcflie/include/cflie/CCrazyflie.h -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/RobatsEngine.d" -MT"src/RobatsEngine.o" -o "src/RobatsEngine.o" "../src/RobatsEngine.cpp"
+Finished building: ../src/RobatsEngine.cpp
+ 
+Building target: RobatsEngine
+Invoking: GCC C++ Linker
+g++ -L/home/midries/Projects/libcflie/lib -o "RobatsEngine"  ./src/RobatsEngine.o   -lcflie
+/home/midries/Projects/libcflie/lib/libcflie.a(CCrazyRadio.cpp.o): In function `CCrazyRadio::CCrazyRadio(std::string)':
+CCrazyRadio.cpp:(.text+0x87): undefined reference to `libusb_init'
+/home/midries/Projects/libcflie/lib/libcflie.a(CCrazyRadio.cpp.o): In function `CCrazyRadio::~CCrazyRadio()':
+CCrazyRadio.cpp:(.text+0x10a): undefined reference to `libusb_exit'
+/home/midries/Projects/libcflie/lib/libcflie.a(CCrazyRadio.cpp.o): In function `CCrazyRadio::closeDevice()':
+CCrazyRadio.cpp:(.text+0x1ad): undefined reference to `libusb_close'
+CCrazyRadio.cpp:(.text+0x1bd): undefined reference to `libusb_unref_device'
+/home/midries/Projects/libcflie/lib/libcflie.a(CCrazyRadio.cpp.o): In function `CCrazyRadio::listDevices(int, int)':
+CCrazyRadio.cpp:(.text+0x212): undefined reference to `libusb_get_device_list'
+CCrazyRadio.cpp:(.text+0x247): undefined reference to `libusb_get_device_descriptor'
+CCrazyRadio.cpp:(.text+0x26b): undefined reference to `libusb_ref_device'
+CCrazyRadio.cpp:(.text+0x2a3): undefined reference to `libusb_free_device_list'
+/home/midries/Projects/libcflie/lib/libcflie.a(CCrazyRadio.cpp.o): In function `CCrazyRadio::openUSBDongle()':
+CCrazyRadio.cpp:(.text+0x34d): undefined reference to `libusb_open'
+CCrazyRadio.cpp:(.text+0x39f): undefined reference to `libusb_unref_device'
+/home/midries/Projects/libcflie/lib/libcflie.a(CCrazyRadio.cpp.o): In function `CCrazyRadio::startRadio()':
+CCrazyRadio.cpp:(.text+0x5ba): undefined reference to `libusb_get_device_descriptor'
+CCrazyRadio.cpp:(.text+0x742): undefined reference to `libusb_set_configuration'
+/home/midries/Projects/libcflie/lib/libcflie.a(CCrazyRadio.cpp.o): In function `CCrazyRadio::writeData(void*, int)':
+CCrazyRadio.cpp:(.text+0xa52): undefined reference to `libusb_bulk_transfer'
+/home/midries/Projects/libcflie/lib/libcflie.a(CCrazyRadio.cpp.o): In function `CCrazyRadio::readData(void*, int&)':
+CCrazyRadio.cpp:(.text+0xaba): undefined reference to `libusb_bulk_transfer'
+/home/midries/Projects/libcflie/lib/libcflie.a(CCrazyRadio.cpp.o): In function `CCrazyRadio::writeControl(void*, int, unsigned char, unsigned short, unsigned short)':
+CCrazyRadio.cpp:(.text+0xb65): undefined reference to `libusb_control_transfer'
+/home/midries/Projects/libcflie/lib/libcflie.a(CCrazyRadio.cpp.o): In function `CCrazyRadio::claimInterface(int)':
+CCrazyRadio.cpp:(.text+0xe90): undefined reference to `libusb_claim_interface'
+/home/midries/Projects/libcflie/lib/libcflie.a(CCrazyRadio.cpp.o): In function `CCrazyRadio::usbOK()':
+CCrazyRadio.cpp:(.text+0x12ad): undefined reference to `libusb_get_device_descriptor'
+collect2: error: ld returned 1 exit status
+make: *** [RobatsEngine] Error 1
+10:29:13 **** Incremental Build of configuration Debug for project RobatsEngine ****
+make all 
+Building target: RobatsEngine
+Invoking: GCC C++ Linker
+g++ -L/home/midries/Projects/libcflie/lib -o "RobatsEngine"  ./src/RobatsEngine.o   -lcflie -lusb-1.0
+Finished building target: RobatsEngine
+ 
+10:29:18 **** Incremental Build of configuration Debug for project RobatsEngine ****
+make all 
+make: Nothing to be done for `all'.
+10:29:39 **** Incremental Build of configuration Debug for project RobatsEngine ****
+make all 
+make: Nothing to be done for `all'.
+10:30:49 **** Incremental Build of configuration Debug for project RobatsEngine ****
+make all 
+Building file: ../src/RobatsEngine.cpp
+Invoking: GCC C++ Compiler
+g++ -I/home/midries/Projects/libcflie/include/cflie -include/home/midries/Projects/libcflie/include/cflie/CCrazyflie.h -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/RobatsEngine.d" -MT"src/RobatsEngine.o" -o "src/RobatsEngine.o" "../src/RobatsEngine.cpp"
+Finished building: ../src/RobatsEngine.cpp
+ 
+Building target: RobatsEngine
+Invoking: GCC C++ Linker
+g++ -L/home/midries/Projects/libcflie/lib -o "RobatsEngine"  ./src/RobatsEngine.o   -lcflie -lusb-1.0
+Finished building target: RobatsEngine
+ 
+10:31:09 **** Incremental Build of configuration Debug for project RobatsEngine ****
+make all 
+make: Nothing to be done for `all'.
+10:31:20 **** Incremental Build of configuration Debug for project RobatsEngine ****
+make all 
+make: Nothing to be done for `all'.
+10:31:34 **** Incremental Build of configuration Debug for project RobatsEngine ****
+make all 
+make: Nothing to be done for `all'.
+10:32:53 **** Incremental Build of configuration Debug for project RobatsEngine ****
+make all 
+Building file: ../src/RobatsEngine.cpp
+Invoking: GCC C++ Compiler
+g++ -I/home/midries/Projects/libcflie/include/cflie -include/home/midries/Projects/libcflie/include/cflie/CCrazyflie.h -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/RobatsEngine.d" -MT"src/RobatsEngine.o" -o "src/RobatsEngine.o" "../src/RobatsEngine.cpp"
+Finished building: ../src/RobatsEngine.cpp
+ 
+Building target: RobatsEngine
+Invoking: GCC C++ Linker
+g++ -L/home/midries/Projects/libcflie/lib -o "RobatsEngine"  ./src/RobatsEngine.o   -lcflie -lusb-1.0
+Finished building target: RobatsEngine
+ 
+10:33:11 **** Incremental Build of configuration Debug for project RobatsEngine ****
+make all 
+make: Nothing to be done for `all'.
+10:38:55 **** Incremental Build of configuration Debug for project RobatsEngine ****
+make all 
+make: Nothing to be done for `all'.
+10:40:04 **** Incremental Build of configuration Debug for project RobatsEngine ****
+make all 
+make: Nothing to be done for `all'.
+11:08:23 **** Incremental Build of configuration Debug for project RobatsEngine ****
+make all 
+make: Nothing to be done for `all'.
+11:08:49 **** Incremental Build of configuration Debug for project RobatsEngine ****
+make all 
+Building file: ../src/RobatsEngine.cpp
+Invoking: GCC C++ Compiler
+g++ -I/home/midries/Projects/libcflie/include/cflie -include/home/midries/Projects/libcflie/include/cflie/CCrazyflie.h -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/RobatsEngine.d" -MT"src/RobatsEngine.o" -o "src/RobatsEngine.o" "../src/RobatsEngine.cpp"
+../src/RobatsEngine.cpp:12:30: fatal error: cflie/CCrazyflie.h: No such file or directory
+ #include <cflie/CCrazyflie.h>
+                              ^
+compilation terminated.
+make: *** [src/RobatsEngine.o] Error 1
+11:09:17 **** Incremental Build of configuration Debug for project RobatsEngine ****
+make all 
+Building file: ../src/RobatsEngine.cpp
+Invoking: GCC C++ Compiler
+g++ -I/home/midries/Projects/libcflie/include/cflie -include/home/midries/Projects/libcflie/include/cflie/CCrazyflie.h -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/RobatsEngine.d" -MT"src/RobatsEngine.o" -o "src/RobatsEngine.o" "../src/RobatsEngine.cpp"
+Finished building: ../src/RobatsEngine.cpp
+ 
+Building target: RobatsEngine
+Invoking: GCC C++ Linker
+g++ -L/home/midries/Projects/libcflie/lib -o "RobatsEngine"  ./src/RobatsEngine.o   -lcflie -lusb-1.0
+Finished building target: RobatsEngine
+ 
+11:09:43 **** Incremental Build of configuration Debug for project RobatsEngine ****
+make all 
+make: Nothing to be done for `all'.
+11:09:47 **** Incremental Build of configuration Debug for project RobatsEngine ****
+make all 
+make: Nothing to be done for `all'.
+11:11:06 **** Incremental Build of configuration Debug for project RobatsEngine ****
+make all 
+Building file: ../src/RobatsEngine.cpp
+Invoking: GCC C++ Compiler
+g++ -I/home/midries/Projects/libcflie/include/cflie -include/home/midries/Projects/libcflie/include/cflie/CCrazyflie.h -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/RobatsEngine.d" -MT"src/RobatsEngine.o" -o "src/RobatsEngine.o" "../src/RobatsEngine.cpp"
+Finished building: ../src/RobatsEngine.cpp
+ 
+Building target: RobatsEngine
+Invoking: GCC C++ Linker
+g++ -L/home/midries/Projects/libcflie/lib -o "RobatsEngine"  ./src/RobatsEngine.o   -lcflie -lusb-1.0
+Finished building target: RobatsEngine
+ 
+11:17:10 **** Incremental Build of configuration Debug for project RobatsEngine ****
+make all 
+Building file: ../src/CrazyFlieEngine/CCRTPPacket.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/CrazyFlieEngine/CCRTPPacket.d" -MT"src/CrazyFlieEngine/CCRTPPacket.o" -o "src/CrazyFlieEngine/CCRTPPacket.o" "../src/CrazyFlieEngine/CCRTPPacket.cpp"
+../src/CrazyFlieEngine/CCRTPPacket.cpp:29:31: fatal error: cflie/CCRTPPacket.h: No such file or directory
+ #include <cflie/CCRTPPacket.h>
+                               ^
+compilation terminated.
+make: *** [src/CrazyFlieEngine/CCRTPPacket.o] Error 1
+11:17:41 **** Incremental Build of configuration Debug for project RobatsEngine ****
+make all 
+Building file: ../src/CrazyFlieEngine/CCRTPPacket.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/CrazyFlieEngine/CCRTPPacket.d" -MT"src/CrazyFlieEngine/CCRTPPacket.o" -o "src/CrazyFlieEngine/CCRTPPacket.o" "../src/CrazyFlieEngine/CCRTPPacket.cpp"
+../src/CrazyFlieEngine/CCRTPPacket.cpp:29:41: fatal error: CrazyFlieEngine/CCRTPPacket.h: No such file or directory
+ #include "CrazyFlieEngine/CCRTPPacket.h"
+                                         ^
+compilation terminated.
+make: *** [src/CrazyFlieEngine/CCRTPPacket.o] Error 1
+11:17:42 **** Incremental Build of configuration Debug for project RobatsEngine ****
+make all 
+Building file: ../src/CrazyFlieEngine/CCRTPPacket.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/CrazyFlieEngine/CCRTPPacket.d" -MT"src/CrazyFlieEngine/CCRTPPacket.o" -o "src/CrazyFlieEngine/CCRTPPacket.o" "../src/CrazyFlieEngine/CCRTPPacket.cpp"
+../src/CrazyFlieEngine/CCRTPPacket.cpp:29:41: fatal error: CrazyFlieEngine/CCRTPPacket.h: No such file or directory
+ #include "CrazyFlieEngine/CCRTPPacket.h"
+                                         ^
+compilation terminated.
+make: *** [src/CrazyFlieEngine/CCRTPPacket.o] Error 1
+11:18:06 **** Incremental Build of configuration Debug for project RobatsEngine ****
+make all 
+Building file: ../src/CrazyFlieEngine/CCRTPPacket.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/CrazyFlieEngine/CCRTPPacket.d" -MT"src/CrazyFlieEngine/CCRTPPacket.o" -o "src/CrazyFlieEngine/CCRTPPacket.o" "../src/CrazyFlieEngine/CCRTPPacket.cpp"
+Finished building: ../src/CrazyFlieEngine/CCRTPPacket.cpp
+ 
+Building file: ../src/CrazyFlieEngine/CCrazyRadio.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/CrazyFlieEngine/CCrazyRadio.d" -MT"src/CrazyFlieEngine/CCrazyRadio.o" -o "src/CrazyFlieEngine/CCrazyRadio.o" "../src/CrazyFlieEngine/CCrazyRadio.cpp"
+../src/CrazyFlieEngine/CCrazyRadio.cpp:29:31: fatal error: cflie/CCrazyRadio.h: No such file or directory
+ #include <cflie/CCrazyRadio.h>
+                               ^
+compilation terminated.
+make: *** [src/CrazyFlieEngine/CCrazyRadio.o] Error 1
+11:18:44 **** Incremental Build of configuration Debug for project RobatsEngine ****
+make all 
+Building file: ../src/CrazyFlieEngine/CCrazyRadio.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/CrazyFlieEngine/CCrazyRadio.d" -MT"src/CrazyFlieEngine/CCrazyRadio.o" -o "src/CrazyFlieEngine/CCrazyRadio.o" "../src/CrazyFlieEngine/CCrazyRadio.cpp"
+Finished building: ../src/CrazyFlieEngine/CCrazyRadio.cpp
+ 
+Building file: ../src/CrazyFlieEngine/CCrazyflie.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/CrazyFlieEngine/CCrazyflie.d" -MT"src/CrazyFlieEngine/CCrazyflie.o" -o "src/CrazyFlieEngine/CCrazyflie.o" "../src/CrazyFlieEngine/CCrazyflie.cpp"
+Finished building: ../src/CrazyFlieEngine/CCrazyflie.cpp
+ 
+Building file: ../src/CrazyFlieEngine/CTOC.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/CrazyFlieEngine/CTOC.d" -MT"src/CrazyFlieEngine/CTOC.o" -o "src/CrazyFlieEngine/CTOC.o" "../src/CrazyFlieEngine/CTOC.cpp"
+../src/CrazyFlieEngine/CTOC.cpp: In member function ‘bool CTOC::processItem(CCRTPPacket*)’:
+../src/CrazyFlieEngine/CTOC.cpp:109:11: warning: unused variable ‘nLength’ [-Wunused-variable]
+       int nLength = crtpItem->dataLength();
+           ^
+../src/CrazyFlieEngine/CTOC.cpp: In member function ‘bool CTOC::startLogging(std::string, std::string)’:
+../src/CrazyFlieEngine/CTOC.cpp:216:78: warning: narrowing conversion of ‘lbCurrent.LoggingBlock::nID’ from ‘int’ to ‘char’ inside { } is ill-formed in C++11 [-Wnarrowing]
+       char cPayload[5] = {0x01, lbCurrent.nID, teCurrent.nType, teCurrent.nID};
+                                                                              ^
+../src/CrazyFlieEngine/CTOC.cpp:216:78: warning: narrowing conversion of ‘teCurrent.TOCElement::nType’ from ‘int’ to ‘char’ inside { } is ill-formed in C++11 [-Wnarrowing]
+../src/CrazyFlieEngine/CTOC.cpp:216:78: warning: narrowing conversion of ‘teCurrent.TOCElement::nID’ from ‘int’ to ‘char’ inside { } is ill-formed in C++11 [-Wnarrowing]
+../src/CrazyFlieEngine/CTOC.cpp: In member function ‘bool CTOC::stopLogging(std::string)’:
+../src/CrazyFlieEngine/CTOC.cpp:265:1: warning: no return statement in function returning non-void [-Wreturn-type]
+ }
+ ^
+../src/CrazyFlieEngine/CTOC.cpp: In member function ‘bool CTOC::isLogging(std::string)’:
+../src/CrazyFlieEngine/CTOC.cpp:269:1: warning: no return statement in function returning non-void [-Wreturn-type]
+ }
+ ^
+../src/CrazyFlieEngine/CTOC.cpp: In member function ‘bool CTOC::registerLoggingBlock(std::string, double)’:
+../src/CrazyFlieEngine/CTOC.cpp:340:45: warning: narrowing conversion of ‘nID’ from ‘int’ to ‘char’ inside { } is ill-formed in C++11 [-Wnarrowing]
+     char cPayload[4] = {0x00, nID, d10thOfMS};
+                                             ^
+../src/CrazyFlieEngine/CTOC.cpp:340:45: warning: narrowing conversion of ‘d10thOfMS’ from ‘double’ to ‘char’ inside { } is ill-formed in C++11 [-Wnarrowing]
+../src/CrazyFlieEngine/CTOC.cpp: In member function ‘bool CTOC::enableLogging(std::string)’:
+../src/CrazyFlieEngine/CTOC.cpp:382:55: warning: narrowing conversion of ‘lbCurrent.LoggingBlock::nID’ from ‘int’ to ‘char’ inside { } is ill-formed in C++11 [-Wnarrowing]
+     char cPayload[3] = {0x03, lbCurrent.nID, d10thOfMS};
+                                                       ^
+../src/CrazyFlieEngine/CTOC.cpp:382:55: warning: narrowing conversion of ‘d10thOfMS’ from ‘double’ to ‘char’ inside { } is ill-formed in C++11 [-Wnarrowing]
+../src/CrazyFlieEngine/CTOC.cpp: In member function ‘bool CTOC::unregisterLoggingBlockID(int)’:
+../src/CrazyFlieEngine/CTOC.cpp:409:32: warning: narrowing conversion of ‘nID’ from ‘int’ to ‘char’ inside { } is ill-formed in C++11 [-Wnarrowing]
+   char cPayload[2] = {0x02, nID};
+                                ^
+../src/CrazyFlieEngine/CTOC.cpp: In member function ‘void CTOC::processPackets(std::list<CCRTPPacket*>)’:
+../src/CrazyFlieEngine/CTOC.cpp:446:46: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+  while(nIndex < lbCurrent.lstElementIDs.size()) {
+                                              ^
+../src/CrazyFlieEngine/CTOC.cpp:439:11: warning: unused variable ‘nAvailableLogBytes’ [-Wunused-variable]
+       int nAvailableLogBytes = crtpPacket->dataLength() - 5;
+           ^
+../src/CrazyFlieEngine/CTOC.cpp: In member function ‘int CTOC::elementIDinBlock(int, int)’:
+../src/CrazyFlieEngine/CTOC.cpp:551:53: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+     if(nElementIndex < lbCurrent.lstElementIDs.size()) {
+                                                     ^
+Finished building: ../src/CrazyFlieEngine/CTOC.cpp
+ 
+Building file: ../src/RobatsEngine.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/RobatsEngine.d" -MT"src/RobatsEngine.o" -o "src/RobatsEngine.o" "../src/RobatsEngine.cpp"
+Finished building: ../src/RobatsEngine.cpp
+ 
+Building target: RobatsEngine
+Invoking: GCC C++ Linker
+g++ -L/home/midries/Projects/libcflie/lib -o "RobatsEngine"  ./src/CrazyFlieEngine/CCRTPPacket.o ./src/CrazyFlieEngine/CCrazyRadio.o ./src/CrazyFlieEngine/CCrazyflie.o ./src/CrazyFlieEngine/CTOC.o  ./src/RobatsEngine.o   -lcflie -lusb-1.0
+Finished building target: RobatsEngine
+ 
+11:19:09 **** Incremental Build of configuration Debug for project RobatsEngine ****
+make all 
+Building file: ../src/RobatsEngine.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/RobatsEngine.d" -MT"src/RobatsEngine.o" -o "src/RobatsEngine.o" "../src/RobatsEngine.cpp"
+Finished building: ../src/RobatsEngine.cpp
+ 
+Building target: RobatsEngine
+Invoking: GCC C++ Linker
+g++ -L/home/midries/Projects/libcflie/lib -o "RobatsEngine"  ./src/CrazyFlieEngine/CCRTPPacket.o ./src/CrazyFlieEngine/CCrazyRadio.o ./src/CrazyFlieEngine/CCrazyflie.o ./src/CrazyFlieEngine/CTOC.o  ./src/RobatsEngine.o   -lcflie -lusb-1.0
+Finished building target: RobatsEngine
+ 

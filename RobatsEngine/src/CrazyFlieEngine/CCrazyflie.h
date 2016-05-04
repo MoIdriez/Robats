@@ -121,10 +121,12 @@ class CCrazyflie {
 
   void disableLogging();
 
+  void enableProximityLogging();
   void enableStabilizerLogging();
   void enableGyroscopeLogging();
   void enableAccelerometerLogging();
 
+  void disableProximityLogging();
   void disableStabilizerLogging();
   void disableGyroscopeLogging();
   void disableAccelerometerLogging();
@@ -284,6 +286,7 @@ class CCrazyflie {
     copter. */
   double batteryLevel();
 
+  float adc();
   float accX();
   float accY();
   float accZ();

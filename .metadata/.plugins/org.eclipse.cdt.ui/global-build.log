@@ -423,3 +423,69 @@ Invoking: GCC C++ Linker
 g++ -L/home/midries/Projects/libcflie/lib -o "RobatsEngine"  ./src/CrazyFlieEngine/CCRTPPacket.o ./src/CrazyFlieEngine/CCrazyRadio.o ./src/CrazyFlieEngine/CCrazyflie.o ./src/CrazyFlieEngine/CTOC.o  ./src/RobatsEngine.o   -lcflie -lusb-1.0
 Finished building target: RobatsEngine
  
+13:22:29 **** Incremental Build of configuration Debug for project RobatsEngine ****
+make all 
+Building file: ../src/CrazyFlieEngine/CCrazyflie.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/CrazyFlieEngine/CCrazyflie.d" -MT"src/CrazyFlieEngine/CCrazyflie.o" -o "src/CrazyFlieEngine/CCrazyflie.o" "../src/CrazyFlieEngine/CCrazyflie.cpp"
+../src/CrazyFlieEngine/CCrazyflie.cpp: In member function ‘bool CCrazyflie::stopLogging()’:
+../src/CrazyFlieEngine/CCrazyflie.cpp:248:9: error: ‘class CCrazyflie’ has no member named ‘enableProximityLogging’
+   this->enableProximityLogging();
+         ^
+../src/CrazyFlieEngine/CCrazyflie.cpp: At global scope:
+../src/CrazyFlieEngine/CCrazyflie.cpp:276:41: error: no ‘void CCrazyflie::enableProximityLogging()’ member function declared in class ‘CCrazyflie’
+ void CCrazyflie::enableProximityLogging() {
+                                         ^
+../src/CrazyFlieEngine/CCrazyflie.cpp:319:23: error: no ‘float CCrazyflie::adc()’ member function declared in class ‘CCrazyflie’
+ float CCrazyflie::adc() {
+                       ^
+make: *** [src/CrazyFlieEngine/CCrazyflie.o] Error 1
+13:23:44 **** Incremental Build of configuration Debug for project RobatsEngine ****
+make all 
+Building file: ../src/CrazyFlieEngine/CCrazyflie.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/CrazyFlieEngine/CCrazyflie.d" -MT"src/CrazyFlieEngine/CCrazyflie.o" -o "src/CrazyFlieEngine/CCrazyflie.o" "../src/CrazyFlieEngine/CCrazyflie.cpp"
+Finished building: ../src/CrazyFlieEngine/CCrazyflie.cpp
+ 
+Building file: ../src/RobatsEngine.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/RobatsEngine.d" -MT"src/RobatsEngine.o" -o "src/RobatsEngine.o" "../src/RobatsEngine.cpp"
+Finished building: ../src/RobatsEngine.cpp
+ 
+Building target: RobatsEngine
+Invoking: GCC C++ Linker
+g++ -L/home/midries/Projects/libcflie/lib -o "RobatsEngine"  ./src/CrazyFlieEngine/CCRTPPacket.o ./src/CrazyFlieEngine/CCrazyRadio.o ./src/CrazyFlieEngine/CCrazyflie.o ./src/CrazyFlieEngine/CTOC.o  ./src/RobatsEngine.o   -lcflie -lusb-1.0
+Finished building target: RobatsEngine
+ 
+13:25:20 **** Incremental Build of configuration Debug for project RobatsEngine ****
+make all 
+Building file: ../src/RobatsEngine.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/RobatsEngine.d" -MT"src/RobatsEngine.o" -o "src/RobatsEngine.o" "../src/RobatsEngine.cpp"
+Finished building: ../src/RobatsEngine.cpp
+ 
+Building target: RobatsEngine
+Invoking: GCC C++ Linker
+g++ -L/home/midries/Projects/libcflie/lib -o "RobatsEngine"  ./src/CrazyFlieEngine/CCRTPPacket.o ./src/CrazyFlieEngine/CCrazyRadio.o ./src/CrazyFlieEngine/CCrazyflie.o ./src/CrazyFlieEngine/CTOC.o  ./src/RobatsEngine.o   -lcflie -lusb-1.0
+Finished building target: RobatsEngine
+ 
+13:27:42 **** Incremental Build of configuration Debug for project RobatsEngine ****
+make all 
+Building file: ../src/CrazyFlieEngine/CCrazyflie.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/CrazyFlieEngine/CCrazyflie.d" -MT"src/CrazyFlieEngine/CCrazyflie.o" -o "src/CrazyFlieEngine/CCrazyflie.o" "../src/CrazyFlieEngine/CCrazyflie.cpp"
+Finished building: ../src/CrazyFlieEngine/CCrazyflie.cpp
+ 
+Building file: ../src/RobatsEngine.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/RobatsEngine.d" -MT"src/RobatsEngine.o" -o "src/RobatsEngine.o" "../src/RobatsEngine.cpp"
+Finished building: ../src/RobatsEngine.cpp
+ 
+Building target: RobatsEngine
+Invoking: GCC C++ Linker
+g++ -L/home/midries/Projects/libcflie/lib -o "RobatsEngine"  ./src/CrazyFlieEngine/CCRTPPacket.o ./src/CrazyFlieEngine/CCrazyRadio.o ./src/CrazyFlieEngine/CCrazyflie.o ./src/CrazyFlieEngine/CTOC.o  ./src/RobatsEngine.o   -lcflie -lusb-1.0
+Finished building target: RobatsEngine
+ 
+13:27:49 **** Incremental Build of configuration Debug for project RobatsEngine ****
+make all 
+make: Nothing to be done for `all'.

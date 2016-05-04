@@ -23,6 +23,10 @@ int main(int argc, char **argv) {
     cflieCopter->setSendSetpoints(true);
 
     while(cflieCopter->cycle()) {
+    	std::cout << cflieCopter->adc() << ","
+    			 << cflieCopter->accX() << ","
+				 << cflieCopter->accY() << ","
+				 << cflieCopter->accZ() << std::endl;
       // Main loop. Currently empty.
     	//cflieCopter->setThrust(16001);
       /* Examples to set thrust and RPY:

@@ -234,6 +234,7 @@ bool CCrazyflie::isInitialized() {
 
 bool CCrazyflie::startLogging() {
   // Register the desired sensor readings
+	this->enableProximityLogging();
   this->enableStabilizerLogging();
   this->enableGyroscopeLogging();
   this->enableAccelerometerLogging();
@@ -245,6 +246,7 @@ bool CCrazyflie::startLogging() {
 }
 
 bool CCrazyflie::stopLogging() {
+  this->disableProximityLogging();
   this->disableStabilizerLogging();
   this->disableGyroscopeLogging();
   this->disableAccelerometerLogging();
@@ -270,6 +272,12 @@ double CCrazyflie::sensorDoubleValue(std::string strName) {
 void CCrazyflie::disableLogging() {
   m_tocLogs->unregisterLoggingBlock("high-speed");
   m_tocLogs->unregisterLoggingBlock("low-speed");
+}
+
+void CCrazyflie::enableProximityLogging() {
+	m_tocLogs->registerLoggingBlock("proximity", 1000);
+
+	m_tocLogs->startLogging("adc.vProx", "proximity");
 }
 
 void CCrazyflie::enableStabilizerLogging() {
@@ -309,6 +317,10 @@ void CCrazyflie::enableAccelerometerLogging() {
   m_tocLogs->startLogging("acc.zw", "accelerometer");
 }
 
+float CCrazyflie::adc() {
+	return this->sensorDoubleValue("adc.vProx");
+}
+
 float CCrazyflie::accX() {
   return this->sensorDoubleValue("acc.x");
 }
@@ -323,6 +335,10 @@ float CCrazyflie::accZ() {
 
 float CCrazyflie::accZW() {
   return this->sensorDoubleValue("acc.zw");
+}
+
+void CCrazyflie::disableProximityLogging() {
+  m_tocLogs->unregisterLoggingBlock("proximity");
 }
 
 void CCrazyflie::disableStabilizerLogging() {

@@ -55,7 +55,7 @@
 
 #define CH_VREF               ADC_Channel_17
 #define CH_TEMP               ADC_Channel_16
-#define CH_PROX               ADC_Channel_6
+#define CH_PROX               ADC_Channel_7
 
 static bool isInit;
 volatile AdcGroup adcValues[ADC_MEAN_SIZE * 2];

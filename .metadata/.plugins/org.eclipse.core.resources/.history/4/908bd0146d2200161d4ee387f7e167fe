@@ -1,0 +1,25 @@
+/*
+ * gamepad.cpp
+ *
+ *  Created on: 25 May 2016
+ *      Author: midries
+ */
+
+#include "gamepad.h"
+
+gamepad::gamepad() { open("/dev/input/js0"); }
+gamepad::gamepad(std::string gamepadPath) { open(gamepadPath); }
+gamepad::gamepad(int gamepadNumber) { open("/dev/input/js0"); }
+
+gamepad::~gamepad() {
+	// TODO Auto-generated destructor stub
+}
+
+//gamepad();
+//	gamepad(int gamepadNumber);
+//	gamepad(std::string gamepadPath);
+//	virtual ~gamepad();
+//private:
+//	bool isFound();
+//	void openGamepad();
+//	bool sample();

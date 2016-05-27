@@ -1,0 +1,49 @@
+/*
+ * gamepad.h
+ *
+ *  Created on: 25 May 2016
+ *      Author: midries
+ */
+
+#ifndef GAMEPAD_H_
+#define GAMEPAD_H_
+
+#define GAMEPAD_DEVNAME "/dev/input/js0"
+
+#define GP_EVENT_BUTTON         0x01    /* button pressed/released */
+#define GP_EVENT_AXIS           0x02    /* gamepad moved */
+#define GP_EVENT_INIT           0x80    /* initial state of device */
+
+struct gp_event {
+	unsigned int time;      /* event timestamp in milliseconds */
+	short value;   /* value */
+	unsigned char type;     /* event type */
+	unsigned char number;   /* axis/button number */
+};
+
+struct wwvi_js_event {
+	int button[11];
+	int stick_x;
+	int stick_y;
+};
+
+extern int open_gamepad(char *gamepad_device);
+extern int read_gamepad_event(struct js_event *jse);
+extern void set_gamepad_y_axis(int axis);
+extern void set_gamepad_x_axis(int axis);
+extern void close_gamepad();
+extern int get_gamepad_status(struct wwvi_js_event *wjse);
+
+//class gamepad {
+//public:
+//	gamepad();
+//	virtual ~gamepad();
+//private:
+//	int _fd;
+//
+//	bool isFound();
+//	void openGamepad();
+//	bool sample();
+//};
+
+#endif /* GAMEPAD_H_ */

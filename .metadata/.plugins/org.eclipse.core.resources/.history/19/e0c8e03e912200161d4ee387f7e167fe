@@ -1,0 +1,48 @@
+/*
+ * GamePad.cpp
+ *
+ *  Created on: 25 May 2016
+ *      Author: midries
+ */
+
+#include "GamePad.h"
+#include <stdio.h>
+#include <sys/types.h>
+#include <sys/stat.h>
+#include <fcntl.h>
+#include <unistd.h>
+#include <stdlib.h>
+#include <string.h>
+
+GamePad::GamePad() {
+	gamepad_fd = open(GAMEPAD_DEVNAME, O_RDONLY | O_NONBLOCK); /* read write for force feedback? */
+	if (gamepad_fd < 0)
+		throw "Couldn't open gamepad";
+}
+
+int GamePad::readValues(struct gp_values *gpv) {
+
+
+
+}
+
+int GamePad::readEvent(struct gp_event *jse) {
+	int bytes;
+	bytes = read(gamepad_fd, jse, sizeof(*jse));
+
+	if (bytes == -1)
+		return 0;
+
+	if (bytes == sizeof(*jse))
+		return 1;
+
+	printf("Unexpected bytes from gamepad:%d\n", bytes);
+    return -1;
+}
+
+GamePad::~GamePad() {
+	close(gamepad_fd);
+}
+
+
+

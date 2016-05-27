@@ -1,0 +1,17 @@
+/*
+ * gamepad.h
+ *
+ *  Created on: 25 May 2016
+ *      Author: midries
+ */
+
+#ifndef GAMEPAD_H_
+#define GAMEPAD_H_
+
+class gamepad {
+public:
+	gamepad();
+	virtual ~gamepad();
+};
+
+#endif /* GAMEPAD_H_ */

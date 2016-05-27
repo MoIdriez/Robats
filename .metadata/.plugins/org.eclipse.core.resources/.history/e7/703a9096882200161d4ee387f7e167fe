@@ -1,0 +1,12 @@
+/*
+ * ControlTest.cpp
+ *
+ *  Created on: 25 May 2016
+ *      Author: midries
+ */
+#include "ControlEngine/GamePad.h"
+
+int main() {
+	GamePad gamepad = new GamePad();
+
+}

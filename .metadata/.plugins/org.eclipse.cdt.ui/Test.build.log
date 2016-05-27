@@ -1,0 +1,18 @@
+14:31:00 **** Incremental Build of configuration Debug for project Test ****
+make all 
+Building file: ../src/MathTest.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -std=c++11 -MMD -MP -MF"src/MathTest.d" -MT"src/MathTest.o" -o "src/MathTest.o" "../src/MathTest.cpp"
+Finished building: ../src/MathTest.cpp
+ 
+Building target: Test
+Invoking: GCC C++ Linker
+g++ -Wl,--no-as-needed -pthread -o "Test"  ./src/ControlEngine/GamePad.o  ./src/ControlTest.o ./src/MathTest.o ./src/Test.o   
+./src/MathTest.o: In function `main':
+/home/midries/Projects/robats/Test/Debug/../src/MathTest.cpp:14: multiple definition of `main'
+./src/ControlTest.o:/home/midries/Projects/robats/Test/Debug/../src/ControlTest.cpp:16: first defined here
+collect2: error: ld returned 1 exit status
+make: *** [Test] Error 1
+
+14:31:00 Build Finished (took 172ms)
+

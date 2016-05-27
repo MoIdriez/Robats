@@ -1,0 +1,33 @@
+//============================================================================
+// Name        : Test.cpp
+// Author      : Mohamed Idries
+// Version     :
+// Copyright   : Just use it for awesome stuff
+// Description : Hello World in C++, Ansi-style
+//============================================================================
+
+#include <iostream>       // std::cout, std::endl
+#include <thread>
+#include <unistd.h>
+using namespace std;
+
+int x = 0;
+class awesome {
+public:
+	void foo() {
+		for(;;){
+			cout<< x << endl;
+			sleep(1);
+		}
+	}
+};
+
+
+int main() {
+	thread first (foo);
+	for (int i=10; i>0; --i) {
+		x = i;
+	    sleep(1);
+	  }
+	first.join();
+}

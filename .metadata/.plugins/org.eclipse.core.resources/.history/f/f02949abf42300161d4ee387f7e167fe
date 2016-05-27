@@ -1,0 +1,14 @@
+/*
+ * MathTest.h
+ *
+ *  Created on: 27 May 2016
+ *      Author: midries
+ */
+
+#ifndef MATHTEST_H_
+#define MATHTEST_H_
+
+class MathTest {
+};
+
+#endif /* MATHTEST_H_ */

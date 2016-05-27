@@ -1,0 +1,25 @@
+/*
+ * ControlTest.cpp
+ *
+ *  Created on: 25 May 2016
+ *      Author: midries
+ */
+#include "ControlEngine/GamePad.h"
+
+int main() {
+	int done = 0;
+	GamePad gamepad;
+	struct gp_event gpe;
+
+
+	while (!done) {
+		int rc = gamepad->readGamePad(gpe);
+		usleep(1000);
+		if (rc == 1){
+			printf("Event: time %8u, value %8hd, type: %3u, axis/button: %u\n",
+					jse.time, jse.value, jse.type, jse.number);
+
+		}
+	}
+
+}

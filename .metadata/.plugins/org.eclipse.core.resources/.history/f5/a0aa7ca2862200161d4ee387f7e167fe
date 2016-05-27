@@ -1,0 +1,34 @@
+/*
+ * GamePad.cpp
+ *
+ *  Created on: 25 May 2016
+ *      Author: midries
+ */
+
+#include "GamePad.h"
+#include <stdio.h>
+#include <sys/types.h>
+#include <sys/stat.h>
+#include <fcntl.h>
+#include <unistd.h>
+#include <stdlib.h>
+#include <string.h>
+
+GamePad::GamePad() {
+	gamepad_fd = open(GAMEPAD_DEVNAME, O_RDONLY | O_NONBLOCK); /* read write for force feedback? */
+	if (gamepad_fd < 0)
+		throw "Couldn't open gamepad";
+}
+
+int GamePad::read(struct gp_event *jse) {
+	int bytes;
+	bytes = read(gamepad_fd, jse, sizeof(*jse));
+
+}
+
+GamePad::~GamePad() {
+	// TODO Auto-generated destructor stub
+}
+
+
+

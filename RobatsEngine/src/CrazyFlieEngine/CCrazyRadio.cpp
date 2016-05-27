@@ -306,7 +306,8 @@ void CCrazyRadio::setContCarrier(bool bContCarrier) {
 }
 
 bool CCrazyRadio::claimInterface(int nInterface) {
-  return libusb_claim_interface(m_hndlDevice, nInterface) == 0;
+	int results = libusb_claim_interface(m_hndlDevice, nInterface);
+  return results == 0;
 }
 
 CCRTPPacket *CCrazyRadio::sendPacket(CCRTPPacket *crtpSend, bool bDeleteAfterwards) {

@@ -4,5 +4,5 @@
 
 USER_OBJS :=
 
-LIBS := -lcflie -lusb-1.0
+LIBS := -lusb-1.0
 

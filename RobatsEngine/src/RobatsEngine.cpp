@@ -1,105 +1,68 @@
-//============================================================================
-// Name        : RobatsEngine.cpp
-// Author      : Mohamed Idries
-// Version     :
-// Copyright   : Just use it for awesome stuff
-// Description : Hello World in C++, Ansi-style
-//============================================================================
-
 #include <iostream>
-// libcflie
 #include "ControlEngine/GamePad.h"
 #include "ControlEngine/AutoFlight.h"
 #include "CrazyFlieEngine/CCrazyflie.h"
 #include "CommunicationEngine/CrazyflieServer.h"
 
-int main(int argc, char **argv) {
+bool altHold = false; // just so that we set it once
+bool gamepadEnabled = true;
+bool autoflightEnabled = true;
 
+void logGMP(gp_values gpv) {
+	cout << "T: " << gpv.thrust << "\tR: " << gpv.roll
+				<< "\tP: " << gpv.pitch << "\tY: " << gpv.yaw
+				<< endl;
+}
+
+void logACC(CCrazyflie *cflieCopter) {
+	std::cout << cflieCopter->accX() << "," << cflieCopter->accY() << ","
+			<< cflieCopter->accZ() << std::endl;
+}
+void logASL(CCrazyflie *cflieCopter) {
+	cout << "Asl: " << cflieCopter->asl() << ", AslLong"
+			<< cflieCopter->aslLong() << ", Pressure" << cflieCopter->pressure()
+			<< ", Temperature" << cflieCopter->temperature() << endl;
+}
+
+void logTRPY(CCrazyflie *cflieCopter) {
+	cout << "T: " << cflieCopter->thrust() << "\tR: " << cflieCopter->roll()
+			<< "\tP: " << cflieCopter->pitch() << "\tY: " << cflieCopter->yaw()
+			<< endl;
+}
+
+int main(int argc, char **argv) {
 	CCrazyRadio *crRadio = new CCrazyRadio("radio://0/10/250K");
-//
 	if (crRadio->startRadio()) {
 
-//		int data[4];
 		struct gp_values gpv;
-//		struct gp_event gpe;
 		GamePad *gamepad = new GamePad();
+		AutoFlight *af = new AutoFlight();
 		CCrazyflie *cflieCopter = new CCrazyflie(crRadio);
-		AutoFlight *af = new AutoFlight(cflieCopter);
-//		af->hover(11.5);
-		cflieCopter->setThrust(10001);
-//
-//		//CrazyflieServer *sockety = new CrazyflieServer(4444, data);
-//		// Enable sending the setpoints. This can be used to temporarily
-//		// stop updating the internal controller setpoints and instead
-//		// sending dummy packets (to keep the connection alive).
+
 		cflieCopter->setSendSetpoints(true);
-//
+
 		while (cflieCopter->cycle()) {
-			//cflieCopter->setThrust(43001);
-////			data[0] = cflieCopter->adc();
-////			data[1] = cflieCopter->accX();
-////			data[2] = cflieCopter->accY();
-////			data[3] = cflieCopter->accZ();
-////			cout << "Send Data: " << data[0] << "," << data[1] << "," << data[2]
-////					<< "," << data[3] << endl;
-			if (gamepad->readValues(&gpv)) {
-////				cout<< "Data: " << cflieCopter->adc() << "\nGamepad: Thrust " << gpv.thrust << ", Roll " << gpv.roll << ", Pitch " << gpv.pitch << ", Yaw " << gpv.yaw << endl;
-////				cflieCopter->setThrust(gpv.thrust);
-////				cflieCopter->setRoll(gpv.roll);
-////				cflieCopter->setPitch(gpv.pitch);
-////				cflieCopter->setYaw(gpv.yaw);
-			}
-//			cout<< "Data: " << cflieCopter->adc() << endl;// << "\nGamepad: Thrust " << gpv.thrust << ", Roll " << gpv.roll << ", Pitch " << gpv.pitch << ", Yaw " << gpv.yaw << endl;
-////			cout << "GyroX: " << cflieCopter->gyroX() << ", GyroY: " << cflieCopter->gyroY() << ", GyroZ: " << cflieCopter->gyroZ() << endl;
-////			cout << "AccX: " << cflieCopter->accX() << ", AccY: " << cflieCopter->accY() << ", AccZ: " << cflieCopter->accZ() << endl;
-//			cout<< "Asl: " <<cflieCopter->asl() << ", AslLong" << cflieCopter->aslLong() << ", Pressure" << cflieCopter->pressure() << ", Temperature" << cflieCopter->temperature() << endl;
-			cflieCopter->setThrust(gpv.thrust);
+			gamepad->readValues(&gpv);
+
 			cflieCopter->setRoll(gpv.roll);
 			cflieCopter->setPitch(gpv.pitch);
-			cflieCopter->setYaw(gpv.yaw);
-			if (gpv.althold) {
-				cout<< "Yep" <<endl;
-				af->hover(23.8);
+//			cflieCopter->setYaw(gpv.yaw); // disable this to make flying easier
+
+			if (autoflightEnabled & gpv.althold) {
+				if (!altHold) {
+					af->setTargetAlt(cflieCopter->asl());
+				}
+				cflieCopter->setThrust(
+						af->cycle(cflieCopter->asl(), cflieCopter->thrust()));
 			} else {
-				af->stop();
+				cflieCopter->setThrust(gpv.thrust);
 			}
-////			cout << "Current Values: T: " << cflieCopter->thrust() << ", R: " << cflieCopter->roll() << ", p: " << cflieCopter->pitch() << ", Y: " << cflieCopter->yaw() << endl;
-//
-//			if (gamepad->readEvent(&gpe)) {
-//				printf("Event: time %8u, value %8hd, type: %3u, axis/button: %u\n", gpe.time, gpe.value, gpe.type, gpe.number);
-//			}
-////    	std::cout << cflieCopter->adc() << ","
-////    			 << cflieCopter->accX() << ","
-////				 << cflieCopter->accY() << ","
-////				 << cflieCopter->accZ() << std::endl;
-//		// Main loop. Currently empty.
-//		//cflieCopter->setThrust(16001);
-//		/* Examples to set thrust and RPY:
-//		 // Range: 10001 - (approx.) 60000
-//
-//		 // All in degrees. R/P shouldn't be over 45 degree (it goes
-//		 // sidewards really fast!). R/P/Y are all from -180.0deg to 180.0deg.
-//		 cflieCopter->setRoll(20);
-//		 cflieCopter->setPitch(15);
-//		 cflieCopter->setYaw(140); */
-//
-//		// Important note: When quitting the program, please don't just
-//		// SIGINT (i.e. CTRL-C) it. The CCrazyflie class instance
-//		// cflieCopter must be deleted in order to call the destructor
-//		// which stops logging on the device. If you fail to do this
-//		// when quitting your program, your copter will experience some
-//		// kind of buffer overflow (because of a lot of logging messages
-//		// summing up without being collected) and you will have to
-//		// restart it manually. This is not being done in this
-//		// particular example. You have been warned.
-//		// Other than that, this example covers pretty much everything
-//		// basic you will need for controlling the copter.
-	}
-//
-	delete cflieCopter;
+//			logGMP(gpv);
+			logTRPY(cflieCopter);
+		}
+		delete cflieCopter;
 	} else {
-		std::cerr << "Could not connect to dongle. Did you plug it in?"
-				<< std::endl;
+		std::cerr << "Could not connect to dongle. Did you plug it in?" << std::endl;
 	}
 
 	delete crRadio;

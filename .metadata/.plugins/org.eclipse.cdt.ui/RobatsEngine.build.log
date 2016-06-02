@@ -1,6 +1,108 @@
-11:17:37 **** Incremental Build of configuration Debug for project RobatsEngine ****
+15:55:43 **** Build of configuration Debug for project RobatsEngine ****
 make all 
-make: Nothing to be done for `all'.
+Building file: ../src/CrazyFlieEngine/CCRTPPacket.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -std=c++11 -MMD -MP -MF"src/CrazyFlieEngine/CCRTPPacket.d" -MT"src/CrazyFlieEngine/CCRTPPacket.o" -o "src/CrazyFlieEngine/CCRTPPacket.o" "../src/CrazyFlieEngine/CCRTPPacket.cpp"
+Finished building: ../src/CrazyFlieEngine/CCRTPPacket.cpp
+ 
+Building file: ../src/CrazyFlieEngine/CCrazyRadio.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -std=c++11 -MMD -MP -MF"src/CrazyFlieEngine/CCrazyRadio.d" -MT"src/CrazyFlieEngine/CCrazyRadio.o" -o "src/CrazyFlieEngine/CCrazyRadio.o" "../src/CrazyFlieEngine/CCrazyRadio.cpp"
+Finished building: ../src/CrazyFlieEngine/CCrazyRadio.cpp
+ 
+Building file: ../src/CrazyFlieEngine/CCrazyflie.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -std=c++11 -MMD -MP -MF"src/CrazyFlieEngine/CCrazyflie.d" -MT"src/CrazyFlieEngine/CCrazyflie.o" -o "src/CrazyFlieEngine/CCrazyflie.o" "../src/CrazyFlieEngine/CCrazyflie.cpp"
+Finished building: ../src/CrazyFlieEngine/CCrazyflie.cpp
+ 
+Building file: ../src/CrazyFlieEngine/CTOC.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -std=c++11 -MMD -MP -MF"src/CrazyFlieEngine/CTOC.d" -MT"src/CrazyFlieEngine/CTOC.o" -o "src/CrazyFlieEngine/CTOC.o" "../src/CrazyFlieEngine/CTOC.cpp"
+../src/CrazyFlieEngine/CTOC.cpp: In member function ‘bool CTOC::processItem(CCRTPPacket*)’:
+../src/CrazyFlieEngine/CTOC.cpp:109:11: warning: unused variable ‘nLength’ [-Wunused-variable]
+       int nLength = crtpItem->dataLength();
+           ^
+../src/CrazyFlieEngine/CTOC.cpp: In member function ‘bool CTOC::startLogging(std::string, std::string)’:
+../src/CrazyFlieEngine/CTOC.cpp:216:78: warning: narrowing conversion of ‘lbCurrent.LoggingBlock::nID’ from ‘int’ to ‘char’ inside { } [-Wnarrowing]
+       char cPayload[5] = {0x01, lbCurrent.nID, teCurrent.nType, teCurrent.nID};
+                                                                              ^
+../src/CrazyFlieEngine/CTOC.cpp:216:78: warning: narrowing conversion of ‘teCurrent.TOCElement::nType’ from ‘int’ to ‘char’ inside { } [-Wnarrowing]
+../src/CrazyFlieEngine/CTOC.cpp:216:78: warning: narrowing conversion of ‘teCurrent.TOCElement::nID’ from ‘int’ to ‘char’ inside { } [-Wnarrowing]
+../src/CrazyFlieEngine/CTOC.cpp: In member function ‘bool CTOC::stopLogging(std::string)’:
+../src/CrazyFlieEngine/CTOC.cpp:265:1: warning: no return statement in function returning non-void [-Wreturn-type]
+ }
+ ^
+../src/CrazyFlieEngine/CTOC.cpp: In member function ‘bool CTOC::isLogging(std::string)’:
+../src/CrazyFlieEngine/CTOC.cpp:269:1: warning: no return statement in function returning non-void [-Wreturn-type]
+ }
+ ^
+../src/CrazyFlieEngine/CTOC.cpp: In member function ‘bool CTOC::registerLoggingBlock(std::string, double)’:
+../src/CrazyFlieEngine/CTOC.cpp:340:45: warning: narrowing conversion of ‘nID’ from ‘int’ to ‘char’ inside { } [-Wnarrowing]
+     char cPayload[4] = {0x00, nID, d10thOfMS};
+                                             ^
+../src/CrazyFlieEngine/CTOC.cpp:340:45: warning: narrowing conversion of ‘d10thOfMS’ from ‘double’ to ‘char’ inside { } [-Wnarrowing]
+../src/CrazyFlieEngine/CTOC.cpp: In member function ‘bool CTOC::enableLogging(std::string)’:
+../src/CrazyFlieEngine/CTOC.cpp:382:55: warning: narrowing conversion of ‘lbCurrent.LoggingBlock::nID’ from ‘int’ to ‘char’ inside { } [-Wnarrowing]
+     char cPayload[3] = {0x03, lbCurrent.nID, d10thOfMS};
+                                                       ^
+../src/CrazyFlieEngine/CTOC.cpp:382:55: warning: narrowing conversion of ‘d10thOfMS’ from ‘double’ to ‘char’ inside { } [-Wnarrowing]
+../src/CrazyFlieEngine/CTOC.cpp: In member function ‘bool CTOC::unregisterLoggingBlockID(int)’:
+../src/CrazyFlieEngine/CTOC.cpp:409:32: warning: narrowing conversion of ‘nID’ from ‘int’ to ‘char’ inside { } [-Wnarrowing]
+   char cPayload[2] = {0x02, nID};
+                                ^
+../src/CrazyFlieEngine/CTOC.cpp: In member function ‘void CTOC::processPackets(std::list<CCRTPPacket*>)’:
+../src/CrazyFlieEngine/CTOC.cpp:446:46: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+  while(nIndex < lbCurrent.lstElementIDs.size()) {
+                                              ^
+../src/CrazyFlieEngine/CTOC.cpp:439:11: warning: unused variable ‘nAvailableLogBytes’ [-Wunused-variable]
+       int nAvailableLogBytes = crtpPacket->dataLength() - 5;
+           ^
+../src/CrazyFlieEngine/CTOC.cpp: In member function ‘int CTOC::elementIDinBlock(int, int)’:
+../src/CrazyFlieEngine/CTOC.cpp:551:53: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+     if(nElementIndex < lbCurrent.lstElementIDs.size()) {
+                                                     ^
+Finished building: ../src/CrazyFlieEngine/CTOC.cpp
+ 
+Building file: ../src/ControlEngine/AutoFlight.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -std=c++11 -MMD -MP -MF"src/ControlEngine/AutoFlight.d" -MT"src/ControlEngine/AutoFlight.o" -o "src/ControlEngine/AutoFlight.o" "../src/ControlEngine/AutoFlight.cpp"
+Finished building: ../src/ControlEngine/AutoFlight.cpp
+ 
+Building file: ../src/ControlEngine/GamePad.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -std=c++11 -MMD -MP -MF"src/ControlEngine/GamePad.d" -MT"src/ControlEngine/GamePad.o" -o "src/ControlEngine/GamePad.o" "../src/ControlEngine/GamePad.cpp"
+../src/ControlEngine/GamePad.cpp: In member function ‘int GamePad::readValues(gp_values*)’:
+../src/ControlEngine/GamePad.cpp:62:1: warning: no return statement in function returning non-void [-Wreturn-type]
+ }
+ ^
+Finished building: ../src/ControlEngine/GamePad.cpp
+ 
+Building file: ../src/CommunicationEngine/CrazyflieServer.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -std=c++11 -MMD -MP -MF"src/CommunicationEngine/CrazyflieServer.d" -MT"src/CommunicationEngine/CrazyflieServer.o" -o "src/CommunicationEngine/CrazyflieServer.o" "../src/CommunicationEngine/CrazyflieServer.cpp"
+In file included from ../src/CommunicationEngine/CrazyflieServer.cpp:9:0:
+../src/CommunicationEngine/CrazyflieServer.h: In constructor ‘CrazyflieServer::CrazyflieServer(int, int*)’:
+../src/CommunicationEngine/CrazyflieServer.h:23:6: warning: ‘CrazyflieServer::port’ will be initialized after [-Wreorder]
+  int port;
+      ^
+../src/CommunicationEngine/CrazyflieServer.h:22:7: warning:   ‘int* CrazyflieServer::data’ [-Wreorder]
+  int* data; // [isNew, Sonar, AccX, AccY, AccZ, GyrX, GyrY, GyrZ]
+       ^
+../src/CommunicationEngine/CrazyflieServer.cpp:19:1: warning:   when initialized here [-Wreorder]
+ CrazyflieServer::CrazyflieServer(int port, int* data): port(port), data(data), clientsocket(0) {
+ ^
+Finished building: ../src/CommunicationEngine/CrazyflieServer.cpp
+ 
+Building file: ../src/RobatsEngine.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -std=c++11 -MMD -MP -MF"src/RobatsEngine.d" -MT"src/RobatsEngine.o" -o "src/RobatsEngine.o" "../src/RobatsEngine.cpp"
+Finished building: ../src/RobatsEngine.cpp
+ 
+Building target: RobatsEngine
+Invoking: GCC C++ Linker
+g++  -o "RobatsEngine"  ./src/CrazyFlieEngine/CCRTPPacket.o ./src/CrazyFlieEngine/CCrazyRadio.o ./src/CrazyFlieEngine/CCrazyflie.o ./src/CrazyFlieEngine/CTOC.o  ./src/ControlEngine/AutoFlight.o ./src/ControlEngine/GamePad.o  ./src/CommunicationEngine/CrazyflieServer.o  ./src/RobatsEngine.o   -lusb-1.0
+Finished building target: RobatsEngine
+ 
 
-11:17:37 Build Finished (took 64ms)
+15:55:47 Build Finished (took 3s.274ms)
 

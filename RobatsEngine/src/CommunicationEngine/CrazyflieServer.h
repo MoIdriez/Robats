@@ -19,7 +19,7 @@ public:
 	virtual ~CrazyflieServer();
 
 private:
-	int* data;
+	int* data; // [isNew, Sonar, AccX, AccY, AccZ, GyrX, GyrY, GyrZ]
 	int port;
 	int serversocket;
 	int clientsocket;

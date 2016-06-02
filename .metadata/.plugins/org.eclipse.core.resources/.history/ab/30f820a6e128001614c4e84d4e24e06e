@@ -1,0 +1,7 @@
+#ifndef TEST_COUNTER_H_
+#define TEST_COUNTER_H_
+
+class Counter {
+};
+
+#endif /* TEST_COUNTER_H_ */

@@ -1,0 +1,6 @@
+17:52:48 **** Incremental Build of configuration Debug for project TestEngine ****
+make all 
+make: Nothing to be done for `all'.
+
+17:52:48 Build Finished (took 86ms)
+

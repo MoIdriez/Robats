@@ -1,0 +1,26 @@
+/*
+ * AutonomousFlight.h
+ *
+ *  Created on: 27 May 2016
+ *      Author: midries
+ */
+#include "../CrazyFlieEngine/CCrazyflie.h"
+class AutoFlight {
+public:
+	AutoFlight(CCrazyflie *cf);
+	~AutoFlight();
+	void stop();
+	void hover(int targetAltitude);
+	void setInformationLevel(int level);
+	int start(bool showInformation = true);
+private:
+	bool isLive = false;
+	double threshold = 10; // 10ms
+	float targetAlt;
+	int lvl = 0; /* 0 = nothing, 1 = warnings, 2 = everything */
+	CCrazyflie *cf;
+
+	void print(int level, std::string message);
+	bool diff(clock_t clock1,clock_t clock2)
+
+};

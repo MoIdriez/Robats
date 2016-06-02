@@ -1,0 +1,16 @@
+/*
+ * AutonomousFlight.h
+ *
+ *  Created on: 27 May 2016
+ *      Author: midries
+ */
+
+class AutonomousFlight {
+public:
+	AutoFlight();
+	int start(bool showInformation = true);
+	int stop();
+private:
+
+
+};

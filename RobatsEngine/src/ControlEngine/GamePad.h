@@ -20,18 +20,19 @@
 /* These values can change depending on the gamepad used */
 #define YAW 					0
 #define THRUST 					1
-#define ROLL 					2
-#define PITCH 					5
+#define ROLL 					5
+#define PITCH 					2
+#define ALTHOLD					4
 
 /* I took these values from the Python client*/
 #define CF_YAW_MAX				180
 #define CF_YAW_MIN				-180
 #define CF_THRUST_MAX			60000
-#define CF_THRUST_MIN			0
+#define CF_THRUST_MIN			-60000
 #define CF_ROLL_MAX				45
 #define CF_ROLL_MIN				-45
-#define CF_PITCH_MAX			45
-#define CF_PITCH_MIN			-45
+#define CF_PITCH_MAX			-45
+#define CF_PITCH_MIN			45
 
 struct gp_event {
 	unsigned int time;      /* event timestamp in milliseconds */
@@ -45,6 +46,7 @@ struct gp_values {
 	double roll = 0;
 	double pitch = 0;
 	double thrust = 0;
+	bool althold = 0;
 };
 
 class GamePad {

@@ -295,6 +295,7 @@ class CCrazyflie {
   float aslLong();
   float temperature();
   float pressure();
+  float althold();
   float gyroX();
   float gyroY();
   float gyroZ();

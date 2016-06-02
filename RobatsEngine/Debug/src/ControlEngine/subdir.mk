@@ -4,12 +4,15 @@
 
 # Add inputs and outputs from these tool invocations to the build variables 
 CPP_SRCS += \
+../src/ControlEngine/AutoFlight.cpp \
 ../src/ControlEngine/GamePad.cpp 
 
 OBJS += \
+./src/ControlEngine/AutoFlight.o \
 ./src/ControlEngine/GamePad.o 
 
 CPP_DEPS += \
+./src/ControlEngine/AutoFlight.d \
 ./src/ControlEngine/GamePad.d 
 
 

@@ -6408,3 +6408,2243 @@ Invoking: GCC C++ Linker
 g++  -o "RobatsEngine"  ./src/CrazyFlieEngine/CCRTPPacket.o ./src/CrazyFlieEngine/CCrazyRadio.o ./src/CrazyFlieEngine/CCrazyflie.o ./src/CrazyFlieEngine/CTOC.o  ./src/ControlEngine/GamePad.o  ./src/CommunicationEngine/CrazyflieServer.o  ./src/RobatsEngine.o   -lusb-1.0
 Finished building target: RobatsEngine
  
+15:29:40 **** Incremental Build of configuration Debug for project RobatsEngine ****
+make all 
+Building file: ../src/ControlEngine/AutoFlight.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -std=c++11 -MMD -MP -MF"src/ControlEngine/AutoFlight.d" -MT"src/ControlEngine/AutoFlight.o" -o "src/ControlEngine/AutoFlight.o" "../src/ControlEngine/AutoFlight.cpp"
+In file included from ../src/ControlEngine/AutoFlight.cpp:8:0:
+../src/ControlEngine/AutoFlight.h:18:2: error: #endif without #if
+ #endif /* SRC_CONTROLENGINE_AUTOFLIGHT_H_ */
+  ^
+../src/ControlEngine/AutoFlight.h:10:13: error: ISO C++ forbids declaration of ‘AutoFlight’ with no type [-fpermissive]
+  AutoFlight();
+             ^
+make: *** [src/ControlEngine/AutoFlight.o] Error 1
+15:29:46 **** Incremental Build of configuration Debug for project RobatsEngine ****
+make all 
+Building file: ../src/ControlEngine/AutoFlight.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -std=c++11 -MMD -MP -MF"src/ControlEngine/AutoFlight.d" -MT"src/ControlEngine/AutoFlight.o" -o "src/ControlEngine/AutoFlight.o" "../src/ControlEngine/AutoFlight.cpp"
+In file included from ../src/ControlEngine/AutoFlight.cpp:8:0:
+../src/ControlEngine/AutoFlight.h:10:13: error: ISO C++ forbids declaration of ‘AutoFlight’ with no type [-fpermissive]
+  AutoFlight();
+             ^
+make: *** [src/ControlEngine/AutoFlight.o] Error 1
+15:30:10 **** Incremental Build of configuration Debug for project RobatsEngine ****
+make all 
+Building file: ../src/ControlEngine/AutoFlight.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -std=c++11 -MMD -MP -MF"src/ControlEngine/AutoFlight.d" -MT"src/ControlEngine/AutoFlight.o" -o "src/ControlEngine/AutoFlight.o" "../src/ControlEngine/AutoFlight.cpp"
+Finished building: ../src/ControlEngine/AutoFlight.cpp
+ 
+Building target: RobatsEngine
+Invoking: GCC C++ Linker
+g++  -o "RobatsEngine"  ./src/CrazyFlieEngine/CCRTPPacket.o ./src/CrazyFlieEngine/CCrazyRadio.o ./src/CrazyFlieEngine/CCrazyflie.o ./src/CrazyFlieEngine/CTOC.o  ./src/ControlEngine/AutoFlight.o ./src/ControlEngine/GamePad.o  ./src/CommunicationEngine/CrazyflieServer.o  ./src/RobatsEngine.o   -lusb-1.0
+Finished building target: RobatsEngine
+ 
+15:36:52 **** Incremental Build of configuration Debug for project RobatsEngine ****
+make all 
+Building file: ../src/ControlEngine/AutoFlight.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -std=c++11 -MMD -MP -MF"src/ControlEngine/AutoFlight.d" -MT"src/ControlEngine/AutoFlight.o" -o "src/ControlEngine/AutoFlight.o" "../src/ControlEngine/AutoFlight.cpp"
+In file included from ../src/ControlEngine/AutoFlight.cpp:8:0:
+../src/ControlEngine/AutoFlight.h:10:25: error: expected ‘)’ before ‘radioIdentifier’
+  AutoFlight(std::string radioIdentifier);
+                         ^
+../src/ControlEngine/AutoFlight.h:17:2: error: ‘CCrazyflie’ does not name a type
+  CCrazyflie *cf;
+  ^
+../src/ControlEngine/AutoFlight.cpp:10:23: error: expected constructor, destructor, or type conversion before ‘(’ token
+ AutoFlight::AutoFlight(std::string radioIdentifier) {
+                       ^
+make: *** [src/ControlEngine/AutoFlight.o] Error 1
+15:37:53 **** Incremental Build of configuration Debug for project RobatsEngine ****
+make all 
+Building file: ../src/ControlEngine/AutoFlight.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -std=c++11 -MMD -MP -MF"src/ControlEngine/AutoFlight.d" -MT"src/ControlEngine/AutoFlight.o" -o "src/ControlEngine/AutoFlight.o" "../src/ControlEngine/AutoFlight.cpp"
+In file included from ../src/ControlEngine/AutoFlight.cpp:8:0:
+../src/ControlEngine/AutoFlight.h:10:25: error: expected ‘)’ before ‘radioIdentifier’
+  AutoFlight(std::string radioIdentifier);
+                         ^
+../src/ControlEngine/AutoFlight.h:17:2: error: ‘CCrazyflie’ does not name a type
+  CCrazyflie *cf;
+  ^
+../src/ControlEngine/AutoFlight.cpp:10:23: error: expected constructor, destructor, or type conversion before ‘(’ token
+ AutoFlight::AutoFlight(std::string radioIdentifier) {
+                       ^
+make: *** [src/ControlEngine/AutoFlight.o] Error 1
+15:38:26 **** Incremental Build of configuration Debug for project RobatsEngine ****
+make all 
+Building file: ../src/ControlEngine/AutoFlight.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -std=c++11 -MMD -MP -MF"src/ControlEngine/AutoFlight.d" -MT"src/ControlEngine/AutoFlight.o" -o "src/ControlEngine/AutoFlight.o" "../src/ControlEngine/AutoFlight.cpp"
+In file included from ../src/ControlEngine/AutoFlight.cpp:8:0:
+../src/ControlEngine/AutoFlight.h:17:2: error: ‘CCrazyflie’ does not name a type
+  CCrazyflie *cf;
+  ^
+../src/ControlEngine/AutoFlight.cpp: In constructor ‘AutoFlight::AutoFlight(std::string)’:
+../src/ControlEngine/AutoFlight.cpp:11:2: error: ‘CCrazyRadio’ was not declared in this scope
+  CCrazyRadio *crazyRadio = new crazyRadio(radioIdentifier);
+  ^
+../src/ControlEngine/AutoFlight.cpp:11:15: error: ‘crazyRadio’ was not declared in this scope
+  CCrazyRadio *crazyRadio = new crazyRadio(radioIdentifier);
+               ^
+../src/ControlEngine/AutoFlight.cpp:11:32: error: expected type-specifier before ‘crazyRadio’
+  CCrazyRadio *crazyRadio = new crazyRadio(radioIdentifier);
+                                ^
+../src/ControlEngine/AutoFlight.cpp:11:32: error: expected ‘;’ before ‘crazyRadio’
+../src/ControlEngine/AutoFlight.cpp:15:2: error: ‘cf’ was not declared in this scope
+  cf = new CCrazyflie(crazyRadio);
+  ^
+../src/ControlEngine/AutoFlight.cpp:15:11: error: expected type-specifier before ‘CCrazyflie’
+  cf = new CCrazyflie(crazyRadio);
+           ^
+../src/ControlEngine/AutoFlight.cpp:15:11: error: expected ‘;’ before ‘CCrazyflie’
+make: *** [src/ControlEngine/AutoFlight.o] Error 1
+15:38:31 **** Clean-only build of configuration Debug for project RobatsEngine ****
+make clean 
+rm -rf  ./src/CrazyFlieEngine/CCRTPPacket.o ./src/CrazyFlieEngine/CCrazyRadio.o ./src/CrazyFlieEngine/CCrazyflie.o ./src/CrazyFlieEngine/CTOC.o  ./src/ControlEngine/AutoFlight.o ./src/ControlEngine/GamePad.o  ./src/CommunicationEngine/CrazyflieServer.o  ./src/RobatsEngine.o  ./src/CrazyFlieEngine/CCRTPPacket.d ./src/CrazyFlieEngine/CCrazyRadio.d ./src/CrazyFlieEngine/CCrazyflie.d ./src/CrazyFlieEngine/CTOC.d  ./src/ControlEngine/AutoFlight.d ./src/ControlEngine/GamePad.d  ./src/CommunicationEngine/CrazyflieServer.d  ./src/RobatsEngine.d  RobatsEngine
+ 
+15:38:34 **** Build of configuration Debug for project RobatsEngine ****
+make all 
+Building file: ../src/CrazyFlieEngine/CCRTPPacket.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -std=c++11 -MMD -MP -MF"src/CrazyFlieEngine/CCRTPPacket.d" -MT"src/CrazyFlieEngine/CCRTPPacket.o" -o "src/CrazyFlieEngine/CCRTPPacket.o" "../src/CrazyFlieEngine/CCRTPPacket.cpp"
+Finished building: ../src/CrazyFlieEngine/CCRTPPacket.cpp
+ 
+Building file: ../src/CrazyFlieEngine/CCrazyRadio.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -std=c++11 -MMD -MP -MF"src/CrazyFlieEngine/CCrazyRadio.d" -MT"src/CrazyFlieEngine/CCrazyRadio.o" -o "src/CrazyFlieEngine/CCrazyRadio.o" "../src/CrazyFlieEngine/CCrazyRadio.cpp"
+Finished building: ../src/CrazyFlieEngine/CCrazyRadio.cpp
+ 
+Building file: ../src/CrazyFlieEngine/CCrazyflie.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -std=c++11 -MMD -MP -MF"src/CrazyFlieEngine/CCrazyflie.d" -MT"src/CrazyFlieEngine/CCrazyflie.o" -o "src/CrazyFlieEngine/CCrazyflie.o" "../src/CrazyFlieEngine/CCrazyflie.cpp"
+Finished building: ../src/CrazyFlieEngine/CCrazyflie.cpp
+ 
+Building file: ../src/CrazyFlieEngine/CTOC.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -std=c++11 -MMD -MP -MF"src/CrazyFlieEngine/CTOC.d" -MT"src/CrazyFlieEngine/CTOC.o" -o "src/CrazyFlieEngine/CTOC.o" "../src/CrazyFlieEngine/CTOC.cpp"
+../src/CrazyFlieEngine/CTOC.cpp: In member function ‘bool CTOC::processItem(CCRTPPacket*)’:
+../src/CrazyFlieEngine/CTOC.cpp:109:11: warning: unused variable ‘nLength’ [-Wunused-variable]
+       int nLength = crtpItem->dataLength();
+           ^
+../src/CrazyFlieEngine/CTOC.cpp: In member function ‘bool CTOC::startLogging(std::string, std::string)’:
+../src/CrazyFlieEngine/CTOC.cpp:216:78: warning: narrowing conversion of ‘lbCurrent.LoggingBlock::nID’ from ‘int’ to ‘char’ inside { } [-Wnarrowing]
+       char cPayload[5] = {0x01, lbCurrent.nID, teCurrent.nType, teCurrent.nID};
+                                                                              ^
+../src/CrazyFlieEngine/CTOC.cpp:216:78: warning: narrowing conversion of ‘teCurrent.TOCElement::nType’ from ‘int’ to ‘char’ inside { } [-Wnarrowing]
+../src/CrazyFlieEngine/CTOC.cpp:216:78: warning: narrowing conversion of ‘teCurrent.TOCElement::nID’ from ‘int’ to ‘char’ inside { } [-Wnarrowing]
+../src/CrazyFlieEngine/CTOC.cpp: In member function ‘bool CTOC::stopLogging(std::string)’:
+../src/CrazyFlieEngine/CTOC.cpp:265:1: warning: no return statement in function returning non-void [-Wreturn-type]
+ }
+ ^
+../src/CrazyFlieEngine/CTOC.cpp: In member function ‘bool CTOC::isLogging(std::string)’:
+../src/CrazyFlieEngine/CTOC.cpp:269:1: warning: no return statement in function returning non-void [-Wreturn-type]
+ }
+ ^
+../src/CrazyFlieEngine/CTOC.cpp: In member function ‘bool CTOC::registerLoggingBlock(std::string, double)’:
+../src/CrazyFlieEngine/CTOC.cpp:340:45: warning: narrowing conversion of ‘nID’ from ‘int’ to ‘char’ inside { } [-Wnarrowing]
+     char cPayload[4] = {0x00, nID, d10thOfMS};
+                                             ^
+../src/CrazyFlieEngine/CTOC.cpp:340:45: warning: narrowing conversion of ‘d10thOfMS’ from ‘double’ to ‘char’ inside { } [-Wnarrowing]
+../src/CrazyFlieEngine/CTOC.cpp: In member function ‘bool CTOC::enableLogging(std::string)’:
+../src/CrazyFlieEngine/CTOC.cpp:382:55: warning: narrowing conversion of ‘lbCurrent.LoggingBlock::nID’ from ‘int’ to ‘char’ inside { } [-Wnarrowing]
+     char cPayload[3] = {0x03, lbCurrent.nID, d10thOfMS};
+                                                       ^
+../src/CrazyFlieEngine/CTOC.cpp:382:55: warning: narrowing conversion of ‘d10thOfMS’ from ‘double’ to ‘char’ inside { } [-Wnarrowing]
+../src/CrazyFlieEngine/CTOC.cpp: In member function ‘bool CTOC::unregisterLoggingBlockID(int)’:
+../src/CrazyFlieEngine/CTOC.cpp:409:32: warning: narrowing conversion of ‘nID’ from ‘int’ to ‘char’ inside { } [-Wnarrowing]
+   char cPayload[2] = {0x02, nID};
+                                ^
+../src/CrazyFlieEngine/CTOC.cpp: In member function ‘void CTOC::processPackets(std::list<CCRTPPacket*>)’:
+../src/CrazyFlieEngine/CTOC.cpp:446:46: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+  while(nIndex < lbCurrent.lstElementIDs.size()) {
+                                              ^
+../src/CrazyFlieEngine/CTOC.cpp:439:11: warning: unused variable ‘nAvailableLogBytes’ [-Wunused-variable]
+       int nAvailableLogBytes = crtpPacket->dataLength() - 5;
+           ^
+../src/CrazyFlieEngine/CTOC.cpp: In member function ‘int CTOC::elementIDinBlock(int, int)’:
+../src/CrazyFlieEngine/CTOC.cpp:551:53: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+     if(nElementIndex < lbCurrent.lstElementIDs.size()) {
+                                                     ^
+Finished building: ../src/CrazyFlieEngine/CTOC.cpp
+ 
+Building file: ../src/ControlEngine/AutoFlight.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -std=c++11 -MMD -MP -MF"src/ControlEngine/AutoFlight.d" -MT"src/ControlEngine/AutoFlight.o" -o "src/ControlEngine/AutoFlight.o" "../src/ControlEngine/AutoFlight.cpp"
+In file included from ../src/ControlEngine/AutoFlight.cpp:8:0:
+../src/ControlEngine/AutoFlight.h:17:2: error: ‘CCrazyflie’ does not name a type
+  CCrazyflie *cf;
+  ^
+../src/ControlEngine/AutoFlight.cpp: In constructor ‘AutoFlight::AutoFlight(std::string)’:
+../src/ControlEngine/AutoFlight.cpp:11:2: error: ‘CCrazyRadio’ was not declared in this scope
+  CCrazyRadio *crazyRadio = new crazyRadio(radioIdentifier);
+  ^
+../src/ControlEngine/AutoFlight.cpp:11:15: error: ‘crazyRadio’ was not declared in this scope
+  CCrazyRadio *crazyRadio = new crazyRadio(radioIdentifier);
+               ^
+../src/ControlEngine/AutoFlight.cpp:11:32: error: expected type-specifier before ‘crazyRadio’
+  CCrazyRadio *crazyRadio = new crazyRadio(radioIdentifier);
+                                ^
+../src/ControlEngine/AutoFlight.cpp:11:32: error: expected ‘;’ before ‘crazyRadio’
+../src/ControlEngine/AutoFlight.cpp:15:2: error: ‘cf’ was not declared in this scope
+  cf = new CCrazyflie(crazyRadio);
+  ^
+../src/ControlEngine/AutoFlight.cpp:15:11: error: expected type-specifier before ‘CCrazyflie’
+  cf = new CCrazyflie(crazyRadio);
+           ^
+../src/ControlEngine/AutoFlight.cpp:15:11: error: expected ‘;’ before ‘CCrazyflie’
+make: *** [src/ControlEngine/AutoFlight.o] Error 1
+15:38:50 **** Incremental Build of configuration Debug for project RobatsEngine ****
+make all 
+Building file: ../src/ControlEngine/AutoFlight.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -std=c++11 -MMD -MP -MF"src/ControlEngine/AutoFlight.d" -MT"src/ControlEngine/AutoFlight.o" -o "src/ControlEngine/AutoFlight.o" "../src/ControlEngine/AutoFlight.cpp"
+In file included from ../src/ControlEngine/AutoFlight.cpp:8:0:
+../src/ControlEngine/AutoFlight.h:17:2: error: ‘CCrazyflie’ does not name a type
+  CCrazyflie *cf;
+  ^
+../src/ControlEngine/AutoFlight.cpp: In constructor ‘AutoFlight::AutoFlight(std::string)’:
+../src/ControlEngine/AutoFlight.cpp:11:2: error: ‘CCrazyRadio’ was not declared in this scope
+  CCrazyRadio *crazyRadio = new CCrazyRadio(radioIdentifier);
+  ^
+../src/ControlEngine/AutoFlight.cpp:11:15: error: ‘crazyRadio’ was not declared in this scope
+  CCrazyRadio *crazyRadio = new CCrazyRadio(radioIdentifier);
+               ^
+../src/ControlEngine/AutoFlight.cpp:11:32: error: expected type-specifier before ‘CCrazyRadio’
+  CCrazyRadio *crazyRadio = new CCrazyRadio(radioIdentifier);
+                                ^
+../src/ControlEngine/AutoFlight.cpp:11:32: error: expected ‘;’ before ‘CCrazyRadio’
+../src/ControlEngine/AutoFlight.cpp:15:2: error: ‘cf’ was not declared in this scope
+  cf = new CCrazyflie(crazyRadio);
+  ^
+../src/ControlEngine/AutoFlight.cpp:15:11: error: expected type-specifier before ‘CCrazyflie’
+  cf = new CCrazyflie(crazyRadio);
+           ^
+../src/ControlEngine/AutoFlight.cpp:15:11: error: expected ‘;’ before ‘CCrazyflie’
+make: *** [src/ControlEngine/AutoFlight.o] Error 1
+15:38:54 **** Incremental Build of configuration Debug for project RobatsEngine ****
+make all 
+Building file: ../src/ControlEngine/AutoFlight.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -std=c++11 -MMD -MP -MF"src/ControlEngine/AutoFlight.d" -MT"src/ControlEngine/AutoFlight.o" -o "src/ControlEngine/AutoFlight.o" "../src/ControlEngine/AutoFlight.cpp"
+In file included from ../src/ControlEngine/AutoFlight.cpp:8:0:
+../src/ControlEngine/AutoFlight.h:17:2: error: ‘CCrazyflie’ does not name a type
+  CCrazyflie *cf;
+  ^
+../src/ControlEngine/AutoFlight.cpp: In constructor ‘AutoFlight::AutoFlight(std::string)’:
+../src/ControlEngine/AutoFlight.cpp:11:2: error: ‘CCrazyRadio’ was not declared in this scope
+  CCrazyRadio *crazyRadio = new CCrazyRadio(radioIdentifier);
+  ^
+../src/ControlEngine/AutoFlight.cpp:11:15: error: ‘crazyRadio’ was not declared in this scope
+  CCrazyRadio *crazyRadio = new CCrazyRadio(radioIdentifier);
+               ^
+../src/ControlEngine/AutoFlight.cpp:11:32: error: expected type-specifier before ‘CCrazyRadio’
+  CCrazyRadio *crazyRadio = new CCrazyRadio(radioIdentifier);
+                                ^
+../src/ControlEngine/AutoFlight.cpp:11:32: error: expected ‘;’ before ‘CCrazyRadio’
+../src/ControlEngine/AutoFlight.cpp:15:2: error: ‘cf’ was not declared in this scope
+  cf = new CCrazyflie(crazyRadio);
+  ^
+../src/ControlEngine/AutoFlight.cpp:15:11: error: expected type-specifier before ‘CCrazyflie’
+  cf = new CCrazyflie(crazyRadio);
+           ^
+../src/ControlEngine/AutoFlight.cpp:15:11: error: expected ‘;’ before ‘CCrazyflie’
+make: *** [src/ControlEngine/AutoFlight.o] Error 1
+15:39:18 **** Incremental Build of configuration Debug for project RobatsEngine ****
+make all 
+Building file: ../src/ControlEngine/AutoFlight.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -std=c++11 -MMD -MP -MF"src/ControlEngine/AutoFlight.d" -MT"src/ControlEngine/AutoFlight.o" -o "src/ControlEngine/AutoFlight.o" "../src/ControlEngine/AutoFlight.cpp"
+In file included from ../src/ControlEngine/AutoFlight.cpp:8:0:
+../src/ControlEngine/AutoFlight.h:7:40: fatal error: CrazyFlieEngine/CCrazyflie.h: No such file or directory
+ #include "CrazyFlieEngine/CCrazyflie.h"
+                                        ^
+compilation terminated.
+make: *** [src/ControlEngine/AutoFlight.o] Error 1
+15:39:29 **** Incremental Build of configuration Debug for project RobatsEngine ****
+make all 
+Building file: ../src/ControlEngine/AutoFlight.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -std=c++11 -MMD -MP -MF"src/ControlEngine/AutoFlight.d" -MT"src/ControlEngine/AutoFlight.o" -o "src/ControlEngine/AutoFlight.o" "../src/ControlEngine/AutoFlight.cpp"
+Finished building: ../src/ControlEngine/AutoFlight.cpp
+ 
+Building file: ../src/ControlEngine/GamePad.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -std=c++11 -MMD -MP -MF"src/ControlEngine/GamePad.d" -MT"src/ControlEngine/GamePad.o" -o "src/ControlEngine/GamePad.o" "../src/ControlEngine/GamePad.cpp"
+../src/ControlEngine/GamePad.cpp: In member function ‘int GamePad::readValues(gp_values*)’:
+../src/ControlEngine/GamePad.cpp:50:1: warning: no return statement in function returning non-void [-Wreturn-type]
+ }
+ ^
+Finished building: ../src/ControlEngine/GamePad.cpp
+ 
+Building file: ../src/CommunicationEngine/CrazyflieServer.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -std=c++11 -MMD -MP -MF"src/CommunicationEngine/CrazyflieServer.d" -MT"src/CommunicationEngine/CrazyflieServer.o" -o "src/CommunicationEngine/CrazyflieServer.o" "../src/CommunicationEngine/CrazyflieServer.cpp"
+In file included from ../src/CommunicationEngine/CrazyflieServer.cpp:9:0:
+../src/CommunicationEngine/CrazyflieServer.h: In constructor ‘CrazyflieServer::CrazyflieServer(int, int*)’:
+../src/CommunicationEngine/CrazyflieServer.h:23:6: warning: ‘CrazyflieServer::port’ will be initialized after [-Wreorder]
+  int port;
+      ^
+../src/CommunicationEngine/CrazyflieServer.h:22:7: warning:   ‘int* CrazyflieServer::data’ [-Wreorder]
+  int* data;
+       ^
+../src/CommunicationEngine/CrazyflieServer.cpp:19:1: warning:   when initialized here [-Wreorder]
+ CrazyflieServer::CrazyflieServer(int port, int* data): port(port), data(data), clientsocket(0) {
+ ^
+Finished building: ../src/CommunicationEngine/CrazyflieServer.cpp
+ 
+Building file: ../src/RobatsEngine.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -std=c++11 -MMD -MP -MF"src/RobatsEngine.d" -MT"src/RobatsEngine.o" -o "src/RobatsEngine.o" "../src/RobatsEngine.cpp"
+../src/RobatsEngine.cpp:11:35: warning: extra tokens at end of #include directive [enabled by default]
+ #include "ControlEngine/GamePad.h";
+                                   ^
+../src/RobatsEngine.cpp: In function ‘int main(int, char**)’:
+../src/RobatsEngine.cpp:19:7: warning: unused variable ‘data’ [-Wunused-variable]
+   int data[4];
+       ^
+../src/RobatsEngine.cpp:21:19: warning: unused variable ‘gpe’ [-Wunused-variable]
+   struct gp_event gpe;
+                   ^
+Finished building: ../src/RobatsEngine.cpp
+ 
+Building target: RobatsEngine
+Invoking: GCC C++ Linker
+g++  -o "RobatsEngine"  ./src/CrazyFlieEngine/CCRTPPacket.o ./src/CrazyFlieEngine/CCrazyRadio.o ./src/CrazyFlieEngine/CCrazyflie.o ./src/CrazyFlieEngine/CTOC.o  ./src/ControlEngine/AutoFlight.o ./src/ControlEngine/GamePad.o  ./src/CommunicationEngine/CrazyflieServer.o  ./src/RobatsEngine.o   -lusb-1.0
+Finished building target: RobatsEngine
+ 
+15:51:57 **** Incremental Build of configuration Debug for project RobatsEngine ****
+make all 
+Building file: ../src/ControlEngine/AutoFlight.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -std=c++11 -MMD -MP -MF"src/ControlEngine/AutoFlight.d" -MT"src/ControlEngine/AutoFlight.o" -o "src/ControlEngine/AutoFlight.o" "../src/ControlEngine/AutoFlight.cpp"
+Finished building: ../src/ControlEngine/AutoFlight.cpp
+ 
+Building file: ../src/RobatsEngine.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -std=c++11 -MMD -MP -MF"src/RobatsEngine.d" -MT"src/RobatsEngine.o" -o "src/RobatsEngine.o" "../src/RobatsEngine.cpp"
+../src/RobatsEngine.cpp:11:35: warning: extra tokens at end of #include directive [enabled by default]
+ #include "ControlEngine/GamePad.h";
+                                   ^
+../src/RobatsEngine.cpp: In function ‘int main(int, char**)’:
+../src/RobatsEngine.cpp:19:7: warning: unused variable ‘data’ [-Wunused-variable]
+   int data[4];
+       ^
+../src/RobatsEngine.cpp:21:19: warning: unused variable ‘gpe’ [-Wunused-variable]
+   struct gp_event gpe;
+                   ^
+Finished building: ../src/RobatsEngine.cpp
+ 
+Building target: RobatsEngine
+Invoking: GCC C++ Linker
+g++  -o "RobatsEngine"  ./src/CrazyFlieEngine/CCRTPPacket.o ./src/CrazyFlieEngine/CCrazyRadio.o ./src/CrazyFlieEngine/CCrazyflie.o ./src/CrazyFlieEngine/CTOC.o  ./src/ControlEngine/AutoFlight.o ./src/ControlEngine/GamePad.o  ./src/CommunicationEngine/CrazyflieServer.o  ./src/RobatsEngine.o   -lusb-1.0
+Finished building target: RobatsEngine
+ 
+15:53:38 **** Incremental Build of configuration Debug for project RobatsEngine ****
+make all 
+Building file: ../src/ControlEngine/AutoFlight.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -std=c++11 -MMD -MP -MF"src/ControlEngine/AutoFlight.d" -MT"src/ControlEngine/AutoFlight.o" -o "src/ControlEngine/AutoFlight.o" "../src/ControlEngine/AutoFlight.cpp"
+../src/ControlEngine/AutoFlight.cpp: In member function ‘void AutoFlight::print(int, std::string)’:
+../src/ControlEngine/AutoFlight.cpp:20:1: error: expected primary-expression before ‘.’ token
+ .
+ ^
+../src/ControlEngine/AutoFlight.cpp:21:2: error: expected unqualified-id before ‘}’ token
+  }
+  ^
+../src/ControlEngine/AutoFlight.cpp:21:2: error: expected ‘;’ before ‘}’ token
+make: *** [src/ControlEngine/AutoFlight.o] Error 1
+15:53:48 **** Incremental Build of configuration Debug for project RobatsEngine ****
+make all 
+Building file: ../src/ControlEngine/AutoFlight.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -std=c++11 -MMD -MP -MF"src/ControlEngine/AutoFlight.d" -MT"src/ControlEngine/AutoFlight.o" -o "src/ControlEngine/AutoFlight.o" "../src/ControlEngine/AutoFlight.cpp"
+Finished building: ../src/ControlEngine/AutoFlight.cpp
+ 
+Building target: RobatsEngine
+Invoking: GCC C++ Linker
+g++  -o "RobatsEngine"  ./src/CrazyFlieEngine/CCRTPPacket.o ./src/CrazyFlieEngine/CCrazyRadio.o ./src/CrazyFlieEngine/CCrazyflie.o ./src/CrazyFlieEngine/CTOC.o  ./src/ControlEngine/AutoFlight.o ./src/ControlEngine/GamePad.o  ./src/CommunicationEngine/CrazyflieServer.o  ./src/RobatsEngine.o   -lusb-1.0
+Finished building target: RobatsEngine
+ 
+15:53:52 **** Incremental Build of configuration Debug for project RobatsEngine ****
+make all 
+make: Nothing to be done for `all'.
+15:54:05 **** Incremental Build of configuration Debug for project RobatsEngine ****
+make all 
+make: Nothing to be done for `all'.
+15:55:23 **** Incremental Build of configuration Debug for project RobatsEngine ****
+make all 
+make: Nothing to be done for `all'.
+15:55:48 **** Incremental Build of configuration Debug for project RobatsEngine ****
+make all 
+Building file: ../src/RobatsEngine.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -std=c++11 -MMD -MP -MF"src/RobatsEngine.d" -MT"src/RobatsEngine.o" -o "src/RobatsEngine.o" "../src/RobatsEngine.cpp"
+../src/RobatsEngine.cpp:11:35: warning: extra tokens at end of #include directive [enabled by default]
+ #include "ControlEngine/GamePad.h";
+                                   ^
+../src/RobatsEngine.cpp: In function ‘int main(int, char**)’:
+../src/RobatsEngine.cpp:19:7: warning: unused variable ‘data’ [-Wunused-variable]
+   int data[4];
+       ^
+../src/RobatsEngine.cpp:21:19: warning: unused variable ‘gpe’ [-Wunused-variable]
+   struct gp_event gpe;
+                   ^
+Finished building: ../src/RobatsEngine.cpp
+ 
+Building target: RobatsEngine
+Invoking: GCC C++ Linker
+g++  -o "RobatsEngine"  ./src/CrazyFlieEngine/CCRTPPacket.o ./src/CrazyFlieEngine/CCrazyRadio.o ./src/CrazyFlieEngine/CCrazyflie.o ./src/CrazyFlieEngine/CTOC.o  ./src/ControlEngine/AutoFlight.o ./src/ControlEngine/GamePad.o  ./src/CommunicationEngine/CrazyflieServer.o  ./src/RobatsEngine.o   -lusb-1.0
+Finished building target: RobatsEngine
+ 
+15:55:51 **** Incremental Build of configuration Debug for project RobatsEngine ****
+make all 
+make: Nothing to be done for `all'.
+15:55:59 **** Incremental Build of configuration Debug for project RobatsEngine ****
+make all 
+make: Nothing to be done for `all'.
+15:57:06 **** Incremental Build of configuration Debug for project RobatsEngine ****
+make all 
+make: Nothing to be done for `all'.
+15:57:58 **** Incremental Build of configuration Debug for project RobatsEngine ****
+make all 
+../src/RobatsEngine.cpp:11:35: warning: extra tokens at end of #include directive [enabled by default]
+Building file: ../src/RobatsEngine.cpp
+ #include "ControlEngine/GamePad.h";
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -std=c++11 -MMD -MP -MF"src/RobatsEngine.d" -MT"src/RobatsEngine.o" -o "src/RobatsEngine.o" "../src/RobatsEngine.cpp"
+Finished building: ../src/RobatsEngine.cpp
+ 
+Building target: RobatsEngine
+Invoking: GCC C++ Linker
+g++  -o "RobatsEngine"  ./src/CrazyFlieEngine/CCRTPPacket.o ./src/CrazyFlieEngine/CCrazyRadio.o ./src/CrazyFlieEngine/CCrazyflie.o ./src/CrazyFlieEngine/CTOC.o  ./src/ControlEngine/AutoFlight.o ./src/ControlEngine/GamePad.o  ./src/CommunicationEngine/CrazyflieServer.o  ./src/RobatsEngine.o   -lusb-1.0
+                                   ^
+../src/RobatsEngine.cpp: In function ‘int main(int, char**)’:
+../src/RobatsEngine.cpp:19:7: warning: unused variable ‘data’ [-Wunused-variable]
+   int data[4];
+       ^
+../src/RobatsEngine.cpp:21:19: warning: unused variable ‘gpe’ [-Wunused-variable]
+   struct gp_event gpe;
+                   ^
+../src/RobatsEngine.cpp:22:12: warning: unused variable ‘gamepad’ [-Wunused-variable]
+   GamePad *gamepad = new GamePad();
+            ^
+Finished building target: RobatsEngine
+ 
+15:58:25 **** Incremental Build of configuration Debug for project RobatsEngine ****
+make all 
+Building file: ../src/RobatsEngine.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -std=c++11 -MMD -MP -MF"src/RobatsEngine.d" -MT"src/RobatsEngine.o" -o "src/RobatsEngine.o" "../src/RobatsEngine.cpp"
+../src/RobatsEngine.cpp:11:35: warning: extra tokens at end of #include directive [enabled by default]
+ #include "ControlEngine/GamePad.h";
+                                   ^
+../src/RobatsEngine.cpp: In function ‘int main(int, char**)’:
+../src/RobatsEngine.cpp:19:7: warning: unused variable ‘data’ [-Wunused-variable]
+   int data[4];
+       ^
+../src/RobatsEngine.cpp:21:19: warning: unused variable ‘gpe’ [-Wunused-variable]
+   struct gp_event gpe;
+                   ^
+Finished building: ../src/RobatsEngine.cpp
+ 
+Building target: RobatsEngine
+Invoking: GCC C++ Linker
+g++  -o "RobatsEngine"  ./src/CrazyFlieEngine/CCRTPPacket.o ./src/CrazyFlieEngine/CCrazyRadio.o ./src/CrazyFlieEngine/CCrazyflie.o ./src/CrazyFlieEngine/CTOC.o  ./src/ControlEngine/AutoFlight.o ./src/ControlEngine/GamePad.o  ./src/CommunicationEngine/CrazyflieServer.o  ./src/RobatsEngine.o   -lusb-1.0
+Finished building target: RobatsEngine
+ 
+16:13:08 **** Incremental Build of configuration Debug for project RobatsEngine ****
+make all 
+Building file: ../src/RobatsEngine.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -std=c++11 -MMD -MP -MF"src/RobatsEngine.d" -MT"src/RobatsEngine.o" -o "src/RobatsEngine.o" "../src/RobatsEngine.cpp"
+../src/RobatsEngine.cpp:11:35: warning: extra tokens at end of #include directive [enabled by default]
+ #include "ControlEngine/GamePad.h";
+                                   ^
+../src/RobatsEngine.cpp: In function ‘int main(int, char**)’:
+../src/RobatsEngine.cpp:19:7: warning: unused variable ‘data’ [-Wunused-variable]
+   int data[4];
+       ^
+../src/RobatsEngine.cpp:21:19: warning: unused variable ‘gpe’ [-Wunused-variable]
+   struct gp_event gpe;
+                   ^
+Finished building: ../src/RobatsEngine.cpp
+ 
+Building target: RobatsEngine
+Invoking: GCC C++ Linker
+g++  -o "RobatsEngine"  ./src/CrazyFlieEngine/CCRTPPacket.o ./src/CrazyFlieEngine/CCrazyRadio.o ./src/CrazyFlieEngine/CCrazyflie.o ./src/CrazyFlieEngine/CTOC.o  ./src/ControlEngine/AutoFlight.o ./src/ControlEngine/GamePad.o  ./src/CommunicationEngine/CrazyflieServer.o  ./src/RobatsEngine.o   -lusb-1.0
+Finished building target: RobatsEngine
+ 
+16:14:46 **** Incremental Build of configuration Debug for project RobatsEngine ****
+make all 
+Building file: ../src/RobatsEngine.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -std=c++11 -MMD -MP -MF"src/RobatsEngine.d" -MT"src/RobatsEngine.o" -o "src/RobatsEngine.o" "../src/RobatsEngine.cpp"
+../src/RobatsEngine.cpp:11:35: warning: extra tokens at end of #include directive [enabled by default]
+ #include "ControlEngine/GamePad.h";
+                                   ^
+../src/RobatsEngine.cpp: In function ‘int main(int, char**)’:
+../src/RobatsEngine.cpp:19:7: warning: unused variable ‘data’ [-Wunused-variable]
+   int data[4];
+       ^
+../src/RobatsEngine.cpp:21:19: warning: unused variable ‘gpe’ [-Wunused-variable]
+   struct gp_event gpe;
+                   ^
+Finished building: ../src/RobatsEngine.cpp
+ 
+Building target: RobatsEngine
+Invoking: GCC C++ Linker
+g++  -o "RobatsEngine"  ./src/CrazyFlieEngine/CCRTPPacket.o ./src/CrazyFlieEngine/CCrazyRadio.o ./src/CrazyFlieEngine/CCrazyflie.o ./src/CrazyFlieEngine/CTOC.o  ./src/ControlEngine/AutoFlight.o ./src/ControlEngine/GamePad.o  ./src/CommunicationEngine/CrazyflieServer.o  ./src/RobatsEngine.o   -lusb-1.0
+Finished building target: RobatsEngine
+ 
+16:15:38 **** Incremental Build of configuration Debug for project RobatsEngine ****
+make all 
+Building file: ../src/ControlEngine/GamePad.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -std=c++11 -MMD -MP -MF"src/ControlEngine/GamePad.d" -MT"src/ControlEngine/GamePad.o" -o "src/ControlEngine/GamePad.o" "../src/ControlEngine/GamePad.cpp"
+../src/ControlEngine/GamePad.cpp: In member function ‘int GamePad::readValues(gp_values*)’:
+../src/ControlEngine/GamePad.cpp:50:1: warning: no return statement in function returning non-void [-Wreturn-type]
+ }
+ ^
+Finished building: ../src/ControlEngine/GamePad.cpp
+ 
+Building file: ../src/RobatsEngine.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -std=c++11 -MMD -MP -MF"src/RobatsEngine.d" -MT"src/RobatsEngine.o" -o "src/RobatsEngine.o" "../src/RobatsEngine.cpp"
+../src/RobatsEngine.cpp:11:35: warning: extra tokens at end of #include directive [enabled by default]
+ #include "ControlEngine/GamePad.h";
+                                   ^
+../src/RobatsEngine.cpp: In function ‘int main(int, char**)’:
+../src/RobatsEngine.cpp:19:7: warning: unused variable ‘data’ [-Wunused-variable]
+   int data[4];
+       ^
+../src/RobatsEngine.cpp:21:19: warning: unused variable ‘gpe’ [-Wunused-variable]
+   struct gp_event gpe;
+                   ^
+Finished building: ../src/RobatsEngine.cpp
+ 
+Building target: RobatsEngine
+Invoking: GCC C++ Linker
+g++  -o "RobatsEngine"  ./src/CrazyFlieEngine/CCRTPPacket.o ./src/CrazyFlieEngine/CCrazyRadio.o ./src/CrazyFlieEngine/CCrazyflie.o ./src/CrazyFlieEngine/CTOC.o  ./src/ControlEngine/AutoFlight.o ./src/ControlEngine/GamePad.o  ./src/CommunicationEngine/CrazyflieServer.o  ./src/RobatsEngine.o   -lusb-1.0
+Finished building target: RobatsEngine
+ 
+16:20:50 **** Incremental Build of configuration Debug for project RobatsEngine ****
+make all 
+Building file: ../src/RobatsEngine.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -std=c++11 -MMD -MP -MF"src/RobatsEngine.d" -MT"src/RobatsEngine.o" -o "src/RobatsEngine.o" "../src/RobatsEngine.cpp"
+../src/RobatsEngine.cpp:11:35: warning: extra tokens at end of #include directive [enabled by default]
+ #include "ControlEngine/GamePad.h";
+                                   ^
+../src/RobatsEngine.cpp: In function ‘int main(int, char**)’:
+../src/RobatsEngine.cpp:19:7: warning: unused variable ‘data’ [-Wunused-variable]
+   int data[4];
+       ^
+../src/RobatsEngine.cpp:21:19: warning: unused variable ‘gpe’ [-Wunused-variable]
+   struct gp_event gpe;
+                   ^
+Finished building: ../src/RobatsEngine.cpp
+ 
+Building target: RobatsEngine
+Invoking: GCC C++ Linker
+g++  -o "RobatsEngine"  ./src/CrazyFlieEngine/CCRTPPacket.o ./src/CrazyFlieEngine/CCrazyRadio.o ./src/CrazyFlieEngine/CCrazyflie.o ./src/CrazyFlieEngine/CTOC.o  ./src/ControlEngine/AutoFlight.o ./src/ControlEngine/GamePad.o  ./src/CommunicationEngine/CrazyflieServer.o  ./src/RobatsEngine.o   -lusb-1.0
+Finished building target: RobatsEngine
+ 
+16:21:13 **** Incremental Build of configuration Debug for project RobatsEngine ****
+make all 
+Building file: ../src/RobatsEngine.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -std=c++11 -MMD -MP -MF"src/RobatsEngine.d" -MT"src/RobatsEngine.o" -o "src/RobatsEngine.o" "../src/RobatsEngine.cpp"
+../src/RobatsEngine.cpp:11:35: warning: extra tokens at end of #include directive [enabled by default]
+ #include "ControlEngine/GamePad.h";
+                                   ^
+../src/RobatsEngine.cpp: In function ‘int main(int, char**)’:
+../src/RobatsEngine.cpp:19:7: warning: unused variable ‘data’ [-Wunused-variable]
+   int data[4];
+       ^
+../src/RobatsEngine.cpp:21:19: warning: unused variable ‘gpe’ [-Wunused-variable]
+   struct gp_event gpe;
+                   ^
+Finished building: ../src/RobatsEngine.cpp
+ 
+Building target: RobatsEngine
+Invoking: GCC C++ Linker
+g++  -o "RobatsEngine"  ./src/CrazyFlieEngine/CCRTPPacket.o ./src/CrazyFlieEngine/CCrazyRadio.o ./src/CrazyFlieEngine/CCrazyflie.o ./src/CrazyFlieEngine/CTOC.o  ./src/ControlEngine/AutoFlight.o ./src/ControlEngine/GamePad.o  ./src/CommunicationEngine/CrazyflieServer.o  ./src/RobatsEngine.o   -lusb-1.0
+Finished building target: RobatsEngine
+ 
+16:21:15 **** Incremental Build of configuration Debug for project RobatsEngine ****
+make all 
+make: Nothing to be done for `all'.
+16:21:49 **** Incremental Build of configuration Debug for project RobatsEngine ****
+make all 
+make: Nothing to be done for `all'.
+16:22:01 **** Incremental Build of configuration Debug for project RobatsEngine ****
+make all 
+make: Nothing to be done for `all'.
+16:22:42 **** Incremental Build of configuration Debug for project RobatsEngine ****
+make all 
+make: Nothing to be done for `all'.
+16:22:59 **** Incremental Build of configuration Debug for project RobatsEngine ****
+make all 
+Building file: ../src/RobatsEngine.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -std=c++11 -MMD -MP -MF"src/RobatsEngine.d" -MT"src/RobatsEngine.o" -o "src/RobatsEngine.o" "../src/RobatsEngine.cpp"
+../src/RobatsEngine.cpp:11:35: warning: extra tokens at end of #include directive [enabled by default]
+ #include "ControlEngine/GamePad.h";
+                                   ^
+../src/RobatsEngine.cpp: In function ‘int main(int, char**)’:
+../src/RobatsEngine.cpp:19:7: warning: unused variable ‘data’ [-Wunused-variable]
+   int data[4];
+       ^
+../src/RobatsEngine.cpp:21:19: warning: unused variable ‘gpe’ [-Wunused-variable]
+   struct gp_event gpe;
+                   ^
+Finished building: ../src/RobatsEngine.cpp
+ 
+Building target: RobatsEngine
+Invoking: GCC C++ Linker
+g++  -o "RobatsEngine"  ./src/CrazyFlieEngine/CCRTPPacket.o ./src/CrazyFlieEngine/CCrazyRadio.o ./src/CrazyFlieEngine/CCrazyflie.o ./src/CrazyFlieEngine/CTOC.o  ./src/ControlEngine/AutoFlight.o ./src/ControlEngine/GamePad.o  ./src/CommunicationEngine/CrazyflieServer.o  ./src/RobatsEngine.o   -lusb-1.0
+Finished building target: RobatsEngine
+ 
+16:23:03 **** Incremental Build of configuration Debug for project RobatsEngine ****
+make all 
+make: Nothing to be done for `all'.
+16:23:26 **** Incremental Build of configuration Debug for project RobatsEngine ****
+make all 
+Building file: ../src/RobatsEngine.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -std=c++11 -MMD -MP -MF"src/RobatsEngine.d" -MT"src/RobatsEngine.o" -o "src/RobatsEngine.o" "../src/RobatsEngine.cpp"
+../src/RobatsEngine.cpp:11:35: warning: extra tokens at end of #include directive [enabled by default]
+ #include "ControlEngine/GamePad.h";
+                                   ^
+../src/RobatsEngine.cpp: In function ‘int main(int, char**)’:
+../src/RobatsEngine.cpp:19:7: warning: unused variable ‘data’ [-Wunused-variable]
+   int data[4];
+       ^
+../src/RobatsEngine.cpp:21:19: warning: unused variable ‘gpe’ [-Wunused-variable]
+   struct gp_event gpe;
+                   ^
+Finished building: ../src/RobatsEngine.cpp
+ 
+Building target: RobatsEngine
+Invoking: GCC C++ Linker
+g++  -o "RobatsEngine"  ./src/CrazyFlieEngine/CCRTPPacket.o ./src/CrazyFlieEngine/CCrazyRadio.o ./src/CrazyFlieEngine/CCrazyflie.o ./src/CrazyFlieEngine/CTOC.o  ./src/ControlEngine/AutoFlight.o ./src/ControlEngine/GamePad.o  ./src/CommunicationEngine/CrazyflieServer.o  ./src/RobatsEngine.o   -lusb-1.0
+Finished building target: RobatsEngine
+ 
+16:24:13 **** Incremental Build of configuration Debug for project RobatsEngine ****
+make all 
+Building file: ../src/RobatsEngine.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -std=c++11 -MMD -MP -MF"src/RobatsEngine.d" -MT"src/RobatsEngine.o" -o "src/RobatsEngine.o" "../src/RobatsEngine.cpp"
+../src/RobatsEngine.cpp:11:35: warning: extra tokens at end of #include directive [enabled by default]
+ #include "ControlEngine/GamePad.h";
+                                   ^
+../src/RobatsEngine.cpp: In function ‘int main(int, char**)’:
+../src/RobatsEngine.cpp:19:7: warning: unused variable ‘data’ [-Wunused-variable]
+   int data[4];
+       ^
+../src/RobatsEngine.cpp:21:19: warning: unused variable ‘gpe’ [-Wunused-variable]
+   struct gp_event gpe;
+                   ^
+Finished building: ../src/RobatsEngine.cpp
+ 
+Building target: RobatsEngine
+Invoking: GCC C++ Linker
+g++  -o "RobatsEngine"  ./src/CrazyFlieEngine/CCRTPPacket.o ./src/CrazyFlieEngine/CCrazyRadio.o ./src/CrazyFlieEngine/CCrazyflie.o ./src/CrazyFlieEngine/CTOC.o  ./src/ControlEngine/AutoFlight.o ./src/ControlEngine/GamePad.o  ./src/CommunicationEngine/CrazyflieServer.o  ./src/RobatsEngine.o   -lusb-1.0
+Finished building target: RobatsEngine
+ 
+16:26:00 **** Incremental Build of configuration Debug for project RobatsEngine ****
+make all 
+make: Nothing to be done for `all'.
+16:26:37 **** Incremental Build of configuration Debug for project RobatsEngine ****
+make all 
+Building file: ../src/RobatsEngine.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -std=c++11 -MMD -MP -MF"src/RobatsEngine.d" -MT"src/RobatsEngine.o" -o "src/RobatsEngine.o" "../src/RobatsEngine.cpp"
+../src/RobatsEngine.cpp:11:35: warning: extra tokens at end of #include directive [enabled by default]
+ #include "ControlEngine/GamePad.h";
+                                   ^
+../src/RobatsEngine.cpp: In function ‘int main(int, char**)’:
+../src/RobatsEngine.cpp:19:7: warning: unused variable ‘data’ [-Wunused-variable]
+   int data[4];
+       ^
+../src/RobatsEngine.cpp:21:19: warning: unused variable ‘gpe’ [-Wunused-variable]
+   struct gp_event gpe;
+                   ^
+Finished building: ../src/RobatsEngine.cpp
+ 
+Building target: RobatsEngine
+Invoking: GCC C++ Linker
+g++  -o "RobatsEngine"  ./src/CrazyFlieEngine/CCRTPPacket.o ./src/CrazyFlieEngine/CCrazyRadio.o ./src/CrazyFlieEngine/CCrazyflie.o ./src/CrazyFlieEngine/CTOC.o  ./src/ControlEngine/AutoFlight.o ./src/ControlEngine/GamePad.o  ./src/CommunicationEngine/CrazyflieServer.o  ./src/RobatsEngine.o   -lusb-1.0
+Finished building target: RobatsEngine
+ 
+16:27:06 **** Incremental Build of configuration Debug for project RobatsEngine ****
+make all 
+make: Nothing to be done for `all'.
+16:27:47 **** Incremental Build of configuration Debug for project RobatsEngine ****
+make all 
+make: Nothing to be done for `all'.
+16:28:35 **** Incremental Build of configuration Debug for project RobatsEngine ****
+make all 
+make: Nothing to be done for `all'.
+16:29:51 **** Incremental Build of configuration Debug for project RobatsEngine ****
+make all 
+make: Nothing to be done for `all'.
+16:30:23 **** Incremental Build of configuration Debug for project RobatsEngine ****
+make all 
+Building file: ../src/RobatsEngine.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -std=c++11 -MMD -MP -MF"src/RobatsEngine.d" -MT"src/RobatsEngine.o" -o "src/RobatsEngine.o" "../src/RobatsEngine.cpp"
+../src/RobatsEngine.cpp:11:35: warning: extra tokens at end of #include directive [enabled by default]
+ #include "ControlEngine/GamePad.h";
+                                   ^
+../src/RobatsEngine.cpp: In function ‘int main(int, char**)’:
+../src/RobatsEngine.cpp:19:7: warning: unused variable ‘data’ [-Wunused-variable]
+   int data[4];
+       ^
+../src/RobatsEngine.cpp:21:19: warning: unused variable ‘gpe’ [-Wunused-variable]
+   struct gp_event gpe;
+                   ^
+Finished building: ../src/RobatsEngine.cpp
+ 
+Building target: RobatsEngine
+Invoking: GCC C++ Linker
+g++  -o "RobatsEngine"  ./src/CrazyFlieEngine/CCRTPPacket.o ./src/CrazyFlieEngine/CCrazyRadio.o ./src/CrazyFlieEngine/CCrazyflie.o ./src/CrazyFlieEngine/CTOC.o  ./src/ControlEngine/AutoFlight.o ./src/ControlEngine/GamePad.o  ./src/CommunicationEngine/CrazyflieServer.o  ./src/RobatsEngine.o   -lusb-1.0
+Finished building target: RobatsEngine
+ 
+16:31:57 **** Incremental Build of configuration Debug for project RobatsEngine ****
+make all 
+Building file: ../src/ControlEngine/GamePad.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -std=c++11 -MMD -MP -MF"src/ControlEngine/GamePad.d" -MT"src/ControlEngine/GamePad.o" -o "src/ControlEngine/GamePad.o" "../src/ControlEngine/GamePad.cpp"
+../src/ControlEngine/GamePad.cpp: In member function ‘int GamePad::readValues(gp_values*)’:
+../src/ControlEngine/GamePad.cpp:50:1: warning: no return statement in function returning non-void [-Wreturn-type]
+ }
+ ^
+Finished building: ../src/ControlEngine/GamePad.cpp
+ 
+Building file: ../src/RobatsEngine.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -std=c++11 -MMD -MP -MF"src/RobatsEngine.d" -MT"src/RobatsEngine.o" -o "src/RobatsEngine.o" "../src/RobatsEngine.cpp"
+../src/RobatsEngine.cpp:11:35: warning: extra tokens at end of #include directive [enabled by default]
+ #include "ControlEngine/GamePad.h";
+                                   ^
+../src/RobatsEngine.cpp: In function ‘int main(int, char**)’:
+../src/RobatsEngine.cpp:19:7: warning: unused variable ‘data’ [-Wunused-variable]
+   int data[4];
+       ^
+../src/RobatsEngine.cpp:21:19: warning: unused variable ‘gpe’ [-Wunused-variable]
+   struct gp_event gpe;
+                   ^
+Finished building: ../src/RobatsEngine.cpp
+ 
+Building target: RobatsEngine
+Invoking: GCC C++ Linker
+g++  -o "RobatsEngine"  ./src/CrazyFlieEngine/CCRTPPacket.o ./src/CrazyFlieEngine/CCrazyRadio.o ./src/CrazyFlieEngine/CCrazyflie.o ./src/CrazyFlieEngine/CTOC.o  ./src/ControlEngine/AutoFlight.o ./src/ControlEngine/GamePad.o  ./src/CommunicationEngine/CrazyflieServer.o  ./src/RobatsEngine.o   -lusb-1.0
+Finished building target: RobatsEngine
+ 
+16:33:36 **** Incremental Build of configuration Debug for project RobatsEngine ****
+make all 
+Building file: ../src/ControlEngine/GamePad.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -std=c++11 -MMD -MP -MF"src/ControlEngine/GamePad.d" -MT"src/ControlEngine/GamePad.o" -o "src/ControlEngine/GamePad.o" "../src/ControlEngine/GamePad.cpp"
+../src/ControlEngine/GamePad.cpp: In member function ‘int GamePad::readValues(gp_values*)’:
+../src/ControlEngine/GamePad.cpp:50:1: warning: no return statement in function returning non-void [-Wreturn-type]
+ }
+ ^
+Finished building: ../src/ControlEngine/GamePad.cpp
+ 
+Building file: ../src/RobatsEngine.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -std=c++11 -MMD -MP -MF"src/RobatsEngine.d" -MT"src/RobatsEngine.o" -o "src/RobatsEngine.o" "../src/RobatsEngine.cpp"
+../src/RobatsEngine.cpp:11:35: warning: extra tokens at end of #include directive [enabled by default]
+ #include "ControlEngine/GamePad.h";
+                                   ^
+../src/RobatsEngine.cpp: In function ‘int main(int, char**)’:
+../src/RobatsEngine.cpp:19:7: warning: unused variable ‘data’ [-Wunused-variable]
+   int data[4];
+       ^
+../src/RobatsEngine.cpp:21:19: warning: unused variable ‘gpe’ [-Wunused-variable]
+   struct gp_event gpe;
+                   ^
+Finished building: ../src/RobatsEngine.cpp
+ 
+Building target: RobatsEngine
+Invoking: GCC C++ Linker
+g++  -o "RobatsEngine"  ./src/CrazyFlieEngine/CCRTPPacket.o ./src/CrazyFlieEngine/CCrazyRadio.o ./src/CrazyFlieEngine/CCrazyflie.o ./src/CrazyFlieEngine/CTOC.o  ./src/ControlEngine/AutoFlight.o ./src/ControlEngine/GamePad.o  ./src/CommunicationEngine/CrazyflieServer.o  ./src/RobatsEngine.o   -lusb-1.0
+Finished building target: RobatsEngine
+ 
+08:03:43 **** Incremental Build of configuration Debug for project RobatsEngine ****
+make all 
+make: Nothing to be done for `all'.
+08:10:36 **** Incremental Build of configuration Debug for project RobatsEngine ****
+make all 
+make: Nothing to be done for `all'.
+08:34:17 **** Incremental Build of configuration Debug for project RobatsEngine ****
+make all 
+Building file: ../src/RobatsEngine.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -std=c++11 -MMD -MP -MF"src/RobatsEngine.d" -MT"src/RobatsEngine.o" -o "src/RobatsEngine.o" "../src/RobatsEngine.cpp"
+../src/RobatsEngine.cpp:11:35: warning: extra tokens at end of #include directive [enabled by default]
+ #include "ControlEngine/GamePad.h";
+                                   ^
+../src/RobatsEngine.cpp: In function ‘int main(int, char**)’:
+../src/RobatsEngine.cpp:19:7: warning: unused variable ‘data’ [-Wunused-variable]
+   int data[4];
+       ^
+../src/RobatsEngine.cpp:21:19: warning: unused variable ‘gpe’ [-Wunused-variable]
+   struct gp_event gpe;
+                   ^
+Finished building: ../src/RobatsEngine.cpp
+ 
+Building target: RobatsEngine
+Invoking: GCC C++ Linker
+g++  -o "RobatsEngine"  ./src/CrazyFlieEngine/CCRTPPacket.o ./src/CrazyFlieEngine/CCrazyRadio.o ./src/CrazyFlieEngine/CCrazyflie.o ./src/CrazyFlieEngine/CTOC.o  ./src/ControlEngine/AutoFlight.o ./src/ControlEngine/GamePad.o  ./src/CommunicationEngine/CrazyflieServer.o  ./src/RobatsEngine.o   -lusb-1.0
+Finished building target: RobatsEngine
+ 
+08:34:24 **** Incremental Build of configuration Debug for project RobatsEngine ****
+make all 
+make: Nothing to be done for `all'.
+08:34:41 **** Incremental Build of configuration Debug for project RobatsEngine ****
+make all 
+make: Nothing to be done for `all'.
+10:27:55 **** Incremental Build of configuration Debug for project RobatsEngine ****
+make all 
+Building file: ../src/RobatsEngine.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -std=c++11 -MMD -MP -MF"src/RobatsEngine.d" -MT"src/RobatsEngine.o" -o "src/RobatsEngine.o" "../src/RobatsEngine.cpp"
+../src/RobatsEngine.cpp:11:35: warning: extra tokens at end of #include directive [enabled by default]
+ #include "ControlEngine/GamePad.h";
+                                   ^
+../src/RobatsEngine.cpp: In function ‘int main(int, char**)’:
+../src/RobatsEngine.cpp:19:7: warning: unused variable ‘data’ [-Wunused-variable]
+   int data[4];
+       ^
+../src/RobatsEngine.cpp:21:19: warning: unused variable ‘gpe’ [-Wunused-variable]
+   struct gp_event gpe;
+                   ^
+Finished building: ../src/RobatsEngine.cpp
+ 
+Building target: RobatsEngine
+Invoking: GCC C++ Linker
+g++  -o "RobatsEngine"  ./src/CrazyFlieEngine/CCRTPPacket.o ./src/CrazyFlieEngine/CCrazyRadio.o ./src/CrazyFlieEngine/CCrazyflie.o ./src/CrazyFlieEngine/CTOC.o  ./src/ControlEngine/AutoFlight.o ./src/ControlEngine/GamePad.o  ./src/CommunicationEngine/CrazyflieServer.o  ./src/RobatsEngine.o   -lusb-1.0
+Finished building target: RobatsEngine
+ 
+11:42:47 **** Incremental Build of configuration Debug for project RobatsEngine ****
+make all 
+make: Nothing to be done for `all'.
+13:20:13 **** Incremental Build of configuration Debug for project RobatsEngine ****
+make all 
+Building file: ../src/CrazyFlieEngine/CCrazyflie.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -std=c++11 -MMD -MP -MF"src/CrazyFlieEngine/CCrazyflie.d" -MT"src/CrazyFlieEngine/CCrazyflie.o" -o "src/CrazyFlieEngine/CCrazyflie.o" "../src/CrazyFlieEngine/CCrazyflie.cpp"
+Finished building: ../src/CrazyFlieEngine/CCrazyflie.cpp
+ 
+Building file: ../src/ControlEngine/AutoFlight.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -std=c++11 -MMD -MP -MF"src/ControlEngine/AutoFlight.d" -MT"src/ControlEngine/AutoFlight.o" -o "src/ControlEngine/AutoFlight.o" "../src/ControlEngine/AutoFlight.cpp"
+Finished building: ../src/ControlEngine/AutoFlight.cpp
+ 
+Building file: ../src/RobatsEngine.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -std=c++11 -MMD -MP -MF"src/RobatsEngine.d" -MT"src/RobatsEngine.o" -o "src/RobatsEngine.o" "../src/RobatsEngine.cpp"
+../src/RobatsEngine.cpp:11:35: warning: extra tokens at end of #include directive [enabled by default]
+ #include "ControlEngine/GamePad.h";
+                                   ^
+../src/RobatsEngine.cpp: In function ‘int main(int, char**)’:
+../src/RobatsEngine.cpp:84:2: error: expected ‘;’ before ‘}’ token
+  }
+  ^
+../src/RobatsEngine.cpp:19:7: warning: unused variable ‘data’ [-Wunused-variable]
+   int data[4];
+       ^
+../src/RobatsEngine.cpp:21:19: warning: unused variable ‘gpe’ [-Wunused-variable]
+   struct gp_event gpe;
+                   ^
+make: *** [src/RobatsEngine.o] Error 1
+13:20:26 **** Incremental Build of configuration Debug for project RobatsEngine ****
+make all 
+Building file: ../src/RobatsEngine.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -std=c++11 -MMD -MP -MF"src/RobatsEngine.d" -MT"src/RobatsEngine.o" -o "src/RobatsEngine.o" "../src/RobatsEngine.cpp"
+../src/RobatsEngine.cpp:11:35: warning: extra tokens at end of #include directive [enabled by default]
+ #include "ControlEngine/GamePad.h";
+                                   ^
+../src/RobatsEngine.cpp: In function ‘int main(int, char**)’:
+../src/RobatsEngine.cpp:19:7: warning: unused variable ‘data’ [-Wunused-variable]
+   int data[4];
+       ^
+../src/RobatsEngine.cpp:21:19: warning: unused variable ‘gpe’ [-Wunused-variable]
+   struct gp_event gpe;
+                   ^
+Finished building: ../src/RobatsEngine.cpp
+ 
+Building target: RobatsEngine
+Invoking: GCC C++ Linker
+g++  -o "RobatsEngine"  ./src/CrazyFlieEngine/CCRTPPacket.o ./src/CrazyFlieEngine/CCrazyRadio.o ./src/CrazyFlieEngine/CCrazyflie.o ./src/CrazyFlieEngine/CTOC.o  ./src/ControlEngine/AutoFlight.o ./src/ControlEngine/GamePad.o  ./src/CommunicationEngine/CrazyflieServer.o  ./src/RobatsEngine.o   -lusb-1.0
+Finished building target: RobatsEngine
+ 
+13:20:39 **** Incremental Build of configuration Debug for project RobatsEngine ****
+make all 
+make: Nothing to be done for `all'.
+13:22:59 **** Incremental Build of configuration Debug for project RobatsEngine ****
+make all 
+Building file: ../src/RobatsEngine.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -std=c++11 -MMD -MP -MF"src/RobatsEngine.d" -MT"src/RobatsEngine.o" -o "src/RobatsEngine.o" "../src/RobatsEngine.cpp"
+../src/RobatsEngine.cpp:11:35: warning: extra tokens at end of #include directive [enabled by default]
+ #include "ControlEngine/GamePad.h";
+                                   ^
+../src/RobatsEngine.cpp: In function ‘int main(int, char**)’:
+../src/RobatsEngine.cpp:19:7: warning: unused variable ‘data’ [-Wunused-variable]
+   int data[4];
+       ^
+../src/RobatsEngine.cpp:21:19: warning: unused variable ‘gpe’ [-Wunused-variable]
+   struct gp_event gpe;
+                   ^
+Finished building: ../src/RobatsEngine.cpp
+ 
+Building target: RobatsEngine
+Invoking: GCC C++ Linker
+g++  -o "RobatsEngine"  ./src/CrazyFlieEngine/CCRTPPacket.o ./src/CrazyFlieEngine/CCrazyRadio.o ./src/CrazyFlieEngine/CCrazyflie.o ./src/CrazyFlieEngine/CTOC.o  ./src/ControlEngine/AutoFlight.o ./src/ControlEngine/GamePad.o  ./src/CommunicationEngine/CrazyflieServer.o  ./src/RobatsEngine.o   -lusb-1.0
+Finished building target: RobatsEngine
+ 
+13:23:17 **** Incremental Build of configuration Debug for project RobatsEngine ****
+make all 
+Building file: ../src/RobatsEngine.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -std=c++11 -MMD -MP -MF"src/RobatsEngine.d" -MT"src/RobatsEngine.o" -o "src/RobatsEngine.o" "../src/RobatsEngine.cpp"
+../src/RobatsEngine.cpp:11:35: warning: extra tokens at end of #include directive [enabled by default]
+ #include "ControlEngine/GamePad.h";
+                                   ^
+../src/RobatsEngine.cpp: In function ‘int main(int, char**)’:
+../src/RobatsEngine.cpp:19:7: warning: unused variable ‘data’ [-Wunused-variable]
+   int data[4];
+       ^
+../src/RobatsEngine.cpp:21:19: warning: unused variable ‘gpe’ [-Wunused-variable]
+   struct gp_event gpe;
+                   ^
+Finished building: ../src/RobatsEngine.cpp
+ 
+Building target: RobatsEngine
+Invoking: GCC C++ Linker
+g++  -o "RobatsEngine"  ./src/CrazyFlieEngine/CCRTPPacket.o ./src/CrazyFlieEngine/CCrazyRadio.o ./src/CrazyFlieEngine/CCrazyflie.o ./src/CrazyFlieEngine/CTOC.o  ./src/ControlEngine/AutoFlight.o ./src/ControlEngine/GamePad.o  ./src/CommunicationEngine/CrazyflieServer.o  ./src/RobatsEngine.o   -lusb-1.0
+Finished building target: RobatsEngine
+ 
+13:23:39 **** Incremental Build of configuration Debug for project RobatsEngine ****
+make all 
+Building file: ../src/RobatsEngine.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -std=c++11 -MMD -MP -MF"src/RobatsEngine.d" -MT"src/RobatsEngine.o" -o "src/RobatsEngine.o" "../src/RobatsEngine.cpp"
+../src/RobatsEngine.cpp:11:35: warning: extra tokens at end of #include directive [enabled by default]
+ #include "ControlEngine/GamePad.h";
+                                   ^
+../src/RobatsEngine.cpp: In function ‘int main(int, char**)’:
+../src/RobatsEngine.cpp:19:7: warning: unused variable ‘data’ [-Wunused-variable]
+   int data[4];
+       ^
+../src/RobatsEngine.cpp:21:19: warning: unused variable ‘gpe’ [-Wunused-variable]
+   struct gp_event gpe;
+                   ^
+Finished building: ../src/RobatsEngine.cpp
+ 
+Building target: RobatsEngine
+Invoking: GCC C++ Linker
+g++  -o "RobatsEngine"  ./src/CrazyFlieEngine/CCRTPPacket.o ./src/CrazyFlieEngine/CCrazyRadio.o ./src/CrazyFlieEngine/CCrazyflie.o ./src/CrazyFlieEngine/CTOC.o  ./src/ControlEngine/AutoFlight.o ./src/ControlEngine/GamePad.o  ./src/CommunicationEngine/CrazyflieServer.o  ./src/RobatsEngine.o   -lusb-1.0
+Finished building target: RobatsEngine
+ 
+13:24:58 **** Incremental Build of configuration Debug for project RobatsEngine ****
+make all 
+Building file: ../src/RobatsEngine.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -std=c++11 -MMD -MP -MF"src/RobatsEngine.d" -MT"src/RobatsEngine.o" -o "src/RobatsEngine.o" "../src/RobatsEngine.cpp"
+../src/RobatsEngine.cpp:11:35: warning: extra tokens at end of #include directive [enabled by default]
+ #include "ControlEngine/GamePad.h";
+                                   ^
+../src/RobatsEngine.cpp: In function ‘int main(int, char**)’:
+../src/RobatsEngine.cpp:19:7: warning: unused variable ‘data’ [-Wunused-variable]
+   int data[4];
+       ^
+../src/RobatsEngine.cpp:21:19: warning: unused variable ‘gpe’ [-Wunused-variable]
+   struct gp_event gpe;
+                   ^
+Finished building: ../src/RobatsEngine.cpp
+ 
+Building target: RobatsEngine
+Invoking: GCC C++ Linker
+g++  -o "RobatsEngine"  ./src/CrazyFlieEngine/CCRTPPacket.o ./src/CrazyFlieEngine/CCrazyRadio.o ./src/CrazyFlieEngine/CCrazyflie.o ./src/CrazyFlieEngine/CTOC.o  ./src/ControlEngine/AutoFlight.o ./src/ControlEngine/GamePad.o  ./src/CommunicationEngine/CrazyflieServer.o  ./src/RobatsEngine.o   -lusb-1.0
+Finished building target: RobatsEngine
+ 
+13:26:26 **** Incremental Build of configuration Debug for project RobatsEngine ****
+make all 
+make: Nothing to be done for `all'.
+13:29:33 **** Incremental Build of configuration Debug for project RobatsEngine ****
+make all 
+Building file: ../src/ControlEngine/AutoFlight.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -std=c++11 -MMD -MP -MF"src/ControlEngine/AutoFlight.d" -MT"src/ControlEngine/AutoFlight.o" -o "src/ControlEngine/AutoFlight.o" "../src/ControlEngine/AutoFlight.cpp"
+Finished building: ../src/ControlEngine/AutoFlight.cpp
+ 
+Building file: ../src/RobatsEngine.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -std=c++11 -MMD -MP -MF"src/RobatsEngine.d" -MT"src/RobatsEngine.o" -o "src/RobatsEngine.o" "../src/RobatsEngine.cpp"
+../src/RobatsEngine.cpp:11:35: warning: extra tokens at end of #include directive [enabled by default]
+ #include "ControlEngine/GamePad.h";
+                                   ^
+../src/RobatsEngine.cpp: In function ‘int main(int, char**)’:
+../src/RobatsEngine.cpp:19:7: warning: unused variable ‘data’ [-Wunused-variable]
+   int data[4];
+       ^
+../src/RobatsEngine.cpp:21:19: warning: unused variable ‘gpe’ [-Wunused-variable]
+   struct gp_event gpe;
+                   ^
+Finished building: ../src/RobatsEngine.cpp
+ 
+Building target: RobatsEngine
+Invoking: GCC C++ Linker
+g++  -o "RobatsEngine"  ./src/CrazyFlieEngine/CCRTPPacket.o ./src/CrazyFlieEngine/CCrazyRadio.o ./src/CrazyFlieEngine/CCrazyflie.o ./src/CrazyFlieEngine/CTOC.o  ./src/ControlEngine/AutoFlight.o ./src/ControlEngine/GamePad.o  ./src/CommunicationEngine/CrazyflieServer.o  ./src/RobatsEngine.o   -lusb-1.0
+Finished building target: RobatsEngine
+ 
+13:29:50 **** Incremental Build of configuration Debug for project RobatsEngine ****
+make all 
+make: Nothing to be done for `all'.
+13:30:04 **** Incremental Build of configuration Debug for project RobatsEngine ****
+make all 
+Building file: ../src/RobatsEngine.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -std=c++11 -MMD -MP -MF"src/RobatsEngine.d" -MT"src/RobatsEngine.o" -o "src/RobatsEngine.o" "../src/RobatsEngine.cpp"
+../src/RobatsEngine.cpp:11:35: warning: extra tokens at end of #include directive [enabled by default]
+ #include "ControlEngine/GamePad.h";
+                                   ^
+../src/RobatsEngine.cpp: In function ‘int main(int, char**)’:
+../src/RobatsEngine.cpp:19:7: warning: unused variable ‘data’ [-Wunused-variable]
+   int data[4];
+       ^
+../src/RobatsEngine.cpp:21:19: warning: unused variable ‘gpe’ [-Wunused-variable]
+   struct gp_event gpe;
+                   ^
+Finished building: ../src/RobatsEngine.cpp
+ 
+Building target: RobatsEngine
+Invoking: GCC C++ Linker
+g++  -o "RobatsEngine"  ./src/CrazyFlieEngine/CCRTPPacket.o ./src/CrazyFlieEngine/CCrazyRadio.o ./src/CrazyFlieEngine/CCrazyflie.o ./src/CrazyFlieEngine/CTOC.o  ./src/ControlEngine/AutoFlight.o ./src/ControlEngine/GamePad.o  ./src/CommunicationEngine/CrazyflieServer.o  ./src/RobatsEngine.o   -lusb-1.0
+Finished building target: RobatsEngine
+ 
+13:30:33 **** Incremental Build of configuration Debug for project RobatsEngine ****
+make all 
+make: Nothing to be done for `all'.
+13:42:11 **** Incremental Build of configuration Debug for project RobatsEngine ****
+make all 
+Building file: ../src/CrazyFlieEngine/CCrazyflie.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -std=c++11 -MMD -MP -MF"src/CrazyFlieEngine/CCrazyflie.d" -MT"src/CrazyFlieEngine/CCrazyflie.o" -o "src/CrazyFlieEngine/CCrazyflie.o" "../src/CrazyFlieEngine/CCrazyflie.cpp"
+Finished building: ../src/CrazyFlieEngine/CCrazyflie.cpp
+ 
+Building file: ../src/RobatsEngine.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -std=c++11 -MMD -MP -MF"src/RobatsEngine.d" -MT"src/RobatsEngine.o" -o "src/RobatsEngine.o" "../src/RobatsEngine.cpp"
+../src/RobatsEngine.cpp:11:35: warning: extra tokens at end of #include directive [enabled by default]
+ #include "ControlEngine/GamePad.h";
+                                   ^
+../src/RobatsEngine.cpp: In function ‘int main(int, char**)’:
+../src/RobatsEngine.cpp:19:7: warning: unused variable ‘data’ [-Wunused-variable]
+   int data[4];
+       ^
+../src/RobatsEngine.cpp:21:19: warning: unused variable ‘gpe’ [-Wunused-variable]
+   struct gp_event gpe;
+                   ^
+Finished building: ../src/RobatsEngine.cpp
+ 
+Building target: RobatsEngine
+Invoking: GCC C++ Linker
+g++  -o "RobatsEngine"  ./src/CrazyFlieEngine/CCRTPPacket.o ./src/CrazyFlieEngine/CCrazyRadio.o ./src/CrazyFlieEngine/CCrazyflie.o ./src/CrazyFlieEngine/CTOC.o  ./src/ControlEngine/AutoFlight.o ./src/ControlEngine/GamePad.o  ./src/CommunicationEngine/CrazyflieServer.o  ./src/RobatsEngine.o   -lusb-1.0
+Finished building target: RobatsEngine
+ 
+13:42:17 **** Incremental Build of configuration Debug for project RobatsEngine ****
+make all 
+make: Nothing to be done for `all'.
+13:42:43 **** Incremental Build of configuration Debug for project RobatsEngine ****
+make all 
+make: Nothing to be done for `all'.
+14:03:21 **** Incremental Build of configuration Debug for project RobatsEngine ****
+make all 
+Building file: ../src/ControlEngine/AutoFlight.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -std=c++11 -MMD -MP -MF"src/ControlEngine/AutoFlight.d" -MT"src/ControlEngine/AutoFlight.o" -o "src/ControlEngine/AutoFlight.o" "../src/ControlEngine/AutoFlight.cpp"
+In file included from ../src/ControlEngine/AutoFlight.cpp:8:0:
+../src/ControlEngine/AutoFlight.h:16:6: error: ‘int AutoFlight::stop()’ cannot be overloaded
+  int stop();
+      ^
+../src/ControlEngine/AutoFlight.h:12:7: error: with ‘void AutoFlight::stop()’
+  void stop();
+       ^
+make: *** [src/ControlEngine/AutoFlight.o] Error 1
+14:03:50 **** Incremental Build of configuration Debug for project RobatsEngine ****
+make all 
+Building file: ../src/ControlEngine/AutoFlight.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -std=c++11 -MMD -MP -MF"src/ControlEngine/AutoFlight.d" -MT"src/ControlEngine/AutoFlight.o" -o "src/ControlEngine/AutoFlight.o" "../src/ControlEngine/AutoFlight.cpp"
+Finished building: ../src/ControlEngine/AutoFlight.cpp
+ 
+Building target: RobatsEngine
+Invoking: GCC C++ Linker
+g++  -o "RobatsEngine"  ./src/CrazyFlieEngine/CCRTPPacket.o ./src/CrazyFlieEngine/CCrazyRadio.o ./src/CrazyFlieEngine/CCrazyflie.o ./src/CrazyFlieEngine/CTOC.o  ./src/ControlEngine/AutoFlight.o ./src/ControlEngine/GamePad.o  ./src/CommunicationEngine/CrazyflieServer.o  ./src/RobatsEngine.o   -lusb-1.0
+Finished building target: RobatsEngine
+ 
+14:08:39 **** Incremental Build of configuration Debug for project RobatsEngine ****
+make all 
+Building file: ../src/ControlEngine/AutoFlight.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -std=c++11 -MMD -MP -MF"src/ControlEngine/AutoFlight.d" -MT"src/ControlEngine/AutoFlight.o" -o "src/ControlEngine/AutoFlight.o" "../src/ControlEngine/AutoFlight.cpp"
+../src/ControlEngine/AutoFlight.cpp: In member function ‘void AutoFlight::hover(int)’:
+../src/ControlEngine/AutoFlight.cpp:12:46: error: only constructors take member initializers
+ void AutoFlight::hover(int targetAltitude) : targetAltitude(targetAltitude) {
+                                              ^
+make: *** [src/ControlEngine/AutoFlight.o] Error 1
+14:09:19 **** Incremental Build of configuration Debug for project RobatsEngine ****
+make all 
+Building file: ../src/ControlEngine/AutoFlight.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -std=c++11 -MMD -MP -MF"src/ControlEngine/AutoFlight.d" -MT"src/ControlEngine/AutoFlight.o" -o "src/ControlEngine/AutoFlight.o" "../src/ControlEngine/AutoFlight.cpp"
+Finished building: ../src/ControlEngine/AutoFlight.cpp
+ 
+Building target: RobatsEngine
+Invoking: GCC C++ Linker
+g++  -o "RobatsEngine"  ./src/CrazyFlieEngine/CCRTPPacket.o ./src/CrazyFlieEngine/CCrazyRadio.o ./src/CrazyFlieEngine/CCrazyflie.o ./src/CrazyFlieEngine/CTOC.o  ./src/ControlEngine/AutoFlight.o ./src/ControlEngine/GamePad.o  ./src/CommunicationEngine/CrazyflieServer.o  ./src/RobatsEngine.o   -lusb-1.0
+Finished building target: RobatsEngine
+ 
+15:57:24 **** Incremental Build of configuration Debug for project RobatsEngine ****
+make all 
+Building file: ../src/ControlEngine/AutoFlight.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -std=c++11 -MMD -MP -MF"src/ControlEngine/AutoFlight.d" -MT"src/ControlEngine/AutoFlight.o" -o "src/ControlEngine/AutoFlight.o" "../src/ControlEngine/AutoFlight.cpp"
+In file included from ../src/ControlEngine/AutoFlight.cpp:9:0:
+../src/ControlEngine/AutoFlight.h: In constructor ‘AutoFlight::AutoFlight(CCrazyflie*)’:
+../src/ControlEngine/AutoFlight.h:22:14: warning: ‘AutoFlight::cf’ will be initialized after [-Wreorder]
+  CCrazyflie *cf;
+              ^
+../src/ControlEngine/AutoFlight.h:20:8: warning:   ‘float AutoFlight::targetAlt’ [-Wreorder]
+  float targetAlt;
+        ^
+../src/ControlEngine/AutoFlight.cpp:11:1: warning:   when initialized here [-Wreorder]
+ AutoFlight::AutoFlight(CCrazyflie *cf) : cf(cf), targetAlt(0) { }
+ ^
+../src/ControlEngine/AutoFlight.cpp: In member function ‘double AutoFlight::thrustchange(double)’:
+../src/ControlEngine/AutoFlight.cpp:40:3: error: ‘itemp’ was not declared in this scope
+   itemp += er;
+   ^
+../src/ControlEngine/AutoFlight.cpp:37:10: warning: unused variable ‘pt’ [-Wunused-variable]
+   double pt = kp * er;
+          ^
+../src/ControlEngine/AutoFlight.cpp:43:1: warning: no return statement in function returning non-void [-Wreturn-type]
+ }
+ ^
+make: *** [src/ControlEngine/AutoFlight.o] Error 1
+15:57:51 **** Incremental Build of configuration Debug for project RobatsEngine ****
+make all 
+Building file: ../src/ControlEngine/AutoFlight.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -std=c++11 -MMD -MP -MF"src/ControlEngine/AutoFlight.d" -MT"src/ControlEngine/AutoFlight.o" -o "src/ControlEngine/AutoFlight.o" "../src/ControlEngine/AutoFlight.cpp"
+In file included from ../src/ControlEngine/AutoFlight.cpp:9:0:
+../src/ControlEngine/AutoFlight.h: In constructor ‘AutoFlight::AutoFlight(CCrazyflie*)’:
+../src/ControlEngine/AutoFlight.h:22:14: warning: ‘AutoFlight::cf’ will be initialized after [-Wreorder]
+  CCrazyflie *cf;
+              ^
+../src/ControlEngine/AutoFlight.h:20:8: warning:   ‘float AutoFlight::targetAlt’ [-Wreorder]
+  float targetAlt;
+        ^
+../src/ControlEngine/AutoFlight.cpp:11:1: warning:   when initialized here [-Wreorder]
+ AutoFlight::AutoFlight(CCrazyflie *cf) : cf(cf), targetAlt(0) { }
+ ^
+../src/ControlEngine/AutoFlight.cpp: In member function ‘double AutoFlight::thrustchange(double)’:
+../src/ControlEngine/AutoFlight.cpp:40:3: error: ‘itemp’ was not declared in this scope
+   itemp += er;
+   ^
+../src/ControlEngine/AutoFlight.cpp:37:10: warning: unused variable ‘pt’ [-Wunused-variable]
+   double pt = kp * er;
+          ^
+../src/ControlEngine/AutoFlight.cpp:43:1: warning: no return statement in function returning non-void [-Wreturn-type]
+ }
+ ^
+make: *** [src/ControlEngine/AutoFlight.o] Error 1
+15:58:29 **** Clean-only build of configuration Debug for project RobatsEngine ****
+make clean 
+rm -rf  ./src/CrazyFlieEngine/CCRTPPacket.o ./src/CrazyFlieEngine/CCrazyRadio.o ./src/CrazyFlieEngine/CCrazyflie.o ./src/CrazyFlieEngine/CTOC.o  ./src/ControlEngine/AutoFlight.o ./src/ControlEngine/GamePad.o  ./src/CommunicationEngine/CrazyflieServer.o  ./src/RobatsEngine.o  ./src/CrazyFlieEngine/CCRTPPacket.d ./src/CrazyFlieEngine/CCrazyRadio.d ./src/CrazyFlieEngine/CCrazyflie.d ./src/CrazyFlieEngine/CTOC.d  ./src/ControlEngine/AutoFlight.d ./src/ControlEngine/GamePad.d  ./src/CommunicationEngine/CrazyflieServer.d  ./src/RobatsEngine.d  RobatsEngine
+ 
+15:58:31 **** Build of configuration Debug for project RobatsEngine ****
+make all 
+Building file: ../src/CrazyFlieEngine/CCRTPPacket.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -std=c++11 -MMD -MP -MF"src/CrazyFlieEngine/CCRTPPacket.d" -MT"src/CrazyFlieEngine/CCRTPPacket.o" -o "src/CrazyFlieEngine/CCRTPPacket.o" "../src/CrazyFlieEngine/CCRTPPacket.cpp"
+Finished building: ../src/CrazyFlieEngine/CCRTPPacket.cpp
+ 
+Building file: ../src/CrazyFlieEngine/CCrazyRadio.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -std=c++11 -MMD -MP -MF"src/CrazyFlieEngine/CCrazyRadio.d" -MT"src/CrazyFlieEngine/CCrazyRadio.o" -o "src/CrazyFlieEngine/CCrazyRadio.o" "../src/CrazyFlieEngine/CCrazyRadio.cpp"
+Finished building: ../src/CrazyFlieEngine/CCrazyRadio.cpp
+ 
+Building file: ../src/CrazyFlieEngine/CCrazyflie.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -std=c++11 -MMD -MP -MF"src/CrazyFlieEngine/CCrazyflie.d" -MT"src/CrazyFlieEngine/CCrazyflie.o" -o "src/CrazyFlieEngine/CCrazyflie.o" "../src/CrazyFlieEngine/CCrazyflie.cpp"
+Finished building: ../src/CrazyFlieEngine/CCrazyflie.cpp
+ 
+Building file: ../src/CrazyFlieEngine/CTOC.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -std=c++11 -MMD -MP -MF"src/CrazyFlieEngine/CTOC.d" -MT"src/CrazyFlieEngine/CTOC.o" -o "src/CrazyFlieEngine/CTOC.o" "../src/CrazyFlieEngine/CTOC.cpp"
+../src/CrazyFlieEngine/CTOC.cpp: In member function ‘bool CTOC::processItem(CCRTPPacket*)’:
+../src/CrazyFlieEngine/CTOC.cpp:109:11: warning: unused variable ‘nLength’ [-Wunused-variable]
+       int nLength = crtpItem->dataLength();
+           ^
+../src/CrazyFlieEngine/CTOC.cpp: In member function ‘bool CTOC::startLogging(std::string, std::string)’:
+../src/CrazyFlieEngine/CTOC.cpp:216:78: warning: narrowing conversion of ‘lbCurrent.LoggingBlock::nID’ from ‘int’ to ‘char’ inside { } [-Wnarrowing]
+       char cPayload[5] = {0x01, lbCurrent.nID, teCurrent.nType, teCurrent.nID};
+                                                                              ^
+../src/CrazyFlieEngine/CTOC.cpp:216:78: warning: narrowing conversion of ‘teCurrent.TOCElement::nType’ from ‘int’ to ‘char’ inside { } [-Wnarrowing]
+../src/CrazyFlieEngine/CTOC.cpp:216:78: warning: narrowing conversion of ‘teCurrent.TOCElement::nID’ from ‘int’ to ‘char’ inside { } [-Wnarrowing]
+../src/CrazyFlieEngine/CTOC.cpp: In member function ‘bool CTOC::stopLogging(std::string)’:
+../src/CrazyFlieEngine/CTOC.cpp:265:1: warning: no return statement in function returning non-void [-Wreturn-type]
+ }
+ ^
+../src/CrazyFlieEngine/CTOC.cpp: In member function ‘bool CTOC::isLogging(std::string)’:
+../src/CrazyFlieEngine/CTOC.cpp:269:1: warning: no return statement in function returning non-void [-Wreturn-type]
+ }
+ ^
+../src/CrazyFlieEngine/CTOC.cpp: In member function ‘bool CTOC::registerLoggingBlock(std::string, double)’:
+../src/CrazyFlieEngine/CTOC.cpp:340:45: warning: narrowing conversion of ‘nID’ from ‘int’ to ‘char’ inside { } [-Wnarrowing]
+     char cPayload[4] = {0x00, nID, d10thOfMS};
+                                             ^
+../src/CrazyFlieEngine/CTOC.cpp:340:45: warning: narrowing conversion of ‘d10thOfMS’ from ‘double’ to ‘char’ inside { } [-Wnarrowing]
+../src/CrazyFlieEngine/CTOC.cpp: In member function ‘bool CTOC::enableLogging(std::string)’:
+../src/CrazyFlieEngine/CTOC.cpp:382:55: warning: narrowing conversion of ‘lbCurrent.LoggingBlock::nID’ from ‘int’ to ‘char’ inside { } [-Wnarrowing]
+     char cPayload[3] = {0x03, lbCurrent.nID, d10thOfMS};
+                                                       ^
+../src/CrazyFlieEngine/CTOC.cpp:382:55: warning: narrowing conversion of ‘d10thOfMS’ from ‘double’ to ‘char’ inside { } [-Wnarrowing]
+../src/CrazyFlieEngine/CTOC.cpp: In member function ‘bool CTOC::unregisterLoggingBlockID(int)’:
+../src/CrazyFlieEngine/CTOC.cpp:409:32: warning: narrowing conversion of ‘nID’ from ‘int’ to ‘char’ inside { } [-Wnarrowing]
+   char cPayload[2] = {0x02, nID};
+                                ^
+../src/CrazyFlieEngine/CTOC.cpp: In member function ‘void CTOC::processPackets(std::list<CCRTPPacket*>)’:
+../src/CrazyFlieEngine/CTOC.cpp:446:46: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+  while(nIndex < lbCurrent.lstElementIDs.size()) {
+                                              ^
+../src/CrazyFlieEngine/CTOC.cpp:439:11: warning: unused variable ‘nAvailableLogBytes’ [-Wunused-variable]
+       int nAvailableLogBytes = crtpPacket->dataLength() - 5;
+           ^
+../src/CrazyFlieEngine/CTOC.cpp: In member function ‘int CTOC::elementIDinBlock(int, int)’:
+../src/CrazyFlieEngine/CTOC.cpp:551:53: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+     if(nElementIndex < lbCurrent.lstElementIDs.size()) {
+                                                     ^
+Finished building: ../src/CrazyFlieEngine/CTOC.cpp
+ 
+Building file: ../src/ControlEngine/AutoFlight.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -std=c++11 -MMD -MP -MF"src/ControlEngine/AutoFlight.d" -MT"src/ControlEngine/AutoFlight.o" -o "src/ControlEngine/AutoFlight.o" "../src/ControlEngine/AutoFlight.cpp"
+In file included from ../src/ControlEngine/AutoFlight.cpp:9:0:
+../src/ControlEngine/AutoFlight.h: In constructor ‘AutoFlight::AutoFlight(CCrazyflie*)’:
+../src/ControlEngine/AutoFlight.h:22:14: warning: ‘AutoFlight::cf’ will be initialized after [-Wreorder]
+  CCrazyflie *cf;
+              ^
+../src/ControlEngine/AutoFlight.h:20:8: warning:   ‘float AutoFlight::targetAlt’ [-Wreorder]
+  float targetAlt;
+        ^
+../src/ControlEngine/AutoFlight.cpp:11:1: warning:   when initialized here [-Wreorder]
+ AutoFlight::AutoFlight(CCrazyflie *cf) : cf(cf), targetAlt(0) { }
+ ^
+../src/ControlEngine/AutoFlight.cpp: In member function ‘double AutoFlight::thrustchange(double)’:
+../src/ControlEngine/AutoFlight.cpp:40:3: error: ‘itemp’ was not declared in this scope
+   itemp += er;
+   ^
+../src/ControlEngine/AutoFlight.cpp:37:10: warning: unused variable ‘pt’ [-Wunused-variable]
+   double pt = kp * er;
+          ^
+../src/ControlEngine/AutoFlight.cpp:43:1: warning: no return statement in function returning non-void [-Wreturn-type]
+ }
+ ^
+make: *** [src/ControlEngine/AutoFlight.o] Error 1
+15:58:38 **** Incremental Build of configuration Debug for project RobatsEngine ****
+make all 
+Building file: ../src/ControlEngine/AutoFlight.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -std=c++11 -MMD -MP -MF"src/ControlEngine/AutoFlight.d" -MT"src/ControlEngine/AutoFlight.o" -o "src/ControlEngine/AutoFlight.o" "../src/ControlEngine/AutoFlight.cpp"
+In file included from ../src/ControlEngine/AutoFlight.cpp:9:0:
+../src/ControlEngine/AutoFlight.h: In constructor ‘AutoFlight::AutoFlight(CCrazyflie*)’:
+../src/ControlEngine/AutoFlight.h:22:14: warning: ‘AutoFlight::cf’ will be initialized after [-Wreorder]
+  CCrazyflie *cf;
+              ^
+../src/ControlEngine/AutoFlight.h:20:8: warning:   ‘float AutoFlight::targetAlt’ [-Wreorder]
+  float targetAlt;
+        ^
+../src/ControlEngine/AutoFlight.cpp:11:1: warning:   when initialized here [-Wreorder]
+ AutoFlight::AutoFlight(CCrazyflie *cf) : cf(cf), targetAlt(0) { }
+ ^
+../src/ControlEngine/AutoFlight.cpp: In member function ‘double AutoFlight::thrustchange(double)’:
+../src/ControlEngine/AutoFlight.cpp:40:3: error: ‘itemp’ was not declared in this scope
+   itemp += er;
+   ^
+../src/ControlEngine/AutoFlight.cpp:37:10: warning: unused variable ‘pt’ [-Wunused-variable]
+   double pt = kp * er;
+          ^
+../src/ControlEngine/AutoFlight.cpp:43:1: warning: no return statement in function returning non-void [-Wreturn-type]
+ }
+ ^
+make: *** [src/ControlEngine/AutoFlight.o] Error 1
+15:58:40 **** Incremental Build of configuration Debug for project RobatsEngine ****
+make all 
+Building file: ../src/ControlEngine/AutoFlight.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -std=c++11 -MMD -MP -MF"src/ControlEngine/AutoFlight.d" -MT"src/ControlEngine/AutoFlight.o" -o "src/ControlEngine/AutoFlight.o" "../src/ControlEngine/AutoFlight.cpp"
+In file included from ../src/ControlEngine/AutoFlight.cpp:9:0:
+../src/ControlEngine/AutoFlight.h: In constructor ‘AutoFlight::AutoFlight(CCrazyflie*)’:
+../src/ControlEngine/AutoFlight.h:22:14: warning: ‘AutoFlight::cf’ will be initialized after [-Wreorder]
+  CCrazyflie *cf;
+              ^
+../src/ControlEngine/AutoFlight.h:20:8: warning:   ‘float AutoFlight::targetAlt’ [-Wreorder]
+  float targetAlt;
+        ^
+../src/ControlEngine/AutoFlight.cpp:11:1: warning:   when initialized here [-Wreorder]
+ AutoFlight::AutoFlight(CCrazyflie *cf) : cf(cf), targetAlt(0) { }
+ ^
+../src/ControlEngine/AutoFlight.cpp: In member function ‘double AutoFlight::thrustchange(double)’:
+../src/ControlEngine/AutoFlight.cpp:37:10: warning: unused variable ‘pt’ [-Wunused-variable]
+   double pt = kp * er;
+          ^
+../src/ControlEngine/AutoFlight.cpp:43:1: warning: no return statement in function returning non-void [-Wreturn-type]
+ }
+ ^
+Finished building: ../src/ControlEngine/AutoFlight.cpp
+ 
+Building file: ../src/ControlEngine/GamePad.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -std=c++11 -MMD -MP -MF"src/ControlEngine/GamePad.d" -MT"src/ControlEngine/GamePad.o" -o "src/ControlEngine/GamePad.o" "../src/ControlEngine/GamePad.cpp"
+../src/ControlEngine/GamePad.cpp: In member function ‘int GamePad::readValues(gp_values*)’:
+../src/ControlEngine/GamePad.cpp:50:1: warning: no return statement in function returning non-void [-Wreturn-type]
+ }
+ ^
+Finished building: ../src/ControlEngine/GamePad.cpp
+ 
+Building file: ../src/CommunicationEngine/CrazyflieServer.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -std=c++11 -MMD -MP -MF"src/CommunicationEngine/CrazyflieServer.d" -MT"src/CommunicationEngine/CrazyflieServer.o" -o "src/CommunicationEngine/CrazyflieServer.o" "../src/CommunicationEngine/CrazyflieServer.cpp"
+In file included from ../src/CommunicationEngine/CrazyflieServer.cpp:9:0:
+../src/CommunicationEngine/CrazyflieServer.h: In constructor ‘CrazyflieServer::CrazyflieServer(int, int*)’:
+../src/CommunicationEngine/CrazyflieServer.h:23:6: warning: ‘CrazyflieServer::port’ will be initialized after [-Wreorder]
+  int port;
+      ^
+../src/CommunicationEngine/CrazyflieServer.h:22:7: warning:   ‘int* CrazyflieServer::data’ [-Wreorder]
+  int* data;
+       ^
+../src/CommunicationEngine/CrazyflieServer.cpp:19:1: warning:   when initialized here [-Wreorder]
+ CrazyflieServer::CrazyflieServer(int port, int* data): port(port), data(data), clientsocket(0) {
+ ^
+Finished building: ../src/CommunicationEngine/CrazyflieServer.cpp
+ 
+Building file: ../src/RobatsEngine.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -std=c++11 -MMD -MP -MF"src/RobatsEngine.d" -MT"src/RobatsEngine.o" -o "src/RobatsEngine.o" "../src/RobatsEngine.cpp"
+../src/RobatsEngine.cpp:11:35: warning: extra tokens at end of #include directive [enabled by default]
+ #include "ControlEngine/GamePad.h";
+                                   ^
+../src/RobatsEngine.cpp: In function ‘int main(int, char**)’:
+../src/RobatsEngine.cpp:19:7: warning: unused variable ‘data’ [-Wunused-variable]
+   int data[4];
+       ^
+../src/RobatsEngine.cpp:21:19: warning: unused variable ‘gpe’ [-Wunused-variable]
+   struct gp_event gpe;
+                   ^
+Finished building: ../src/RobatsEngine.cpp
+ 
+Building target: RobatsEngine
+Invoking: GCC C++ Linker
+g++  -o "RobatsEngine"  ./src/CrazyFlieEngine/CCRTPPacket.o ./src/CrazyFlieEngine/CCrazyRadio.o ./src/CrazyFlieEngine/CCrazyflie.o ./src/CrazyFlieEngine/CTOC.o  ./src/ControlEngine/AutoFlight.o ./src/ControlEngine/GamePad.o  ./src/CommunicationEngine/CrazyflieServer.o  ./src/RobatsEngine.o   -lusb-1.0
+Finished building target: RobatsEngine
+ 
+15:58:50 **** Incremental Build of configuration Debug for project RobatsEngine ****
+make all 
+Building file: ../src/ControlEngine/AutoFlight.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -std=c++11 -MMD -MP -MF"src/ControlEngine/AutoFlight.d" -MT"src/ControlEngine/AutoFlight.o" -o "src/ControlEngine/AutoFlight.o" "../src/ControlEngine/AutoFlight.cpp"
+In file included from ../src/ControlEngine/AutoFlight.cpp:9:0:
+../src/ControlEngine/AutoFlight.h: In constructor ‘AutoFlight::AutoFlight(CCrazyflie*)’:
+../src/ControlEngine/AutoFlight.h:22:14: warning: ‘AutoFlight::cf’ will be initialized after [-Wreorder]
+  CCrazyflie *cf;
+              ^
+../src/ControlEngine/AutoFlight.h:20:8: warning:   ‘float AutoFlight::targetAlt’ [-Wreorder]
+  float targetAlt;
+        ^
+../src/ControlEngine/AutoFlight.cpp:11:1: warning:   when initialized here [-Wreorder]
+ AutoFlight::AutoFlight(CCrazyflie *cf) : cf(cf), targetAlt(0) { }
+ ^
+../src/ControlEngine/AutoFlight.cpp: In member function ‘double AutoFlight::thrustchange(double)’:
+../src/ControlEngine/AutoFlight.cpp:40:3: error: ‘itemp’ was not declared in this scope
+   itemp += er;
+   ^
+../src/ControlEngine/AutoFlight.cpp:37:10: warning: unused variable ‘pt’ [-Wunused-variable]
+   double pt = kp * er;
+          ^
+../src/ControlEngine/AutoFlight.cpp:43:1: warning: no return statement in function returning non-void [-Wreturn-type]
+ }
+ ^
+make: *** [src/ControlEngine/AutoFlight.o] Error 1
+16:02:24 **** Incremental Build of configuration Debug for project RobatsEngine ****
+make all 
+Building file: ../src/ControlEngine/AutoFlight.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -std=c++11 -MMD -MP -MF"src/ControlEngine/AutoFlight.d" -MT"src/ControlEngine/AutoFlight.o" -o "src/ControlEngine/AutoFlight.o" "../src/ControlEngine/AutoFlight.cpp"
+In file included from ../src/ControlEngine/AutoFlight.cpp:9:0:
+../src/ControlEngine/AutoFlight.h: In constructor ‘AutoFlight::AutoFlight(CCrazyflie*)’:
+../src/ControlEngine/AutoFlight.h:22:14: warning: ‘AutoFlight::cf’ will be initialized after [-Wreorder]
+  CCrazyflie *cf;
+              ^
+../src/ControlEngine/AutoFlight.h:20:8: warning:   ‘float AutoFlight::targetAlt’ [-Wreorder]
+  float targetAlt;
+        ^
+../src/ControlEngine/AutoFlight.cpp:11:1: warning:   when initialized here [-Wreorder]
+ AutoFlight::AutoFlight(CCrazyflie *cf) : cf(cf), targetAlt(0) { }
+ ^
+../src/ControlEngine/AutoFlight.cpp: In member function ‘double AutoFlight::thrustchange(double)’:
+../src/ControlEngine/AutoFlight.cpp:37:10: warning: unused variable ‘pt’ [-Wunused-variable]
+   double pt = kp * er;
+          ^
+../src/ControlEngine/AutoFlight.cpp:43:1: warning: no return statement in function returning non-void [-Wreturn-type]
+ }
+ ^
+Finished building: ../src/ControlEngine/AutoFlight.cpp
+ 
+Building target: RobatsEngine
+Invoking: GCC C++ Linker
+g++  -o "RobatsEngine"  ./src/CrazyFlieEngine/CCRTPPacket.o ./src/CrazyFlieEngine/CCrazyRadio.o ./src/CrazyFlieEngine/CCrazyflie.o ./src/CrazyFlieEngine/CTOC.o  ./src/ControlEngine/AutoFlight.o ./src/ControlEngine/GamePad.o  ./src/CommunicationEngine/CrazyflieServer.o  ./src/RobatsEngine.o   -lusb-1.0
+Finished building target: RobatsEngine
+ 
+16:02:35 **** Incremental Build of configuration Debug for project RobatsEngine ****
+make all 
+Building file: ../src/ControlEngine/AutoFlight.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -std=c++11 -MMD -MP -MF"src/ControlEngine/AutoFlight.d" -MT"src/ControlEngine/AutoFlight.o" -o "src/ControlEngine/AutoFlight.o" "../src/ControlEngine/AutoFlight.cpp"
+In file included from ../src/ControlEngine/AutoFlight.cpp:9:0:
+../src/ControlEngine/AutoFlight.h: In constructor ‘AutoFlight::AutoFlight(CCrazyflie*)’:
+../src/ControlEngine/AutoFlight.h:22:14: warning: ‘AutoFlight::cf’ will be initialized after [-Wreorder]
+  CCrazyflie *cf;
+              ^
+../src/ControlEngine/AutoFlight.h:20:8: warning:   ‘float AutoFlight::targetAlt’ [-Wreorder]
+  float targetAlt;
+        ^
+../src/ControlEngine/AutoFlight.cpp:11:1: warning:   when initialized here [-Wreorder]
+ AutoFlight::AutoFlight(CCrazyflie *cf) : cf(cf), targetAlt(0) { }
+ ^
+../src/ControlEngine/AutoFlight.cpp: In member function ‘double AutoFlight::thrustchange(double)’:
+../src/ControlEngine/AutoFlight.cpp:37:10: warning: unused variable ‘pt’ [-Wunused-variable]
+   double pt = kp * er;
+          ^
+../src/ControlEngine/AutoFlight.cpp:43:1: warning: no return statement in function returning non-void [-Wreturn-type]
+ }
+ ^
+Finished building: ../src/ControlEngine/AutoFlight.cpp
+ 
+Building target: RobatsEngine
+Invoking: GCC C++ Linker
+g++  -o "RobatsEngine"  ./src/CrazyFlieEngine/CCRTPPacket.o ./src/CrazyFlieEngine/CCrazyRadio.o ./src/CrazyFlieEngine/CCrazyflie.o ./src/CrazyFlieEngine/CTOC.o  ./src/ControlEngine/AutoFlight.o ./src/ControlEngine/GamePad.o  ./src/CommunicationEngine/CrazyflieServer.o  ./src/RobatsEngine.o   -lusb-1.0
+Finished building target: RobatsEngine
+ 
+16:12:08 **** Incremental Build of configuration Debug for project RobatsEngine ****
+make all 
+Building file: ../src/ControlEngine/AutoFlight.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -std=c++11 -MMD -MP -MF"src/ControlEngine/AutoFlight.d" -MT"src/ControlEngine/AutoFlight.o" -o "src/ControlEngine/AutoFlight.o" "../src/ControlEngine/AutoFlight.cpp"
+In file included from ../src/ControlEngine/AutoFlight.cpp:9:0:
+../src/ControlEngine/AutoFlight.h: In constructor ‘AutoFlight::AutoFlight(CCrazyflie*)’:
+../src/ControlEngine/AutoFlight.h:22:14: warning: ‘AutoFlight::cf’ will be initialized after [-Wreorder]
+  CCrazyflie *cf;
+              ^
+../src/ControlEngine/AutoFlight.h:20:8: warning:   ‘float AutoFlight::targetAlt’ [-Wreorder]
+  float targetAlt;
+        ^
+../src/ControlEngine/AutoFlight.cpp:11:1: warning:   when initialized here [-Wreorder]
+ AutoFlight::AutoFlight(CCrazyflie *cf) : cf(cf), targetAlt(0) { }
+ ^
+../src/ControlEngine/AutoFlight.cpp: In member function ‘double AutoFlight::thrustchange(double)’:
+../src/ControlEngine/AutoFlight.cpp:37:10: warning: unused variable ‘pt’ [-Wunused-variable]
+   double pt = kp * er;
+          ^
+../src/ControlEngine/AutoFlight.cpp:49:10: warning: unused variable ‘it’ [-Wunused-variable]
+   double it = ki * itemp;
+          ^
+../src/ControlEngine/AutoFlight.cpp:57:1: warning: no return statement in function returning non-void [-Wreturn-type]
+ }
+ ^
+../src/ControlEngine/AutoFlight.cpp:52:24: warning: ‘dt’ may be used uninitialized in this function [-Wmaybe-uninitialized]
+   double dt = kd * (dt - er);
+                        ^
+Finished building: ../src/ControlEngine/AutoFlight.cpp
+ 
+Building target: RobatsEngine
+Invoking: GCC C++ Linker
+g++  -o "RobatsEngine"  ./src/CrazyFlieEngine/CCRTPPacket.o ./src/CrazyFlieEngine/CCrazyRadio.o ./src/CrazyFlieEngine/CCrazyflie.o ./src/CrazyFlieEngine/CTOC.o  ./src/ControlEngine/AutoFlight.o ./src/ControlEngine/GamePad.o  ./src/CommunicationEngine/CrazyflieServer.o  ./src/RobatsEngine.o   -lusb-1.0
+Finished building target: RobatsEngine
+ 
+16:46:16 **** Incremental Build of configuration Debug for project RobatsEngine ****
+make all 
+Building file: ../src/ControlEngine/AutoFlight.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -std=c++11 -MMD -MP -MF"src/ControlEngine/AutoFlight.d" -MT"src/ControlEngine/AutoFlight.o" -o "src/ControlEngine/AutoFlight.o" "../src/ControlEngine/AutoFlight.cpp"
+In file included from ../src/ControlEngine/AutoFlight.cpp:9:0:
+../src/ControlEngine/AutoFlight.h: In constructor ‘AutoFlight::AutoFlight(CCrazyflie*)’:
+../src/ControlEngine/AutoFlight.h:22:14: warning: ‘AutoFlight::cf’ will be initialized after [-Wreorder]
+  CCrazyflie *cf;
+              ^
+../src/ControlEngine/AutoFlight.h:20:8: warning:   ‘float AutoFlight::targetAlt’ [-Wreorder]
+  float targetAlt;
+        ^
+../src/ControlEngine/AutoFlight.cpp:11:1: warning:   when initialized here [-Wreorder]
+ AutoFlight::AutoFlight(CCrazyflie *cf) : cf(cf), targetAlt(0) { }
+ ^
+../src/ControlEngine/AutoFlight.cpp: In member function ‘double AutoFlight::thrustchange(double)’:
+../src/ControlEngine/AutoFlight.cpp:61:1: warning: control reaches end of non-void function [-Wreturn-type]
+ }
+ ^
+Finished building: ../src/ControlEngine/AutoFlight.cpp
+ 
+Building target: RobatsEngine
+Invoking: GCC C++ Linker
+g++  -o "RobatsEngine"  ./src/CrazyFlieEngine/CCRTPPacket.o ./src/CrazyFlieEngine/CCrazyRadio.o ./src/CrazyFlieEngine/CCrazyflie.o ./src/CrazyFlieEngine/CTOC.o  ./src/ControlEngine/AutoFlight.o ./src/ControlEngine/GamePad.o  ./src/CommunicationEngine/CrazyflieServer.o  ./src/RobatsEngine.o   -lusb-1.0
+Finished building target: RobatsEngine
+ 
+16:55:09 **** Incremental Build of configuration Debug for project RobatsEngine ****
+make all 
+Building file: ../src/ControlEngine/AutoFlight.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -std=c++11 -MMD -MP -MF"src/ControlEngine/AutoFlight.d" -MT"src/ControlEngine/AutoFlight.o" -o "src/ControlEngine/AutoFlight.o" "../src/ControlEngine/AutoFlight.cpp"
+In file included from ../src/ControlEngine/AutoFlight.cpp:9:0:
+../src/ControlEngine/AutoFlight.h: In constructor ‘AutoFlight::AutoFlight(CCrazyflie*)’:
+../src/ControlEngine/AutoFlight.h:22:14: warning: ‘AutoFlight::cf’ will be initialized after [-Wreorder]
+  CCrazyflie *cf;
+              ^
+../src/ControlEngine/AutoFlight.h:20:8: warning:   ‘float AutoFlight::targetAlt’ [-Wreorder]
+  float targetAlt;
+        ^
+../src/ControlEngine/AutoFlight.cpp:11:1: warning:   when initialized here [-Wreorder]
+ AutoFlight::AutoFlight(CCrazyflie *cf) : cf(cf), targetAlt(0) { }
+ ^
+Finished building: ../src/ControlEngine/AutoFlight.cpp
+ 
+Building file: ../src/RobatsEngine.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -std=c++11 -MMD -MP -MF"src/RobatsEngine.d" -MT"src/RobatsEngine.o" -o "src/RobatsEngine.o" "../src/RobatsEngine.cpp"
+../src/RobatsEngine.cpp:11:35: warning: extra tokens at end of #include directive [enabled by default]
+ #include "ControlEngine/GamePad.h";
+                                   ^
+../src/RobatsEngine.cpp: In function ‘int main(int, char**)’:
+../src/RobatsEngine.cpp:19:7: warning: unused variable ‘data’ [-Wunused-variable]
+   int data[4];
+       ^
+../src/RobatsEngine.cpp:21:19: warning: unused variable ‘gpe’ [-Wunused-variable]
+   struct gp_event gpe;
+                   ^
+../src/RobatsEngine.cpp:22:12: warning: unused variable ‘gamepad’ [-Wunused-variable]
+   GamePad *gamepad = new GamePad();
+            ^
+Finished building: ../src/RobatsEngine.cpp
+ 
+Building target: RobatsEngine
+Invoking: GCC C++ Linker
+g++  -o "RobatsEngine"  ./src/CrazyFlieEngine/CCRTPPacket.o ./src/CrazyFlieEngine/CCrazyRadio.o ./src/CrazyFlieEngine/CCrazyflie.o ./src/CrazyFlieEngine/CTOC.o  ./src/ControlEngine/AutoFlight.o ./src/ControlEngine/GamePad.o  ./src/CommunicationEngine/CrazyflieServer.o  ./src/RobatsEngine.o   -lusb-1.0
+Finished building target: RobatsEngine
+ 
+16:55:27 **** Incremental Build of configuration Debug for project RobatsEngine ****
+make all 
+make: Nothing to be done for `all'.
+17:01:27 **** Incremental Build of configuration Debug for project RobatsEngine ****
+make all 
+Building file: ../src/ControlEngine/AutoFlight.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -std=c++11 -MMD -MP -MF"src/ControlEngine/AutoFlight.d" -MT"src/ControlEngine/AutoFlight.o" -o "src/ControlEngine/AutoFlight.o" "../src/ControlEngine/AutoFlight.cpp"
+In file included from ../src/ControlEngine/AutoFlight.cpp:9:0:
+../src/ControlEngine/AutoFlight.h: In constructor ‘AutoFlight::AutoFlight(CCrazyflie*)’:
+../src/ControlEngine/AutoFlight.h:22:14: warning: ‘AutoFlight::cf’ will be initialized after [-Wreorder]
+  CCrazyflie *cf;
+              ^
+../src/ControlEngine/AutoFlight.h:20:8: warning:   ‘float AutoFlight::targetAlt’ [-Wreorder]
+  float targetAlt;
+        ^
+../src/ControlEngine/AutoFlight.cpp:11:1: warning:   when initialized here [-Wreorder]
+ AutoFlight::AutoFlight(CCrazyflie *cf) : cf(cf), targetAlt(0) { }
+ ^
+Finished building: ../src/ControlEngine/AutoFlight.cpp
+ 
+Building file: ../src/RobatsEngine.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -std=c++11 -MMD -MP -MF"src/RobatsEngine.d" -MT"src/RobatsEngine.o" -o "src/RobatsEngine.o" "../src/RobatsEngine.cpp"
+../src/RobatsEngine.cpp:11:35: warning: extra tokens at end of #include directive [enabled by default]
+ #include "ControlEngine/GamePad.h";
+                                   ^
+../src/RobatsEngine.cpp:12:38: warning: extra tokens at end of #include directive [enabled by default]
+ #include "ControlEngine/AutoFlight.h";
+                                      ^
+Finished building: ../src/RobatsEngine.cpp
+ 
+Building target: RobatsEngine
+Invoking: GCC C++ Linker
+g++  -o "RobatsEngine"  ./src/CrazyFlieEngine/CCRTPPacket.o ./src/CrazyFlieEngine/CCrazyRadio.o ./src/CrazyFlieEngine/CCrazyflie.o ./src/CrazyFlieEngine/CTOC.o  ./src/ControlEngine/AutoFlight.o ./src/ControlEngine/GamePad.o  ./src/CommunicationEngine/CrazyflieServer.o  ./src/RobatsEngine.o   -lusb-1.0
+Finished building target: RobatsEngine
+ 
+17:01:30 **** Incremental Build of configuration Debug for project RobatsEngine ****
+make all 
+make: Nothing to be done for `all'.
+17:02:25 **** Incremental Build of configuration Debug for project RobatsEngine ****
+make all 
+Building file: ../src/ControlEngine/AutoFlight.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -std=c++11 -MMD -MP -MF"src/ControlEngine/AutoFlight.d" -MT"src/ControlEngine/AutoFlight.o" -o "src/ControlEngine/AutoFlight.o" "../src/ControlEngine/AutoFlight.cpp"
+In file included from ../src/ControlEngine/AutoFlight.cpp:9:0:
+../src/ControlEngine/AutoFlight.h: In constructor ‘AutoFlight::AutoFlight(CCrazyflie*)’:
+../src/ControlEngine/AutoFlight.h:22:14: warning: ‘AutoFlight::cf’ will be initialized after [-Wreorder]
+  CCrazyflie *cf;
+              ^
+../src/ControlEngine/AutoFlight.h:20:8: warning:   ‘float AutoFlight::targetAlt’ [-Wreorder]
+  float targetAlt;
+        ^
+../src/ControlEngine/AutoFlight.cpp:11:1: warning:   when initialized here [-Wreorder]
+ AutoFlight::AutoFlight(CCrazyflie *cf) : cf(cf), targetAlt(0) { }
+ ^
+Finished building: ../src/ControlEngine/AutoFlight.cpp
+ 
+Building target: RobatsEngine
+Invoking: GCC C++ Linker
+g++  -o "RobatsEngine"  ./src/CrazyFlieEngine/CCRTPPacket.o ./src/CrazyFlieEngine/CCrazyRadio.o ./src/CrazyFlieEngine/CCrazyflie.o ./src/CrazyFlieEngine/CTOC.o  ./src/ControlEngine/AutoFlight.o ./src/ControlEngine/GamePad.o  ./src/CommunicationEngine/CrazyflieServer.o  ./src/RobatsEngine.o   -lusb-1.0
+Finished building target: RobatsEngine
+ 
+17:03:04 **** Incremental Build of configuration Debug for project RobatsEngine ****
+make all 
+Building file: ../src/RobatsEngine.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -std=c++11 -MMD -MP -MF"src/RobatsEngine.d" -MT"src/RobatsEngine.o" -o "src/RobatsEngine.o" "../src/RobatsEngine.cpp"
+../src/RobatsEngine.cpp:11:35: warning: extra tokens at end of #include directive [enabled by default]
+ #include "ControlEngine/GamePad.h";
+                                   ^
+../src/RobatsEngine.cpp:12:38: warning: extra tokens at end of #include directive [enabled by default]
+ #include "ControlEngine/AutoFlight.h";
+                                      ^
+Finished building: ../src/RobatsEngine.cpp
+ 
+Building target: RobatsEngine
+Invoking: GCC C++ Linker
+g++  -o "RobatsEngine"  ./src/CrazyFlieEngine/CCRTPPacket.o ./src/CrazyFlieEngine/CCrazyRadio.o ./src/CrazyFlieEngine/CCrazyflie.o ./src/CrazyFlieEngine/CTOC.o  ./src/ControlEngine/AutoFlight.o ./src/ControlEngine/GamePad.o  ./src/CommunicationEngine/CrazyflieServer.o  ./src/RobatsEngine.o   -lusb-1.0
+Finished building target: RobatsEngine
+ 
+17:03:24 **** Incremental Build of configuration Debug for project RobatsEngine ****
+make all 
+Building file: ../src/RobatsEngine.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -std=c++11 -MMD -MP -MF"src/RobatsEngine.d" -MT"src/RobatsEngine.o" -o "src/RobatsEngine.o" "../src/RobatsEngine.cpp"
+../src/RobatsEngine.cpp:11:35: warning: extra tokens at end of #include directive [enabled by default]
+ #include "ControlEngine/GamePad.h";
+                                   ^
+../src/RobatsEngine.cpp:12:38: warning: extra tokens at end of #include directive [enabled by default]
+ #include "ControlEngine/AutoFlight.h";
+                                      ^
+Finished building: ../src/RobatsEngine.cpp
+ 
+Building target: RobatsEngine
+Invoking: GCC C++ Linker
+g++  -o "RobatsEngine"  ./src/CrazyFlieEngine/CCRTPPacket.o ./src/CrazyFlieEngine/CCrazyRadio.o ./src/CrazyFlieEngine/CCrazyflie.o ./src/CrazyFlieEngine/CTOC.o  ./src/ControlEngine/AutoFlight.o ./src/ControlEngine/GamePad.o  ./src/CommunicationEngine/CrazyflieServer.o  ./src/RobatsEngine.o   -lusb-1.0
+Finished building target: RobatsEngine
+ 
+17:05:08 **** Incremental Build of configuration Debug for project RobatsEngine ****
+make all 
+Building file: ../src/ControlEngine/AutoFlight.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -std=c++11 -MMD -MP -MF"src/ControlEngine/AutoFlight.d" -MT"src/ControlEngine/AutoFlight.o" -o "src/ControlEngine/AutoFlight.o" "../src/ControlEngine/AutoFlight.cpp"
+In file included from ../src/ControlEngine/AutoFlight.cpp:9:0:
+../src/ControlEngine/AutoFlight.h: In constructor ‘AutoFlight::AutoFlight(CCrazyflie*)’:
+../src/ControlEngine/AutoFlight.h:22:14: warning: ‘AutoFlight::cf’ will be initialized after [-Wreorder]
+  CCrazyflie *cf;
+              ^
+../src/ControlEngine/AutoFlight.h:20:8: warning:   ‘float AutoFlight::targetAlt’ [-Wreorder]
+  float targetAlt;
+        ^
+../src/ControlEngine/AutoFlight.cpp:11:1: warning:   when initialized here [-Wreorder]
+ AutoFlight::AutoFlight(CCrazyflie *cf) : cf(cf), targetAlt(0) { }
+ ^
+Finished building: ../src/ControlEngine/AutoFlight.cpp
+ 
+Building target: RobatsEngine
+Invoking: GCC C++ Linker
+g++  -o "RobatsEngine"  ./src/CrazyFlieEngine/CCRTPPacket.o ./src/CrazyFlieEngine/CCrazyRadio.o ./src/CrazyFlieEngine/CCrazyflie.o ./src/CrazyFlieEngine/CTOC.o  ./src/ControlEngine/AutoFlight.o ./src/ControlEngine/GamePad.o  ./src/CommunicationEngine/CrazyflieServer.o  ./src/RobatsEngine.o   -lusb-1.0
+Finished building target: RobatsEngine
+ 
+17:05:25 **** Incremental Build of configuration Debug for project RobatsEngine ****
+make all 
+make: Nothing to be done for `all'.
+17:07:31 **** Incremental Build of configuration Debug for project RobatsEngine ****
+make all 
+Building file: ../src/ControlEngine/AutoFlight.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -std=c++11 -MMD -MP -MF"src/ControlEngine/AutoFlight.d" -MT"src/ControlEngine/AutoFlight.o" -o "src/ControlEngine/AutoFlight.o" "../src/ControlEngine/AutoFlight.cpp"
+In file included from ../src/ControlEngine/AutoFlight.cpp:9:0:
+../src/ControlEngine/AutoFlight.h: In constructor ‘AutoFlight::AutoFlight(CCrazyflie*)’:
+../src/ControlEngine/AutoFlight.h:22:14: warning: ‘AutoFlight::cf’ will be initialized after [-Wreorder]
+  CCrazyflie *cf;
+              ^
+../src/ControlEngine/AutoFlight.h:20:8: warning:   ‘float AutoFlight::targetAlt’ [-Wreorder]
+  float targetAlt;
+        ^
+../src/ControlEngine/AutoFlight.cpp:11:1: warning:   when initialized here [-Wreorder]
+ AutoFlight::AutoFlight(CCrazyflie *cf) : cf(cf), targetAlt(0) { }
+ ^
+Finished building: ../src/ControlEngine/AutoFlight.cpp
+ 
+Building target: RobatsEngine
+Invoking: GCC C++ Linker
+g++  -o "RobatsEngine"  ./src/CrazyFlieEngine/CCRTPPacket.o ./src/CrazyFlieEngine/CCrazyRadio.o ./src/CrazyFlieEngine/CCrazyflie.o ./src/CrazyFlieEngine/CTOC.o  ./src/ControlEngine/AutoFlight.o ./src/ControlEngine/GamePad.o  ./src/CommunicationEngine/CrazyflieServer.o  ./src/RobatsEngine.o   -lusb-1.0
+Finished building target: RobatsEngine
+ 
+17:07:49 **** Incremental Build of configuration Debug for project RobatsEngine ****
+make all 
+make: Nothing to be done for `all'.
+17:08:03 **** Incremental Build of configuration Debug for project RobatsEngine ****
+make all 
+make: Nothing to be done for `all'.
+17:10:39 **** Incremental Build of configuration Debug for project RobatsEngine ****
+make all 
+Building file: ../src/ControlEngine/AutoFlight.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -std=c++11 -MMD -MP -MF"src/ControlEngine/AutoFlight.d" -MT"src/ControlEngine/AutoFlight.o" -o "src/ControlEngine/AutoFlight.o" "../src/ControlEngine/AutoFlight.cpp"
+In file included from ../src/ControlEngine/AutoFlight.cpp:9:0:
+../src/ControlEngine/AutoFlight.h: In constructor ‘AutoFlight::AutoFlight(CCrazyflie*)’:
+../src/ControlEngine/AutoFlight.h:22:14: warning: ‘AutoFlight::cf’ will be initialized after [-Wreorder]
+  CCrazyflie *cf;
+              ^
+../src/ControlEngine/AutoFlight.h:20:8: warning:   ‘float AutoFlight::targetAlt’ [-Wreorder]
+  float targetAlt;
+        ^
+../src/ControlEngine/AutoFlight.cpp:11:1: warning:   when initialized here [-Wreorder]
+ AutoFlight::AutoFlight(CCrazyflie *cf) : cf(cf), targetAlt(0) { }
+ ^
+Finished building: ../src/ControlEngine/AutoFlight.cpp
+ 
+Building file: ../src/RobatsEngine.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -std=c++11 -MMD -MP -MF"src/RobatsEngine.d" -MT"src/RobatsEngine.o" -o "src/RobatsEngine.o" "../src/RobatsEngine.cpp"
+../src/RobatsEngine.cpp:11:35: warning: extra tokens at end of #include directive [enabled by default]
+ #include "ControlEngine/GamePad.h";
+                                   ^
+../src/RobatsEngine.cpp:12:38: warning: extra tokens at end of #include directive [enabled by default]
+ #include "ControlEngine/AutoFlight.h";
+                                      ^
+Finished building: ../src/RobatsEngine.cpp
+ 
+Building target: RobatsEngine
+Invoking: GCC C++ Linker
+g++  -o "RobatsEngine"  ./src/CrazyFlieEngine/CCRTPPacket.o ./src/CrazyFlieEngine/CCrazyRadio.o ./src/CrazyFlieEngine/CCrazyflie.o ./src/CrazyFlieEngine/CTOC.o  ./src/ControlEngine/AutoFlight.o ./src/ControlEngine/GamePad.o  ./src/CommunicationEngine/CrazyflieServer.o  ./src/RobatsEngine.o   -lusb-1.0
+Finished building target: RobatsEngine
+ 
+17:11:00 **** Incremental Build of configuration Debug for project RobatsEngine ****
+make all 
+make: Nothing to be done for `all'.
+17:12:14 **** Incremental Build of configuration Debug for project RobatsEngine ****
+make all 
+Building file: ../src/ControlEngine/AutoFlight.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -std=c++11 -MMD -MP -MF"src/ControlEngine/AutoFlight.d" -MT"src/ControlEngine/AutoFlight.o" -o "src/ControlEngine/AutoFlight.o" "../src/ControlEngine/AutoFlight.cpp"
+In file included from ../src/ControlEngine/AutoFlight.cpp:9:0:
+../src/ControlEngine/AutoFlight.h: In constructor ‘AutoFlight::AutoFlight(CCrazyflie*)’:
+../src/ControlEngine/AutoFlight.h:22:14: warning: ‘AutoFlight::cf’ will be initialized after [-Wreorder]
+  CCrazyflie *cf;
+              ^
+../src/ControlEngine/AutoFlight.h:20:8: warning:   ‘float AutoFlight::targetAlt’ [-Wreorder]
+  float targetAlt;
+        ^
+../src/ControlEngine/AutoFlight.cpp:11:1: warning:   when initialized here [-Wreorder]
+ AutoFlight::AutoFlight(CCrazyflie *cf) : cf(cf), targetAlt(0) { }
+ ^
+Finished building: ../src/ControlEngine/AutoFlight.cpp
+ 
+Building file: ../src/RobatsEngine.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -std=c++11 -MMD -MP -MF"src/RobatsEngine.d" -MT"src/RobatsEngine.o" -o "src/RobatsEngine.o" "../src/RobatsEngine.cpp"
+../src/RobatsEngine.cpp:11:35: warning: extra tokens at end of #include directive [enabled by default]
+ #include "ControlEngine/GamePad.h";
+                                   ^
+../src/RobatsEngine.cpp:12:38: warning: extra tokens at end of #include directive [enabled by default]
+ #include "ControlEngine/AutoFlight.h";
+                                      ^
+Finished building: ../src/RobatsEngine.cpp
+ 
+Building target: RobatsEngine
+Invoking: GCC C++ Linker
+g++  -o "RobatsEngine"  ./src/CrazyFlieEngine/CCRTPPacket.o ./src/CrazyFlieEngine/CCrazyRadio.o ./src/CrazyFlieEngine/CCrazyflie.o ./src/CrazyFlieEngine/CTOC.o  ./src/ControlEngine/AutoFlight.o ./src/ControlEngine/GamePad.o  ./src/CommunicationEngine/CrazyflieServer.o  ./src/RobatsEngine.o   -lusb-1.0
+Finished building target: RobatsEngine
+ 
+17:13:01 **** Incremental Build of configuration Debug for project RobatsEngine ****
+make all 
+Building file: ../src/RobatsEngine.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -std=c++11 -MMD -MP -MF"src/RobatsEngine.d" -MT"src/RobatsEngine.o" -o "src/RobatsEngine.o" "../src/RobatsEngine.cpp"
+../src/RobatsEngine.cpp:11:35: warning: extra tokens at end of #include directive [enabled by default]
+ #include "ControlEngine/GamePad.h";
+                                   ^
+../src/RobatsEngine.cpp:12:38: warning: extra tokens at end of #include directive [enabled by default]
+ #include "ControlEngine/AutoFlight.h";
+                                      ^
+Finished building: ../src/RobatsEngine.cpp
+ 
+Building target: RobatsEngine
+Invoking: GCC C++ Linker
+g++  -o "RobatsEngine"  ./src/CrazyFlieEngine/CCRTPPacket.o ./src/CrazyFlieEngine/CCrazyRadio.o ./src/CrazyFlieEngine/CCrazyflie.o ./src/CrazyFlieEngine/CTOC.o  ./src/ControlEngine/AutoFlight.o ./src/ControlEngine/GamePad.o  ./src/CommunicationEngine/CrazyflieServer.o  ./src/RobatsEngine.o   -lusb-1.0
+Finished building target: RobatsEngine
+ 
+17:16:04 **** Incremental Build of configuration Debug for project RobatsEngine ****
+make all 
+Building file: ../src/RobatsEngine.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -std=c++11 -MMD -MP -MF"src/RobatsEngine.d" -MT"src/RobatsEngine.o" -o "src/RobatsEngine.o" "../src/RobatsEngine.cpp"
+../src/RobatsEngine.cpp:11:35: warning: extra tokens at end of #include directive [enabled by default]
+ #include "ControlEngine/GamePad.h";
+                                   ^
+../src/RobatsEngine.cpp:12:38: warning: extra tokens at end of #include directive [enabled by default]
+ #include "ControlEngine/AutoFlight.h";
+                                      ^
+../src/RobatsEngine.cpp: In function ‘int main(int, char**)’:
+../src/RobatsEngine.cpp:54:69: error: ‘gpv’ was not declared in this scope
+    cout<< "Data: " << cflieCopter->adc() << "\nGamepad: Thrust " << gpv.thrust << ", Roll " << gpv.roll << ", Pitch " << gpv.pitch << ", Yaw " << gpv.yaw << endl;
+                                                                     ^
+make: *** [src/RobatsEngine.o] Error 1
+17:16:26 **** Incremental Build of configuration Debug for project RobatsEngine ****
+make all 
+Building file: ../src/RobatsEngine.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -std=c++11 -MMD -MP -MF"src/RobatsEngine.d" -MT"src/RobatsEngine.o" -o "src/RobatsEngine.o" "../src/RobatsEngine.cpp"
+../src/RobatsEngine.cpp:11:35: warning: extra tokens at end of #include directive [enabled by default]
+ #include "ControlEngine/GamePad.h";
+                                   ^
+../src/RobatsEngine.cpp:12:38: warning: extra tokens at end of #include directive [enabled by default]
+ #include "ControlEngine/AutoFlight.h";
+                                      ^
+Finished building: ../src/RobatsEngine.cpp
+ 
+Building target: RobatsEngine
+Invoking: GCC C++ Linker
+g++  -o "RobatsEngine"  ./src/CrazyFlieEngine/CCRTPPacket.o ./src/CrazyFlieEngine/CCrazyRadio.o ./src/CrazyFlieEngine/CCrazyflie.o ./src/CrazyFlieEngine/CTOC.o  ./src/ControlEngine/AutoFlight.o ./src/ControlEngine/GamePad.o  ./src/CommunicationEngine/CrazyflieServer.o  ./src/RobatsEngine.o   -lusb-1.0
+Finished building target: RobatsEngine
+ 
+17:18:16 **** Incremental Build of configuration Debug for project RobatsEngine ****
+make all 
+make: Nothing to be done for `all'.
+17:18:37 **** Incremental Build of configuration Debug for project RobatsEngine ****
+make all 
+make: Nothing to be done for `all'.
+09:13:04 **** Incremental Build of configuration Debug for project RobatsEngine ****
+make all 
+Building file: ../src/RobatsEngine.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -std=c++11 -MMD -MP -MF"src/RobatsEngine.d" -MT"src/RobatsEngine.o" -o "src/RobatsEngine.o" "../src/RobatsEngine.cpp"
+../src/RobatsEngine.cpp:11:35: warning: extra tokens at end of #include directive [enabled by default]
+ #include "ControlEngine/GamePad.h";
+                                   ^
+../src/RobatsEngine.cpp:12:38: warning: extra tokens at end of #include directive [enabled by default]
+ #include "ControlEngine/AutoFlight.h";
+                                      ^
+Finished building: ../src/RobatsEngine.cpp
+ 
+Building target: RobatsEngine
+Invoking: GCC C++ Linker
+g++  -o "RobatsEngine"  ./src/CrazyFlieEngine/CCRTPPacket.o ./src/CrazyFlieEngine/CCrazyRadio.o ./src/CrazyFlieEngine/CCrazyflie.o ./src/CrazyFlieEngine/CTOC.o  ./src/ControlEngine/AutoFlight.o ./src/ControlEngine/GamePad.o  ./src/CommunicationEngine/CrazyflieServer.o  ./src/RobatsEngine.o   -lusb-1.0
+Finished building target: RobatsEngine
+ 
+09:15:11 **** Incremental Build of configuration Debug for project RobatsEngine ****
+make all 
+make: Nothing to be done for `all'.
+09:22:16 **** Incremental Build of configuration Debug for project RobatsEngine ****
+make all 
+Building file: ../src/RobatsEngine.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -std=c++11 -MMD -MP -MF"src/RobatsEngine.d" -MT"src/RobatsEngine.o" -o "src/RobatsEngine.o" "../src/RobatsEngine.cpp"
+../src/RobatsEngine.cpp:11:35: warning: extra tokens at end of #include directive [enabled by default]
+ #include "ControlEngine/GamePad.h";
+                                   ^
+../src/RobatsEngine.cpp:12:38: warning: extra tokens at end of #include directive [enabled by default]
+ #include "ControlEngine/AutoFlight.h";
+                                      ^
+Finished building: ../src/RobatsEngine.cpp
+ 
+Building target: RobatsEngine
+Invoking: GCC C++ Linker
+g++  -o "RobatsEngine"  ./src/CrazyFlieEngine/CCRTPPacket.o ./src/CrazyFlieEngine/CCrazyRadio.o ./src/CrazyFlieEngine/CCrazyflie.o ./src/CrazyFlieEngine/CTOC.o  ./src/ControlEngine/AutoFlight.o ./src/ControlEngine/GamePad.o  ./src/CommunicationEngine/CrazyflieServer.o  ./src/RobatsEngine.o   -lusb-1.0
+Finished building target: RobatsEngine
+ 
+09:24:07 **** Incremental Build of configuration Debug for project RobatsEngine ****
+make all 
+make: Nothing to be done for `all'.
+09:24:14 **** Incremental Build of configuration Debug for project RobatsEngine ****
+make all 
+make: Nothing to be done for `all'.
+09:29:06 **** Incremental Build of configuration Debug for project RobatsEngine ****
+make all 
+Building file: ../src/RobatsEngine.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -std=c++11 -MMD -MP -MF"src/RobatsEngine.d" -MT"src/RobatsEngine.o" -o "src/RobatsEngine.o" "../src/RobatsEngine.cpp"
+../src/RobatsEngine.cpp:11:35: warning: extra tokens at end of #include directive [enabled by default]
+ #include "ControlEngine/GamePad.h";
+                                   ^
+../src/RobatsEngine.cpp:12:38: warning: extra tokens at end of #include directive [enabled by default]
+ #include "ControlEngine/AutoFlight.h";
+                                      ^
+Finished building: ../src/RobatsEngine.cpp
+ 
+Building target: RobatsEngine
+Invoking: GCC C++ Linker
+g++  -o "RobatsEngine"  ./src/CrazyFlieEngine/CCRTPPacket.o ./src/CrazyFlieEngine/CCrazyRadio.o ./src/CrazyFlieEngine/CCrazyflie.o ./src/CrazyFlieEngine/CTOC.o  ./src/ControlEngine/AutoFlight.o ./src/ControlEngine/GamePad.o  ./src/CommunicationEngine/CrazyflieServer.o  ./src/RobatsEngine.o   -lusb-1.0
+Finished building target: RobatsEngine
+ 
+09:29:33 **** Incremental Build of configuration Debug for project RobatsEngine ****
+make all 
+make: Nothing to be done for `all'.
+09:44:49 **** Incremental Build of configuration Debug for project RobatsEngine ****
+make all 
+Building file: ../src/RobatsEngine.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -std=c++11 -MMD -MP -MF"src/RobatsEngine.d" -MT"src/RobatsEngine.o" -o "src/RobatsEngine.o" "../src/RobatsEngine.cpp"
+../src/RobatsEngine.cpp:11:35: warning: extra tokens at end of #include directive [enabled by default]
+ #include "ControlEngine/GamePad.h";
+                                   ^
+../src/RobatsEngine.cpp:12:38: warning: extra tokens at end of #include directive [enabled by default]
+ #include "ControlEngine/AutoFlight.h";
+                                      ^
+Finished building: ../src/RobatsEngine.cpp
+ 
+Building target: RobatsEngine
+Invoking: GCC C++ Linker
+g++  -o "RobatsEngine"  ./src/CrazyFlieEngine/CCRTPPacket.o ./src/CrazyFlieEngine/CCrazyRadio.o ./src/CrazyFlieEngine/CCrazyflie.o ./src/CrazyFlieEngine/CTOC.o  ./src/ControlEngine/AutoFlight.o ./src/ControlEngine/GamePad.o  ./src/CommunicationEngine/CrazyflieServer.o  ./src/RobatsEngine.o   -lusb-1.0
+Finished building target: RobatsEngine
+ 
+10:01:13 **** Incremental Build of configuration Debug for project RobatsEngine ****
+make all 
+make: Nothing to be done for `all'.
+10:07:35 **** Incremental Build of configuration Debug for project RobatsEngine ****
+make all 
+Building file: ../src/RobatsEngine.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -std=c++11 -MMD -MP -MF"src/RobatsEngine.d" -MT"src/RobatsEngine.o" -o "src/RobatsEngine.o" "../src/RobatsEngine.cpp"
+../src/RobatsEngine.cpp:11:35: warning: extra tokens at end of #include directive [enabled by default]
+ #include "ControlEngine/GamePad.h";
+                                   ^
+../src/RobatsEngine.cpp:12:38: warning: extra tokens at end of #include directive [enabled by default]
+ #include "ControlEngine/AutoFlight.h";
+                                      ^
+Finished building: ../src/RobatsEngine.cpp
+ 
+Building target: RobatsEngine
+Invoking: GCC C++ Linker
+g++  -o "RobatsEngine"  ./src/CrazyFlieEngine/CCRTPPacket.o ./src/CrazyFlieEngine/CCrazyRadio.o ./src/CrazyFlieEngine/CCrazyflie.o ./src/CrazyFlieEngine/CTOC.o  ./src/ControlEngine/AutoFlight.o ./src/ControlEngine/GamePad.o  ./src/CommunicationEngine/CrazyflieServer.o  ./src/RobatsEngine.o   -lusb-1.0
+Finished building target: RobatsEngine
+ 
+10:12:22 **** Incremental Build of configuration Debug for project RobatsEngine ****
+make all 
+Building file: ../src/RobatsEngine.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -std=c++11 -MMD -MP -MF"src/RobatsEngine.d" -MT"src/RobatsEngine.o" -o "src/RobatsEngine.o" "../src/RobatsEngine.cpp"
+Finished building: ../src/RobatsEngine.cpp
+ 
+Building target: RobatsEngine
+Invoking: GCC C++ Linker
+g++  -o "RobatsEngine"  ./src/CrazyFlieEngine/CCRTPPacket.o ./src/CrazyFlieEngine/CCrazyRadio.o ./src/CrazyFlieEngine/CCrazyflie.o ./src/CrazyFlieEngine/CTOC.o  ./src/ControlEngine/AutoFlight.o ./src/ControlEngine/GamePad.o  ./src/CommunicationEngine/CrazyflieServer.o  ./src/RobatsEngine.o   -lusb-1.0
+Finished building target: RobatsEngine
+ 
+10:12:56 **** Incremental Build of configuration Debug for project RobatsEngine ****
+make all 
+make: Nothing to be done for `all'.
+10:13:26 **** Incremental Build of configuration Debug for project RobatsEngine ****
+make all 
+Building file: ../src/RobatsEngine.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -std=c++11 -MMD -MP -MF"src/RobatsEngine.d" -MT"src/RobatsEngine.o" -o "src/RobatsEngine.o" "../src/RobatsEngine.cpp"
+Finished building: ../src/RobatsEngine.cpp
+ 
+Building target: RobatsEngine
+Invoking: GCC C++ Linker
+g++  -o "RobatsEngine"  ./src/CrazyFlieEngine/CCRTPPacket.o ./src/CrazyFlieEngine/CCrazyRadio.o ./src/CrazyFlieEngine/CCrazyflie.o ./src/CrazyFlieEngine/CTOC.o  ./src/ControlEngine/AutoFlight.o ./src/ControlEngine/GamePad.o  ./src/CommunicationEngine/CrazyflieServer.o  ./src/RobatsEngine.o   -lusb-1.0
+Finished building target: RobatsEngine
+ 
+10:14:07 **** Incremental Build of configuration Debug for project RobatsEngine ****
+make all 
+Building file: ../src/RobatsEngine.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -std=c++11 -MMD -MP -MF"src/RobatsEngine.d" -MT"src/RobatsEngine.o" -o "src/RobatsEngine.o" "../src/RobatsEngine.cpp"
+Finished building: ../src/RobatsEngine.cpp
+ 
+Building target: RobatsEngine
+Invoking: GCC C++ Linker
+g++  -o "RobatsEngine"  ./src/CrazyFlieEngine/CCRTPPacket.o ./src/CrazyFlieEngine/CCrazyRadio.o ./src/CrazyFlieEngine/CCrazyflie.o ./src/CrazyFlieEngine/CTOC.o  ./src/ControlEngine/AutoFlight.o ./src/ControlEngine/GamePad.o  ./src/CommunicationEngine/CrazyflieServer.o  ./src/RobatsEngine.o   -lusb-1.0
+Finished building target: RobatsEngine
+ 
+10:15:08 **** Incremental Build of configuration Debug for project RobatsEngine ****
+make all 
+Building file: ../src/RobatsEngine.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -std=c++11 -MMD -MP -MF"src/RobatsEngine.d" -MT"src/RobatsEngine.o" -o "src/RobatsEngine.o" "../src/RobatsEngine.cpp"
+Finished building: ../src/RobatsEngine.cpp
+ 
+Building target: RobatsEngine
+Invoking: GCC C++ Linker
+g++  -o "RobatsEngine"  ./src/CrazyFlieEngine/CCRTPPacket.o ./src/CrazyFlieEngine/CCrazyRadio.o ./src/CrazyFlieEngine/CCrazyflie.o ./src/CrazyFlieEngine/CTOC.o  ./src/ControlEngine/AutoFlight.o ./src/ControlEngine/GamePad.o  ./src/CommunicationEngine/CrazyflieServer.o  ./src/RobatsEngine.o   -lusb-1.0
+Finished building target: RobatsEngine
+ 
+10:16:26 **** Incremental Build of configuration Debug for project RobatsEngine ****
+make all 
+make: Nothing to be done for `all'.
+10:48:09 **** Incremental Build of configuration Debug for project RobatsEngine ****
+make all 
+Building file: ../src/RobatsEngine.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -std=c++11 -MMD -MP -MF"src/RobatsEngine.d" -MT"src/RobatsEngine.o" -o "src/RobatsEngine.o" "../src/RobatsEngine.cpp"
+Finished building: ../src/RobatsEngine.cpp
+ 
+Building target: RobatsEngine
+Invoking: GCC C++ Linker
+g++  -o "RobatsEngine"  ./src/CrazyFlieEngine/CCRTPPacket.o ./src/CrazyFlieEngine/CCrazyRadio.o ./src/CrazyFlieEngine/CCrazyflie.o ./src/CrazyFlieEngine/CTOC.o  ./src/ControlEngine/AutoFlight.o ./src/ControlEngine/GamePad.o  ./src/CommunicationEngine/CrazyflieServer.o  ./src/RobatsEngine.o   -lusb-1.0
+Finished building target: RobatsEngine
+ 
+10:48:29 **** Incremental Build of configuration Debug for project RobatsEngine ****
+make all 
+Building file: ../src/RobatsEngine.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -std=c++11 -MMD -MP -MF"src/RobatsEngine.d" -MT"src/RobatsEngine.o" -o "src/RobatsEngine.o" "../src/RobatsEngine.cpp"
+Finished building: ../src/RobatsEngine.cpp
+ 
+Building target: RobatsEngine
+Invoking: GCC C++ Linker
+g++  -o "RobatsEngine"  ./src/CrazyFlieEngine/CCRTPPacket.o ./src/CrazyFlieEngine/CCrazyRadio.o ./src/CrazyFlieEngine/CCrazyflie.o ./src/CrazyFlieEngine/CTOC.o  ./src/ControlEngine/AutoFlight.o ./src/ControlEngine/GamePad.o  ./src/CommunicationEngine/CrazyflieServer.o  ./src/RobatsEngine.o   -lusb-1.0
+Finished building target: RobatsEngine
+ 
+10:52:13 **** Incremental Build of configuration Debug for project RobatsEngine ****
+make all 
+Building file: ../src/ControlEngine/GamePad.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -std=c++11 -MMD -MP -MF"src/ControlEngine/GamePad.d" -MT"src/ControlEngine/GamePad.o" -o "src/ControlEngine/GamePad.o" "../src/ControlEngine/GamePad.cpp"
+../src/ControlEngine/GamePad.cpp: In member function ‘int GamePad::readValues(gp_values*)’:
+../src/ControlEngine/GamePad.cpp:50:1: warning: no return statement in function returning non-void [-Wreturn-type]
+ }
+ ^
+Finished building: ../src/ControlEngine/GamePad.cpp
+ 
+Building file: ../src/RobatsEngine.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -std=c++11 -MMD -MP -MF"src/RobatsEngine.d" -MT"src/RobatsEngine.o" -o "src/RobatsEngine.o" "../src/RobatsEngine.cpp"
+Finished building: ../src/RobatsEngine.cpp
+ 
+Building target: RobatsEngine
+Invoking: GCC C++ Linker
+g++  -o "RobatsEngine"  ./src/CrazyFlieEngine/CCRTPPacket.o ./src/CrazyFlieEngine/CCrazyRadio.o ./src/CrazyFlieEngine/CCrazyflie.o ./src/CrazyFlieEngine/CTOC.o  ./src/ControlEngine/AutoFlight.o ./src/ControlEngine/GamePad.o  ./src/CommunicationEngine/CrazyflieServer.o  ./src/RobatsEngine.o   -lusb-1.0
+Finished building target: RobatsEngine
+ 
+11:03:54 **** Incremental Build of configuration Debug for project RobatsEngine ****
+make all 
+Building file: ../src/ControlEngine/GamePad.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -std=c++11 -MMD -MP -MF"src/ControlEngine/GamePad.d" -MT"src/ControlEngine/GamePad.o" -o "src/ControlEngine/GamePad.o" "../src/ControlEngine/GamePad.cpp"
+../src/ControlEngine/GamePad.cpp: In member function ‘int GamePad::readValues(gp_values*)’:
+../src/ControlEngine/GamePad.cpp:62:1: warning: no return statement in function returning non-void [-Wreturn-type]
+ }
+ ^
+Finished building: ../src/ControlEngine/GamePad.cpp
+ 
+Building file: ../src/RobatsEngine.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -std=c++11 -MMD -MP -MF"src/RobatsEngine.d" -MT"src/RobatsEngine.o" -o "src/RobatsEngine.o" "../src/RobatsEngine.cpp"
+Finished building: ../src/RobatsEngine.cpp
+ 
+Building target: RobatsEngine
+Invoking: GCC C++ Linker
+g++  -o "RobatsEngine"  ./src/CrazyFlieEngine/CCRTPPacket.o ./src/CrazyFlieEngine/CCrazyRadio.o ./src/CrazyFlieEngine/CCrazyflie.o ./src/CrazyFlieEngine/CTOC.o  ./src/ControlEngine/AutoFlight.o ./src/ControlEngine/GamePad.o  ./src/CommunicationEngine/CrazyflieServer.o  ./src/RobatsEngine.o   -lusb-1.0
+Finished building target: RobatsEngine
+ 
+11:05:13 **** Incremental Build of configuration Debug for project RobatsEngine ****
+make all 
+Building file: ../src/ControlEngine/AutoFlight.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -std=c++11 -MMD -MP -MF"src/ControlEngine/AutoFlight.d" -MT"src/ControlEngine/AutoFlight.o" -o "src/ControlEngine/AutoFlight.o" "../src/ControlEngine/AutoFlight.cpp"
+In file included from ../src/ControlEngine/AutoFlight.cpp:9:0:
+../src/ControlEngine/AutoFlight.h: In constructor ‘AutoFlight::AutoFlight(CCrazyflie*)’:
+../src/ControlEngine/AutoFlight.h:22:14: warning: ‘AutoFlight::cf’ will be initialized after [-Wreorder]
+  CCrazyflie *cf;
+              ^
+../src/ControlEngine/AutoFlight.h:20:8: warning:   ‘float AutoFlight::targetAlt’ [-Wreorder]
+  float targetAlt;
+        ^
+../src/ControlEngine/AutoFlight.cpp:11:1: warning:   when initialized here [-Wreorder]
+ AutoFlight::AutoFlight(CCrazyflie *cf) : cf(cf), targetAlt(0) { }
+ ^
+Finished building: ../src/ControlEngine/AutoFlight.cpp
+ 
+Building target: RobatsEngine
+Invoking: GCC C++ Linker
+g++  -o "RobatsEngine"  ./src/CrazyFlieEngine/CCRTPPacket.o ./src/CrazyFlieEngine/CCrazyRadio.o ./src/CrazyFlieEngine/CCrazyflie.o ./src/CrazyFlieEngine/CTOC.o  ./src/ControlEngine/AutoFlight.o ./src/ControlEngine/GamePad.o  ./src/CommunicationEngine/CrazyflieServer.o  ./src/RobatsEngine.o   -lusb-1.0
+Finished building target: RobatsEngine
+ 
+11:06:56 **** Incremental Build of configuration Debug for project RobatsEngine ****
+make all 
+Building file: ../src/RobatsEngine.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -std=c++11 -MMD -MP -MF"src/RobatsEngine.d" -MT"src/RobatsEngine.o" -o "src/RobatsEngine.o" "../src/RobatsEngine.cpp"
+Finished building: ../src/RobatsEngine.cpp
+ 
+Building target: RobatsEngine
+Invoking: GCC C++ Linker
+g++  -o "RobatsEngine"  ./src/CrazyFlieEngine/CCRTPPacket.o ./src/CrazyFlieEngine/CCrazyRadio.o ./src/CrazyFlieEngine/CCrazyflie.o ./src/CrazyFlieEngine/CTOC.o  ./src/ControlEngine/AutoFlight.o ./src/ControlEngine/GamePad.o  ./src/CommunicationEngine/CrazyflieServer.o  ./src/RobatsEngine.o   -lusb-1.0
+Finished building target: RobatsEngine
+ 
+11:08:55 **** Incremental Build of configuration Debug for project RobatsEngine ****
+make all 
+Building file: ../src/RobatsEngine.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -std=c++11 -MMD -MP -MF"src/RobatsEngine.d" -MT"src/RobatsEngine.o" -o "src/RobatsEngine.o" "../src/RobatsEngine.cpp"
+../src/RobatsEngine.cpp: In function ‘int main(int, char**)’:
+../src/RobatsEngine.cpp:27:15: warning: unused variable ‘af’ [-Wunused-variable]
+   AutoFlight *af = new AutoFlight(cflieCopter);
+               ^
+Finished building: ../src/RobatsEngine.cpp
+ 
+Building target: RobatsEngine
+Invoking: GCC C++ Linker
+g++  -o "RobatsEngine"  ./src/CrazyFlieEngine/CCRTPPacket.o ./src/CrazyFlieEngine/CCrazyRadio.o ./src/CrazyFlieEngine/CCrazyflie.o ./src/CrazyFlieEngine/CTOC.o  ./src/ControlEngine/AutoFlight.o ./src/ControlEngine/GamePad.o  ./src/CommunicationEngine/CrazyflieServer.o  ./src/RobatsEngine.o   -lusb-1.0
+Finished building target: RobatsEngine
+ 
+11:09:38 **** Incremental Build of configuration Debug for project RobatsEngine ****
+make all 
+Building file: ../src/RobatsEngine.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -std=c++11 -MMD -MP -MF"src/RobatsEngine.d" -MT"src/RobatsEngine.o" -o "src/RobatsEngine.o" "../src/RobatsEngine.cpp"
+Finished building: ../src/RobatsEngine.cpp
+ 
+Building target: RobatsEngine
+Invoking: GCC C++ Linker
+g++  -o "RobatsEngine"  ./src/CrazyFlieEngine/CCRTPPacket.o ./src/CrazyFlieEngine/CCrazyRadio.o ./src/CrazyFlieEngine/CCrazyflie.o ./src/CrazyFlieEngine/CTOC.o  ./src/ControlEngine/AutoFlight.o ./src/ControlEngine/GamePad.o  ./src/CommunicationEngine/CrazyflieServer.o  ./src/RobatsEngine.o   -lusb-1.0
+Finished building target: RobatsEngine
+ 
+11:10:21 **** Incremental Build of configuration Debug for project RobatsEngine ****
+make all 
+Building file: ../src/ControlEngine/AutoFlight.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -std=c++11 -MMD -MP -MF"src/ControlEngine/AutoFlight.d" -MT"src/ControlEngine/AutoFlight.o" -o "src/ControlEngine/AutoFlight.o" "../src/ControlEngine/AutoFlight.cpp"
+In file included from ../src/ControlEngine/AutoFlight.cpp:9:0:
+../src/ControlEngine/AutoFlight.h: In constructor ‘AutoFlight::AutoFlight(CCrazyflie*)’:
+../src/ControlEngine/AutoFlight.h:22:14: warning: ‘AutoFlight::cf’ will be initialized after [-Wreorder]
+  CCrazyflie *cf;
+              ^
+../src/ControlEngine/AutoFlight.h:20:8: warning:   ‘float AutoFlight::targetAlt’ [-Wreorder]
+  float targetAlt;
+        ^
+../src/ControlEngine/AutoFlight.cpp:11:1: warning:   when initialized here [-Wreorder]
+ AutoFlight::AutoFlight(CCrazyflie *cf) : cf(cf), targetAlt(0) { }
+ ^
+Finished building: ../src/ControlEngine/AutoFlight.cpp
+ 
+Building file: ../src/RobatsEngine.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -std=c++11 -MMD -MP -MF"src/RobatsEngine.d" -MT"src/RobatsEngine.o" -o "src/RobatsEngine.o" "../src/RobatsEngine.cpp"
+Finished building: ../src/RobatsEngine.cpp
+ 
+Building target: RobatsEngine
+Invoking: GCC C++ Linker
+g++  -o "RobatsEngine"  ./src/CrazyFlieEngine/CCRTPPacket.o ./src/CrazyFlieEngine/CCrazyRadio.o ./src/CrazyFlieEngine/CCrazyflie.o ./src/CrazyFlieEngine/CTOC.o  ./src/ControlEngine/AutoFlight.o ./src/ControlEngine/GamePad.o  ./src/CommunicationEngine/CrazyflieServer.o  ./src/RobatsEngine.o   -lusb-1.0
+Finished building target: RobatsEngine
+ 
+11:10:59 **** Incremental Build of configuration Debug for project RobatsEngine ****
+make all 
+Building file: ../src/ControlEngine/AutoFlight.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -std=c++11 -MMD -MP -MF"src/ControlEngine/AutoFlight.d" -MT"src/ControlEngine/AutoFlight.o" -o "src/ControlEngine/AutoFlight.o" "../src/ControlEngine/AutoFlight.cpp"
+In file included from ../src/ControlEngine/AutoFlight.cpp:9:0:
+../src/ControlEngine/AutoFlight.h: In constructor ‘AutoFlight::AutoFlight(CCrazyflie*)’:
+../src/ControlEngine/AutoFlight.h:22:14: warning: ‘AutoFlight::cf’ will be initialized after [-Wreorder]
+  CCrazyflie *cf;
+              ^
+../src/ControlEngine/AutoFlight.h:20:8: warning:   ‘float AutoFlight::targetAlt’ [-Wreorder]
+  float targetAlt;
+        ^
+../src/ControlEngine/AutoFlight.cpp:11:1: warning:   when initialized here [-Wreorder]
+ AutoFlight::AutoFlight(CCrazyflie *cf) : cf(cf), targetAlt(0) { }
+ ^
+../src/ControlEngine/AutoFlight.cpp: In member function ‘double AutoFlight::thrustchange(double)’:
+../src/ControlEngine/AutoFlight.cpp:51:15: error: ‘iMax’ was not declared in this scope
+   if (itemp > iMax)
+               ^
+../src/ControlEngine/AutoFlight.cpp:53:20: error: ‘iMin’ was not declared in this scope
+   else if (itemp < iMin)
+                    ^
+make: *** [src/ControlEngine/AutoFlight.o] Error 1
+11:11:34 **** Incremental Build of configuration Debug for project RobatsEngine ****
+make all 
+Building file: ../src/ControlEngine/AutoFlight.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -std=c++11 -MMD -MP -MF"src/ControlEngine/AutoFlight.d" -MT"src/ControlEngine/AutoFlight.o" -o "src/ControlEngine/AutoFlight.o" "../src/ControlEngine/AutoFlight.cpp"
+In file included from ../src/ControlEngine/AutoFlight.cpp:9:0:
+../src/ControlEngine/AutoFlight.h: In constructor ‘AutoFlight::AutoFlight(CCrazyflie*)’:
+../src/ControlEngine/AutoFlight.h:22:14: warning: ‘AutoFlight::cf’ will be initialized after [-Wreorder]
+  CCrazyflie *cf;
+              ^
+../src/ControlEngine/AutoFlight.h:20:8: warning:   ‘float AutoFlight::targetAlt’ [-Wreorder]
+  float targetAlt;
+        ^
+../src/ControlEngine/AutoFlight.cpp:11:1: warning:   when initialized here [-Wreorder]
+ AutoFlight::AutoFlight(CCrazyflie *cf) : cf(cf), targetAlt(0) { }
+ ^
+Finished building: ../src/ControlEngine/AutoFlight.cpp
+ 
+Building file: ../src/RobatsEngine.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -std=c++11 -MMD -MP -MF"src/RobatsEngine.d" -MT"src/RobatsEngine.o" -o "src/RobatsEngine.o" "../src/RobatsEngine.cpp"
+Finished building: ../src/RobatsEngine.cpp
+ 
+Building target: RobatsEngine
+Invoking: GCC C++ Linker
+g++  -o "RobatsEngine"  ./src/CrazyFlieEngine/CCRTPPacket.o ./src/CrazyFlieEngine/CCrazyRadio.o ./src/CrazyFlieEngine/CCrazyflie.o ./src/CrazyFlieEngine/CTOC.o  ./src/ControlEngine/AutoFlight.o ./src/ControlEngine/GamePad.o  ./src/CommunicationEngine/CrazyflieServer.o  ./src/RobatsEngine.o   -lusb-1.0
+Finished building target: RobatsEngine
+ 
+11:12:19 **** Incremental Build of configuration Debug for project RobatsEngine ****
+make all 
+make: Nothing to be done for `all'.
+11:12:31 **** Incremental Build of configuration Debug for project RobatsEngine ****
+make all 
+Building file: ../src/ControlEngine/AutoFlight.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -std=c++11 -MMD -MP -MF"src/ControlEngine/AutoFlight.d" -MT"src/ControlEngine/AutoFlight.o" -o "src/ControlEngine/AutoFlight.o" "../src/ControlEngine/AutoFlight.cpp"
+In file included from ../src/ControlEngine/AutoFlight.cpp:9:0:
+../src/ControlEngine/AutoFlight.h: In constructor ‘AutoFlight::AutoFlight(CCrazyflie*)’:
+../src/ControlEngine/AutoFlight.h:22:14: warning: ‘AutoFlight::cf’ will be initialized after [-Wreorder]
+  CCrazyflie *cf;
+              ^
+../src/ControlEngine/AutoFlight.h:20:8: warning:   ‘float AutoFlight::targetAlt’ [-Wreorder]
+  float targetAlt;
+        ^
+../src/ControlEngine/AutoFlight.cpp:11:1: warning:   when initialized here [-Wreorder]
+ AutoFlight::AutoFlight(CCrazyflie *cf) : cf(cf), targetAlt(0) { }
+ ^
+Finished building: ../src/ControlEngine/AutoFlight.cpp
+ 
+Building target: RobatsEngine
+Invoking: GCC C++ Linker
+g++  -o "RobatsEngine"  ./src/CrazyFlieEngine/CCRTPPacket.o ./src/CrazyFlieEngine/CCrazyRadio.o ./src/CrazyFlieEngine/CCrazyflie.o ./src/CrazyFlieEngine/CTOC.o  ./src/ControlEngine/AutoFlight.o ./src/ControlEngine/GamePad.o  ./src/CommunicationEngine/CrazyflieServer.o  ./src/RobatsEngine.o   -lusb-1.0
+Finished building target: RobatsEngine
+ 
+11:12:45 **** Incremental Build of configuration Debug for project RobatsEngine ****
+make all 
+make: Nothing to be done for `all'.
+11:13:23 **** Incremental Build of configuration Debug for project RobatsEngine ****
+make all 
+make: Nothing to be done for `all'.
+11:14:01 **** Incremental Build of configuration Debug for project RobatsEngine ****
+make all 
+make: Nothing to be done for `all'.
+11:14:13 **** Incremental Build of configuration Debug for project RobatsEngine ****
+make all 
+make: Nothing to be done for `all'.
+11:15:14 **** Incremental Build of configuration Debug for project RobatsEngine ****
+make all 
+make: Nothing to be done for `all'.
+11:17:37 **** Incremental Build of configuration Debug for project RobatsEngine ****
+make all 
+make: Nothing to be done for `all'.

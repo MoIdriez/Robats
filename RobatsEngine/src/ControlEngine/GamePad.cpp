@@ -27,17 +27,29 @@ int GamePad::readValues(struct gp_values *gpv) {
 		if (gpe.type == GP_EVENT_AXIS) {
 			switch (gpe.number) {
 			case YAW:
-				gpv->yaw = convert(gpe.value, GP_AXIS_MIN, GP_AXIS_MAX, CF_YAW_MIN, CF_YAW_MAX);
+				gpv->yaw = convert(gpe.value, GP_AXIS_MIN, GP_AXIS_MAX,
+						CF_YAW_MIN, CF_YAW_MAX);
 				break;
 			case PITCH:
-				gpv->pitch = convert(gpe.value, GP_AXIS_MIN, GP_AXIS_MAX, CF_PITCH_MIN, CF_PITCH_MAX);
+				gpv->pitch = convert(gpe.value, GP_AXIS_MIN, GP_AXIS_MAX,
+						CF_PITCH_MIN, CF_PITCH_MAX);
 				break;
 			case ROLL:
-				gpv->roll = convert(gpe.value, GP_AXIS_MIN, GP_AXIS_MAX, CF_ROLL_MIN, CF_ROLL_MAX);
+				gpv->roll = convert(gpe.value, GP_AXIS_MIN, GP_AXIS_MAX,
+						CF_ROLL_MIN, CF_ROLL_MAX);
 				break;
 			case THRUST:
 				/* MAX and MIN of the axis are swapt on purpose because of the gamepad I am using*/
-				gpv->thrust = convert(gpe.value, GP_AXIS_MAX, GP_AXIS_MIN, CF_THRUST_MIN, CF_THRUST_MAX);
+				gpv->thrust = convert(gpe.value, GP_AXIS_MAX, GP_AXIS_MIN,
+						CF_THRUST_MIN, CF_THRUST_MAX);
+				break;
+			default:
+				break;
+			}
+		} else if (gpe.type == GP_EVENT_BUTTON) {
+			switch (gpe.number) {
+			case ALTHOLD:
+				gpv->althold = gpe.value;
 				break;
 			default:
 				break;
@@ -49,7 +61,8 @@ int GamePad::readValues(struct gp_values *gpv) {
 	}
 }
 
-double GamePad::convert(double oldValue, double oldMin, double oldMax, double newMin, double newMax) {
+double GamePad::convert(double oldValue, double oldMin, double oldMax,
+		double newMin, double newMax) {
 	double oldRange = oldMax - oldMin;
 	double newRange = newMax - newMin;
 	return (((oldValue - oldMin) * newRange) / oldRange) + newMin;
@@ -66,12 +79,10 @@ int GamePad::readEvent(struct gp_event *gpe) {
 		return 1;
 
 	printf("Unexpected bytes from gamepad:%d\n", bytes);
-    return -1;
+	return -1;
 }
 
 GamePad::~GamePad() {
 	close(gamepad_fd);
 }
-
-
 

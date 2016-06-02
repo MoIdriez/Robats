@@ -1,15 +1,6 @@
-14:46:06 **** Incremental Build of configuration Debug for project RobatsEngine ****
+11:17:37 **** Incremental Build of configuration Debug for project RobatsEngine ****
 make all 
-Building file: ../src/CrazyFlieEngine/CCrazyflie.cpp
-Invoking: GCC C++ Compiler
-g++ -O0 -g3 -Wall -c -fmessage-length=0 -std=c++11 -MMD -MP -MF"src/CrazyFlieEngine/CCrazyflie.d" -MT"src/CrazyFlieEngine/CCrazyflie.o" -o "src/CrazyFlieEngine/CCrazyflie.o" "../src/CrazyFlieEngine/CCrazyflie.cpp"
-Finished building: ../src/CrazyFlieEngine/CCrazyflie.cpp
- 
-Building target: RobatsEngine
-Invoking: GCC C++ Linker
-g++  -o "RobatsEngine"  ./src/CrazyFlieEngine/CCRTPPacket.o ./src/CrazyFlieEngine/CCrazyRadio.o ./src/CrazyFlieEngine/CCrazyflie.o ./src/CrazyFlieEngine/CTOC.o  ./src/ControlEngine/GamePad.o  ./src/CommunicationEngine/CrazyflieServer.o  ./src/RobatsEngine.o   -lusb-1.0
-Finished building target: RobatsEngine
- 
+make: Nothing to be done for `all'.
 
-14:46:07 Build Finished (took 733ms)
+11:17:37 Build Finished (took 64ms)
 

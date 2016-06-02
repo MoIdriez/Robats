@@ -13,12 +13,16 @@
 		<item value="false" key="casesensitive"/>
 		<item value="false" key="incremental"/>
 		<item value="false" key="wholeword"/>
-		<item value="get_gamepad_status" key="selection"/>
+		<item value="Param" key="selection"/>
 		<list key="findhistory">
-			<item value="get_gamepad_status"/>
-			<item value="joystick"/>
-			<item value="terminate called without an active exception"/>
-			<item value="disable"/>
+			<item value="Param"/>
+			<item value="setPar"/>
+			<item value="para"/>
+			<item value="startLogging"/>
+			<item value="enableGyroscopeLogging"/>
+			<item value="setThrust"/>
+			<item value="flightmode"/>
+			<item value="bool"/>
 		</list>
 		<list key="replacehistory">
 			<item value="gamepad"/>

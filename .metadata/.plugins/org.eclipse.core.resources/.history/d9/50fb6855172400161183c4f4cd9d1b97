@@ -1,0 +1,21 @@
+/*
+ * AutonomousFlight.h
+ *
+ *  Created on: 27 May 2016
+ *      Author: midries
+ */
+
+#ifndef SRC_CONTROLENGINE_AUTONOMOUSFLIGHT_H_
+#define SRC_CONTROLENGINE_AUTONOMOUSFLIGHT_H_
+
+class AutonomousFlight {
+public:
+	Auto
+	int start(bool showInformation = true);
+	int stop();
+private:
+
+
+};
+
+#endif /* SRC_CONTROLENGINE_AUTONOMOUSFLIGHT_H_ */

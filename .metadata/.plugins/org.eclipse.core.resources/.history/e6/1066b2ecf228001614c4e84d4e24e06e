@@ -1,0 +1,12 @@
+#ifndef SRC_TESTINTERFACEENGINE_TESTCOUNTER_H_
+#define SRC_TESTINTERFACEENGINE_TESTCOUNTER_H_
+
+class TestCounter {
+private:
+      int mCounter;
+public:
+      TestCounter() : mCounter(0) {}
+      int Increment();
+};
+
+#endif /* SRC_TESTINTERFACEENGINE_TESTCOUNTER_H_ */

@@ -1,24 +1,22 @@
 src/RobatsEngine.o: ../src/RobatsEngine.cpp \
- ../src/ControlEngine/GamePad.h ../src/ControlEngine/AutoFlight.h \
- ../src/ControlEngine/../CrazyFlieEngine/CCrazyflie.h \
- ../src/ControlEngine/../CrazyFlieEngine/CCrazyRadio.h \
- ../src/ControlEngine/../CrazyFlieEngine/CCRTPPacket.h \
- ../src/ControlEngine/../CrazyFlieEngine/CTOC.h \
- ../src/CrazyFlieEngine/CCrazyflie.h \
- ../src/CommunicationEngine/CrazyflieServer.h
+ /home/midries/Projects/robats/Robats/include/GamePad.h \
+ /home/midries/Projects/robats/Robats/include/AutoFlight.h \
+ /home/midries/Projects/robats/Robats/include/CCrazyflie.h \
+ /home/midries/Projects/robats/Robats/include/CCrazyRadio.h \
+ /home/midries/Projects/robats/Robats/include/CCRTPPacket.h \
+ /home/midries/Projects/robats/Robats/include/CTOC.h \
+ /home/midries/Projects/robats/Robats/include/CrazyServer.h
 
-../src/ControlEngine/GamePad.h:
+/home/midries/Projects/robats/Robats/include/GamePad.h:
 
-../src/ControlEngine/AutoFlight.h:
+/home/midries/Projects/robats/Robats/include/AutoFlight.h:
 
-../src/ControlEngine/../CrazyFlieEngine/CCrazyflie.h:
+/home/midries/Projects/robats/Robats/include/CCrazyflie.h:
 
-../src/ControlEngine/../CrazyFlieEngine/CCrazyRadio.h:
+/home/midries/Projects/robats/Robats/include/CCrazyRadio.h:
 
-../src/ControlEngine/../CrazyFlieEngine/CCRTPPacket.h:
+/home/midries/Projects/robats/Robats/include/CCRTPPacket.h:
 
-../src/ControlEngine/../CrazyFlieEngine/CTOC.h:
+/home/midries/Projects/robats/Robats/include/CTOC.h:
 
-../src/CrazyFlieEngine/CCrazyflie.h:
-
-../src/CommunicationEngine/CrazyflieServer.h:
+/home/midries/Projects/robats/Robats/include/CrazyServer.h:

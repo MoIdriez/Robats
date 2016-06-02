@@ -1,8 +1,8 @@
 #include <iostream>
-#include "ControlEngine/GamePad.h"
-#include "ControlEngine/AutoFlight.h"
-#include "CrazyFlieEngine/CCrazyflie.h"
-#include "CommunicationEngine/CrazyflieServer.h"
+#include "GamePad.h"
+#include "AutoFlight.h"
+#include "CCrazyflie.h"
+#include "CrazyServer.h"
 
 bool altHold = false; // just so that we set it once
 bool gamepadEnabled = true;

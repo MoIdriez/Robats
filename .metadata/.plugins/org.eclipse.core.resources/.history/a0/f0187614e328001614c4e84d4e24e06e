@@ -1,0 +1,14 @@
+/*
+ * TestCounter.h
+ *
+ *  Created on: 2 Jun 2016
+ *      Author: midries
+ */
+
+#ifndef SRC_TESTINTERFACEENGINE_TESTCOUNTER_H_
+#define SRC_TESTINTERFACEENGINE_TESTCOUNTER_H_
+
+class TestCounter {
+};
+
+#endif /* SRC_TESTINTERFACEENGINE_TESTCOUNTER_H_ */

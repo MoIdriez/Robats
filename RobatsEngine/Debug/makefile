@@ -8,9 +8,6 @@ RM := rm -rf
 
 # All of the sources participating in the build are defined here
 -include sources.mk
--include src/CrazyFlieEngine/subdir.mk
--include src/ControlEngine/subdir.mk
--include src/CommunicationEngine/subdir.mk
 -include src/subdir.mk
 -include subdir.mk
 -include objects.mk
@@ -47,7 +44,7 @@ all: RobatsEngine
 RobatsEngine: $(OBJS) $(USER_OBJS)
 	@echo 'Building target: $@'
 	@echo 'Invoking: GCC C++ Linker'
-	g++  -o "RobatsEngine" $(OBJS) $(USER_OBJS) $(LIBS)
+	g++ -L"/home/midries/Projects/robats/Robats/Release" -o "RobatsEngine" $(OBJS) $(USER_OBJS) $(LIBS)
 	@echo 'Finished building target: $@'
 	@echo ' '
 

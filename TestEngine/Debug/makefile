@@ -40,11 +40,14 @@ endif
 # All Target
 all: TestEngine
 
+dependents:
+	-cd /home/midries/Projects/robats/RobatsEngine/Debug && $(MAKE) clean all
+
 # Tool invocations
-TestEngine: $(OBJS) $(USER_OBJS)
+TestEngine: $(OBJS) $(USER_OBJS) /home/midries/Projects/robats/RobatsEngine/Debug/RobatsEngine
 	@echo 'Building target: $@'
 	@echo 'Invoking: GCC C++ Linker'
-	g++ -L"/home/midries/Projects/robats/TestEngine/external" -o "TestEngine" $(OBJS) $(USER_OBJS) $(LIBS)
+	g++ -L"/home/midries/Projects/robats/TestEngine/external" -L"/home/midries/Projects/robats/Robats/Release" -o "TestEngine" $(OBJS) $(USER_OBJS) $(LIBS)
 	@echo 'Finished building target: $@'
 	@echo ' '
 
@@ -55,5 +58,6 @@ clean:
 
 .PHONY: all clean dependents
 .SECONDARY:
+/home/midries/Projects/robats/RobatsEngine/Debug/RobatsEngine:
 
 -include ../makefile.targets

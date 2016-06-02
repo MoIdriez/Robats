@@ -4,15 +4,12 @@
 
 # Add inputs and outputs from these tool invocations to the build variables 
 CPP_SRCS += \
-../test/Counter.cpp \
 ../test/main.cpp 
 
 OBJS += \
-./test/Counter.o \
 ./test/main.o 
 
 CPP_DEPS += \
-./test/Counter.d \
 ./test/main.d 
 
 
@@ -20,7 +17,7 @@ CPP_DEPS += \
 test/%.o: ../test/%.cpp
 	@echo 'Building file: $<'
 	@echo 'Invoking: GCC C++ Compiler'
-	g++ -I"/home/midries/Projects/robats/TestEngine/external/include" -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"$(@:%.o=%.d)" -MT"$(@)" -o "$@" "$<"
+	g++ -I"/home/midries/Projects/robats/TestEngine/external/include" -I"/home/midries/Projects/robats/Robats/include" -I"/home/midries/Projects/robats/Robats" -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"$(@:%.o=%.d)" -MT"$(@)" -o "$@" "$<"
 	@echo 'Finished building: $<'
 	@echo ' '
 

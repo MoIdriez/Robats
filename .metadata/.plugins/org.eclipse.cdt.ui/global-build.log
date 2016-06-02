@@ -1,501 +1,256 @@
-15:56:23 **** Incremental Build of configuration Debug for project TestEngine ****
+19:47:08 **** Incremental Build of configuration Release for project Robats ****
 make all 
-make: Nothing to be done for `all'.
-15:56:52 **** Incremental Build of configuration Debug for project TestEngine ****
-make all 
-Building file: ../test/main.cpp
+Building file: ../src/CrazyControl/AutoFlight.cpp
 Invoking: GCC C++ Compiler
-g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"test/main.d" -MT"test/main.o" -o "test/main.o" "../test/main.cpp"
-../test/main.cpp: In function ‘int main(int, char**)’:
-../test/main.cpp:3:1: error: expected ‘;’ before ‘}’ token
+g++ -I"/home/midries/Projects/robats/Robats/include" -O3 -Wall -c -fmessage-length=0 -std=c++11 -fPIC -MMD -MP -MF"src/CrazyControl/AutoFlight.d" -MT"src/CrazyControl/AutoFlight.o" -o "src/CrazyControl/AutoFlight.o" "../src/CrazyControl/AutoFlight.cpp"
+Finished building: ../src/CrazyControl/AutoFlight.cpp
+ 
+Building file: ../src/CrazyControl/GamePad.cpp
+Invoking: GCC C++ Compiler
+g++ -I"/home/midries/Projects/robats/Robats/include" -O3 -Wall -c -fmessage-length=0 -std=c++11 -fPIC -MMD -MP -MF"src/CrazyControl/GamePad.d" -MT"src/CrazyControl/GamePad.o" -o "src/CrazyControl/GamePad.o" "../src/CrazyControl/GamePad.cpp"
+../src/CrazyControl/GamePad.cpp: In member function ‘int GamePad::readValues(gp_values*)’:
+../src/CrazyControl/GamePad.cpp:62:1: warning: no return statement in function returning non-void [-Wreturn-type]
  }
  ^
-make: *** [test/main.o] Error 1
-16:01:53 **** Incremental Build of configuration Debug for project TestEngine ****
-make all 
-Building file: ../test/main.cpp
-Invoking: GCC C++ Compiler
-g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"test/main.d" -MT"test/main.o" -o "test/main.o" "../test/main.cpp"
-Finished building: ../test/main.cpp
+Finished building: ../src/CrazyControl/GamePad.cpp
  
-Building target: TestEngine
+Building target: libRobats.so
 Invoking: GCC C++ Linker
-g++  -o "TestEngine"  ./test/main.o   
-Finished building target: TestEngine
+g++ -shared -o "libRobats.so"  ./src/CrazyEngine/CCRTPPacket.o ./src/CrazyEngine/CCrazyRadio.o ./src/CrazyEngine/CCrazyflie.o ./src/CrazyEngine/CTOC.o  ./src/CrazyControl/AutoFlight.o ./src/CrazyControl/GamePad.o  ./src/CrazyComms/CrazyServer.o  ./src/Counter.o   -lusb-1.0
+Finished building target: libRobats.so
  
-16:02:11 **** Incremental Build of configuration Debug for project TestEngine ****
+20:50:25 **** Incremental Build of configuration Debug for project RobatsEngine ****
+make all 
+Building file: ../src/RobatsEngine.cpp
+Invoking: GCC C++ Compiler
+g++ -I"/home/midries/Projects/robats/Robats" -O0 -g3 -Wall -c -fmessage-length=0 -std=c++11 -MMD -MP -MF"src/RobatsEngine.d" -MT"src/RobatsEngine.o" -o "src/RobatsEngine.o" "../src/RobatsEngine.cpp"
+../src/RobatsEngine.cpp:2:39: fatal error: src/ControlEngine/GamePad.h: No such file or directory
+ #include "src/ControlEngine/GamePad.h"
+                                       ^
+compilation terminated.
+make: *** [src/RobatsEngine.o] Error 1
+20:50:39 **** Incremental Build of configuration Release for project Robats ****
 make all 
 make: Nothing to be done for `all'.
-16:05:27 **** Incremental Build of configuration Debug for project TestEngine ****
+20:50:39 **** Incremental Build of configuration Debug for project RobatsEngine ****
 make all 
-Building file: ../external/googletest/xcode/Samples/FrameworkSample/widget.cc
+Building file: ../src/RobatsEngine.cpp
 Invoking: GCC C++ Compiler
-g++ -I"/home/midries/Projects/robats/TestEngine/external" -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"external/googletest/xcode/Samples/FrameworkSample/widget.d" -MT"external/googletest/xcode/Samples/FrameworkSample/widget.o" -o "external/googletest/xcode/Samples/FrameworkSample/widget.o" "../external/googletest/xcode/Samples/FrameworkSample/widget.cc"
-In file included from ../external/googletest/xcode/Samples/FrameworkSample/widget.cc:38:0:
-../external/googletest/xcode/Samples/FrameworkSample/widget.h:40:2: warning: #import is a deprecated GCC extension [-Wdeprecated]
- #import <string>
-  ^
-../external/googletest/xcode/Samples/FrameworkSample/widget.cc: In member function ‘void Widget::GetCharPtrValue(char*, size_t) const’:
-../external/googletest/xcode/Samples/FrameworkSample/widget.cc:60:44: error: ‘strncpy’ was not declared in this scope
-   strncpy(buffer, name_.c_str(), max_size-1);
-                                            ^
-make: *** [external/googletest/xcode/Samples/FrameworkSample/widget.o] Error 1
-16:07:07 **** Incremental Build of configuration Debug for project TestEngine ****
-make all 
-Building file: ../external/googletest/xcode/Samples/FrameworkSample/widget.cc
-Invoking: GCC C++ Compiler
-g++ -I"/home/midries/Projects/robats/TestEngine/external" -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"external/googletest/xcode/Samples/FrameworkSample/widget.d" -MT"external/googletest/xcode/Samples/FrameworkSample/widget.o" -o "external/googletest/xcode/Samples/FrameworkSample/widget.o" "../external/googletest/xcode/Samples/FrameworkSample/widget.cc"
-In file included from ../external/googletest/xcode/Samples/FrameworkSample/widget.cc:38:0:
-../external/googletest/xcode/Samples/FrameworkSample/widget.h:40:2: warning: #import is a deprecated GCC extension [-Wdeprecated]
- #import <string>
-  ^
-Finished building: ../external/googletest/xcode/Samples/FrameworkSample/widget.cc
- 
-Building file: ../external/googletest/xcode/Samples/FrameworkSample/widget_test.cc
-Invoking: GCC C++ Compiler
-g++ -I"/home/midries/Projects/robats/TestEngine/external" -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"external/googletest/xcode/Samples/FrameworkSample/widget_test.d" -MT"external/googletest/xcode/Samples/FrameworkSample/widget_test.o" -o "external/googletest/xcode/Samples/FrameworkSample/widget_test.o" "../external/googletest/xcode/Samples/FrameworkSample/widget_test.cc"
-../external/googletest/xcode/Samples/FrameworkSample/widget_test.cc:39:25: fatal error: gtest/gtest.h: No such file or directory
- #include "gtest/gtest.h"
-                         ^
+g++ -I"/home/midries/Projects/robats/Robats" -O0 -g3 -Wall -c -fmessage-length=0 -std=c++11 -MMD -MP -MF"src/RobatsEngine.d" -MT"src/RobatsEngine.o" -o "src/RobatsEngine.o" "../src/RobatsEngine.cpp"
+../src/RobatsEngine.cpp:2:34: fatal error: CrazyControl/GamePad.h: No such file or directory
+ #include "CrazyControl/GamePad.h"
+                                  ^
 compilation terminated.
-make: *** [external/googletest/xcode/Samples/FrameworkSample/widget_test.o] Error 1
-16:09:23 **** Incremental Build of configuration Debug for project TestEngine ****
+make: *** [src/RobatsEngine.o] Error 1
+20:50:40 **** Incremental Build of configuration Debug for project TestEngine ****
 make all 
-Building file: ../external/gtest/gtest-all.cc
-Invoking: GCC C++ Compiler
-g++ -I"/home/midries/Projects/robats/TestEngine/external" -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"external/gtest/gtest-all.d" -MT"external/gtest/gtest-all.o" -o "external/gtest/gtest-all.o" "../external/gtest/gtest-all.cc"
-In file included from ../external/gtest/gtest-all.cc:39:0:
-/home/midries/Projects/robats/TestEngine/external/gtest/gtest.h:58:43: fatal error: gtest/internal/gtest-internal.h: No such file or directory
- #include "gtest/internal/gtest-internal.h"
-                                           ^
-compilation terminated.
-make: *** [external/gtest/gtest-all.o] Error 1
-16:09:32 **** Clean-only build of configuration Debug for project TestEngine ****
-make clean 
-rm -rf  ./test/main.o  ./external/gtest/gtest-all.o  ./external/gtest/gtest-all.d  ./test/main.d  TestEngine
- 
-16:09:34 **** Clean-only build of configuration Debug for project TestEngine ****
-make clean 
-rm -rf  ./test/main.o  ./external/gtest/gtest-all.o  ./external/gtest/gtest-all.d  ./test/main.d  TestEngine
- 
-16:09:34 **** Build of configuration Debug for project TestEngine ****
-make all 
-Building file: ../test/main.cpp
-Invoking: GCC C++ Compiler
-g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"test/main.d" -MT"test/main.o" -o "test/main.o" "../test/main.cpp"
-Finished building: ../test/main.cpp
- 
-Building file: ../external/gtest/gtest-all.cc
-Invoking: GCC C++ Compiler
-g++ -I"/home/midries/Projects/robats/TestEngine/external" -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"external/gtest/gtest-all.d" -MT"external/gtest/gtest-all.o" -o "external/gtest/gtest-all.o" "../external/gtest/gtest-all.cc"
-In file included from ../external/gtest/gtest-all.cc:39:0:
-/home/midries/Projects/robats/TestEngine/external/gtest/gtest.h:58:43: fatal error: gtest/internal/gtest-internal.h: No such file or directory
- #include "gtest/internal/gtest-internal.h"
-                                           ^
-compilation terminated.
-make: *** [external/gtest/gtest-all.o] Error 1
-16:13:16 **** Incremental Build of configuration Debug for project TestEngine ****
-make all 
-Building file: ../external/googletest/xcode/Samples/FrameworkSample/widget.cc
-Invoking: GCC C++ Compiler
-g++ -I"/home/midries/Projects/robats/TestEngine/external" -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"external/googletest/xcode/Samples/FrameworkSample/widget.d" -MT"external/googletest/xcode/Samples/FrameworkSample/widget.o" -o "external/googletest/xcode/Samples/FrameworkSample/widget.o" "../external/googletest/xcode/Samples/FrameworkSample/widget.cc"
-In file included from ../external/googletest/xcode/Samples/FrameworkSample/widget.cc:38:0:
-../external/googletest/xcode/Samples/FrameworkSample/widget.h:40:2: warning: #import is a deprecated GCC extension [-Wdeprecated]
- #import <string>
-  ^
-../external/googletest/xcode/Samples/FrameworkSample/widget.cc: In member function ‘void Widget::GetCharPtrValue(char*, size_t) const’:
-../external/googletest/xcode/Samples/FrameworkSample/widget.cc:60:44: error: ‘strncpy’ was not declared in this scope
-   strncpy(buffer, name_.c_str(), max_size-1);
-                                            ^
-make: *** [external/googletest/xcode/Samples/FrameworkSample/widget.o] Error 1
-16:13:29 **** Clean-only build of configuration Debug for project TestEngine ****
-make clean 
-rm -rf  ./test/main.o  ./external/googletest/xcode/Samples/FrameworkSample/widget.o ./external/googletest/xcode/Samples/FrameworkSample/widget_test.o  ./external/googletest/test/gtest-death-test_ex_test.o ./external/googletest/test/gtest-death-test_test.o ./external/googletest/test/gtest-filepath_test.o ./external/googletest/test/gtest-linked_ptr_test.o ./external/googletest/test/gtest-listener_test.o ./external/googletest/test/gtest-message_test.o ./external/googletest/test/gtest-options_test.o ./external/googletest/test/gtest-param-test2_test.o ./external/googletest/test/gtest-param-test_test.o ./external/googletest/test/gtest-port_test.o ./external/googletest/test/gtest-printers_test.o ./external/googletest/test/gtest-test-part_test.o ./external/googletest/test/gtest-tuple_test.o ./external/googletest/test/gtest-typed-test2_test.o ./external/googletest/test/gtest-typed-test_test.o ./external/googletest/test/gtest-unittest-api_test.o ./external/googletest/test/gtest_all_test.o ./external/googletest/test/gtest_break_on_failure_unittest_.o ./external/googletest/test/gtest_catch_exceptions_test_.o ./external/googletest/test/gtest_color_test_.o ./external/googletest/test/gtest_env_var_test_.o ./external/googletest/test/gtest_environment_test.o ./external/googletest/test/gtest_filter_unittest_.o ./external/googletest/test/gtest_help_test_.o ./external/googletest/test/gtest_list_tests_unittest_.o ./external/googletest/test/gtest_main_unittest.o ./external/googletest/test/gtest_no_test_unittest.o ./external/googletest/test/gtest_output_test_.o ./external/googletest/test/gtest_pred_impl_unittest.o ./external/googletest/test/gtest_premature_exit_test.o ./external/googletest/test/gtest_prod_test.o ./external/googletest/test/gtest_repeat_test.o ./external/googletest/test/gtest_shuffle_test_.o ./external/googletest/test/gtest_sole_header_test.o ./external/googletest/test/gtest_stress_test.o ./external/googletest/test/gtest_throw_on_failure_ex_test.o ./external/googletest/test/gtest_throw_on_failure_test_.o ./external/googletest/test/gtest_uninitialized_test_.o ./external/googletest/test/gtest_unittest.o ./external/googletest/test/gtest_xml_outfile1_test_.o ./external/googletest/test/gtest_xml_outfile2_test_.o ./external/googletest/test/gtest_xml_output_unittest_.o ./external/googletest/test/production.o  ./external/googletest/src/gtest-all.o ./external/googletest/src/gtest-death-test.o ./external/googletest/src/gtest-filepath.o ./external/googletest/src/gtest-port.o ./external/googletest/src/gtest-printers.o ./external/googletest/src/gtest-test-part.o ./external/googletest/src/gtest-typed-test.o ./external/googletest/src/gtest.o ./external/googletest/src/gtest_main.o  ./external/googletest/samples/sample1.o ./external/googletest/samples/sample10_unittest.o ./external/googletest/samples/sample1_unittest.o ./external/googletest/samples/sample2.o ./external/googletest/samples/sample2_unittest.o ./external/googletest/samples/sample3_unittest.o ./external/googletest/samples/sample4.o ./external/googletest/samples/sample4_unittest.o ./external/googletest/samples/sample5_unittest.o ./external/googletest/samples/sample6_unittest.o ./external/googletest/samples/sample7_unittest.o ./external/googletest/samples/sample8_unittest.o ./external/googletest/samples/sample9_unittest.o  ./external/googletest/codegear/gtest_all.o ./external/googletest/codegear/gtest_link.o  ./external/googletest/xcode/Samples/FrameworkSample/widget.d ./external/googletest/xcode/Samples/FrameworkSample/widget_test.d  ./external/googletest/test/gtest-death-test_ex_test.d ./external/googletest/test/gtest-death-test_test.d ./external/googletest/test/gtest-filepath_test.d ./external/googletest/test/gtest-linked_ptr_test.d ./external/googletest/test/gtest-listener_test.d ./external/googletest/test/gtest-message_test.d ./external/googletest/test/gtest-options_test.d ./external/googletest/test/gtest-param-test2_test.d ./external/googletest/test/gtest-param-test_test.d ./external/googletest/test/gtest-port_test.d ./external/googletest/test/gtest-printers_test.d ./external/googletest/test/gtest-test-part_test.d ./external/googletest/test/gtest-tuple_test.d ./external/googletest/test/gtest-typed-test2_test.d ./external/googletest/test/gtest-typed-test_test.d ./external/googletest/test/gtest-unittest-api_test.d ./external/googletest/test/gtest_all_test.d ./external/googletest/test/gtest_break_on_failure_unittest_.d ./external/googletest/test/gtest_catch_exceptions_test_.d ./external/googletest/test/gtest_color_test_.d ./external/googletest/test/gtest_env_var_test_.d ./external/googletest/test/gtest_environment_test.d ./external/googletest/test/gtest_filter_unittest_.d ./external/googletest/test/gtest_help_test_.d ./external/googletest/test/gtest_list_tests_unittest_.d ./external/googletest/test/gtest_main_unittest.d ./external/googletest/test/gtest_no_test_unittest.d ./external/googletest/test/gtest_output_test_.d ./external/googletest/test/gtest_pred_impl_unittest.d ./external/googletest/test/gtest_premature_exit_test.d ./external/googletest/test/gtest_prod_test.d ./external/googletest/test/gtest_repeat_test.d ./external/googletest/test/gtest_shuffle_test_.d ./external/googletest/test/gtest_sole_header_test.d ./external/googletest/test/gtest_stress_test.d ./external/googletest/test/gtest_throw_on_failure_ex_test.d ./external/googletest/test/gtest_throw_on_failure_test_.d ./external/googletest/test/gtest_uninitialized_test_.d ./external/googletest/test/gtest_unittest.d ./external/googletest/test/gtest_xml_outfile1_test_.d ./external/googletest/test/gtest_xml_outfile2_test_.d ./external/googletest/test/gtest_xml_output_unittest_.d ./external/googletest/test/production.d  ./external/googletest/src/gtest-all.d ./external/googletest/src/gtest-death-test.d ./external/googletest/src/gtest-filepath.d ./external/googletest/src/gtest-port.d ./external/googletest/src/gtest-printers.d ./external/googletest/src/gtest-test-part.d ./external/googletest/src/gtest-typed-test.d ./external/googletest/src/gtest.d ./external/googletest/src/gtest_main.d  ./external/googletest/samples/sample1.d ./external/googletest/samples/sample10_unittest.d ./external/googletest/samples/sample1_unittest.d ./external/googletest/samples/sample2.d ./external/googletest/samples/sample2_unittest.d ./external/googletest/samples/sample3_unittest.d ./external/googletest/samples/sample4.d ./external/googletest/samples/sample4_unittest.d ./external/googletest/samples/sample5_unittest.d ./external/googletest/samples/sample6_unittest.d ./external/googletest/samples/sample7_unittest.d ./external/googletest/samples/sample8_unittest.d ./external/googletest/samples/sample9_unittest.d  ./external/googletest/codegear/gtest_all.d ./external/googletest/codegear/gtest_link.d  ./test/main.d  TestEngine
- 
-16:13:31 **** Clean-only build of configuration Debug for project TestEngine ****
-make clean 
-rm -rf  ./test/main.o  ./external/googletest/xcode/Samples/FrameworkSample/widget.o ./external/googletest/xcode/Samples/FrameworkSample/widget_test.o  ./external/googletest/test/gtest-death-test_ex_test.o ./external/googletest/test/gtest-death-test_test.o ./external/googletest/test/gtest-filepath_test.o ./external/googletest/test/gtest-linked_ptr_test.o ./external/googletest/test/gtest-listener_test.o ./external/googletest/test/gtest-message_test.o ./external/googletest/test/gtest-options_test.o ./external/googletest/test/gtest-param-test2_test.o ./external/googletest/test/gtest-param-test_test.o ./external/googletest/test/gtest-port_test.o ./external/googletest/test/gtest-printers_test.o ./external/googletest/test/gtest-test-part_test.o ./external/googletest/test/gtest-tuple_test.o ./external/googletest/test/gtest-typed-test2_test.o ./external/googletest/test/gtest-typed-test_test.o ./external/googletest/test/gtest-unittest-api_test.o ./external/googletest/test/gtest_all_test.o ./external/googletest/test/gtest_break_on_failure_unittest_.o ./external/googletest/test/gtest_catch_exceptions_test_.o ./external/googletest/test/gtest_color_test_.o ./external/googletest/test/gtest_env_var_test_.o ./external/googletest/test/gtest_environment_test.o ./external/googletest/test/gtest_filter_unittest_.o ./external/googletest/test/gtest_help_test_.o ./external/googletest/test/gtest_list_tests_unittest_.o ./external/googletest/test/gtest_main_unittest.o ./external/googletest/test/gtest_no_test_unittest.o ./external/googletest/test/gtest_output_test_.o ./external/googletest/test/gtest_pred_impl_unittest.o ./external/googletest/test/gtest_premature_exit_test.o ./external/googletest/test/gtest_prod_test.o ./external/googletest/test/gtest_repeat_test.o ./external/googletest/test/gtest_shuffle_test_.o ./external/googletest/test/gtest_sole_header_test.o ./external/googletest/test/gtest_stress_test.o ./external/googletest/test/gtest_throw_on_failure_ex_test.o ./external/googletest/test/gtest_throw_on_failure_test_.o ./external/googletest/test/gtest_uninitialized_test_.o ./external/googletest/test/gtest_unittest.o ./external/googletest/test/gtest_xml_outfile1_test_.o ./external/googletest/test/gtest_xml_outfile2_test_.o ./external/googletest/test/gtest_xml_output_unittest_.o ./external/googletest/test/production.o  ./external/googletest/src/gtest-all.o ./external/googletest/src/gtest-death-test.o ./external/googletest/src/gtest-filepath.o ./external/googletest/src/gtest-port.o ./external/googletest/src/gtest-printers.o ./external/googletest/src/gtest-test-part.o ./external/googletest/src/gtest-typed-test.o ./external/googletest/src/gtest.o ./external/googletest/src/gtest_main.o  ./external/googletest/samples/sample1.o ./external/googletest/samples/sample10_unittest.o ./external/googletest/samples/sample1_unittest.o ./external/googletest/samples/sample2.o ./external/googletest/samples/sample2_unittest.o ./external/googletest/samples/sample3_unittest.o ./external/googletest/samples/sample4.o ./external/googletest/samples/sample4_unittest.o ./external/googletest/samples/sample5_unittest.o ./external/googletest/samples/sample6_unittest.o ./external/googletest/samples/sample7_unittest.o ./external/googletest/samples/sample8_unittest.o ./external/googletest/samples/sample9_unittest.o  ./external/googletest/codegear/gtest_all.o ./external/googletest/codegear/gtest_link.o  ./external/googletest/xcode/Samples/FrameworkSample/widget.d ./external/googletest/xcode/Samples/FrameworkSample/widget_test.d  ./external/googletest/test/gtest-death-test_ex_test.d ./external/googletest/test/gtest-death-test_test.d ./external/googletest/test/gtest-filepath_test.d ./external/googletest/test/gtest-linked_ptr_test.d ./external/googletest/test/gtest-listener_test.d ./external/googletest/test/gtest-message_test.d ./external/googletest/test/gtest-options_test.d ./external/googletest/test/gtest-param-test2_test.d ./external/googletest/test/gtest-param-test_test.d ./external/googletest/test/gtest-port_test.d ./external/googletest/test/gtest-printers_test.d ./external/googletest/test/gtest-test-part_test.d ./external/googletest/test/gtest-tuple_test.d ./external/googletest/test/gtest-typed-test2_test.d ./external/googletest/test/gtest-typed-test_test.d ./external/googletest/test/gtest-unittest-api_test.d ./external/googletest/test/gtest_all_test.d ./external/googletest/test/gtest_break_on_failure_unittest_.d ./external/googletest/test/gtest_catch_exceptions_test_.d ./external/googletest/test/gtest_color_test_.d ./external/googletest/test/gtest_env_var_test_.d ./external/googletest/test/gtest_environment_test.d ./external/googletest/test/gtest_filter_unittest_.d ./external/googletest/test/gtest_help_test_.d ./external/googletest/test/gtest_list_tests_unittest_.d ./external/googletest/test/gtest_main_unittest.d ./external/googletest/test/gtest_no_test_unittest.d ./external/googletest/test/gtest_output_test_.d ./external/googletest/test/gtest_pred_impl_unittest.d ./external/googletest/test/gtest_premature_exit_test.d ./external/googletest/test/gtest_prod_test.d ./external/googletest/test/gtest_repeat_test.d ./external/googletest/test/gtest_shuffle_test_.d ./external/googletest/test/gtest_sole_header_test.d ./external/googletest/test/gtest_stress_test.d ./external/googletest/test/gtest_throw_on_failure_ex_test.d ./external/googletest/test/gtest_throw_on_failure_test_.d ./external/googletest/test/gtest_uninitialized_test_.d ./external/googletest/test/gtest_unittest.d ./external/googletest/test/gtest_xml_outfile1_test_.d ./external/googletest/test/gtest_xml_outfile2_test_.d ./external/googletest/test/gtest_xml_output_unittest_.d ./external/googletest/test/production.d  ./external/googletest/src/gtest-all.d ./external/googletest/src/gtest-death-test.d ./external/googletest/src/gtest-filepath.d ./external/googletest/src/gtest-port.d ./external/googletest/src/gtest-printers.d ./external/googletest/src/gtest-test-part.d ./external/googletest/src/gtest-typed-test.d ./external/googletest/src/gtest.d ./external/googletest/src/gtest_main.d  ./external/googletest/samples/sample1.d ./external/googletest/samples/sample10_unittest.d ./external/googletest/samples/sample1_unittest.d ./external/googletest/samples/sample2.d ./external/googletest/samples/sample2_unittest.d ./external/googletest/samples/sample3_unittest.d ./external/googletest/samples/sample4.d ./external/googletest/samples/sample4_unittest.d ./external/googletest/samples/sample5_unittest.d ./external/googletest/samples/sample6_unittest.d ./external/googletest/samples/sample7_unittest.d ./external/googletest/samples/sample8_unittest.d ./external/googletest/samples/sample9_unittest.d  ./external/googletest/codegear/gtest_all.d ./external/googletest/codegear/gtest_link.d  ./test/main.d  TestEngine
- 
-16:13:31 **** Build of configuration Debug for project TestEngine ****
-make all 
-Building file: ../test/main.cpp
-Invoking: GCC C++ Compiler
-g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"test/main.d" -MT"test/main.o" -o "test/main.o" "../test/main.cpp"
-Finished building: ../test/main.cpp
- 
-Building file: ../external/googletest/xcode/Samples/FrameworkSample/widget.cc
-Invoking: GCC C++ Compiler
-g++ -I"/home/midries/Projects/robats/TestEngine/external" -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"external/googletest/xcode/Samples/FrameworkSample/widget.d" -MT"external/googletest/xcode/Samples/FrameworkSample/widget.o" -o "external/googletest/xcode/Samples/FrameworkSample/widget.o" "../external/googletest/xcode/Samples/FrameworkSample/widget.cc"
-In file included from ../external/googletest/xcode/Samples/FrameworkSample/widget.cc:38:0:
-../external/googletest/xcode/Samples/FrameworkSample/widget.h:40:2: warning: #import is a deprecated GCC extension [-Wdeprecated]
- #import <string>
-  ^
-../external/googletest/xcode/Samples/FrameworkSample/widget.cc: In member function ‘void Widget::GetCharPtrValue(char*, size_t) const’:
-../external/googletest/xcode/Samples/FrameworkSample/widget.cc:60:44: error: ‘strncpy’ was not declared in this scope
-   strncpy(buffer, name_.c_str(), max_size-1);
-                                            ^
-make: *** [external/googletest/xcode/Samples/FrameworkSample/widget.o] Error 1
-16:13:55 **** Incremental Build of configuration Debug for project TestEngine ****
-make all 
-Building file: ../external/googletest/xcode/Samples/FrameworkSample/widget.cc
-Invoking: GCC C++ Compiler
-g++ -I"/home/midries/Projects/robats/TestEngine/external" -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"external/googletest/xcode/Samples/FrameworkSample/widget.d" -MT"external/googletest/xcode/Samples/FrameworkSample/widget.o" -o "external/googletest/xcode/Samples/FrameworkSample/widget.o" "../external/googletest/xcode/Samples/FrameworkSample/widget.cc"
-In file included from ../external/googletest/xcode/Samples/FrameworkSample/widget.cc:38:0:
-../external/googletest/xcode/Samples/FrameworkSample/widget.h:40:2: warning: #import is a deprecated GCC extension [-Wdeprecated]
- #import <string>
-  ^
-Finished building: ../external/googletest/xcode/Samples/FrameworkSample/widget.cc
- 
-Building file: ../external/googletest/xcode/Samples/FrameworkSample/widget_test.cc
-Invoking: GCC C++ Compiler
-g++ -I"/home/midries/Projects/robats/TestEngine/external" -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"external/googletest/xcode/Samples/FrameworkSample/widget_test.d" -MT"external/googletest/xcode/Samples/FrameworkSample/widget_test.o" -o "external/googletest/xcode/Samples/FrameworkSample/widget_test.o" "../external/googletest/xcode/Samples/FrameworkSample/widget_test.cc"
-../external/googletest/xcode/Samples/FrameworkSample/widget_test.cc:39:25: fatal error: gtest/gtest.h: No such file or directory
- #include "gtest/gtest.h"
-                         ^
-compilation terminated.
-make: *** [external/googletest/xcode/Samples/FrameworkSample/widget_test.o] Error 1
-16:14:35 **** Incremental Build of configuration Debug for project TestEngine ****
-make all 
-Building file: ../external/googletest/xcode/Samples/FrameworkSample/widget.cc
-Invoking: GCC C++ Compiler
-g++ -I"/home/midries/Projects/robats/TestEngine/external" -I"/home/midries/Projects/robats/TestEngine/external/googletest/include" -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"external/googletest/xcode/Samples/FrameworkSample/widget.d" -MT"external/googletest/xcode/Samples/FrameworkSample/widget.o" -o "external/googletest/xcode/Samples/FrameworkSample/widget.o" "../external/googletest/xcode/Samples/FrameworkSample/widget.cc"
-In file included from ../external/googletest/xcode/Samples/FrameworkSample/widget.cc:38:0:
-../external/googletest/xcode/Samples/FrameworkSample/widget.h:40:2: warning: #import is a deprecated GCC extension [-Wdeprecated]
- #import <string>
-  ^
-Finished building: ../external/googletest/xcode/Samples/FrameworkSample/widget.cc
- 
-Building file: ../external/googletest/xcode/Samples/FrameworkSample/widget_test.cc
-Invoking: GCC C++ Compiler
-g++ -I"/home/midries/Projects/robats/TestEngine/external" -I"/home/midries/Projects/robats/TestEngine/external/googletest/include" -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"external/googletest/xcode/Samples/FrameworkSample/widget_test.d" -MT"external/googletest/xcode/Samples/FrameworkSample/widget_test.o" -o "external/googletest/xcode/Samples/FrameworkSample/widget_test.o" "../external/googletest/xcode/Samples/FrameworkSample/widget_test.cc"
-../external/googletest/xcode/Samples/FrameworkSample/widget_test.cc:41:27: fatal error: Widget/widget.h: No such file or directory
- #include <Widget/widget.h>
-                           ^
-compilation terminated.
-make: *** [external/googletest/xcode/Samples/FrameworkSample/widget_test.o] Error 1
-16:14:58 **** Incremental Build of configuration Debug for project TestEngine ****
-make all 
-Building file: ../external/googletest/test/gtest-death-test_ex_test.cc
-Invoking: GCC C++ Compiler
-g++ -I"/home/midries/Projects/robats/TestEngine/external" -I"/home/midries/Projects/robats/TestEngine/external/googletest/include" -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"external/googletest/test/gtest-death-test_ex_test.d" -MT"external/googletest/test/gtest-death-test_ex_test.o" -o "external/googletest/test/gtest-death-test_ex_test.o" "../external/googletest/test/gtest-death-test_ex_test.cc"
-../external/googletest/test/gtest-death-test_ex_test.cc: In function ‘int main(int, char**)’:
-../external/googletest/test/gtest-death-test_ex_test.cc:91:43: error: ‘GTEST_ENABLE_CATCH_EXCEPTIONS_’ was not declared in this scope
-   testing::GTEST_FLAG(catch_exceptions) = GTEST_ENABLE_CATCH_EXCEPTIONS_ != 0;
-                                           ^
-make: *** [external/googletest/test/gtest-death-test_ex_test.o] Error 1
-16:15:05 **** Clean-only build of configuration Debug for project TestEngine ****
-make clean 
-rm -rf  ./test/main.o  ./external/googletest/test/gtest-death-test_ex_test.o ./external/googletest/test/gtest-death-test_test.o ./external/googletest/test/gtest-filepath_test.o ./external/googletest/test/gtest-linked_ptr_test.o ./external/googletest/test/gtest-listener_test.o ./external/googletest/test/gtest-message_test.o ./external/googletest/test/gtest-options_test.o ./external/googletest/test/gtest-param-test2_test.o ./external/googletest/test/gtest-param-test_test.o ./external/googletest/test/gtest-port_test.o ./external/googletest/test/gtest-printers_test.o ./external/googletest/test/gtest-test-part_test.o ./external/googletest/test/gtest-tuple_test.o ./external/googletest/test/gtest-typed-test2_test.o ./external/googletest/test/gtest-typed-test_test.o ./external/googletest/test/gtest-unittest-api_test.o ./external/googletest/test/gtest_all_test.o ./external/googletest/test/gtest_break_on_failure_unittest_.o ./external/googletest/test/gtest_catch_exceptions_test_.o ./external/googletest/test/gtest_color_test_.o ./external/googletest/test/gtest_env_var_test_.o ./external/googletest/test/gtest_environment_test.o ./external/googletest/test/gtest_filter_unittest_.o ./external/googletest/test/gtest_help_test_.o ./external/googletest/test/gtest_list_tests_unittest_.o ./external/googletest/test/gtest_main_unittest.o ./external/googletest/test/gtest_no_test_unittest.o ./external/googletest/test/gtest_output_test_.o ./external/googletest/test/gtest_pred_impl_unittest.o ./external/googletest/test/gtest_premature_exit_test.o ./external/googletest/test/gtest_prod_test.o ./external/googletest/test/gtest_repeat_test.o ./external/googletest/test/gtest_shuffle_test_.o ./external/googletest/test/gtest_sole_header_test.o ./external/googletest/test/gtest_stress_test.o ./external/googletest/test/gtest_throw_on_failure_ex_test.o ./external/googletest/test/gtest_throw_on_failure_test_.o ./external/googletest/test/gtest_uninitialized_test_.o ./external/googletest/test/gtest_unittest.o ./external/googletest/test/gtest_xml_outfile1_test_.o ./external/googletest/test/gtest_xml_outfile2_test_.o ./external/googletest/test/gtest_xml_output_unittest_.o ./external/googletest/test/production.o  ./external/googletest/src/gtest-all.o ./external/googletest/src/gtest-death-test.o ./external/googletest/src/gtest-filepath.o ./external/googletest/src/gtest-port.o ./external/googletest/src/gtest-printers.o ./external/googletest/src/gtest-test-part.o ./external/googletest/src/gtest-typed-test.o ./external/googletest/src/gtest.o ./external/googletest/src/gtest_main.o  ./external/googletest/samples/sample1.o ./external/googletest/samples/sample10_unittest.o ./external/googletest/samples/sample1_unittest.o ./external/googletest/samples/sample2.o ./external/googletest/samples/sample2_unittest.o ./external/googletest/samples/sample3_unittest.o ./external/googletest/samples/sample4.o ./external/googletest/samples/sample4_unittest.o ./external/googletest/samples/sample5_unittest.o ./external/googletest/samples/sample6_unittest.o ./external/googletest/samples/sample7_unittest.o ./external/googletest/samples/sample8_unittest.o ./external/googletest/samples/sample9_unittest.o  ./external/googletest/codegear/gtest_all.o ./external/googletest/codegear/gtest_link.o  ./external/googletest/test/gtest-death-test_ex_test.d ./external/googletest/test/gtest-death-test_test.d ./external/googletest/test/gtest-filepath_test.d ./external/googletest/test/gtest-linked_ptr_test.d ./external/googletest/test/gtest-listener_test.d ./external/googletest/test/gtest-message_test.d ./external/googletest/test/gtest-options_test.d ./external/googletest/test/gtest-param-test2_test.d ./external/googletest/test/gtest-param-test_test.d ./external/googletest/test/gtest-port_test.d ./external/googletest/test/gtest-printers_test.d ./external/googletest/test/gtest-test-part_test.d ./external/googletest/test/gtest-tuple_test.d ./external/googletest/test/gtest-typed-test2_test.d ./external/googletest/test/gtest-typed-test_test.d ./external/googletest/test/gtest-unittest-api_test.d ./external/googletest/test/gtest_all_test.d ./external/googletest/test/gtest_break_on_failure_unittest_.d ./external/googletest/test/gtest_catch_exceptions_test_.d ./external/googletest/test/gtest_color_test_.d ./external/googletest/test/gtest_env_var_test_.d ./external/googletest/test/gtest_environment_test.d ./external/googletest/test/gtest_filter_unittest_.d ./external/googletest/test/gtest_help_test_.d ./external/googletest/test/gtest_list_tests_unittest_.d ./external/googletest/test/gtest_main_unittest.d ./external/googletest/test/gtest_no_test_unittest.d ./external/googletest/test/gtest_output_test_.d ./external/googletest/test/gtest_pred_impl_unittest.d ./external/googletest/test/gtest_premature_exit_test.d ./external/googletest/test/gtest_prod_test.d ./external/googletest/test/gtest_repeat_test.d ./external/googletest/test/gtest_shuffle_test_.d ./external/googletest/test/gtest_sole_header_test.d ./external/googletest/test/gtest_stress_test.d ./external/googletest/test/gtest_throw_on_failure_ex_test.d ./external/googletest/test/gtest_throw_on_failure_test_.d ./external/googletest/test/gtest_uninitialized_test_.d ./external/googletest/test/gtest_unittest.d ./external/googletest/test/gtest_xml_outfile1_test_.d ./external/googletest/test/gtest_xml_outfile2_test_.d ./external/googletest/test/gtest_xml_output_unittest_.d ./external/googletest/test/production.d  ./external/googletest/src/gtest-all.d ./external/googletest/src/gtest-death-test.d ./external/googletest/src/gtest-filepath.d ./external/googletest/src/gtest-port.d ./external/googletest/src/gtest-printers.d ./external/googletest/src/gtest-test-part.d ./external/googletest/src/gtest-typed-test.d ./external/googletest/src/gtest.d ./external/googletest/src/gtest_main.d  ./external/googletest/samples/sample1.d ./external/googletest/samples/sample10_unittest.d ./external/googletest/samples/sample1_unittest.d ./external/googletest/samples/sample2.d ./external/googletest/samples/sample2_unittest.d ./external/googletest/samples/sample3_unittest.d ./external/googletest/samples/sample4.d ./external/googletest/samples/sample4_unittest.d ./external/googletest/samples/sample5_unittest.d ./external/googletest/samples/sample6_unittest.d ./external/googletest/samples/sample7_unittest.d ./external/googletest/samples/sample8_unittest.d ./external/googletest/samples/sample9_unittest.d  ./external/googletest/codegear/gtest_all.d ./external/googletest/codegear/gtest_link.d  ./test/main.d  TestEngine
- 
-16:15:06 **** Clean-only build of configuration Debug for project TestEngine ****
-make clean 
-rm -rf  ./test/main.o  ./external/googletest/test/gtest-death-test_ex_test.o ./external/googletest/test/gtest-death-test_test.o ./external/googletest/test/gtest-filepath_test.o ./external/googletest/test/gtest-linked_ptr_test.o ./external/googletest/test/gtest-listener_test.o ./external/googletest/test/gtest-message_test.o ./external/googletest/test/gtest-options_test.o ./external/googletest/test/gtest-param-test2_test.o ./external/googletest/test/gtest-param-test_test.o ./external/googletest/test/gtest-port_test.o ./external/googletest/test/gtest-printers_test.o ./external/googletest/test/gtest-test-part_test.o ./external/googletest/test/gtest-tuple_test.o ./external/googletest/test/gtest-typed-test2_test.o ./external/googletest/test/gtest-typed-test_test.o ./external/googletest/test/gtest-unittest-api_test.o ./external/googletest/test/gtest_all_test.o ./external/googletest/test/gtest_break_on_failure_unittest_.o ./external/googletest/test/gtest_catch_exceptions_test_.o ./external/googletest/test/gtest_color_test_.o ./external/googletest/test/gtest_env_var_test_.o ./external/googletest/test/gtest_environment_test.o ./external/googletest/test/gtest_filter_unittest_.o ./external/googletest/test/gtest_help_test_.o ./external/googletest/test/gtest_list_tests_unittest_.o ./external/googletest/test/gtest_main_unittest.o ./external/googletest/test/gtest_no_test_unittest.o ./external/googletest/test/gtest_output_test_.o ./external/googletest/test/gtest_pred_impl_unittest.o ./external/googletest/test/gtest_premature_exit_test.o ./external/googletest/test/gtest_prod_test.o ./external/googletest/test/gtest_repeat_test.o ./external/googletest/test/gtest_shuffle_test_.o ./external/googletest/test/gtest_sole_header_test.o ./external/googletest/test/gtest_stress_test.o ./external/googletest/test/gtest_throw_on_failure_ex_test.o ./external/googletest/test/gtest_throw_on_failure_test_.o ./external/googletest/test/gtest_uninitialized_test_.o ./external/googletest/test/gtest_unittest.o ./external/googletest/test/gtest_xml_outfile1_test_.o ./external/googletest/test/gtest_xml_outfile2_test_.o ./external/googletest/test/gtest_xml_output_unittest_.o ./external/googletest/test/production.o  ./external/googletest/src/gtest-all.o ./external/googletest/src/gtest-death-test.o ./external/googletest/src/gtest-filepath.o ./external/googletest/src/gtest-port.o ./external/googletest/src/gtest-printers.o ./external/googletest/src/gtest-test-part.o ./external/googletest/src/gtest-typed-test.o ./external/googletest/src/gtest.o ./external/googletest/src/gtest_main.o  ./external/googletest/samples/sample1.o ./external/googletest/samples/sample10_unittest.o ./external/googletest/samples/sample1_unittest.o ./external/googletest/samples/sample2.o ./external/googletest/samples/sample2_unittest.o ./external/googletest/samples/sample3_unittest.o ./external/googletest/samples/sample4.o ./external/googletest/samples/sample4_unittest.o ./external/googletest/samples/sample5_unittest.o ./external/googletest/samples/sample6_unittest.o ./external/googletest/samples/sample7_unittest.o ./external/googletest/samples/sample8_unittest.o ./external/googletest/samples/sample9_unittest.o  ./external/googletest/codegear/gtest_all.o ./external/googletest/codegear/gtest_link.o  ./external/googletest/test/gtest-death-test_ex_test.d ./external/googletest/test/gtest-death-test_test.d ./external/googletest/test/gtest-filepath_test.d ./external/googletest/test/gtest-linked_ptr_test.d ./external/googletest/test/gtest-listener_test.d ./external/googletest/test/gtest-message_test.d ./external/googletest/test/gtest-options_test.d ./external/googletest/test/gtest-param-test2_test.d ./external/googletest/test/gtest-param-test_test.d ./external/googletest/test/gtest-port_test.d ./external/googletest/test/gtest-printers_test.d ./external/googletest/test/gtest-test-part_test.d ./external/googletest/test/gtest-tuple_test.d ./external/googletest/test/gtest-typed-test2_test.d ./external/googletest/test/gtest-typed-test_test.d ./external/googletest/test/gtest-unittest-api_test.d ./external/googletest/test/gtest_all_test.d ./external/googletest/test/gtest_break_on_failure_unittest_.d ./external/googletest/test/gtest_catch_exceptions_test_.d ./external/googletest/test/gtest_color_test_.d ./external/googletest/test/gtest_env_var_test_.d ./external/googletest/test/gtest_environment_test.d ./external/googletest/test/gtest_filter_unittest_.d ./external/googletest/test/gtest_help_test_.d ./external/googletest/test/gtest_list_tests_unittest_.d ./external/googletest/test/gtest_main_unittest.d ./external/googletest/test/gtest_no_test_unittest.d ./external/googletest/test/gtest_output_test_.d ./external/googletest/test/gtest_pred_impl_unittest.d ./external/googletest/test/gtest_premature_exit_test.d ./external/googletest/test/gtest_prod_test.d ./external/googletest/test/gtest_repeat_test.d ./external/googletest/test/gtest_shuffle_test_.d ./external/googletest/test/gtest_sole_header_test.d ./external/googletest/test/gtest_stress_test.d ./external/googletest/test/gtest_throw_on_failure_ex_test.d ./external/googletest/test/gtest_throw_on_failure_test_.d ./external/googletest/test/gtest_uninitialized_test_.d ./external/googletest/test/gtest_unittest.d ./external/googletest/test/gtest_xml_outfile1_test_.d ./external/googletest/test/gtest_xml_outfile2_test_.d ./external/googletest/test/gtest_xml_output_unittest_.d ./external/googletest/test/production.d  ./external/googletest/src/gtest-all.d ./external/googletest/src/gtest-death-test.d ./external/googletest/src/gtest-filepath.d ./external/googletest/src/gtest-port.d ./external/googletest/src/gtest-printers.d ./external/googletest/src/gtest-test-part.d ./external/googletest/src/gtest-typed-test.d ./external/googletest/src/gtest.d ./external/googletest/src/gtest_main.d  ./external/googletest/samples/sample1.d ./external/googletest/samples/sample10_unittest.d ./external/googletest/samples/sample1_unittest.d ./external/googletest/samples/sample2.d ./external/googletest/samples/sample2_unittest.d ./external/googletest/samples/sample3_unittest.d ./external/googletest/samples/sample4.d ./external/googletest/samples/sample4_unittest.d ./external/googletest/samples/sample5_unittest.d ./external/googletest/samples/sample6_unittest.d ./external/googletest/samples/sample7_unittest.d ./external/googletest/samples/sample8_unittest.d ./external/googletest/samples/sample9_unittest.d  ./external/googletest/codegear/gtest_all.d ./external/googletest/codegear/gtest_link.d  ./test/main.d  TestEngine
- 
-16:15:07 **** Build of configuration Debug for project TestEngine ****
-make all 
-Building file: ../test/main.cpp
-Invoking: GCC C++ Compiler
-g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"test/main.d" -MT"test/main.o" -o "test/main.o" "../test/main.cpp"
-Finished building: ../test/main.cpp
- 
-Building file: ../external/googletest/test/gtest-death-test_ex_test.cc
-Invoking: GCC C++ Compiler
-g++ -I"/home/midries/Projects/robats/TestEngine/external" -I"/home/midries/Projects/robats/TestEngine/external/googletest/include" -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"external/googletest/test/gtest-death-test_ex_test.d" -MT"external/googletest/test/gtest-death-test_ex_test.o" -o "external/googletest/test/gtest-death-test_ex_test.o" "../external/googletest/test/gtest-death-test_ex_test.cc"
-../external/googletest/test/gtest-death-test_ex_test.cc: In function ‘int main(int, char**)’:
-../external/googletest/test/gtest-death-test_ex_test.cc:91:43: error: ‘GTEST_ENABLE_CATCH_EXCEPTIONS_’ was not declared in this scope
-   testing::GTEST_FLAG(catch_exceptions) = GTEST_ENABLE_CATCH_EXCEPTIONS_ != 0;
-                                           ^
-make: *** [external/googletest/test/gtest-death-test_ex_test.o] Error 1
-16:20:00 **** Clean-only build of configuration Debug for project TestEngine ****
-make clean 
-rm -rf  ./test/main.o  ./external/googletest/test/gtest-death-test_ex_test.o ./external/googletest/test/gtest-death-test_test.o ./external/googletest/test/gtest-filepath_test.o ./external/googletest/test/gtest-linked_ptr_test.o ./external/googletest/test/gtest-listener_test.o ./external/googletest/test/gtest-message_test.o ./external/googletest/test/gtest-options_test.o ./external/googletest/test/gtest-param-test2_test.o ./external/googletest/test/gtest-param-test_test.o ./external/googletest/test/gtest-port_test.o ./external/googletest/test/gtest-printers_test.o ./external/googletest/test/gtest-test-part_test.o ./external/googletest/test/gtest-tuple_test.o ./external/googletest/test/gtest-typed-test2_test.o ./external/googletest/test/gtest-typed-test_test.o ./external/googletest/test/gtest-unittest-api_test.o ./external/googletest/test/gtest_all_test.o ./external/googletest/test/gtest_break_on_failure_unittest_.o ./external/googletest/test/gtest_catch_exceptions_test_.o ./external/googletest/test/gtest_color_test_.o ./external/googletest/test/gtest_env_var_test_.o ./external/googletest/test/gtest_environment_test.o ./external/googletest/test/gtest_filter_unittest_.o ./external/googletest/test/gtest_help_test_.o ./external/googletest/test/gtest_list_tests_unittest_.o ./external/googletest/test/gtest_main_unittest.o ./external/googletest/test/gtest_no_test_unittest.o ./external/googletest/test/gtest_output_test_.o ./external/googletest/test/gtest_pred_impl_unittest.o ./external/googletest/test/gtest_premature_exit_test.o ./external/googletest/test/gtest_prod_test.o ./external/googletest/test/gtest_repeat_test.o ./external/googletest/test/gtest_shuffle_test_.o ./external/googletest/test/gtest_sole_header_test.o ./external/googletest/test/gtest_stress_test.o ./external/googletest/test/gtest_throw_on_failure_ex_test.o ./external/googletest/test/gtest_throw_on_failure_test_.o ./external/googletest/test/gtest_uninitialized_test_.o ./external/googletest/test/gtest_unittest.o ./external/googletest/test/gtest_xml_outfile1_test_.o ./external/googletest/test/gtest_xml_outfile2_test_.o ./external/googletest/test/gtest_xml_output_unittest_.o ./external/googletest/test/production.o  ./external/googletest/src/gtest-all.o ./external/googletest/src/gtest-death-test.o ./external/googletest/src/gtest-filepath.o ./external/googletest/src/gtest-port.o ./external/googletest/src/gtest-printers.o ./external/googletest/src/gtest-test-part.o ./external/googletest/src/gtest-typed-test.o ./external/googletest/src/gtest.o ./external/googletest/src/gtest_main.o  ./external/googletest/samples/sample1.o ./external/googletest/samples/sample10_unittest.o ./external/googletest/samples/sample1_unittest.o ./external/googletest/samples/sample2.o ./external/googletest/samples/sample2_unittest.o ./external/googletest/samples/sample3_unittest.o ./external/googletest/samples/sample4.o ./external/googletest/samples/sample4_unittest.o ./external/googletest/samples/sample5_unittest.o ./external/googletest/samples/sample6_unittest.o ./external/googletest/samples/sample7_unittest.o ./external/googletest/samples/sample8_unittest.o ./external/googletest/samples/sample9_unittest.o  ./external/googletest/codegear/gtest_all.o ./external/googletest/codegear/gtest_link.o  ./external/googletest/test/gtest-death-test_ex_test.d ./external/googletest/test/gtest-death-test_test.d ./external/googletest/test/gtest-filepath_test.d ./external/googletest/test/gtest-linked_ptr_test.d ./external/googletest/test/gtest-listener_test.d ./external/googletest/test/gtest-message_test.d ./external/googletest/test/gtest-options_test.d ./external/googletest/test/gtest-param-test2_test.d ./external/googletest/test/gtest-param-test_test.d ./external/googletest/test/gtest-port_test.d ./external/googletest/test/gtest-printers_test.d ./external/googletest/test/gtest-test-part_test.d ./external/googletest/test/gtest-tuple_test.d ./external/googletest/test/gtest-typed-test2_test.d ./external/googletest/test/gtest-typed-test_test.d ./external/googletest/test/gtest-unittest-api_test.d ./external/googletest/test/gtest_all_test.d ./external/googletest/test/gtest_break_on_failure_unittest_.d ./external/googletest/test/gtest_catch_exceptions_test_.d ./external/googletest/test/gtest_color_test_.d ./external/googletest/test/gtest_env_var_test_.d ./external/googletest/test/gtest_environment_test.d ./external/googletest/test/gtest_filter_unittest_.d ./external/googletest/test/gtest_help_test_.d ./external/googletest/test/gtest_list_tests_unittest_.d ./external/googletest/test/gtest_main_unittest.d ./external/googletest/test/gtest_no_test_unittest.d ./external/googletest/test/gtest_output_test_.d ./external/googletest/test/gtest_pred_impl_unittest.d ./external/googletest/test/gtest_premature_exit_test.d ./external/googletest/test/gtest_prod_test.d ./external/googletest/test/gtest_repeat_test.d ./external/googletest/test/gtest_shuffle_test_.d ./external/googletest/test/gtest_sole_header_test.d ./external/googletest/test/gtest_stress_test.d ./external/googletest/test/gtest_throw_on_failure_ex_test.d ./external/googletest/test/gtest_throw_on_failure_test_.d ./external/googletest/test/gtest_uninitialized_test_.d ./external/googletest/test/gtest_unittest.d ./external/googletest/test/gtest_xml_outfile1_test_.d ./external/googletest/test/gtest_xml_outfile2_test_.d ./external/googletest/test/gtest_xml_output_unittest_.d ./external/googletest/test/production.d  ./external/googletest/src/gtest-all.d ./external/googletest/src/gtest-death-test.d ./external/googletest/src/gtest-filepath.d ./external/googletest/src/gtest-port.d ./external/googletest/src/gtest-printers.d ./external/googletest/src/gtest-test-part.d ./external/googletest/src/gtest-typed-test.d ./external/googletest/src/gtest.d ./external/googletest/src/gtest_main.d  ./external/googletest/samples/sample1.d ./external/googletest/samples/sample10_unittest.d ./external/googletest/samples/sample1_unittest.d ./external/googletest/samples/sample2.d ./external/googletest/samples/sample2_unittest.d ./external/googletest/samples/sample3_unittest.d ./external/googletest/samples/sample4.d ./external/googletest/samples/sample4_unittest.d ./external/googletest/samples/sample5_unittest.d ./external/googletest/samples/sample6_unittest.d ./external/googletest/samples/sample7_unittest.d ./external/googletest/samples/sample8_unittest.d ./external/googletest/samples/sample9_unittest.d  ./external/googletest/codegear/gtest_all.d ./external/googletest/codegear/gtest_link.d  ./test/main.d  TestEngine
- 
-16:20:01 **** Build of configuration Debug for project TestEngine ****
-make all 
-Building file: ../test/main.cpp
-Invoking: GCC C++ Compiler
-g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"test/main.d" -MT"test/main.o" -o "test/main.o" "../test/main.cpp"
-Finished building: ../test/main.cpp
- 
 Building target: TestEngine
 Invoking: GCC C++ Linker
-g++  -o "TestEngine"  ./test/main.o   -lpthread
+g++ -L"/home/midries/Projects/robats/TestEngine/external" -L"/home/midries/Projects/robats/Robats/Release" -o "TestEngine"  ./test/main.o   -lgtest -lRobats -lpthread
 Finished building target: TestEngine
  
-16:24:55 **** Clean-only build of configuration Debug for project TestEngine ****
+20:51:45 **** Incremental Build of configuration Release for project Robats ****
+make all 
+make: Nothing to be done for `all'.
+20:51:45 **** Incremental Build of configuration Debug for project RobatsEngine ****
+make all 
+Building file: ../src/RobatsEngine.cpp
+Invoking: GCC C++ Compiler
+g++ -I"/home/midries/Projects/robats/Robats/include" -O0 -g3 -Wall -c -fmessage-length=0 -std=c++11 -MMD -MP -MF"src/RobatsEngine.d" -MT"src/RobatsEngine.o" -o "src/RobatsEngine.o" "../src/RobatsEngine.cpp"
+../src/RobatsEngine.cpp:2:34: fatal error: CrazyControl/GamePad.h: No such file or directory
+ #include "CrazyControl/GamePad.h"
+                                  ^
+compilation terminated.
+make: *** [src/RobatsEngine.o] Error 1
+20:51:45 **** Incremental Build of configuration Debug for project TestEngine ****
+make all 
+make: Nothing to be done for `all'.
+20:52:38 **** Incremental Build of configuration Release for project Robats ****
+make all 
+make: Nothing to be done for `all'.
+20:52:39 **** Incremental Build of configuration Debug for project RobatsEngine ****
+make all 
+Building file: ../src/RobatsEngine.cpp
+Invoking: GCC C++ Compiler
+g++ -I"/home/midries/Projects/robats/Robats" -I"/home/midries/Projects/robats/Robats/include" -O0 -g3 -Wall -c -fmessage-length=0 -std=c++11 -MMD -MP -MF"src/RobatsEngine.d" -MT"src/RobatsEngine.o" -o "src/RobatsEngine.o" "../src/RobatsEngine.cpp"
+../src/RobatsEngine.cpp:3:42: fatal error: src/ControlEngine/AutoFlight.h: No such file or directory
+ #include "src/ControlEngine/AutoFlight.h"
+                                          ^
+compilation terminated.
+make: *** [src/RobatsEngine.o] Error 1
+20:52:39 **** Incremental Build of configuration Debug for project TestEngine ****
+make all 
+make: Nothing to be done for `all'.
+20:52:59 **** Incremental Build of configuration Release for project Robats ****
+make all 
+make: Nothing to be done for `all'.
+20:52:59 **** Incremental Build of configuration Debug for project RobatsEngine ****
+make all 
+Building file: ../src/RobatsEngine.cpp
+Invoking: GCC C++ Compiler
+g++ -I"/home/midries/Projects/robats/Robats/include" -O0 -g3 -Wall -c -fmessage-length=0 -std=c++11 -MMD -MP -MF"src/RobatsEngine.d" -MT"src/RobatsEngine.o" -o "src/RobatsEngine.o" "../src/RobatsEngine.cpp"
+../src/RobatsEngine.cpp:3:42: fatal error: src/ControlEngine/AutoFlight.h: No such file or directory
+ #include "src/ControlEngine/AutoFlight.h"
+                                          ^
+compilation terminated.
+make: *** [src/RobatsEngine.o] Error 1
+20:52:59 **** Incremental Build of configuration Debug for project TestEngine ****
+make all 
+make: Nothing to be done for `all'.
+20:53:51 **** Incremental Build of configuration Release for project Robats ****
+make all 
+make: Nothing to be done for `all'.
+20:53:51 **** Incremental Build of configuration Debug for project RobatsEngine ****
+make all 
+Building file: ../src/RobatsEngine.cpp
+Invoking: GCC C++ Compiler
+g++ -I"/home/midries/Projects/robats/Robats/include" -O0 -g3 -Wall -c -fmessage-length=0 -std=c++11 -MMD -MP -MF"src/RobatsEngine.d" -MT"src/RobatsEngine.o" -o "src/RobatsEngine.o" "../src/RobatsEngine.cpp"
+Finished building: ../src/RobatsEngine.cpp
+ 
+make: *** No rule to make target `RobatsEngine.o', needed by `RobatsEngine'. Stop.
+20:53:52 **** Incremental Build of configuration Debug for project TestEngine ****
+make all 
+make: Nothing to be done for `all'.
+20:54:14 **** Clean-only build of configuration Release for project Robats ****
+make clean 
+rm -rf  ./src/CrazyEngine/CCRTPPacket.o ./src/CrazyEngine/CCrazyRadio.o ./src/CrazyEngine/CCrazyflie.o ./src/CrazyEngine/CTOC.o  ./src/CrazyControl/AutoFlight.o ./src/CrazyControl/GamePad.o  ./src/CrazyComms/CrazyServer.o  ./src/Counter.o  ./src/CrazyEngine/CCRTPPacket.d ./src/CrazyEngine/CCrazyRadio.d ./src/CrazyEngine/CCrazyflie.d ./src/CrazyEngine/CTOC.d  ./src/CrazyControl/AutoFlight.d ./src/CrazyControl/GamePad.d  ./src/CrazyComms/CrazyServer.d  ./src/Counter.d  libRobats.so
+ 
+20:54:14 **** Clean-only build of configuration Debug for project RobatsEngine ****
+make clean 
+rm -rf  ./src/RobatsEngine.o  ./RobatsEngine.o  ./src/RobatsEngine.d  ./RobatsEngine.d  RobatsEngine
+ 
+20:54:14 **** Clean-only build of configuration Debug for project TestEngine ****
 make clean 
 rm -rf  ./test/main.o  ./test/main.d  TestEngine
  
-16:24:55 **** Incremental Build of configuration Debug for project TestEngine ****
+20:54:20 **** Build of configuration Release for project Robats ****
+make all 
+Building file: ../src/CrazyEngine/CCRTPPacket.cpp
+Invoking: GCC C++ Compiler
+g++ -I"/home/midries/Projects/robats/Robats/include" -O3 -Wall -c -fmessage-length=0 -std=c++11 -fPIC -MMD -MP -MF"src/CrazyEngine/CCRTPPacket.d" -MT"src/CrazyEngine/CCRTPPacket.o" -o "src/CrazyEngine/CCRTPPacket.o" "../src/CrazyEngine/CCRTPPacket.cpp"
+Finished building: ../src/CrazyEngine/CCRTPPacket.cpp
+ 
+Building file: ../src/CrazyEngine/CCrazyRadio.cpp
+Invoking: GCC C++ Compiler
+g++ -I"/home/midries/Projects/robats/Robats/include" -O3 -Wall -c -fmessage-length=0 -std=c++11 -fPIC -MMD -MP -MF"src/CrazyEngine/CCrazyRadio.d" -MT"src/CrazyEngine/CCrazyRadio.o" -o "src/CrazyEngine/CCrazyRadio.o" "../src/CrazyEngine/CCrazyRadio.cpp"
+Finished building: ../src/CrazyEngine/CCrazyRadio.cpp
+ 
+Building file: ../src/CrazyEngine/CCrazyflie.cpp
+Invoking: GCC C++ Compiler
+g++ -I"/home/midries/Projects/robats/Robats/include" -O3 -Wall -c -fmessage-length=0 -std=c++11 -fPIC -MMD -MP -MF"src/CrazyEngine/CCrazyflie.d" -MT"src/CrazyEngine/CCrazyflie.o" -o "src/CrazyEngine/CCrazyflie.o" "../src/CrazyEngine/CCrazyflie.cpp"
+Finished building: ../src/CrazyEngine/CCrazyflie.cpp
+ 
+Building file: ../src/CrazyEngine/CTOC.cpp
+Invoking: GCC C++ Compiler
+g++ -I"/home/midries/Projects/robats/Robats/include" -O3 -Wall -c -fmessage-length=0 -std=c++11 -fPIC -MMD -MP -MF"src/CrazyEngine/CTOC.d" -MT"src/CrazyEngine/CTOC.o" -o "src/CrazyEngine/CTOC.o" "../src/CrazyEngine/CTOC.cpp"
+../src/CrazyEngine/CTOC.cpp: In member function ‘bool CTOC::processItem(CCRTPPacket*)’:
+../src/CrazyEngine/CTOC.cpp:109:11: warning: unused variable ‘nLength’ [-Wunused-variable]
+       int nLength = crtpItem->dataLength();
+           ^
+../src/CrazyEngine/CTOC.cpp: In member function ‘bool CTOC::startLogging(std::string, std::string)’:
+../src/CrazyEngine/CTOC.cpp:216:78: warning: narrowing conversion of ‘lbCurrent.LoggingBlock::nID’ from ‘int’ to ‘char’ inside { } [-Wnarrowing]
+       char cPayload[5] = {0x01, lbCurrent.nID, teCurrent.nType, teCurrent.nID};
+                                                                              ^
+../src/CrazyEngine/CTOC.cpp:216:78: warning: narrowing conversion of ‘teCurrent.TOCElement::nType’ from ‘int’ to ‘char’ inside { } [-Wnarrowing]
+../src/CrazyEngine/CTOC.cpp:216:78: warning: narrowing conversion of ‘teCurrent.TOCElement::nID’ from ‘int’ to ‘char’ inside { } [-Wnarrowing]
+../src/CrazyEngine/CTOC.cpp: In member function ‘bool CTOC::stopLogging(std::string)’:
+../src/CrazyEngine/CTOC.cpp:265:1: warning: no return statement in function returning non-void [-Wreturn-type]
+ }
+ ^
+../src/CrazyEngine/CTOC.cpp: In member function ‘bool CTOC::isLogging(std::string)’:
+../src/CrazyEngine/CTOC.cpp:269:1: warning: no return statement in function returning non-void [-Wreturn-type]
+ }
+ ^
+../src/CrazyEngine/CTOC.cpp: In member function ‘bool CTOC::registerLoggingBlock(std::string, double)’:
+../src/CrazyEngine/CTOC.cpp:340:45: warning: narrowing conversion of ‘nID’ from ‘int’ to ‘char’ inside { } [-Wnarrowing]
+     char cPayload[4] = {0x00, nID, d10thOfMS};
+                                             ^
+../src/CrazyEngine/CTOC.cpp:340:45: warning: narrowing conversion of ‘d10thOfMS’ from ‘double’ to ‘char’ inside { } [-Wnarrowing]
+../src/CrazyEngine/CTOC.cpp: In member function ‘bool CTOC::enableLogging(std::string)’:
+../src/CrazyEngine/CTOC.cpp:382:55: warning: narrowing conversion of ‘lbCurrent.LoggingBlock::nID’ from ‘int’ to ‘char’ inside { } [-Wnarrowing]
+     char cPayload[3] = {0x03, lbCurrent.nID, d10thOfMS};
+                                                       ^
+../src/CrazyEngine/CTOC.cpp:382:55: warning: narrowing conversion of ‘d10thOfMS’ from ‘double’ to ‘char’ inside { } [-Wnarrowing]
+../src/CrazyEngine/CTOC.cpp: In member function ‘bool CTOC::unregisterLoggingBlockID(int)’:
+../src/CrazyEngine/CTOC.cpp:409:32: warning: narrowing conversion of ‘nID’ from ‘int’ to ‘char’ inside { } [-Wnarrowing]
+   char cPayload[2] = {0x02, nID};
+                                ^
+../src/CrazyEngine/CTOC.cpp: In member function ‘void CTOC::processPackets(std::list<CCRTPPacket*>)’:
+../src/CrazyEngine/CTOC.cpp:446:46: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+  while(nIndex < lbCurrent.lstElementIDs.size()) {
+                                              ^
+../src/CrazyEngine/CTOC.cpp:439:11: warning: unused variable ‘nAvailableLogBytes’ [-Wunused-variable]
+       int nAvailableLogBytes = crtpPacket->dataLength() - 5;
+           ^
+../src/CrazyEngine/CTOC.cpp: In member function ‘int CTOC::elementIDinBlock(int, int)’:
+../src/CrazyEngine/CTOC.cpp:551:53: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+     if(nElementIndex < lbCurrent.lstElementIDs.size()) {
+                                                     ^
+Finished building: ../src/CrazyEngine/CTOC.cpp
+ 
+Building file: ../src/CrazyControl/AutoFlight.cpp
+Invoking: GCC C++ Compiler
+g++ -I"/home/midries/Projects/robats/Robats/include" -O3 -Wall -c -fmessage-length=0 -std=c++11 -fPIC -MMD -MP -MF"src/CrazyControl/AutoFlight.d" -MT"src/CrazyControl/AutoFlight.o" -o "src/CrazyControl/AutoFlight.o" "../src/CrazyControl/AutoFlight.cpp"
+Finished building: ../src/CrazyControl/AutoFlight.cpp
+ 
+Building file: ../src/CrazyControl/GamePad.cpp
+Invoking: GCC C++ Compiler
+g++ -I"/home/midries/Projects/robats/Robats/include" -O3 -Wall -c -fmessage-length=0 -std=c++11 -fPIC -MMD -MP -MF"src/CrazyControl/GamePad.d" -MT"src/CrazyControl/GamePad.o" -o "src/CrazyControl/GamePad.o" "../src/CrazyControl/GamePad.cpp"
+../src/CrazyControl/GamePad.cpp: In member function ‘int GamePad::readValues(gp_values*)’:
+../src/CrazyControl/GamePad.cpp:62:1: warning: no return statement in function returning non-void [-Wreturn-type]
+ }
+ ^
+Finished building: ../src/CrazyControl/GamePad.cpp
+ 
+Building file: ../src/CrazyComms/CrazyServer.cpp
+Invoking: GCC C++ Compiler
+g++ -I"/home/midries/Projects/robats/Robats/include" -O3 -Wall -c -fmessage-length=0 -std=c++11 -fPIC -MMD -MP -MF"src/CrazyComms/CrazyServer.d" -MT"src/CrazyComms/CrazyServer.o" -o "src/CrazyComms/CrazyServer.o" "../src/CrazyComms/CrazyServer.cpp"
+In file included from ../src/CrazyComms/CrazyServer.cpp:9:0:
+/home/midries/Projects/robats/Robats/include/CrazyServer.h: In constructor ‘CrazyServer::CrazyServer(int, int*)’:
+/home/midries/Projects/robats/Robats/include/CrazyServer.h:16:6: warning: ‘CrazyServer::port’ will be initialized after [-Wreorder]
+  int port;
+      ^
+/home/midries/Projects/robats/Robats/include/CrazyServer.h:15:7: warning:   ‘int* CrazyServer::data’ [-Wreorder]
+  int* data; // [isNew, Sonar, AccX, AccY, AccZ, GyrX, GyrY, GyrZ]
+       ^
+../src/CrazyComms/CrazyServer.cpp:19:1: warning:   when initialized here [-Wreorder]
+ CrazyServer::CrazyServer(int port, int* data): port(port), data(data), clientsocket(0) {
+ ^
+Finished building: ../src/CrazyComms/CrazyServer.cpp
+ 
+Building file: ../src/Counter.cpp
+Invoking: GCC C++ Compiler
+g++ -I"/home/midries/Projects/robats/Robats/include" -O3 -Wall -c -fmessage-length=0 -std=c++11 -fPIC -MMD -MP -MF"src/Counter.d" -MT"src/Counter.o" -o "src/Counter.o" "../src/Counter.cpp"
+Finished building: ../src/Counter.cpp
+ 
+Building target: libRobats.so
+Invoking: GCC C++ Linker
+g++ -shared -o "libRobats.so"  ./src/CrazyEngine/CCRTPPacket.o ./src/CrazyEngine/CCrazyRadio.o ./src/CrazyEngine/CCrazyflie.o ./src/CrazyEngine/CTOC.o  ./src/CrazyControl/AutoFlight.o ./src/CrazyControl/GamePad.o  ./src/CrazyComms/CrazyServer.o  ./src/Counter.o   -lusb-1.0
+Finished building target: libRobats.so
+ 
+20:54:24 **** Build of configuration Debug for project RobatsEngine ****
+make all 
+Building file: ../src/RobatsEngine.cpp
+Invoking: GCC C++ Compiler
+g++ -I"/home/midries/Projects/robats/Robats/include" -O0 -g3 -Wall -c -fmessage-length=0 -std=c++11 -MMD -MP -MF"src/RobatsEngine.d" -MT"src/RobatsEngine.o" -o "src/RobatsEngine.o" "../src/RobatsEngine.cpp"
+Finished building: ../src/RobatsEngine.cpp
+ 
+make: *** No rule to make target `RobatsEngine.o', needed by `RobatsEngine'. Stop.
+20:54:24 **** Build of configuration Debug for project TestEngine ****
 make all 
 Building file: ../test/main.cpp
 Invoking: GCC C++ Compiler
-g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"test/main.d" -MT"test/main.o" -o "test/main.o" "../test/main.cpp"
+g++ -I"/home/midries/Projects/robats/TestEngine/external/include" -I"/home/midries/Projects/robats/Robats/include" -I"/home/midries/Projects/robats/Robats" -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"test/main.d" -MT"test/main.o" -o "test/main.o" "../test/main.cpp"
 Finished building: ../test/main.cpp
  
 Building target: TestEngine
 Invoking: GCC C++ Linker
-g++ -L"/home/midries/Projects/robats/TestEngine/external" -o "TestEngine"  ./test/main.o   -lpthread -lgtest
+g++ -L"/home/midries/Projects/robats/TestEngine/external" -L"/home/midries/Projects/robats/Robats/Release" -o "TestEngine"  ./test/main.o   -lgtest -lRobats -lpthread
 Finished building target: TestEngine
  
-16:25:01 **** Incremental Build of configuration Debug for project TestEngine ****
+20:55:09 **** Incremental Build of configuration Debug for project RobatsEngine ****
 make all 
-Building file: ../test/main.cpp
-Invoking: GCC C++ Compiler
-g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"test/main.d" -MT"test/main.o" -o "test/main.o" "../test/main.cpp"
-../test/main.cpp:1:25: fatal error: gtest/gtest.h: No such file or directory
- #include "gtest/gtest.h"
-                         ^
-compilation terminated.
-make: *** [test/main.o] Error 1
-16:25:21 **** Incremental Build of configuration Debug for project TestEngine ****
+make: *** No rule to make target `RobatsEngine.o', needed by `RobatsEngine'. Stop.
+20:55:09 **** Incremental Build of configuration Debug for project RobatsEngine ****
 make all 
-Building file: ../test/main.cpp
-Invoking: GCC C++ Compiler
-g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"test/main.d" -MT"test/main.o" -o "test/main.o" "../test/main.cpp"
-../test/main.cpp:1:12: warning: extra tokens at end of #include directive [enabled by default]
- #include <>gtest/gtest.h>
-            ^
-../test/main.cpp:1:10: error: empty filename in #include
- #include <>gtest/gtest.h>
-          ^
-make: *** [test/main.o] Error 1
-16:25:29 **** Incremental Build of configuration Debug for project TestEngine ****
-make all 
-Building file: ../test/main.cpp
-Invoking: GCC C++ Compiler
-g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"test/main.d" -MT"test/main.o" -o "test/main.o" "../test/main.cpp"
-../test/main.cpp:1:25: fatal error: gtest/gtest.h: No such file or directory
- #include <gtest/gtest.h>
-                         ^
-compilation terminated.
-make: *** [test/main.o] Error 1
-16:30:16 **** Incremental Build of configuration Debug for project TestEngine ****
-make all 
-Building file: ../test/main.cpp
-Invoking: GCC C++ Compiler
-g++ -I/home/midries/Documents/googletest/include -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"test/main.d" -MT"test/main.o" -o "test/main.o" "../test/main.cpp"
-Finished building: ../test/main.cpp
- 
-Building target: TestEngine
-Invoking: GCC C++ Linker
-g++ -L"/home/midries/Projects/robats/TestEngine/external" -o "TestEngine"  ./test/main.o   -lpthread -lgtest
-Finished building target: TestEngine
- 
-16:31:36 **** Incremental Build of configuration Debug for project TestEngine ****
-make all 
-Building file: ../test/main.cpp
-Invoking: GCC C++ Compiler
-g++ -I"/home/midries/Projects/robats/TestEngine/external/include" -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"test/main.d" -MT"test/main.o" -o "test/main.o" "../test/main.cpp"
-Finished building: ../test/main.cpp
- 
-Building target: TestEngine
-Invoking: GCC C++ Linker
-g++ -L"/home/midries/Projects/robats/TestEngine/external" -o "TestEngine"  ./test/main.o   -lpthread -lgtest
-Finished building target: TestEngine
- 
-17:41:50 **** Incremental Build of configuration Debug for project TestEngine ****
-make all 
-Building file: ../test/main.cpp
-Invoking: GCC C++ Compiler
-g++ -I"/home/midries/Projects/robats/TestEngine/external/include" -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"test/main.d" -MT"test/main.o" -o "test/main.o" "../test/main.cpp"
-Finished building: ../test/main.cpp
- 
-Building target: TestEngine
-Invoking: GCC C++ Linker
-g++ -L"/home/midries/Projects/robats/TestEngine/external" -o "TestEngine"  ./test/main.o   -lpthread -lgtest
-/home/midries/Projects/robats/TestEngine/external/libgtest.a(gtest-all.cc.o): In function `testing::internal::ThreadLocal<testing::TestPartResultReporterInterface*>::~ThreadLocal()':
-gtest-all.cc:(.text._ZN7testing8internal11ThreadLocalIPNS_31TestPartResultReporterInterfaceEED2Ev[_ZN7testing8internal11ThreadLocalIPNS_31TestPartResultReporterInterfaceEED5Ev]+0x16): undefined reference to `pthread_getspecific'
-gtest-all.cc:(.text._ZN7testing8internal11ThreadLocalIPNS_31TestPartResultReporterInterfaceEED2Ev[_ZN7testing8internal11ThreadLocalIPNS_31TestPartResultReporterInterfaceEED5Ev]+0x2b): undefined reference to `pthread_key_delete'
-/home/midries/Projects/robats/TestEngine/external/libgtest.a(gtest-all.cc.o): In function `testing::internal::ThreadLocal<std::vector<testing::internal::TraceInfo, std::allocator<testing::internal::TraceInfo> > >::~ThreadLocal()':
-gtest-all.cc:(.text._ZN7testing8internal11ThreadLocalISt6vectorINS0_9TraceInfoESaIS3_EEED2Ev[_ZN7testing8internal11ThreadLocalISt6vectorINS0_9TraceInfoESaIS3_EEED5Ev]+0x16): undefined reference to `pthread_getspecific'
-gtest-all.cc:(.text._ZN7testing8internal11ThreadLocalISt6vectorINS0_9TraceInfoESaIS3_EEED2Ev[_ZN7testing8internal11ThreadLocalISt6vectorINS0_9TraceInfoESaIS3_EEED5Ev]+0x2b): undefined reference to `pthread_key_delete'
-/home/midries/Projects/robats/TestEngine/external/libgtest.a(gtest-all.cc.o): In function `testing::internal::ThreadLocal<std::vector<testing::internal::TraceInfo, std::allocator<testing::internal::TraceInfo> > >::GetOrCreateValue() const':
-gtest-all.cc:(.text._ZNK7testing8internal11ThreadLocalISt6vectorINS0_9TraceInfoESaIS3_EEE16GetOrCreateValueEv[_ZNK7testing8internal11ThreadLocalISt6vectorINS0_9TraceInfoESaIS3_EEE16GetOrCreateValueEv]+0x16): undefined reference to `pthread_getspecific'
-gtest-all.cc:(.text._ZNK7testing8internal11ThreadLocalISt6vectorINS0_9TraceInfoESaIS3_EEE16GetOrCreateValueEv[_ZNK7testing8internal11ThreadLocalISt6vectorINS0_9TraceInfoESaIS3_EEE16GetOrCreateValueEv]+0x79): undefined reference to `pthread_setspecific'
-/home/midries/Projects/robats/TestEngine/external/libgtest.a(gtest-all.cc.o): In function `testing::internal::ThreadLocal<testing::TestPartResultReporterInterface*>::CreateKey()':
-gtest-all.cc:(.text._ZN7testing8internal11ThreadLocalIPNS_31TestPartResultReporterInterfaceEE9CreateKeyEv[_ZN7testing8internal11ThreadLocalIPNS_31TestPartResultReporterInterfaceEE9CreateKeyEv]+0x16): undefined reference to `pthread_key_create'
-/home/midries/Projects/robats/TestEngine/external/libgtest.a(gtest-all.cc.o): In function `testing::internal::ThreadLocal<std::vector<testing::internal::TraceInfo, std::allocator<testing::internal::TraceInfo> > >::CreateKey()':
-gtest-all.cc:(.text._ZN7testing8internal11ThreadLocalISt6vectorINS0_9TraceInfoESaIS3_EEE9CreateKeyEv[_ZN7testing8internal11ThreadLocalISt6vectorINS0_9TraceInfoESaIS3_EEE9CreateKeyEv]+0x16): undefined reference to `pthread_key_create'
-/home/midries/Projects/robats/TestEngine/external/libgtest.a(gtest-all.cc.o): In function `testing::internal::ThreadLocal<testing::TestPartResultReporterInterface*>::GetOrCreateValue() const':
-gtest-all.cc:(.text._ZNK7testing8internal11ThreadLocalIPNS_31TestPartResultReporterInterfaceEE16GetOrCreateValueEv[_ZNK7testing8internal11ThreadLocalIPNS_31TestPartResultReporterInterfaceEE16GetOrCreateValueEv]+0x16): undefined reference to `pthread_getspecific'
-gtest-all.cc:(.text._ZNK7testing8internal11ThreadLocalIPNS_31TestPartResultReporterInterfaceEE16GetOrCreateValueEv[_ZNK7testing8internal11ThreadLocalIPNS_31TestPartResultReporterInterfaceEE16GetOrCreateValueEv]+0x79): undefined reference to `pthread_setspecific'
-collect2: error: ld returned 1 exit status
-make: *** [TestEngine] Error 1
-17:44:26 **** Clean-only build of configuration Debug for project TestEngine ****
-make clean 
-rm -rf  ./test/main.o  ./test/main.d  TestEngine
- 
-17:44:28 **** Build of configuration Debug for project TestEngine ****
-make all 
-Building file: ../test/main.cpp
-Invoking: GCC C++ Compiler
-g++ -I"/home/midries/Projects/robats/TestEngine/external/include" -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"test/main.d" -MT"test/main.o" -o "test/main.o" "../test/main.cpp"
-Finished building: ../test/main.cpp
- 
-Building target: TestEngine
-Invoking: GCC C++ Linker
-g++ -L"/home/midries/Projects/robats/TestEngine/external" -o "TestEngine"  ./test/main.o   -lpthread -lgtest
-/home/midries/Projects/robats/TestEngine/external/libgtest.a(gtest-all.cc.o): In function `testing::internal::ThreadLocal<testing::TestPartResultReporterInterface*>::~ThreadLocal()':
-gtest-all.cc:(.text._ZN7testing8internal11ThreadLocalIPNS_31TestPartResultReporterInterfaceEED2Ev[_ZN7testing8internal11ThreadLocalIPNS_31TestPartResultReporterInterfaceEED5Ev]+0x16): undefined reference to `pthread_getspecific'
-gtest-all.cc:(.text._ZN7testing8internal11ThreadLocalIPNS_31TestPartResultReporterInterfaceEED2Ev[_ZN7testing8internal11ThreadLocalIPNS_31TestPartResultReporterInterfaceEED5Ev]+0x2b): undefined reference to `pthread_key_delete'
-/home/midries/Projects/robats/TestEngine/external/libgtest.a(gtest-all.cc.o): In function `testing::internal::ThreadLocal<std::vector<testing::internal::TraceInfo, std::allocator<testing::internal::TraceInfo> > >::~ThreadLocal()':
-gtest-all.cc:(.text._ZN7testing8internal11ThreadLocalISt6vectorINS0_9TraceInfoESaIS3_EEED2Ev[_ZN7testing8internal11ThreadLocalISt6vectorINS0_9TraceInfoESaIS3_EEED5Ev]+0x16): undefined reference to `pthread_getspecific'
-gtest-all.cc:(.text._ZN7testing8internal11ThreadLocalISt6vectorINS0_9TraceInfoESaIS3_EEED2Ev[_ZN7testing8internal11ThreadLocalISt6vectorINS0_9TraceInfoESaIS3_EEED5Ev]+0x2b): undefined reference to `pthread_key_delete'
-/home/midries/Projects/robats/TestEngine/external/libgtest.a(gtest-all.cc.o): In function `testing::internal::ThreadLocal<std::vector<testing::internal::TraceInfo, std::allocator<testing::internal::TraceInfo> > >::GetOrCreateValue() const':
-gtest-all.cc:(.text._ZNK7testing8internal11ThreadLocalISt6vectorINS0_9TraceInfoESaIS3_EEE16GetOrCreateValueEv[_ZNK7testing8internal11ThreadLocalISt6vectorINS0_9TraceInfoESaIS3_EEE16GetOrCreateValueEv]+0x16): undefined reference to `pthread_getspecific'
-gtest-all.cc:(.text._ZNK7testing8internal11ThreadLocalISt6vectorINS0_9TraceInfoESaIS3_EEE16GetOrCreateValueEv[_ZNK7testing8internal11ThreadLocalISt6vectorINS0_9TraceInfoESaIS3_EEE16GetOrCreateValueEv]+0x79): undefined reference to `pthread_setspecific'
-/home/midries/Projects/robats/TestEngine/external/libgtest.a(gtest-all.cc.o): In function `testing::internal::ThreadLocal<testing::TestPartResultReporterInterface*>::CreateKey()':
-gtest-all.cc:(.text._ZN7testing8internal11ThreadLocalIPNS_31TestPartResultReporterInterfaceEE9CreateKeyEv[_ZN7testing8internal11ThreadLocalIPNS_31TestPartResultReporterInterfaceEE9CreateKeyEv]+0x16): undefined reference to `pthread_key_create'
-/home/midries/Projects/robats/TestEngine/external/libgtest.a(gtest-all.cc.o): In function `testing::internal::ThreadLocal<std::vector<testing::internal::TraceInfo, std::allocator<testing::internal::TraceInfo> > >::CreateKey()':
-gtest-all.cc:(.text._ZN7testing8internal11ThreadLocalISt6vectorINS0_9TraceInfoESaIS3_EEE9CreateKeyEv[_ZN7testing8internal11ThreadLocalISt6vectorINS0_9TraceInfoESaIS3_EEE9CreateKeyEv]+0x16): undefined reference to `pthread_key_create'
-/home/midries/Projects/robats/TestEngine/external/libgtest.a(gtest-all.cc.o): In function `testing::internal::ThreadLocal<testing::TestPartResultReporterInterface*>::GetOrCreateValue() const':
-gtest-all.cc:(.text._ZNK7testing8internal11ThreadLocalIPNS_31TestPartResultReporterInterfaceEE16GetOrCreateValueEv[_ZNK7testing8internal11ThreadLocalIPNS_31TestPartResultReporterInterfaceEE16GetOrCreateValueEv]+0x16): undefined reference to `pthread_getspecific'
-gtest-all.cc:(.text._ZNK7testing8internal11ThreadLocalIPNS_31TestPartResultReporterInterfaceEE16GetOrCreateValueEv[_ZNK7testing8internal11ThreadLocalIPNS_31TestPartResultReporterInterfaceEE16GetOrCreateValueEv]+0x79): undefined reference to `pthread_setspecific'
-collect2: error: ld returned 1 exit status
-make: *** [TestEngine] Error 1
-17:45:57 **** Incremental Build of configuration Debug for project TestEngine ****
-make all 
-Building file: ../test/main.cpp
-Invoking: GCC C++ Compiler
-g++ -I"/home/midries/Projects/robats/TestEngine/external/include" -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"test/main.d" -MT"test/main.o" -o "test/main.o" "../test/main.cpp"
-Finished building: ../test/main.cpp
- 
-Building target: TestEngine
-Invoking: GCC C++ Linker
-g++ -L"/home/midries/Projects/robats/TestEngine/external" -o "TestEngine"  ./test/main.o   -lpthread -lgtest
-/home/midries/Projects/robats/TestEngine/external/libgtest.a(gtest-all.cc.o): In function `testing::internal::ThreadLocal<testing::TestPartResultReporterInterface*>::~ThreadLocal()':
-gtest-all.cc:(.text._ZN7testing8internal11ThreadLocalIPNS_31TestPartResultReporterInterfaceEED2Ev[_ZN7testing8internal11ThreadLocalIPNS_31TestPartResultReporterInterfaceEED5Ev]+0x16): undefined reference to `pthread_getspecific'
-gtest-all.cc:(.text._ZN7testing8internal11ThreadLocalIPNS_31TestPartResultReporterInterfaceEED2Ev[_ZN7testing8internal11ThreadLocalIPNS_31TestPartResultReporterInterfaceEED5Ev]+0x2b): undefined reference to `pthread_key_delete'
-/home/midries/Projects/robats/TestEngine/external/libgtest.a(gtest-all.cc.o): In function `testing::internal::ThreadLocal<std::vector<testing::internal::TraceInfo, std::allocator<testing::internal::TraceInfo> > >::~ThreadLocal()':
-gtest-all.cc:(.text._ZN7testing8internal11ThreadLocalISt6vectorINS0_9TraceInfoESaIS3_EEED2Ev[_ZN7testing8internal11ThreadLocalISt6vectorINS0_9TraceInfoESaIS3_EEED5Ev]+0x16): undefined reference to `pthread_getspecific'
-gtest-all.cc:(.text._ZN7testing8internal11ThreadLocalISt6vectorINS0_9TraceInfoESaIS3_EEED2Ev[_ZN7testing8internal11ThreadLocalISt6vectorINS0_9TraceInfoESaIS3_EEED5Ev]+0x2b): undefined reference to `pthread_key_delete'
-/home/midries/Projects/robats/TestEngine/external/libgtest.a(gtest-all.cc.o): In function `testing::internal::ThreadLocal<std::vector<testing::internal::TraceInfo, std::allocator<testing::internal::TraceInfo> > >::GetOrCreateValue() const':
-gtest-all.cc:(.text._ZNK7testing8internal11ThreadLocalISt6vectorINS0_9TraceInfoESaIS3_EEE16GetOrCreateValueEv[_ZNK7testing8internal11ThreadLocalISt6vectorINS0_9TraceInfoESaIS3_EEE16GetOrCreateValueEv]+0x16): undefined reference to `pthread_getspecific'
-gtest-all.cc:(.text._ZNK7testing8internal11ThreadLocalISt6vectorINS0_9TraceInfoESaIS3_EEE16GetOrCreateValueEv[_ZNK7testing8internal11ThreadLocalISt6vectorINS0_9TraceInfoESaIS3_EEE16GetOrCreateValueEv]+0x79): undefined reference to `pthread_setspecific'
-/home/midries/Projects/robats/TestEngine/external/libgtest.a(gtest-all.cc.o): In function `testing::internal::ThreadLocal<testing::TestPartResultReporterInterface*>::CreateKey()':
-gtest-all.cc:(.text._ZN7testing8internal11ThreadLocalIPNS_31TestPartResultReporterInterfaceEE9CreateKeyEv[_ZN7testing8internal11ThreadLocalIPNS_31TestPartResultReporterInterfaceEE9CreateKeyEv]+0x16): undefined reference to `pthread_key_create'
-/home/midries/Projects/robats/TestEngine/external/libgtest.a(gtest-all.cc.o): In function `testing::internal::ThreadLocal<std::vector<testing::internal::TraceInfo, std::allocator<testing::internal::TraceInfo> > >::CreateKey()':
-gtest-all.cc:(.text._ZN7testing8internal11ThreadLocalISt6vectorINS0_9TraceInfoESaIS3_EEE9CreateKeyEv[_ZN7testing8internal11ThreadLocalISt6vectorINS0_9TraceInfoESaIS3_EEE9CreateKeyEv]+0x16): undefined reference to `pthread_key_create'
-/home/midries/Projects/robats/TestEngine/external/libgtest.a(gtest-all.cc.o): In function `testing::internal::ThreadLocal<testing::TestPartResultReporterInterface*>::GetOrCreateValue() const':
-gtest-all.cc:(.text._ZNK7testing8internal11ThreadLocalIPNS_31TestPartResultReporterInterfaceEE16GetOrCreateValueEv[_ZNK7testing8internal11ThreadLocalIPNS_31TestPartResultReporterInterfaceEE16GetOrCreateValueEv]+0x16): undefined reference to `pthread_getspecific'
-gtest-all.cc:(.text._ZNK7testing8internal11ThreadLocalIPNS_31TestPartResultReporterInterfaceEE16GetOrCreateValueEv[_ZNK7testing8internal11ThreadLocalIPNS_31TestPartResultReporterInterfaceEE16GetOrCreateValueEv]+0x79): undefined reference to `pthread_setspecific'
-collect2: error: ld returned 1 exit status
-make: *** [TestEngine] Error 1
-17:48:06 **** Incremental Build of configuration Debug for project TestEngine ****
-make all 
-Building file: ../test/Counter.cpp
-Invoking: GCC C++ Compiler
-g++ -I"/home/midries/Projects/robats/TestEngine/external/include" -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"test/Counter.d" -MT"test/Counter.o" -o "test/Counter.o" "../test/Counter.cpp"
-Finished building: ../test/Counter.cpp
- 
-Building file: ../test/main.cpp
-Invoking: GCC C++ Compiler
-g++ -I"/home/midries/Projects/robats/TestEngine/external/include" -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"test/main.d" -MT"test/main.o" -o "test/main.o" "../test/main.cpp"
-Finished building: ../test/main.cpp
- 
-Building target: TestEngine
-Invoking: GCC C++ Linker
-g++ -L"/home/midries/Projects/robats/TestEngine/external" -o "TestEngine"  ./test/Counter.o ./test/main.o   -lpthread -lgtest
-/home/midries/Projects/robats/TestEngine/external/libgtest.a(gtest-all.cc.o): In function `testing::internal::ThreadLocal<testing::TestPartResultReporterInterface*>::~ThreadLocal()':
-gtest-all.cc:(.text._ZN7testing8internal11ThreadLocalIPNS_31TestPartResultReporterInterfaceEED2Ev[_ZN7testing8internal11ThreadLocalIPNS_31TestPartResultReporterInterfaceEED5Ev]+0x16): undefined reference to `pthread_getspecific'
-gtest-all.cc:(.text._ZN7testing8internal11ThreadLocalIPNS_31TestPartResultReporterInterfaceEED2Ev[_ZN7testing8internal11ThreadLocalIPNS_31TestPartResultReporterInterfaceEED5Ev]+0x2b): undefined reference to `pthread_key_delete'
-/home/midries/Projects/robats/TestEngine/external/libgtest.a(gtest-all.cc.o): In function `testing::internal::ThreadLocal<std::vector<testing::internal::TraceInfo, std::allocator<testing::internal::TraceInfo> > >::~ThreadLocal()':
-gtest-all.cc:(.text._ZN7testing8internal11ThreadLocalISt6vectorINS0_9TraceInfoESaIS3_EEED2Ev[_ZN7testing8internal11ThreadLocalISt6vectorINS0_9TraceInfoESaIS3_EEED5Ev]+0x16): undefined reference to `pthread_getspecific'
-gtest-all.cc:(.text._ZN7testing8internal11ThreadLocalISt6vectorINS0_9TraceInfoESaIS3_EEED2Ev[_ZN7testing8internal11ThreadLocalISt6vectorINS0_9TraceInfoESaIS3_EEED5Ev]+0x2b): undefined reference to `pthread_key_delete'
-/home/midries/Projects/robats/TestEngine/external/libgtest.a(gtest-all.cc.o): In function `testing::internal::ThreadLocal<std::vector<testing::internal::TraceInfo, std::allocator<testing::internal::TraceInfo> > >::GetOrCreateValue() const':
-gtest-all.cc:(.text._ZNK7testing8internal11ThreadLocalISt6vectorINS0_9TraceInfoESaIS3_EEE16GetOrCreateValueEv[_ZNK7testing8internal11ThreadLocalISt6vectorINS0_9TraceInfoESaIS3_EEE16GetOrCreateValueEv]+0x16): undefined reference to `pthread_getspecific'
-gtest-all.cc:(.text._ZNK7testing8internal11ThreadLocalISt6vectorINS0_9TraceInfoESaIS3_EEE16GetOrCreateValueEv[_ZNK7testing8internal11ThreadLocalISt6vectorINS0_9TraceInfoESaIS3_EEE16GetOrCreateValueEv]+0x79): undefined reference to `pthread_setspecific'
-/home/midries/Projects/robats/TestEngine/external/libgtest.a(gtest-all.cc.o): In function `testing::internal::ThreadLocal<testing::TestPartResultReporterInterface*>::CreateKey()':
-gtest-all.cc:(.text._ZN7testing8internal11ThreadLocalIPNS_31TestPartResultReporterInterfaceEE9CreateKeyEv[_ZN7testing8internal11ThreadLocalIPNS_31TestPartResultReporterInterfaceEE9CreateKeyEv]+0x16): undefined reference to `pthread_key_create'
-/home/midries/Projects/robats/TestEngine/external/libgtest.a(gtest-all.cc.o): In function `testing::internal::ThreadLocal<std::vector<testing::internal::TraceInfo, std::allocator<testing::internal::TraceInfo> > >::CreateKey()':
-gtest-all.cc:(.text._ZN7testing8internal11ThreadLocalISt6vectorINS0_9TraceInfoESaIS3_EEE9CreateKeyEv[_ZN7testing8internal11ThreadLocalISt6vectorINS0_9TraceInfoESaIS3_EEE9CreateKeyEv]+0x16): undefined reference to `pthread_key_create'
-/home/midries/Projects/robats/TestEngine/external/libgtest.a(gtest-all.cc.o): In function `testing::internal::ThreadLocal<testing::TestPartResultReporterInterface*>::GetOrCreateValue() const':
-gtest-all.cc:(.text._ZNK7testing8internal11ThreadLocalIPNS_31TestPartResultReporterInterfaceEE16GetOrCreateValueEv[_ZNK7testing8internal11ThreadLocalIPNS_31TestPartResultReporterInterfaceEE16GetOrCreateValueEv]+0x16): undefined reference to `pthread_getspecific'
-gtest-all.cc:(.text._ZNK7testing8internal11ThreadLocalIPNS_31TestPartResultReporterInterfaceEE16GetOrCreateValueEv[_ZNK7testing8internal11ThreadLocalIPNS_31TestPartResultReporterInterfaceEE16GetOrCreateValueEv]+0x79): undefined reference to `pthread_setspecific'
-collect2: error: ld returned 1 exit status
-make: *** [TestEngine] Error 1
-17:48:13 **** Clean-only build of configuration Debug for project TestEngine ****
-make clean 
-rm -rf  ./test/Counter.o ./test/main.o  ./test/Counter.d ./test/main.d  TestEngine
- 
-17:48:17 **** Build of configuration Debug for project TestEngine ****
-make all 
-Building file: ../test/Counter.cpp
-Invoking: GCC C++ Compiler
-g++ -I"/home/midries/Projects/robats/TestEngine/external/include" -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"test/Counter.d" -MT"test/Counter.o" -o "test/Counter.o" "../test/Counter.cpp"
-Finished building: ../test/Counter.cpp
- 
-Building file: ../test/main.cpp
-Invoking: GCC C++ Compiler
-g++ -I"/home/midries/Projects/robats/TestEngine/external/include" -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"test/main.d" -MT"test/main.o" -o "test/main.o" "../test/main.cpp"
-Finished building: ../test/main.cpp
- 
-Building target: TestEngine
-Invoking: GCC C++ Linker
-g++ -L"/home/midries/Projects/robats/TestEngine/external" -o "TestEngine"  ./test/Counter.o ./test/main.o   -lpthread -lgtest
-/home/midries/Projects/robats/TestEngine/external/libgtest.a(gtest-all.cc.o): In function `testing::internal::ThreadLocal<testing::TestPartResultReporterInterface*>::~ThreadLocal()':
-gtest-all.cc:(.text._ZN7testing8internal11ThreadLocalIPNS_31TestPartResultReporterInterfaceEED2Ev[_ZN7testing8internal11ThreadLocalIPNS_31TestPartResultReporterInterfaceEED5Ev]+0x16): undefined reference to `pthread_getspecific'
-gtest-all.cc:(.text._ZN7testing8internal11ThreadLocalIPNS_31TestPartResultReporterInterfaceEED2Ev[_ZN7testing8internal11ThreadLocalIPNS_31TestPartResultReporterInterfaceEED5Ev]+0x2b): undefined reference to `pthread_key_delete'
-/home/midries/Projects/robats/TestEngine/external/libgtest.a(gtest-all.cc.o): In function `testing::internal::ThreadLocal<std::vector<testing::internal::TraceInfo, std::allocator<testing::internal::TraceInfo> > >::~ThreadLocal()':
-gtest-all.cc:(.text._ZN7testing8internal11ThreadLocalISt6vectorINS0_9TraceInfoESaIS3_EEED2Ev[_ZN7testing8internal11ThreadLocalISt6vectorINS0_9TraceInfoESaIS3_EEED5Ev]+0x16): undefined reference to `pthread_getspecific'
-gtest-all.cc:(.text._ZN7testing8internal11ThreadLocalISt6vectorINS0_9TraceInfoESaIS3_EEED2Ev[_ZN7testing8internal11ThreadLocalISt6vectorINS0_9TraceInfoESaIS3_EEED5Ev]+0x2b): undefined reference to `pthread_key_delete'
-/home/midries/Projects/robats/TestEngine/external/libgtest.a(gtest-all.cc.o): In function `testing::internal::ThreadLocal<std::vector<testing::internal::TraceInfo, std::allocator<testing::internal::TraceInfo> > >::GetOrCreateValue() const':
-gtest-all.cc:(.text._ZNK7testing8internal11ThreadLocalISt6vectorINS0_9TraceInfoESaIS3_EEE16GetOrCreateValueEv[_ZNK7testing8internal11ThreadLocalISt6vectorINS0_9TraceInfoESaIS3_EEE16GetOrCreateValueEv]+0x16): undefined reference to `pthread_getspecific'
-gtest-all.cc:(.text._ZNK7testing8internal11ThreadLocalISt6vectorINS0_9TraceInfoESaIS3_EEE16GetOrCreateValueEv[_ZNK7testing8internal11ThreadLocalISt6vectorINS0_9TraceInfoESaIS3_EEE16GetOrCreateValueEv]+0x79): undefined reference to `pthread_setspecific'
-/home/midries/Projects/robats/TestEngine/external/libgtest.a(gtest-all.cc.o): In function `testing::internal::ThreadLocal<testing::TestPartResultReporterInterface*>::CreateKey()':
-gtest-all.cc:(.text._ZN7testing8internal11ThreadLocalIPNS_31TestPartResultReporterInterfaceEE9CreateKeyEv[_ZN7testing8internal11ThreadLocalIPNS_31TestPartResultReporterInterfaceEE9CreateKeyEv]+0x16): undefined reference to `pthread_key_create'
-/home/midries/Projects/robats/TestEngine/external/libgtest.a(gtest-all.cc.o): In function `testing::internal::ThreadLocal<std::vector<testing::internal::TraceInfo, std::allocator<testing::internal::TraceInfo> > >::CreateKey()':
-gtest-all.cc:(.text._ZN7testing8internal11ThreadLocalISt6vectorINS0_9TraceInfoESaIS3_EEE9CreateKeyEv[_ZN7testing8internal11ThreadLocalISt6vectorINS0_9TraceInfoESaIS3_EEE9CreateKeyEv]+0x16): undefined reference to `pthread_key_create'
-/home/midries/Projects/robats/TestEngine/external/libgtest.a(gtest-all.cc.o): In function `testing::internal::ThreadLocal<testing::TestPartResultReporterInterface*>::GetOrCreateValue() const':
-gtest-all.cc:(.text._ZNK7testing8internal11ThreadLocalIPNS_31TestPartResultReporterInterfaceEE16GetOrCreateValueEv[_ZNK7testing8internal11ThreadLocalIPNS_31TestPartResultReporterInterfaceEE16GetOrCreateValueEv]+0x16): undefined reference to `pthread_getspecific'
-gtest-all.cc:(.text._ZNK7testing8internal11ThreadLocalIPNS_31TestPartResultReporterInterfaceEE16GetOrCreateValueEv[_ZNK7testing8internal11ThreadLocalIPNS_31TestPartResultReporterInterfaceEE16GetOrCreateValueEv]+0x79): undefined reference to `pthread_setspecific'
-collect2: error: ld returned 1 exit status
-make: *** [TestEngine] Error 1
-17:48:50 **** Clean-only build of configuration Debug for project TestEngine ****
-make clean 
-rm -rf  ./test/Counter.o ./test/main.o  ./test/Counter.d ./test/main.d  TestEngine
- 
-17:48:53 **** Build of configuration Debug for project TestEngine ****
-make all 
-Building file: ../test/Counter.cpp
-Invoking: GCC C++ Compiler
-g++ -I"/home/midries/Projects/robats/TestEngine/external/include" -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"test/Counter.d" -MT"test/Counter.o" -o "test/Counter.o" "../test/Counter.cpp"
-Finished building: ../test/Counter.cpp
- 
-Building file: ../test/main.cpp
-Invoking: GCC C++ Compiler
-g++ -I"/home/midries/Projects/robats/TestEngine/external/include" -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"test/main.d" -MT"test/main.o" -o "test/main.o" "../test/main.cpp"
-Finished building: ../test/main.cpp
- 
-Building target: TestEngine
-Invoking: GCC C++ Linker
-g++ -L"/home/midries/Projects/robats/TestEngine/external" -o "TestEngine"  ./test/Counter.o ./test/main.o   -lgtest
-/home/midries/Projects/robats/TestEngine/external/libgtest.a(gtest-all.cc.o): In function `testing::internal::ThreadLocal<testing::TestPartResultReporterInterface*>::~ThreadLocal()':
-gtest-all.cc:(.text._ZN7testing8internal11ThreadLocalIPNS_31TestPartResultReporterInterfaceEED2Ev[_ZN7testing8internal11ThreadLocalIPNS_31TestPartResultReporterInterfaceEED5Ev]+0x16): undefined reference to `pthread_getspecific'
-gtest-all.cc:(.text._ZN7testing8internal11ThreadLocalIPNS_31TestPartResultReporterInterfaceEED2Ev[_ZN7testing8internal11ThreadLocalIPNS_31TestPartResultReporterInterfaceEED5Ev]+0x2b): undefined reference to `pthread_key_delete'
-/home/midries/Projects/robats/TestEngine/external/libgtest.a(gtest-all.cc.o): In function `testing::internal::ThreadLocal<std::vector<testing::internal::TraceInfo, std::allocator<testing::internal::TraceInfo> > >::~ThreadLocal()':
-gtest-all.cc:(.text._ZN7testing8internal11ThreadLocalISt6vectorINS0_9TraceInfoESaIS3_EEED2Ev[_ZN7testing8internal11ThreadLocalISt6vectorINS0_9TraceInfoESaIS3_EEED5Ev]+0x16): undefined reference to `pthread_getspecific'
-gtest-all.cc:(.text._ZN7testing8internal11ThreadLocalISt6vectorINS0_9TraceInfoESaIS3_EEED2Ev[_ZN7testing8internal11ThreadLocalISt6vectorINS0_9TraceInfoESaIS3_EEED5Ev]+0x2b): undefined reference to `pthread_key_delete'
-/home/midries/Projects/robats/TestEngine/external/libgtest.a(gtest-all.cc.o): In function `testing::internal::ThreadLocal<std::vector<testing::internal::TraceInfo, std::allocator<testing::internal::TraceInfo> > >::GetOrCreateValue() const':
-gtest-all.cc:(.text._ZNK7testing8internal11ThreadLocalISt6vectorINS0_9TraceInfoESaIS3_EEE16GetOrCreateValueEv[_ZNK7testing8internal11ThreadLocalISt6vectorINS0_9TraceInfoESaIS3_EEE16GetOrCreateValueEv]+0x16): undefined reference to `pthread_getspecific'
-gtest-all.cc:(.text._ZNK7testing8internal11ThreadLocalISt6vectorINS0_9TraceInfoESaIS3_EEE16GetOrCreateValueEv[_ZNK7testing8internal11ThreadLocalISt6vectorINS0_9TraceInfoESaIS3_EEE16GetOrCreateValueEv]+0x79): undefined reference to `pthread_setspecific'
-/home/midries/Projects/robats/TestEngine/external/libgtest.a(gtest-all.cc.o): In function `testing::internal::ThreadLocal<testing::TestPartResultReporterInterface*>::CreateKey()':
-gtest-all.cc:(.text._ZN7testing8internal11ThreadLocalIPNS_31TestPartResultReporterInterfaceEE9CreateKeyEv[_ZN7testing8internal11ThreadLocalIPNS_31TestPartResultReporterInterfaceEE9CreateKeyEv]+0x16): undefined reference to `pthread_key_create'
-/home/midries/Projects/robats/TestEngine/external/libgtest.a(gtest-all.cc.o): In function `testing::internal::ThreadLocal<std::vector<testing::internal::TraceInfo, std::allocator<testing::internal::TraceInfo> > >::CreateKey()':
-gtest-all.cc:(.text._ZN7testing8internal11ThreadLocalISt6vectorINS0_9TraceInfoESaIS3_EEE9CreateKeyEv[_ZN7testing8internal11ThreadLocalISt6vectorINS0_9TraceInfoESaIS3_EEE9CreateKeyEv]+0x16): undefined reference to `pthread_key_create'
-/home/midries/Projects/robats/TestEngine/external/libgtest.a(gtest-all.cc.o): In function `testing::internal::ThreadLocal<testing::TestPartResultReporterInterface*>::GetOrCreateValue() const':
-gtest-all.cc:(.text._ZNK7testing8internal11ThreadLocalIPNS_31TestPartResultReporterInterfaceEE16GetOrCreateValueEv[_ZNK7testing8internal11ThreadLocalIPNS_31TestPartResultReporterInterfaceEE16GetOrCreateValueEv]+0x16): undefined reference to `pthread_getspecific'
-gtest-all.cc:(.text._ZNK7testing8internal11ThreadLocalIPNS_31TestPartResultReporterInterfaceEE16GetOrCreateValueEv[_ZNK7testing8internal11ThreadLocalIPNS_31TestPartResultReporterInterfaceEE16GetOrCreateValueEv]+0x79): undefined reference to `pthread_setspecific'
-collect2: error: ld returned 1 exit status
-make: *** [TestEngine] Error 1
-17:52:40 **** Incremental Build of configuration Debug for project TestEngine ****
-make all 
-Building target: TestEngine
-Invoking: GCC C++ Linker
-g++ -L"/home/midries/Projects/robats/TestEngine/external" -o "TestEngine"  ./test/Counter.o ./test/main.o   -lgtest -lpthread
-Finished building target: TestEngine
- 
-17:52:48 **** Incremental Build of configuration Debug for project TestEngine ****
-make all 
-make: Nothing to be done for `all'.
+make: *** No rule to make target `RobatsEngine.o', needed by `RobatsEngine'. Stop.

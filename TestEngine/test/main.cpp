@@ -1,5 +1,14 @@
 #include <gtest/gtest.h>
 #include "Counter.h"
+//#include "TestCounter.h"
+//
+//TEST(TestCounter, Increment) {
+//      TestCounter tc;
+//      EXPECT_EQ(0, tc.Increment());
+////      EXPECT_EQ(0, tc.Increment());
+////      EXPECT_EQ(1, tc.Increment());
+////      EXPECT_EQ(2, tc.Increment());
+//}
 
 TEST(Counter, Increment) {
       Counter c;

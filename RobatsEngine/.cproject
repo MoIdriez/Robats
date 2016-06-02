@@ -31,6 +31,9 @@
 								<option id="gnu.cpp.compiler.option.include.files.1959361918" name="Include files (-include)" superClass="gnu.cpp.compiler.option.include.files" useByScannerDiscovery="false"/>
 								<option id="gnu.cpp.compiler.option.other.other.1385709677" name="Other flags" superClass="gnu.cpp.compiler.option.other.other" useByScannerDiscovery="false" value="-c -fmessage-length=0 -std=c++11" valueType="string"/>
 								<option id="gnu.cpp.compiler.option.preprocessor.def.1521949832" name="Defined symbols (-D)" superClass="gnu.cpp.compiler.option.preprocessor.def" useByScannerDiscovery="false"/>
+								<option id="gnu.cpp.compiler.option.include.paths.1731550117" name="Include paths (-I)" superClass="gnu.cpp.compiler.option.include.paths" useByScannerDiscovery="false" valueType="includePath">
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/Robats/include}&quot;"/>
+								</option>
 								<inputType id="cdt.managedbuild.tool.gnu.cpp.compiler.input.523509583" superClass="cdt.managedbuild.tool.gnu.cpp.compiler.input"/>
 							</tool>
 							<tool id="cdt.managedbuild.tool.gnu.c.compiler.exe.debug.844590764" name="GCC C Compiler" superClass="cdt.managedbuild.tool.gnu.c.compiler.exe.debug">
@@ -42,6 +45,10 @@
 							<tool id="cdt.managedbuild.tool.gnu.cpp.linker.exe.debug.1583563243" name="GCC C++ Linker" superClass="cdt.managedbuild.tool.gnu.cpp.linker.exe.debug">
 								<option id="gnu.cpp.link.option.libs.1211127983" name="Libraries (-l)" superClass="gnu.cpp.link.option.libs" valueType="libs">
 									<listOptionValue builtIn="false" value="usb-1.0"/>
+									<listOptionValue builtIn="false" value="Robats"/>
+								</option>
+								<option id="gnu.cpp.link.option.paths.1873054630" name="Library search path (-L)" superClass="gnu.cpp.link.option.paths" valueType="libPaths">
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/Robats/Release}&quot;"/>
 								</option>
 								<inputType id="cdt.managedbuild.tool.gnu.cpp.linker.input.149017485" superClass="cdt.managedbuild.tool.gnu.cpp.linker.input">
 									<additionalInput kind="additionalinputdependency" paths="$(USER_OBJS)"/>
@@ -103,7 +110,6 @@
 					</folderInfo>
 					<sourceEntries>
 						<entry excluding="ControlEngine" flags="VALUE_WORKSPACE_PATH|RESOLVED" kind="sourcePath" name="src"/>
-						<entry flags="VALUE_WORKSPACE_PATH|RESOLVED" kind="sourcePath" name="src/ControlEngine"/>
 					</sourceEntries>
 				</configuration>
 			</storageModule>
@@ -137,4 +143,5 @@
 			<resource resourceType="PROJECT" workspacePath="/RobatsEngine"/>
 		</configuration>
 	</storageModule>
+	<storageModule moduleId="org.eclipse.cdt.internal.ui.text.commentOwnerProjectMappings"/>
 </cproject>

@@ -20,7 +20,7 @@ test/main.o: ../test/main.cpp \
  /home/midries/Projects/robats/TestEngine/external/include/gtest/gtest-test-part.h \
  /home/midries/Projects/robats/TestEngine/external/include/gtest/gtest-typed-test.h \
  /home/midries/Projects/robats/TestEngine/external/include/gtest/gtest_pred_impl.h \
- ../test/Counter.h
+ /home/midries/Projects/robats/Robats/include/Counter.h
 
 /home/midries/Projects/robats/TestEngine/external/include/gtest/gtest.h:
 
@@ -64,4 +64,4 @@ test/main.o: ../test/main.cpp \
 
 /home/midries/Projects/robats/TestEngine/external/include/gtest/gtest_pred_impl.h:
 
-../test/Counter.h:
+/home/midries/Projects/robats/Robats/include/Counter.h:

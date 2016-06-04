@@ -1,0 +1,8 @@
+#include <csignal>
+#include <iostream>
+#include "CCrazyflie.h"
+
+bool hover() {
+
+}
+

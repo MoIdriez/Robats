@@ -46,7 +46,7 @@ int main(int argc, char **argv) {
 
 			cflieCopter->setRoll(gpv.roll);
 			cflieCopter->setPitch(gpv.pitch);
-//			cflieCopter->setYaw(gpv.yaw); // disable this to make flying easier
+//			cflieCopter->setYaw(gpv.yaw); // disable this to makes flying easier
 
 			if (autoflightEnabled & gpv.althold) {
 				if (!altHold) {

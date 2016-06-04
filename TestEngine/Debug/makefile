@@ -41,7 +41,7 @@ endif
 all: TestEngine
 
 dependents:
-	-cd /home/midries/Projects/robats/RobatsEngine/Debug && $(MAKE) clean all
+	-cd /home/midries/Projects/robats/RobatsEngine/Debug && $(MAKE) all
 
 # Tool invocations
 TestEngine: $(OBJS) $(USER_OBJS) /home/midries/Projects/robats/RobatsEngine/Debug/RobatsEngine

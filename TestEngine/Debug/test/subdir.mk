@@ -4,12 +4,15 @@
 
 # Add inputs and outputs from these tool invocations to the build variables 
 CPP_SRCS += \
+../test/gamepad.cpp \
 ../test/main.cpp 
 
 OBJS += \
+./test/gamepad.o \
 ./test/main.o 
 
 CPP_DEPS += \
+./test/gamepad.d \
 ./test/main.d 
 
 

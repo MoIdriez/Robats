@@ -1,0 +1,13 @@
+/*
+ * Hover.cpp
+ *
+ *  Created on: 4 Jun 2016
+ *      Author: midries
+ */
+
+#include "CCrazyflie.h"
+
+bool hover() {
+
+}
+

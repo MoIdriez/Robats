@@ -7,19 +7,22 @@ CPP_SRCS += \
 ../src/CrazyEngine/CCRTPPacket.cpp \
 ../src/CrazyEngine/CCrazyRadio.cpp \
 ../src/CrazyEngine/CCrazyflie.cpp \
-../src/CrazyEngine/CTOC.cpp 
+../src/CrazyEngine/CTOC.cpp \
+../src/CrazyEngine/CrazyEngine.cpp 
 
 OBJS += \
 ./src/CrazyEngine/CCRTPPacket.o \
 ./src/CrazyEngine/CCrazyRadio.o \
 ./src/CrazyEngine/CCrazyflie.o \
-./src/CrazyEngine/CTOC.o 
+./src/CrazyEngine/CTOC.o \
+./src/CrazyEngine/CrazyEngine.o 
 
 CPP_DEPS += \
 ./src/CrazyEngine/CCRTPPacket.d \
 ./src/CrazyEngine/CCrazyRadio.d \
 ./src/CrazyEngine/CCrazyflie.d \
-./src/CrazyEngine/CTOC.d 
+./src/CrazyEngine/CTOC.d \
+./src/CrazyEngine/CrazyEngine.d 
 
 
 # Each subdirectory must supply rules for building sources it contributes

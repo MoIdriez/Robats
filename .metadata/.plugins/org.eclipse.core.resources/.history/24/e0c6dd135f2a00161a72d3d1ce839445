@@ -1,0 +1,14 @@
+#ifndef SRC_CRAZYENGINE_CRAZYENGINE_H_
+#define SRC_CRAZYENGINE_CRAZYENGINE_H_
+
+class CrazyEngine {
+public:
+	typedef void (*landing_function)(void);
+	typedef void (*main_function)(void);
+	CrazyEngine();
+	void setLandingFunction
+	~CrazyEngine();
+
+};
+
+#endif /* SRC_CRAZYENGINE_CRAZYENGINE_H_ */

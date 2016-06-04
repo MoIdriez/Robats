@@ -1,0 +1,32 @@
+/*
+ * CrazyEngine.cpp
+ *
+ *  Created on: 4 Jun 2016
+ *      Author: midries
+ */
+
+#include "CrazyEngine.h"
+
+CrazyEngine::CrazyEngine() {
+
+}
+
+void CrazyEngine::run() {}
+
+
+void CrazyEngine::setLandingFunction(landing_function lFunc) {
+	landingFunc = lFunc;
+}
+void CrazyEngine::setMainFunction(main_function mFunc) {
+	mainFunc = mFunc;
+}
+
+void CrazyEngine::stop() {}
+
+void CrazyEngine::interruptionHandler() {
+	g_bGoon = false;
+}
+
+CrazyEngine::~CrazyEngine() {
+
+}

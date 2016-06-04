@@ -1,0 +1,8 @@
+#include "CrazyEngine.h"
+
+bool gamepad() {
+
+
+
+	return true;
+}

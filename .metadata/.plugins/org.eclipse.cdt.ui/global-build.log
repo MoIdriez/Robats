@@ -128,3 +128,488 @@ Invoking: GCC C++ Linker
 g++ -L"/home/midries/Projects/robats/TestEngine/external" -L"/home/midries/Projects/robats/Robats/Release" -o "TestEngine"  ./test/main.o   -lgtest -lRobats -lpthread
 Finished building target: TestEngine
  
+14:18:23 **** Incremental Build of configuration Release for project Robats ****
+make all 
+make: Nothing to be done for `all'.
+14:18:23 **** Incremental Build of configuration Debug for project RobatsEngine ****
+make all 
+make: Nothing to be done for `all'.
+14:18:24 **** Incremental Build of configuration Debug for project TestEngine ****
+make all 
+Building file: ../test/Hover.cpp
+Invoking: GCC C++ Compiler
+g++ -I"/home/midries/Projects/robats/TestEngine/external/include" -I"/home/midries/Projects/robats/Robats/include" -I"/home/midries/Projects/robats/Robats" -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"test/Hover.d" -MT"test/Hover.o" -o "test/Hover.o" "../test/Hover.cpp"
+../test/Hover.cpp:8:22: fatal error: CCrazyflie: No such file or directory
+ #include "CCrazyflie"
+                      ^
+compilation terminated.
+make: *** [test/Hover.o] Error 1
+14:18:48 **** Incremental Build of configuration Release for project Robats ****
+make all 
+make: Nothing to be done for `all'.
+14:18:49 **** Incremental Build of configuration Debug for project RobatsEngine ****
+make all 
+make: Nothing to be done for `all'.
+14:18:49 **** Incremental Build of configuration Debug for project TestEngine ****
+make all 
+Building file: ../test/Hover.cpp
+Invoking: GCC C++ Compiler
+g++ -I"/home/midries/Projects/robats/TestEngine/external/include" -I"/home/midries/Projects/robats/Robats/include" -I"/home/midries/Projects/robats/Robats" -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"test/Hover.d" -MT"test/Hover.o" -o "test/Hover.o" "../test/Hover.cpp"
+../test/Hover.cpp: In function ‘bool hover()’:
+../test/Hover.cpp:12:1: warning: no return statement in function returning non-void [-Wreturn-type]
+ }
+ ^
+Finished building: ../test/Hover.cpp
+ 
+Building target: TestEngine
+Invoking: GCC C++ Linker
+g++ -L"/home/midries/Projects/robats/TestEngine/external" -L"/home/midries/Projects/robats/Robats/Release" -o "TestEngine"  ./test/Hover.o ./test/main.o   -lgtest -lRobats -lpthread
+Finished building target: TestEngine
+ 
+14:20:05 **** Incremental Build of configuration Release for project Robats ****
+make all 
+make: Nothing to be done for `all'.
+14:20:05 **** Incremental Build of configuration Debug for project TestEngine ****
+make all 
+Building file: ../test/Hover.cpp
+Invoking: GCC C++ Compiler
+g++ -I"/home/midries/Projects/robats/TestEngine/external/include" -I"/home/midries/Projects/robats/Robats/include" -I"/home/midries/Projects/robats/Robats" -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"test/Hover.d" -MT"test/Hover.o" -o "test/Hover.o" "../test/Hover.cpp"
+Finished building: ../test/Hover.cpp
+ 
+Building target: TestEngine
+Invoking: GCC C++ Linker
+g++ -L"/home/midries/Projects/robats/TestEngine/external" -L"/home/midries/Projects/robats/Robats/Release" -o "TestEngine"  ./test/Hover.o ./test/main.o   -lgtest -lRobats -lpthread
+Finished building target: TestEngine
+ 
+14:33:03 **** Incremental Build of configuration Release for project Robats ****
+make all 
+make: Nothing to be done for `all'.
+14:33:04 **** Incremental Build of configuration Debug for project TestEngine ****
+make all 
+Building file: ../test/Hover.cpp
+Invoking: GCC C++ Compiler
+g++ -I"/home/midries/Projects/robats/TestEngine/external/include" -I"/home/midries/Projects/robats/Robats/include" -I"/home/midries/Projects/robats/Robats" -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"test/Hover.d" -MT"test/Hover.o" -o "test/Hover.o" "../test/Hover.cpp"
+Finished building: ../test/Hover.cpp
+ 
+Building target: TestEngine
+Invoking: GCC C++ Linker
+g++ -L"/home/midries/Projects/robats/TestEngine/external" -L"/home/midries/Projects/robats/Robats/Release" -o "TestEngine"  ./test/Hover.o ./test/main.o   -lgtest -lRobats -lpthread
+Finished building target: TestEngine
+ 
+15:28:31 **** Incremental Build of configuration Release for project Robats ****
+make all 
+Building file: ../src/CrazyEngine/CrazyEngine.cpp
+Invoking: GCC C++ Compiler
+g++ -I"/home/midries/Projects/robats/Robats/include" -O3 -Wall -c -fmessage-length=0 -std=c++11 -fPIC -MMD -MP -MF"src/CrazyEngine/CrazyEngine.d" -MT"src/CrazyEngine/CrazyEngine.o" -o "src/CrazyEngine/CrazyEngine.o" "../src/CrazyEngine/CrazyEngine.cpp"
+../src/CrazyEngine/CrazyEngine.cpp:14:1: error: invalid use of destructor ‘~CrazyEngine’ as a type
+ ~CrazyEngine::CrazyEngine() {
+ ^
+make: *** [src/CrazyEngine/CrazyEngine.o] Error 1
+15:28:31 **** Incremental Build of configuration Debug for project TestEngine ****
+make all 
+Building file: ../test/Hover.cpp
+Invoking: GCC C++ Compiler
+g++ -I"/home/midries/Projects/robats/TestEngine/external/include" -I"/home/midries/Projects/robats/Robats/include" -I"/home/midries/Projects/robats/Robats" -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"test/Hover.d" -MT"test/Hover.o" -o "test/Hover.o" "../test/Hover.cpp"
+Finished building: ../test/Hover.cpp
+ 
+Building target: TestEngine
+Invoking: GCC C++ Linker
+g++ -L"/home/midries/Projects/robats/TestEngine/external" -L"/home/midries/Projects/robats/Robats/Release" -o "TestEngine"  ./test/Hover.o ./test/main.o   -lgtest -lRobats -lpthread
+/usr/bin/ld: cannot find -lRobats
+collect2: error: ld returned 1 exit status
+make: *** [TestEngine] Error 1
+15:28:43 **** Incremental Build of configuration Release for project Robats ****
+make all 
+Building file: ../src/CrazyEngine/CrazyEngine.cpp
+Invoking: GCC C++ Compiler
+g++ -I"/home/midries/Projects/robats/Robats/include" -O3 -Wall -c -fmessage-length=0 -std=c++11 -fPIC -MMD -MP -MF"src/CrazyEngine/CrazyEngine.d" -MT"src/CrazyEngine/CrazyEngine.o" -o "src/CrazyEngine/CrazyEngine.o" "../src/CrazyEngine/CrazyEngine.cpp"
+Finished building: ../src/CrazyEngine/CrazyEngine.cpp
+ 
+Building target: libRobats.so
+Invoking: GCC C++ Linker
+g++ -shared -o "libRobats.so"  ./src/CrazyEngine/CCRTPPacket.o ./src/CrazyEngine/CCrazyRadio.o ./src/CrazyEngine/CCrazyflie.o ./src/CrazyEngine/CTOC.o ./src/CrazyEngine/CrazyEngine.o  ./src/CrazyControl/AutoFlight.o ./src/CrazyControl/GamePad.o  ./src/CrazyComms/CrazyServer.o  ./src/Counter.o   -lusb-1.0
+Finished building target: libRobats.so
+ 
+15:28:44 **** Incremental Build of configuration Debug for project TestEngine ****
+make all 
+Building target: TestEngine
+Invoking: GCC C++ Linker
+g++ -L"/home/midries/Projects/robats/TestEngine/external" -L"/home/midries/Projects/robats/Robats/Release" -o "TestEngine"  ./test/Hover.o ./test/main.o   -lgtest -lRobats -lpthread
+Finished building target: TestEngine
+ 
+15:29:25 **** Incremental Build of configuration Release for project Robats ****
+make all 
+Building file: ../src/CrazyEngine/CrazyEngine.cpp
+Invoking: GCC C++ Compiler
+g++ -I"/home/midries/Projects/robats/Robats/include" -O3 -Wall -c -fmessage-length=0 -std=c++11 -fPIC -MMD -MP -MF"src/CrazyEngine/CrazyEngine.d" -MT"src/CrazyEngine/CrazyEngine.o" -o "src/CrazyEngine/CrazyEngine.o" "../src/CrazyEngine/CrazyEngine.cpp"
+../src/CrazyEngine/CrazyEngine.cpp:14:60: error: declaration of ‘void CrazyEngine::setLandingFunction(CrazyEngine::landing_function)’ outside of class is not definition [-fpermissive]
+ void CrazyEngine::setLandingFunction(landing_function lFunc);
+                                                            ^
+../src/CrazyEngine/CrazyEngine.cpp:15:54: error: declaration of ‘void CrazyEngine::setMainFunction(CrazyEngine::main_function)’ outside of class is not definition [-fpermissive]
+ void CrazyEngine::setMainFunction(main_function mFunc);
+                                                      ^
+../src/CrazyEngine/CrazyEngine.cpp:16:23: error: declaration of ‘void CrazyEngine::run()’ outside of class is not definition [-fpermissive]
+ void CrazyEngine::run();
+                       ^
+../src/CrazyEngine/CrazyEngine.cpp:17:24: error: declaration of ‘void CrazyEngine::stop()’ outside of class is not definition [-fpermissive]
+ void CrazyEngine::stop();
+                        ^
+../src/CrazyEngine/CrazyEngine.cpp:19:6: error: prototype for ‘void CrazyEngine::interruptionHandler(int)’ does not match any in class ‘CrazyEngine’
+ void CrazyEngine::interruptionHandler(int dummy = 0) {
+      ^
+In file included from ../src/CrazyEngine/CrazyEngine.cpp:8:0:
+/home/midries/Projects/robats/Robats/include/CrazyEngine.h:16:7: error: candidate is: void CrazyEngine::interruptionHandler()
+  void interruptionHandler();
+       ^
+make: *** [src/CrazyEngine/CrazyEngine.o] Error 1
+15:29:25 **** Incremental Build of configuration Debug for project TestEngine ****
+make all 
+make: Nothing to be done for `all'.
+15:29:42 **** Incremental Build of configuration Release for project Robats ****
+make all 
+Building file: ../src/CrazyEngine/CrazyEngine.cpp
+Invoking: GCC C++ Compiler
+g++ -I"/home/midries/Projects/robats/Robats/include" -O3 -Wall -c -fmessage-length=0 -std=c++11 -fPIC -MMD -MP -MF"src/CrazyEngine/CrazyEngine.d" -MT"src/CrazyEngine/CrazyEngine.o" -o "src/CrazyEngine/CrazyEngine.o" "../src/CrazyEngine/CrazyEngine.cpp"
+Finished building: ../src/CrazyEngine/CrazyEngine.cpp
+ 
+Building target: libRobats.so
+Invoking: GCC C++ Linker
+g++ -shared -o "libRobats.so"  ./src/CrazyEngine/CCRTPPacket.o ./src/CrazyEngine/CCrazyRadio.o ./src/CrazyEngine/CCrazyflie.o ./src/CrazyEngine/CTOC.o ./src/CrazyEngine/CrazyEngine.o  ./src/CrazyControl/AutoFlight.o ./src/CrazyControl/GamePad.o  ./src/CrazyComms/CrazyServer.o  ./src/Counter.o   -lusb-1.0
+Finished building target: libRobats.so
+ 
+15:29:42 **** Incremental Build of configuration Debug for project TestEngine ****
+make all 
+Building target: TestEngine
+Invoking: GCC C++ Linker
+g++ -L"/home/midries/Projects/robats/TestEngine/external" -L"/home/midries/Projects/robats/Robats/Release" -o "TestEngine"  ./test/Hover.o ./test/main.o   -lgtest -lRobats -lpthread
+Finished building target: TestEngine
+ 
+15:31:11 **** Incremental Build of configuration Release for project Robats ****
+make all 
+Building file: ../src/CrazyEngine/CrazyEngine.cpp
+Invoking: GCC C++ Compiler
+g++ -I"/home/midries/Projects/robats/Robats/include" -O3 -Wall -c -fmessage-length=0 -std=c++11 -fPIC -MMD -MP -MF"src/CrazyEngine/CrazyEngine.d" -MT"src/CrazyEngine/CrazyEngine.o" -o "src/CrazyEngine/CrazyEngine.o" "../src/CrazyEngine/CrazyEngine.cpp"
+../src/CrazyEngine/CrazyEngine.cpp: In member function ‘void CrazyEngine::run()’:
+../src/CrazyEngine/CrazyEngine.cpp:17:41: error: cannot convert ‘CrazyEngine::interruptionHandler’ from type ‘void (CrazyEngine::)()’ to type ‘__sighandler_t {aka void (*)(int)}’
+  std::signal(SIGINT, interruptionHandler);
+                                         ^
+../src/CrazyEngine/CrazyEngine.cpp:112:10: error: return-statement with a value, in function returning 'void' [-fpermissive]
+   return nReturnvalue;
+          ^
+make: *** [src/CrazyEngine/CrazyEngine.o] Error 1
+15:31:11 **** Incremental Build of configuration Debug for project TestEngine ****
+make all 
+make: Nothing to be done for `all'.
+15:31:59 **** Incremental Build of configuration Release for project Robats ****
+make all 
+Building file: ../src/CrazyEngine/CrazyEngine.cpp
+Invoking: GCC C++ Compiler
+g++ -I"/home/midries/Projects/robats/Robats/include" -O3 -Wall -c -fmessage-length=0 -std=c++11 -fPIC -MMD -MP -MF"src/CrazyEngine/CrazyEngine.d" -MT"src/CrazyEngine/CrazyEngine.o" -o "src/CrazyEngine/CrazyEngine.o" "../src/CrazyEngine/CrazyEngine.cpp"
+../src/CrazyEngine/CrazyEngine.cpp: In member function ‘void CrazyEngine::run()’:
+../src/CrazyEngine/CrazyEngine.cpp:17:41: error: cannot convert ‘CrazyEngine::interruptionHandler’ from type ‘void (CrazyEngine::)(int)’ to type ‘__sighandler_t {aka void (*)(int)}’
+  std::signal(SIGINT, interruptionHandler);
+                                         ^
+../src/CrazyEngine/CrazyEngine.cpp:19:7: warning: unused variable ‘nReturnvalue’ [-Wunused-variable]
+   int nReturnvalue = 0;
+       ^
+make: *** [src/CrazyEngine/CrazyEngine.o] Error 1
+15:32:00 **** Incremental Build of configuration Debug for project TestEngine ****
+make all 
+make: Nothing to be done for `all'.
+15:32:16 **** Incremental Build of configuration Release for project Robats ****
+make all 
+Building file: ../src/CrazyEngine/CrazyEngine.cpp
+Invoking: GCC C++ Compiler
+g++ -I"/home/midries/Projects/robats/Robats/include" -O3 -Wall -c -fmessage-length=0 -std=c++11 -fPIC -MMD -MP -MF"src/CrazyEngine/CrazyEngine.d" -MT"src/CrazyEngine/CrazyEngine.o" -o "src/CrazyEngine/CrazyEngine.o" "../src/CrazyEngine/CrazyEngine.cpp"
+../src/CrazyEngine/CrazyEngine.cpp: In member function ‘void CrazyEngine::run()’:
+../src/CrazyEngine/CrazyEngine.cpp:17:47: error: cannot convert ‘CrazyEngine::interruptionHandler’ from type ‘void (CrazyEngine::)(int)’ to type ‘__sighandler_t {aka void (*)(int)}’
+  std::signal(SIGINT, this->interruptionHandler);
+                                               ^
+../src/CrazyEngine/CrazyEngine.cpp:19:7: warning: unused variable ‘nReturnvalue’ [-Wunused-variable]
+   int nReturnvalue = 0;
+       ^
+make: *** [src/CrazyEngine/CrazyEngine.o] Error 1
+15:32:17 **** Incremental Build of configuration Debug for project TestEngine ****
+make all 
+make: Nothing to be done for `all'.
+15:32:27 **** Incremental Build of configuration Release for project Robats ****
+make all 
+Building file: ../src/CrazyEngine/CrazyEngine.cpp
+Invoking: GCC C++ Compiler
+g++ -I"/home/midries/Projects/robats/Robats/include" -O3 -Wall -c -fmessage-length=0 -std=c++11 -fPIC -MMD -MP -MF"src/CrazyEngine/CrazyEngine.d" -MT"src/CrazyEngine/CrazyEngine.o" -o "src/CrazyEngine/CrazyEngine.o" "../src/CrazyEngine/CrazyEngine.cpp"
+../src/CrazyEngine/CrazyEngine.cpp: In member function ‘void CrazyEngine::run()’:
+../src/CrazyEngine/CrazyEngine.cpp:19:7: warning: unused variable ‘nReturnvalue’ [-Wunused-variable]
+   int nReturnvalue = 0;
+       ^
+Finished building: ../src/CrazyEngine/CrazyEngine.cpp
+ 
+Building target: libRobats.so
+Invoking: GCC C++ Linker
+g++ -shared -o "libRobats.so"  ./src/CrazyEngine/CCRTPPacket.o ./src/CrazyEngine/CCrazyRadio.o ./src/CrazyEngine/CCrazyflie.o ./src/CrazyEngine/CTOC.o ./src/CrazyEngine/CrazyEngine.o  ./src/CrazyControl/AutoFlight.o ./src/CrazyControl/GamePad.o  ./src/CrazyComms/CrazyServer.o  ./src/Counter.o   -lusb-1.0
+Finished building target: libRobats.so
+ 
+15:32:28 **** Incremental Build of configuration Debug for project TestEngine ****
+make all 
+Building target: TestEngine
+Invoking: GCC C++ Linker
+g++ -L"/home/midries/Projects/robats/TestEngine/external" -L"/home/midries/Projects/robats/Robats/Release" -o "TestEngine"  ./test/Hover.o ./test/main.o   -lgtest -lRobats -lpthread
+Finished building target: TestEngine
+ 
+15:32:51 **** Incremental Build of configuration Release for project Robats ****
+make all 
+Building file: ../src/CrazyEngine/CrazyEngine.cpp
+Invoking: GCC C++ Compiler
+g++ -I"/home/midries/Projects/robats/Robats/include" -O3 -Wall -c -fmessage-length=0 -std=c++11 -fPIC -MMD -MP -MF"src/CrazyEngine/CrazyEngine.d" -MT"src/CrazyEngine/CrazyEngine.o" -o "src/CrazyEngine/CrazyEngine.o" "../src/CrazyEngine/CrazyEngine.cpp"
+../src/CrazyEngine/CrazyEngine.cpp: In member function ‘void CrazyEngine::run()’:
+../src/CrazyEngine/CrazyEngine.cpp:18:7: warning: unused variable ‘nReturnvalue’ [-Wunused-variable]
+   int nReturnvalue = 0;
+       ^
+Finished building: ../src/CrazyEngine/CrazyEngine.cpp
+ 
+Building target: libRobats.so
+Invoking: GCC C++ Linker
+g++ -shared -o "libRobats.so"  ./src/CrazyEngine/CCRTPPacket.o ./src/CrazyEngine/CCrazyRadio.o ./src/CrazyEngine/CCrazyflie.o ./src/CrazyEngine/CTOC.o ./src/CrazyEngine/CrazyEngine.o  ./src/CrazyControl/AutoFlight.o ./src/CrazyControl/GamePad.o  ./src/CrazyComms/CrazyServer.o  ./src/Counter.o   -lusb-1.0
+Finished building target: libRobats.so
+ 
+15:32:52 **** Incremental Build of configuration Debug for project TestEngine ****
+make all 
+Building target: TestEngine
+Invoking: GCC C++ Linker
+g++ -L"/home/midries/Projects/robats/TestEngine/external" -L"/home/midries/Projects/robats/Robats/Release" -o "TestEngine"  ./test/Hover.o ./test/main.o   -lgtest -lRobats -lpthread
+Finished building target: TestEngine
+ 
+15:45:44 **** Incremental Build of configuration Release for project Robats ****
+make all 
+Building file: ../src/CrazyEngine/CrazyEngine.cpp
+Invoking: GCC C++ Compiler
+g++ -I"/home/midries/Projects/robats/Robats/include" -O3 -Wall -c -fmessage-length=0 -std=c++11 -fPIC -MMD -MP -MF"src/CrazyEngine/CrazyEngine.d" -MT"src/CrazyEngine/CrazyEngine.o" -o "src/CrazyEngine/CrazyEngine.o" "../src/CrazyEngine/CrazyEngine.cpp"
+In file included from ../src/CrazyEngine/CrazyEngine.cpp:10:0:
+/home/midries/Projects/robats/Robats/include/CrazyEngine.h: In constructor ‘CrazyEngine::CrazyEngine(CrazyEngine::main_function)’:
+/home/midries/Projects/robats/Robats/include/CrazyEngine.h:17:16: warning: ‘CrazyEngine::mainFunc’ will be initialized after [-Wreorder]
+  main_function mainFunc;
+                ^
+/home/midries/Projects/robats/Robats/include/CrazyEngine.h:16:19: warning:   ‘void (* CrazyEngine::landingFunc)()’ [-Wreorder]
+  landing_function landingFunc;
+                   ^
+../src/CrazyEngine/CrazyEngine.cpp:12:1: warning:   when initialized here [-Wreorder]
+ CrazyEngine::CrazyEngine(main_function mFunc) : g_bGoon(false), mainFunc(mFunc), landingFunc(NULL) {}
+ ^
+Finished building: ../src/CrazyEngine/CrazyEngine.cpp
+ 
+Building target: libRobats.so
+Invoking: GCC C++ Linker
+g++ -shared -o "libRobats.so"  ./src/CrazyEngine/CCRTPPacket.o ./src/CrazyEngine/CCrazyRadio.o ./src/CrazyEngine/CCrazyflie.o ./src/CrazyEngine/CTOC.o ./src/CrazyEngine/CrazyEngine.o  ./src/CrazyControl/AutoFlight.o ./src/CrazyControl/GamePad.o  ./src/CrazyComms/CrazyServer.o  ./src/Counter.o   -lusb-1.0
+Finished building target: libRobats.so
+ 
+15:45:45 **** Incremental Build of configuration Debug for project TestEngine ****
+make all 
+Building file: ../test/Hover.cpp
+Invoking: GCC C++ Compiler
+g++ -I"/home/midries/Projects/robats/TestEngine/external/include" -I"/home/midries/Projects/robats/Robats/include" -I"/home/midries/Projects/robats/Robats" -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"test/Hover.d" -MT"test/Hover.o" -o "test/Hover.o" "../test/Hover.cpp"
+Finished building: ../test/Hover.cpp
+ 
+Building target: TestEngine
+Invoking: GCC C++ Linker
+g++ -L"/home/midries/Projects/robats/TestEngine/external" -L"/home/midries/Projects/robats/Robats/Release" -o "TestEngine"  ./test/Hover.o ./test/main.o   -lgtest -lRobats -lpthread
+Finished building target: TestEngine
+ 
+16:06:53 **** Incremental Build of configuration Release for project Robats ****
+make all 
+Building file: ../src/CrazyEngine/CrazyEngine.cpp
+Invoking: GCC C++ Compiler
+g++ -I"/home/midries/Projects/robats/Robats/include" -O3 -Wall -c -fmessage-length=0 -std=c++11 -fPIC -MMD -MP -MF"src/CrazyEngine/CrazyEngine.d" -MT"src/CrazyEngine/CrazyEngine.o" -o "src/CrazyEngine/CrazyEngine.o" "../src/CrazyEngine/CrazyEngine.cpp"
+In file included from ../src/CrazyEngine/CrazyEngine.cpp:10:0:
+/home/midries/Projects/robats/Robats/include/CrazyEngine.h: In constructor ‘CrazyEngine::CrazyEngine(CrazyEngine::main_function)’:
+/home/midries/Projects/robats/Robats/include/CrazyEngine.h:19:16: warning: ‘CrazyEngine::mainFunc’ will be initialized after [-Wreorder]
+  main_function mainFunc;
+                ^
+/home/midries/Projects/robats/Robats/include/CrazyEngine.h:18:19: warning:   ‘void (* CrazyEngine::landingFunc)()’ [-Wreorder]
+  landing_function landingFunc;
+                   ^
+../src/CrazyEngine/CrazyEngine.cpp:12:1: warning:   when initialized here [-Wreorder]
+ CrazyEngine::CrazyEngine(main_function mFunc) : g_bGoon(false), gpEnabled(false), mainFunc(mFunc), landingFunc(NULL) {}
+ ^
+../src/CrazyEngine/CrazyEngine.cpp: In member function ‘void CrazyEngine::run()’:
+../src/CrazyEngine/CrazyEngine.cpp:31:20: error: aggregate ‘CrazyEngine::run()::gp_values gpv’ has incomplete type and cannot be defined
+   struct gp_values gpv;
+                    ^
+../src/CrazyEngine/CrazyEngine.cpp:32:3: error: ‘GamePad’ was not declared in this scope
+   GamePad *gamepad = new GamePad();
+   ^
+../src/CrazyEngine/CrazyEngine.cpp:32:12: error: ‘gamepad’ was not declared in this scope
+   GamePad *gamepad = new GamePad();
+            ^
+../src/CrazyEngine/CrazyEngine.cpp:32:26: error: expected type-specifier before ‘GamePad’
+   GamePad *gamepad = new GamePad();
+                          ^
+../src/CrazyEngine/CrazyEngine.cpp:32:26: error: expected ‘;’ before ‘GamePad’
+make: *** [src/CrazyEngine/CrazyEngine.o] Error 1
+16:06:54 **** Incremental Build of configuration Debug for project RobatsEngine ****
+make all 
+Building file: ../src/RobatsEngine.cpp
+Invoking: GCC C++ Compiler
+g++ -I"/home/midries/Projects/robats/Robats/include" -O0 -g3 -Wall -c -fmessage-length=0 -std=c++11 -MMD -MP -MF"src/RobatsEngine.d" -MT"src/RobatsEngine.o" -o "src/RobatsEngine.o" "../src/RobatsEngine.cpp"
+Finished building: ../src/RobatsEngine.cpp
+ 
+Building target: RobatsEngine
+Invoking: GCC C++ Linker
+g++ -L"/home/midries/Projects/robats/Robats/Release" -o "RobatsEngine"  ./src/RobatsEngine.o   -lusb-1.0 -lRobats
+/usr/bin/ld: cannot find -lRobats
+collect2: error: ld returned 1 exit status
+make: *** [RobatsEngine] Error 1
+16:06:54 **** Incremental Build of configuration Debug for project TestEngine ****
+make all 
+Building file: ../test/gamepad.cpp
+Invoking: GCC C++ Compiler
+g++ -I"/home/midries/Projects/robats/TestEngine/external/include" -I"/home/midries/Projects/robats/Robats/include" -I"/home/midries/Projects/robats/Robats" -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"test/gamepad.d" -MT"test/gamepad.o" -o "test/gamepad.o" "../test/gamepad.cpp"
+Finished building: ../test/gamepad.cpp
+ 
+Building target: TestEngine
+Invoking: GCC C++ Linker
+g++ -L"/home/midries/Projects/robats/TestEngine/external" -L"/home/midries/Projects/robats/Robats/Release" -o "TestEngine"  ./test/gamepad.o ./test/main.o   -lgtest -lRobats -lpthread
+/usr/bin/ld: cannot find -lRobats
+collect2: error: ld returned 1 exit status
+make: *** [TestEngine] Error 1
+16:07:13 **** Incremental Build of configuration Release for project Robats ****
+make all 
+Building file: ../src/CrazyEngine/CrazyEngine.cpp
+Invoking: GCC C++ Compiler
+g++ -I"/home/midries/Projects/robats/Robats/include" -O3 -Wall -c -fmessage-length=0 -std=c++11 -fPIC -MMD -MP -MF"src/CrazyEngine/CrazyEngine.d" -MT"src/CrazyEngine/CrazyEngine.o" -o "src/CrazyEngine/CrazyEngine.o" "../src/CrazyEngine/CrazyEngine.cpp"
+In file included from ../src/CrazyEngine/CrazyEngine.cpp:11:0:
+/home/midries/Projects/robats/Robats/include/CrazyEngine.h: In constructor ‘CrazyEngine::CrazyEngine(CrazyEngine::main_function)’:
+/home/midries/Projects/robats/Robats/include/CrazyEngine.h:19:16: warning: ‘CrazyEngine::mainFunc’ will be initialized after [-Wreorder]
+  main_function mainFunc;
+                ^
+/home/midries/Projects/robats/Robats/include/CrazyEngine.h:18:19: warning:   ‘void (* CrazyEngine::landingFunc)()’ [-Wreorder]
+  landing_function landingFunc;
+                   ^
+../src/CrazyEngine/CrazyEngine.cpp:13:1: warning:   when initialized here [-Wreorder]
+ CrazyEngine::CrazyEngine(main_function mFunc) : g_bGoon(false), gpEnabled(false), mainFunc(mFunc), landingFunc(NULL) {}
+ ^
+../src/CrazyEngine/CrazyEngine.cpp: In member function ‘void CrazyEngine::run()’:
+../src/CrazyEngine/CrazyEngine.cpp:33:12: warning: unused variable ‘gamepad’ [-Wunused-variable]
+   GamePad *gamepad = new GamePad();
+            ^
+Finished building: ../src/CrazyEngine/CrazyEngine.cpp
+ 
+Building target: libRobats.so
+Invoking: GCC C++ Linker
+g++ -shared -o "libRobats.so"  ./src/CrazyEngine/CCRTPPacket.o ./src/CrazyEngine/CCrazyRadio.o ./src/CrazyEngine/CCrazyflie.o ./src/CrazyEngine/CTOC.o ./src/CrazyEngine/CrazyEngine.o  ./src/CrazyControl/AutoFlight.o ./src/CrazyControl/GamePad.o  ./src/CrazyComms/CrazyServer.o  ./src/Counter.o   -lusb-1.0
+Finished building target: libRobats.so
+ 
+16:07:13 **** Incremental Build of configuration Debug for project RobatsEngine ****
+make all 
+Building target: RobatsEngine
+Invoking: GCC C++ Linker
+g++ -L"/home/midries/Projects/robats/Robats/Release" -o "RobatsEngine"  ./src/RobatsEngine.o   -lusb-1.0 -lRobats
+Finished building target: RobatsEngine
+ 
+16:07:14 **** Incremental Build of configuration Debug for project TestEngine ****
+make all 
+Building target: TestEngine
+Invoking: GCC C++ Linker
+g++ -L"/home/midries/Projects/robats/TestEngine/external" -L"/home/midries/Projects/robats/Robats/Release" -o "TestEngine"  ./test/gamepad.o ./test/main.o   -lgtest -lRobats -lpthread
+Finished building target: TestEngine
+ 
+16:12:46 **** Incremental Build of configuration Release for project Robats ****
+make all 
+Building file: ../src/CrazyEngine/CrazyEngine.cpp
+Invoking: GCC C++ Compiler
+g++ -I"/home/midries/Projects/robats/Robats/include" -O3 -Wall -c -fmessage-length=0 -std=c++11 -fPIC -MMD -MP -MF"src/CrazyEngine/CrazyEngine.d" -MT"src/CrazyEngine/CrazyEngine.o" -o "src/CrazyEngine/CrazyEngine.o" "../src/CrazyEngine/CrazyEngine.cpp"
+../src/CrazyEngine/CrazyEngine.cpp: In member function ‘void CrazyEngine::run()’:
+../src/CrazyEngine/CrazyEngine.cpp:73:16: error: too few arguments to function
+       mainFunc();
+                ^
+make: *** [src/CrazyEngine/CrazyEngine.o] Error 1
+16:12:46 **** Incremental Build of configuration Debug for project RobatsEngine ****
+make all 
+make: Nothing to be done for `all'.
+16:12:47 **** Incremental Build of configuration Debug for project TestEngine ****
+make all 
+Building file: ../test/gamepad.cpp
+Invoking: GCC C++ Compiler
+g++ -I"/home/midries/Projects/robats/TestEngine/external/include" -I"/home/midries/Projects/robats/Robats/include" -I"/home/midries/Projects/robats/Robats" -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"test/gamepad.d" -MT"test/gamepad.o" -o "test/gamepad.o" "../test/gamepad.cpp"
+In file included from ../test/gamepad.cpp:1:0:
+/home/midries/Projects/robats/Robats/include/GamePad.h:45:15: warning: non-static data member initializers only available with -std=c++11 or -std=gnu++11 [enabled by default]
+  double yaw = 0;
+               ^
+/home/midries/Projects/robats/Robats/include/GamePad.h:46:16: warning: non-static data member initializers only available with -std=c++11 or -std=gnu++11 [enabled by default]
+  double roll = 0;
+                ^
+/home/midries/Projects/robats/Robats/include/GamePad.h:47:17: warning: non-static data member initializers only available with -std=c++11 or -std=gnu++11 [enabled by default]
+  double pitch = 0;
+                 ^
+/home/midries/Projects/robats/Robats/include/GamePad.h:48:18: warning: non-static data member initializers only available with -std=c++11 or -std=gnu++11 [enabled by default]
+  double thrust = 0;
+                  ^
+/home/midries/Projects/robats/Robats/include/GamePad.h:49:17: warning: non-static data member initializers only available with -std=c++11 or -std=gnu++11 [enabled by default]
+  bool althold = 0;
+                 ^
+/home/midries/Projects/robats/Robats/include/GamePad.h:59:20: warning: non-static data member initializers only available with -std=c++11 or -std=gnu++11 [enabled by default]
+  int gamepad_fd = -1;
+                    ^
+Finished building: ../test/gamepad.cpp
+ 
+Building target: TestEngine
+Invoking: GCC C++ Linker
+g++ -L"/home/midries/Projects/robats/TestEngine/external" -L"/home/midries/Projects/robats/Robats/Release" -o "TestEngine"  ./test/gamepad.o ./test/main.o   -lgtest -lRobats -lpthread
+/usr/bin/ld: cannot find -lRobats
+collect2: error: ld returned 1 exit status
+make: *** [TestEngine] Error 1
+16:12:58 **** Incremental Build of configuration Release for project Robats ****
+make all 
+Building file: ../src/CrazyEngine/CrazyEngine.cpp
+Invoking: GCC C++ Compiler
+g++ -I"/home/midries/Projects/robats/Robats/include" -O3 -Wall -c -fmessage-length=0 -std=c++11 -fPIC -MMD -MP -MF"src/CrazyEngine/CrazyEngine.d" -MT"src/CrazyEngine/CrazyEngine.o" -o "src/CrazyEngine/CrazyEngine.o" "../src/CrazyEngine/CrazyEngine.cpp"
+Finished building: ../src/CrazyEngine/CrazyEngine.cpp
+ 
+Building target: libRobats.so
+Invoking: GCC C++ Linker
+g++ -shared -o "libRobats.so"  ./src/CrazyEngine/CCRTPPacket.o ./src/CrazyEngine/CCrazyRadio.o ./src/CrazyEngine/CCrazyflie.o ./src/CrazyEngine/CTOC.o ./src/CrazyEngine/CrazyEngine.o  ./src/CrazyControl/AutoFlight.o ./src/CrazyControl/GamePad.o  ./src/CrazyComms/CrazyServer.o  ./src/Counter.o   -lusb-1.0
+Finished building target: libRobats.so
+ 
+16:12:59 **** Incremental Build of configuration Debug for project RobatsEngine ****
+make all 
+make: Nothing to be done for `all'.
+16:12:59 **** Incremental Build of configuration Debug for project TestEngine ****
+make all 
+Building target: TestEngine
+Invoking: GCC C++ Linker
+g++ -L"/home/midries/Projects/robats/TestEngine/external" -L"/home/midries/Projects/robats/Robats/Release" -o "TestEngine"  ./test/gamepad.o ./test/main.o   -lgtest -lRobats -lpthread
+Finished building target: TestEngine
+ 
+16:13:39 **** Incremental Build of configuration Release for project Robats ****
+make all 
+make: Nothing to be done for `all'.
+16:13:39 **** Incremental Build of configuration Debug for project RobatsEngine ****
+make all 
+make: Nothing to be done for `all'.
+16:13:39 **** Incremental Build of configuration Debug for project TestEngine ****
+make all 
+Building file: ../test/gamepad.cpp
+Invoking: GCC C++ Compiler
+g++ -I"/home/midries/Projects/robats/TestEngine/external/include" -I"/home/midries/Projects/robats/Robats/include" -I"/home/midries/Projects/robats/Robats" -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"test/gamepad.d" -MT"test/gamepad.o" -o "test/gamepad.o" "../test/gamepad.cpp"
+In file included from ../test/gamepad.cpp:1:0:
+/home/midries/Projects/robats/Robats/include/GamePad.h:45:15: warning: non-static data member initializers only available with -std=c++11 or -std=gnu++11 [enabled by default]
+  double yaw = 0;
+               ^
+/home/midries/Projects/robats/Robats/include/GamePad.h:46:16: warning: non-static data member initializers only available with -std=c++11 or -std=gnu++11 [enabled by default]
+  double roll = 0;
+                ^
+/home/midries/Projects/robats/Robats/include/GamePad.h:47:17: warning: non-static data member initializers only available with -std=c++11 or -std=gnu++11 [enabled by default]
+  double pitch = 0;
+                 ^
+/home/midries/Projects/robats/Robats/include/GamePad.h:48:18: warning: non-static data member initializers only available with -std=c++11 or -std=gnu++11 [enabled by default]
+  double thrust = 0;
+                  ^
+/home/midries/Projects/robats/Robats/include/GamePad.h:49:17: warning: non-static data member initializers only available with -std=c++11 or -std=gnu++11 [enabled by default]
+  bool althold = 0;
+                 ^
+/home/midries/Projects/robats/Robats/include/GamePad.h:59:20: warning: non-static data member initializers only available with -std=c++11 or -std=gnu++11 [enabled by default]
+  int gamepad_fd = -1;
+                    ^
+../test/gamepad.cpp: In function ‘void gamepadFunc(CCrazyflie*)’:
+../test/gamepad.cpp:14:15: error: expected ‘;’ before ‘->’ token
+  new GamePad()->readValues(&gpv);
+               ^
+make: *** [test/gamepad.o] Error 1

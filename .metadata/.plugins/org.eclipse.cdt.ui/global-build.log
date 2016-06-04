@@ -1,129 +1,4 @@
-19:47:08 **** Incremental Build of configuration Release for project Robats ****
-make all 
-Building file: ../src/CrazyControl/AutoFlight.cpp
-Invoking: GCC C++ Compiler
-g++ -I"/home/midries/Projects/robats/Robats/include" -O3 -Wall -c -fmessage-length=0 -std=c++11 -fPIC -MMD -MP -MF"src/CrazyControl/AutoFlight.d" -MT"src/CrazyControl/AutoFlight.o" -o "src/CrazyControl/AutoFlight.o" "../src/CrazyControl/AutoFlight.cpp"
-Finished building: ../src/CrazyControl/AutoFlight.cpp
- 
-Building file: ../src/CrazyControl/GamePad.cpp
-Invoking: GCC C++ Compiler
-g++ -I"/home/midries/Projects/robats/Robats/include" -O3 -Wall -c -fmessage-length=0 -std=c++11 -fPIC -MMD -MP -MF"src/CrazyControl/GamePad.d" -MT"src/CrazyControl/GamePad.o" -o "src/CrazyControl/GamePad.o" "../src/CrazyControl/GamePad.cpp"
-../src/CrazyControl/GamePad.cpp: In member function ‘int GamePad::readValues(gp_values*)’:
-../src/CrazyControl/GamePad.cpp:62:1: warning: no return statement in function returning non-void [-Wreturn-type]
- }
- ^
-Finished building: ../src/CrazyControl/GamePad.cpp
- 
-Building target: libRobats.so
-Invoking: GCC C++ Linker
-g++ -shared -o "libRobats.so"  ./src/CrazyEngine/CCRTPPacket.o ./src/CrazyEngine/CCrazyRadio.o ./src/CrazyEngine/CCrazyflie.o ./src/CrazyEngine/CTOC.o  ./src/CrazyControl/AutoFlight.o ./src/CrazyControl/GamePad.o  ./src/CrazyComms/CrazyServer.o  ./src/Counter.o   -lusb-1.0
-Finished building target: libRobats.so
- 
-20:50:25 **** Incremental Build of configuration Debug for project RobatsEngine ****
-make all 
-Building file: ../src/RobatsEngine.cpp
-Invoking: GCC C++ Compiler
-g++ -I"/home/midries/Projects/robats/Robats" -O0 -g3 -Wall -c -fmessage-length=0 -std=c++11 -MMD -MP -MF"src/RobatsEngine.d" -MT"src/RobatsEngine.o" -o "src/RobatsEngine.o" "../src/RobatsEngine.cpp"
-../src/RobatsEngine.cpp:2:39: fatal error: src/ControlEngine/GamePad.h: No such file or directory
- #include "src/ControlEngine/GamePad.h"
-                                       ^
-compilation terminated.
-make: *** [src/RobatsEngine.o] Error 1
-20:50:39 **** Incremental Build of configuration Release for project Robats ****
-make all 
-make: Nothing to be done for `all'.
-20:50:39 **** Incremental Build of configuration Debug for project RobatsEngine ****
-make all 
-Building file: ../src/RobatsEngine.cpp
-Invoking: GCC C++ Compiler
-g++ -I"/home/midries/Projects/robats/Robats" -O0 -g3 -Wall -c -fmessage-length=0 -std=c++11 -MMD -MP -MF"src/RobatsEngine.d" -MT"src/RobatsEngine.o" -o "src/RobatsEngine.o" "../src/RobatsEngine.cpp"
-../src/RobatsEngine.cpp:2:34: fatal error: CrazyControl/GamePad.h: No such file or directory
- #include "CrazyControl/GamePad.h"
-                                  ^
-compilation terminated.
-make: *** [src/RobatsEngine.o] Error 1
-20:50:40 **** Incremental Build of configuration Debug for project TestEngine ****
-make all 
-Building target: TestEngine
-Invoking: GCC C++ Linker
-g++ -L"/home/midries/Projects/robats/TestEngine/external" -L"/home/midries/Projects/robats/Robats/Release" -o "TestEngine"  ./test/main.o   -lgtest -lRobats -lpthread
-Finished building target: TestEngine
- 
-20:51:45 **** Incremental Build of configuration Release for project Robats ****
-make all 
-make: Nothing to be done for `all'.
-20:51:45 **** Incremental Build of configuration Debug for project RobatsEngine ****
-make all 
-Building file: ../src/RobatsEngine.cpp
-Invoking: GCC C++ Compiler
-g++ -I"/home/midries/Projects/robats/Robats/include" -O0 -g3 -Wall -c -fmessage-length=0 -std=c++11 -MMD -MP -MF"src/RobatsEngine.d" -MT"src/RobatsEngine.o" -o "src/RobatsEngine.o" "../src/RobatsEngine.cpp"
-../src/RobatsEngine.cpp:2:34: fatal error: CrazyControl/GamePad.h: No such file or directory
- #include "CrazyControl/GamePad.h"
-                                  ^
-compilation terminated.
-make: *** [src/RobatsEngine.o] Error 1
-20:51:45 **** Incremental Build of configuration Debug for project TestEngine ****
-make all 
-make: Nothing to be done for `all'.
-20:52:38 **** Incremental Build of configuration Release for project Robats ****
-make all 
-make: Nothing to be done for `all'.
-20:52:39 **** Incremental Build of configuration Debug for project RobatsEngine ****
-make all 
-Building file: ../src/RobatsEngine.cpp
-Invoking: GCC C++ Compiler
-g++ -I"/home/midries/Projects/robats/Robats" -I"/home/midries/Projects/robats/Robats/include" -O0 -g3 -Wall -c -fmessage-length=0 -std=c++11 -MMD -MP -MF"src/RobatsEngine.d" -MT"src/RobatsEngine.o" -o "src/RobatsEngine.o" "../src/RobatsEngine.cpp"
-../src/RobatsEngine.cpp:3:42: fatal error: src/ControlEngine/AutoFlight.h: No such file or directory
- #include "src/ControlEngine/AutoFlight.h"
-                                          ^
-compilation terminated.
-make: *** [src/RobatsEngine.o] Error 1
-20:52:39 **** Incremental Build of configuration Debug for project TestEngine ****
-make all 
-make: Nothing to be done for `all'.
-20:52:59 **** Incremental Build of configuration Release for project Robats ****
-make all 
-make: Nothing to be done for `all'.
-20:52:59 **** Incremental Build of configuration Debug for project RobatsEngine ****
-make all 
-Building file: ../src/RobatsEngine.cpp
-Invoking: GCC C++ Compiler
-g++ -I"/home/midries/Projects/robats/Robats/include" -O0 -g3 -Wall -c -fmessage-length=0 -std=c++11 -MMD -MP -MF"src/RobatsEngine.d" -MT"src/RobatsEngine.o" -o "src/RobatsEngine.o" "../src/RobatsEngine.cpp"
-../src/RobatsEngine.cpp:3:42: fatal error: src/ControlEngine/AutoFlight.h: No such file or directory
- #include "src/ControlEngine/AutoFlight.h"
-                                          ^
-compilation terminated.
-make: *** [src/RobatsEngine.o] Error 1
-20:52:59 **** Incremental Build of configuration Debug for project TestEngine ****
-make all 
-make: Nothing to be done for `all'.
-20:53:51 **** Incremental Build of configuration Release for project Robats ****
-make all 
-make: Nothing to be done for `all'.
-20:53:51 **** Incremental Build of configuration Debug for project RobatsEngine ****
-make all 
-Building file: ../src/RobatsEngine.cpp
-Invoking: GCC C++ Compiler
-g++ -I"/home/midries/Projects/robats/Robats/include" -O0 -g3 -Wall -c -fmessage-length=0 -std=c++11 -MMD -MP -MF"src/RobatsEngine.d" -MT"src/RobatsEngine.o" -o "src/RobatsEngine.o" "../src/RobatsEngine.cpp"
-Finished building: ../src/RobatsEngine.cpp
- 
-make: *** No rule to make target `RobatsEngine.o', needed by `RobatsEngine'. Stop.
-20:53:52 **** Incremental Build of configuration Debug for project TestEngine ****
-make all 
-make: Nothing to be done for `all'.
-20:54:14 **** Clean-only build of configuration Release for project Robats ****
-make clean 
-rm -rf  ./src/CrazyEngine/CCRTPPacket.o ./src/CrazyEngine/CCrazyRadio.o ./src/CrazyEngine/CCrazyflie.o ./src/CrazyEngine/CTOC.o  ./src/CrazyControl/AutoFlight.o ./src/CrazyControl/GamePad.o  ./src/CrazyComms/CrazyServer.o  ./src/Counter.o  ./src/CrazyEngine/CCRTPPacket.d ./src/CrazyEngine/CCrazyRadio.d ./src/CrazyEngine/CCrazyflie.d ./src/CrazyEngine/CTOC.d  ./src/CrazyControl/AutoFlight.d ./src/CrazyControl/GamePad.d  ./src/CrazyComms/CrazyServer.d  ./src/Counter.d  libRobats.so
- 
-20:54:14 **** Clean-only build of configuration Debug for project RobatsEngine ****
-make clean 
-rm -rf  ./src/RobatsEngine.o  ./RobatsEngine.o  ./src/RobatsEngine.d  ./RobatsEngine.d  RobatsEngine
- 
-20:54:14 **** Clean-only build of configuration Debug for project TestEngine ****
-make clean 
-rm -rf  ./test/main.o  ./test/main.d  TestEngine
- 
-20:54:20 **** Build of configuration Release for project Robats ****
+13:20:55 **** Build of configuration Release for project Robats ****
 make all 
 Building file: ../src/CrazyEngine/CCRTPPacket.cpp
 Invoking: GCC C++ Compiler
@@ -228,29 +103,28 @@ Invoking: GCC C++ Linker
 g++ -shared -o "libRobats.so"  ./src/CrazyEngine/CCRTPPacket.o ./src/CrazyEngine/CCrazyRadio.o ./src/CrazyEngine/CCrazyflie.o ./src/CrazyEngine/CTOC.o  ./src/CrazyControl/AutoFlight.o ./src/CrazyControl/GamePad.o  ./src/CrazyComms/CrazyServer.o  ./src/Counter.o   -lusb-1.0
 Finished building target: libRobats.so
  
-20:54:24 **** Build of configuration Debug for project RobatsEngine ****
+13:20:59 **** Build of configuration Debug for project RobatsEngine ****
 make all 
 Building file: ../src/RobatsEngine.cpp
 Invoking: GCC C++ Compiler
 g++ -I"/home/midries/Projects/robats/Robats/include" -O0 -g3 -Wall -c -fmessage-length=0 -std=c++11 -MMD -MP -MF"src/RobatsEngine.d" -MT"src/RobatsEngine.o" -o "src/RobatsEngine.o" "../src/RobatsEngine.cpp"
 Finished building: ../src/RobatsEngine.cpp
  
-make: *** No rule to make target `RobatsEngine.o', needed by `RobatsEngine'. Stop.
-20:54:24 **** Build of configuration Debug for project TestEngine ****
-make all 
-Building file: ../test/main.cpp
-Invoking: GCC C++ Compiler
-g++ -I"/home/midries/Projects/robats/TestEngine/external/include" -I"/home/midries/Projects/robats/Robats/include" -I"/home/midries/Projects/robats/Robats" -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"test/main.d" -MT"test/main.o" -o "test/main.o" "../test/main.cpp"
-Finished building: ../test/main.cpp
+Building target: RobatsEngine
+Invoking: GCC C++ Linker
+g++ -L"/home/midries/Projects/robats/Robats/Release" -o "RobatsEngine"  ./src/RobatsEngine.o   -lusb-1.0 -lRobats
+Finished building target: RobatsEngine
  
+13:21:07 **** Incremental Build of configuration Release for project Robats ****
+make all 
+make: Nothing to be done for `all'.
+13:21:08 **** Incremental Build of configuration Debug for project RobatsEngine ****
+make all 
+make: Nothing to be done for `all'.
+13:21:08 **** Incremental Build of configuration Debug for project TestEngine ****
+make all 
 Building target: TestEngine
 Invoking: GCC C++ Linker
 g++ -L"/home/midries/Projects/robats/TestEngine/external" -L"/home/midries/Projects/robats/Robats/Release" -o "TestEngine"  ./test/main.o   -lgtest -lRobats -lpthread
 Finished building target: TestEngine
  
-20:55:09 **** Incremental Build of configuration Debug for project RobatsEngine ****
-make all 
-make: *** No rule to make target `RobatsEngine.o', needed by `RobatsEngine'. Stop.
-20:55:09 **** Incremental Build of configuration Debug for project RobatsEngine ****
-make all 
-make: *** No rule to make target `RobatsEngine.o', needed by `RobatsEngine'. Stop.

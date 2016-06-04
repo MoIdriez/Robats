@@ -3,18 +3,19 @@
 	<section name="org.eclipse.ui.texteditor.FindReplaceDialog_dialogBounds">
 		<item value="324" key="DIALOG_WIDTH"/>
 		<item value="226" key="DIALOG_Y_ORIGIN"/>
-		<item value="435" key="DIALOG_HEIGHT"/>
 		<item value="923" key="DIALOG_X_ORIGIN"/>
+		<item value="435" key="DIALOG_HEIGHT"/>
 		<item value="1|Ubuntu|11.0|0|GTK|1|" key="DIALOG_FONT_NAME"/>
 	</section>
 	<section name="org.eclipse.ui.texteditor.FindReplaceDialog">
 		<item value="true" key="wrap"/>
-		<item value="false" key="isRegEx"/>
 		<item value="false" key="casesensitive"/>
+		<item value="false" key="isRegEx"/>
 		<item value="false" key="incremental"/>
 		<item value="false" key="wholeword"/>
-		<item value="Param" key="selection"/>
+		<item value="&#x0A;int main(int argc, char **argv) {&#x0A;&#x09;CCrazyRadio *crRadio = new CCrazyRadio(&quot;radio://0/10/250K&quot;);&#x0A;&#x09;if (crRadio-&gt;startRadio()) {&#x0A;&#x0A;&#x09;&#x09;struct gp_values gpv;&#x0A;&#x09;&#x09;GamePad *gamepad = new GamePad();&#x0A;&#x09;&#x09;AutoFlight *af = new AutoFlight();&#x0A;&#x09;&#x09;CCrazyflie *cflieCopter = new CCrazyflie(crRadio);&#x0A;&#x0A;&#x09;&#x09;cflieCopter-&gt;setSendSetpoints(true);&#x0A;&#x0A;&#x09;&#x09;while (cflieCopter-&gt;cycle()) {&#x0A;&#x09;&#x09;&#x09;gamepad-&gt;readValues(&amp;gpv);&#x0A;&#x0A;&#x09;&#x09;&#x09;cflieCopter-&gt;setRoll(gpv.roll);&#x0A;&#x09;&#x09;&#x09;cflieCopter-&gt;setPitch(gpv.pitch);&#x0A;//&#x09;&#x09;&#x09;cflieCopter-&gt;setYaw(gpv.yaw); // disable this to make flying easier&#x0A;&#x0A;&#x09;&#x09;&#x09;if (autoflightEnabled &amp; gpv.althold) {&#x0A;&#x09;&#x09;&#x09;&#x09;if (!altHold) {&#x0A;&#x09;&#x09;&#x09;&#x09;&#x09;af-&gt;setTargetAlt(cflieCopter-&gt;asl());&#x0A;&#x09;&#x09;&#x09;&#x09;}&#x0A;&#x09;&#x09;&#x09;&#x09;cflieCopter-&gt;setThrust(&#x0A;&#x09;&#x09;&#x09;&#x09;&#x09;&#x09;af-&gt;cycle(cflieCopter-&gt;asl(), cflieCopter-&gt;thrust()));&#x0A;&#x09;&#x09;&#x09;} else {&#x0A;&#x09;&#x09;&#x09;&#x09;cflieCopter-&gt;setThrust(gpv.thrust);&#x0A;&#x09;&#x09;&#x09;}&#x0A;//&#x09;&#x09;&#x09;logGMP(gpv);&#x0A;&#x09;&#x09;&#x09;logTRPY(cflieCopter);&#x0A;&#x09;&#x09;}&#x0A;&#x09;&#x09;delete cflieCopter;&#x0A;&#x09;} else {&#x0A;&#x09;&#x09;std::cerr &lt;&lt; &quot;Could not connect to dongle. Did you plug it in?&quot; &lt;&lt; std::endl;&#x0A;&#x09;}&#x0A;&#x0A;&#x09;delete crRadio;&#x0A;&#x09;return 0;&#x0A;}" key="selection"/>
 		<list key="findhistory">
+			<item value="&#x0A;int main(int argc, char **argv) {&#x0A;&#x09;CCrazyRadio *crRadio = new CCrazyRadio(&quot;radio://0/10/250K&quot;);&#x0A;&#x09;if (crRadio-&gt;startRadio()) {&#x0A;&#x0A;&#x09;&#x09;struct gp_values gpv;&#x0A;&#x09;&#x09;GamePad *gamepad = new GamePad();&#x0A;&#x09;&#x09;AutoFlight *af = new AutoFlight();&#x0A;&#x09;&#x09;CCrazyflie *cflieCopter = new CCrazyflie(crRadio);&#x0A;&#x0A;&#x09;&#x09;cflieCopter-&gt;setSendSetpoints(true);&#x0A;&#x0A;&#x09;&#x09;while (cflieCopter-&gt;cycle()) {&#x0A;&#x09;&#x09;&#x09;gamepad-&gt;readValues(&amp;gpv);&#x0A;&#x0A;&#x09;&#x09;&#x09;cflieCopter-&gt;setRoll(gpv.roll);&#x0A;&#x09;&#x09;&#x09;cflieCopter-&gt;setPitch(gpv.pitch);&#x0A;//&#x09;&#x09;&#x09;cflieCopter-&gt;setYaw(gpv.yaw); // disable this to make flying easier&#x0A;&#x0A;&#x09;&#x09;&#x09;if (autoflightEnabled &amp; gpv.althold) {&#x0A;&#x09;&#x09;&#x09;&#x09;if (!altHold) {&#x0A;&#x09;&#x09;&#x09;&#x09;&#x09;af-&gt;setTargetAlt(cflieCopter-&gt;asl());&#x0A;&#x09;&#x09;&#x09;&#x09;}&#x0A;&#x09;&#x09;&#x09;&#x09;cflieCopter-&gt;setThrust(&#x0A;&#x09;&#x09;&#x09;&#x09;&#x09;&#x09;af-&gt;cycle(cflieCopter-&gt;asl(), cflieCopter-&gt;thrust()));&#x0A;&#x09;&#x09;&#x09;} else {&#x0A;&#x09;&#x09;&#x09;&#x09;cflieCopter-&gt;setThrust(gpv.thrust);&#x0A;&#x09;&#x09;&#x09;}&#x0A;//&#x09;&#x09;&#x09;logGMP(gpv);&#x0A;&#x09;&#x09;&#x09;logTRPY(cflieCopter);&#x0A;&#x09;&#x09;}&#x0A;&#x09;&#x09;delete cflieCopter;&#x0A;&#x09;} else {&#x0A;&#x09;&#x09;std::cerr &lt;&lt; &quot;Could not connect to dongle. Did you plug it in?&quot; &lt;&lt; std::endl;&#x0A;&#x09;}&#x0A;&#x0A;&#x09;delete crRadio;&#x0A;&#x09;return 0;&#x0A;}"/>
 			<item value="Param"/>
 			<item value="setPar"/>
 			<item value="para"/>
@@ -22,7 +23,6 @@
 			<item value="enableGyroscopeLogging"/>
 			<item value="setThrust"/>
 			<item value="flightmode"/>
-			<item value="bool"/>
 		</list>
 		<list key="replacehistory">
 			<item value="gamepad"/>

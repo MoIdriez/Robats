@@ -1,15 +1,10 @@
-20:54:24 **** Build of configuration Debug for project TestEngine ****
+13:21:08 **** Incremental Build of configuration Debug for project TestEngine ****
 make all 
-Building file: ../test/main.cpp
-Invoking: GCC C++ Compiler
-g++ -I"/home/midries/Projects/robats/TestEngine/external/include" -I"/home/midries/Projects/robats/Robats/include" -I"/home/midries/Projects/robats/Robats" -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"test/main.d" -MT"test/main.o" -o "test/main.o" "../test/main.cpp"
-Finished building: ../test/main.cpp
- 
 Building target: TestEngine
 Invoking: GCC C++ Linker
 g++ -L"/home/midries/Projects/robats/TestEngine/external" -L"/home/midries/Projects/robats/Robats/Release" -o "TestEngine"  ./test/main.o   -lgtest -lRobats -lpthread
 Finished building target: TestEngine
  
 
-20:54:25 Build Finished (took 1s.127ms)
+13:21:08 Build Finished (took 222ms)
 

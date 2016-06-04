@@ -3,6 +3,7 @@
 	<name>RobatsEngine</name>
 	<comment></comment>
 	<projects>
+		<project>Robats</project>
 	</projects>
 	<buildSpec>
 		<buildCommand>

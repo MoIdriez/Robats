@@ -4,12 +4,21 @@
 
 # Add inputs and outputs from these tool invocations to the build variables 
 CPP_SRCS += \
+../src/CSVHover.cpp \
+../src/Hover.cpp \
+../src/Main.cpp \
 ../src/RobatsEngine.cpp 
 
 OBJS += \
+./src/CSVHover.o \
+./src/Hover.o \
+./src/Main.o \
 ./src/RobatsEngine.o 
 
 CPP_DEPS += \
+./src/CSVHover.d \
+./src/Hover.d \
+./src/Main.d \
 ./src/RobatsEngine.d 
 
 

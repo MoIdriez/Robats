@@ -5,17 +5,16 @@
 
 class CrazyEngine {
 public:
-	typedef void (*landing_function)(void);
-	typedef void (*main_function)(CCrazyflie* cflieCopter);
-	CrazyEngine(main_function mFunc);
-	void setLandingFunction(landing_function lFunc);
+	CrazyEngine(bool* isCycle);
 	void run();
+	void runOnThread();
 	void stop();
+	CCrazyflie* getCrazyFlie();
 	~CrazyEngine();
 private:
 	bool g_bGoon;
-	main_function mainFunc;
-	landing_function landingFunc;
+	bool* isCycle;
+	CCrazyflie* cf;
 };
 
 #endif /* SRC_CRAZYENGINE_CRAZYENGINE_H_ */

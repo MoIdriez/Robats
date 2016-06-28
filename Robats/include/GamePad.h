@@ -22,7 +22,9 @@
 #define THRUST 					1
 #define ROLL 					5
 #define PITCH 					2
-#define ALTHOLD					4
+#define L1						4
+#define	R1						6
+#define X						2
 
 /* I took these values from the Python client*/
 #define CF_YAW_MAX				180
@@ -46,7 +48,9 @@ struct gp_values {
 	double roll = 0;
 	double pitch = 0;
 	double thrust = 0;
-	bool althold = 0;
+	bool l1 = 0;
+	bool r1 = 0;
+	bool x = 0;
 };
 
 class GamePad {

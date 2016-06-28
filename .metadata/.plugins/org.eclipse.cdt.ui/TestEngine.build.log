@@ -1,32 +1,20 @@
-16:13:39 **** Incremental Build of configuration Debug for project TestEngine ****
+10:15:12 **** Incremental Build of configuration Debug for project TestEngine ****
 make all 
-Building file: ../test/gamepad.cpp
+Building file: ../test/SimpleFly.cpp
 Invoking: GCC C++ Compiler
-g++ -I"/home/midries/Projects/robats/TestEngine/external/include" -I"/home/midries/Projects/robats/Robats/include" -I"/home/midries/Projects/robats/Robats" -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"test/gamepad.d" -MT"test/gamepad.o" -o "test/gamepad.o" "../test/gamepad.cpp"
-In file included from ../test/gamepad.cpp:1:0:
-/home/midries/Projects/robats/Robats/include/GamePad.h:45:15: warning: non-static data member initializers only available with -std=c++11 or -std=gnu++11 [enabled by default]
-  double yaw = 0;
-               ^
-/home/midries/Projects/robats/Robats/include/GamePad.h:46:16: warning: non-static data member initializers only available with -std=c++11 or -std=gnu++11 [enabled by default]
-  double roll = 0;
-                ^
-/home/midries/Projects/robats/Robats/include/GamePad.h:47:17: warning: non-static data member initializers only available with -std=c++11 or -std=gnu++11 [enabled by default]
-  double pitch = 0;
-                 ^
-/home/midries/Projects/robats/Robats/include/GamePad.h:48:18: warning: non-static data member initializers only available with -std=c++11 or -std=gnu++11 [enabled by default]
-  double thrust = 0;
-                  ^
-/home/midries/Projects/robats/Robats/include/GamePad.h:49:17: warning: non-static data member initializers only available with -std=c++11 or -std=gnu++11 [enabled by default]
-  bool althold = 0;
-                 ^
-/home/midries/Projects/robats/Robats/include/GamePad.h:59:20: warning: non-static data member initializers only available with -std=c++11 or -std=gnu++11 [enabled by default]
-  int gamepad_fd = -1;
-                    ^
-../test/gamepad.cpp: In function ‘void gamepadFunc(CCrazyflie*)’:
-../test/gamepad.cpp:14:15: error: expected ‘;’ before ‘->’ token
-  new GamePad()->readValues(&gpv);
-               ^
-make: *** [test/gamepad.o] Error 1
+g++ -I"/home/midries/Projects/robats/TestEngine/external/include" -I"/home/midries/Projects/robats/Robats/include" -I"/home/midries/Projects/robats/Robats" -O0 -g3 -Wall -c -fmessage-length=0 -std=c++11 -MMD -MP -MF"test/SimpleFly.d" -MT"test/SimpleFly.o" -o "test/SimpleFly.o" "../test/SimpleFly.cpp"
+Finished building: ../test/SimpleFly.cpp
+ 
+Building file: ../test/main.cpp
+Invoking: GCC C++ Compiler
+g++ -I"/home/midries/Projects/robats/TestEngine/external/include" -I"/home/midries/Projects/robats/Robats/include" -I"/home/midries/Projects/robats/Robats" -O0 -g3 -Wall -c -fmessage-length=0 -std=c++11 -MMD -MP -MF"test/main.d" -MT"test/main.o" -o "test/main.o" "../test/main.cpp"
+Finished building: ../test/main.cpp
+ 
+Building target: TestEngine
+Invoking: GCC C++ Linker
+g++ -L"/home/midries/Projects/robats/TestEngine/external" -L"/home/midries/Projects/robats/Robats/Release" -o "TestEngine"  ./test/CSVCrazyFlie.o ./test/PrintGamePad.o ./test/SimpleBalance.o ./test/SimpleFly.o ./test/SimpleHover.o ./test/hover.o ./test/main.o   -lgtest -lRobats -lpthread
+Finished building target: TestEngine
+ 
 
-16:13:40 Build Finished (took 399ms)
+10:15:17 Build Finished (took 5s.15ms)
 

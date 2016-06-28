@@ -244,9 +244,9 @@ bool CCrazyflie::startLogging() {
 	this->enableStabilizerLogging();
 	this->enableGyroscopeLogging();
 	this->enableAccelerometerLogging();
-	this->enableBatteryLogging();
+	//this->enableBatteryLogging();
 	this->enableMagnetometerLogging();
-	this->enableAltimeterLogging();
+	//this->enableAltimeterLogging();
 
 	return true;
 }
@@ -256,9 +256,9 @@ bool CCrazyflie::stopLogging() {
 	this->disableStabilizerLogging();
 	this->disableGyroscopeLogging();
 	this->disableAccelerometerLogging();
-	this->disableBatteryLogging();
+	//this->disableBatteryLogging();
 	this->disableMagnetometerLogging();
-	this->disableAltimeterLogging();
+	//this->disableAltimeterLogging();
 
 	return true;
 }
@@ -292,6 +292,7 @@ void CCrazyflie::enableStabilizerLogging() {
 	m_tocLogs->startLogging("stabilizer.roll", "stabilizer");
 	m_tocLogs->startLogging("stabilizer.pitch", "stabilizer");
 	m_tocLogs->startLogging("stabilizer.yaw", "stabilizer");
+	m_tocLogs->startLogging("stabilizer.thrust", "stabilizer");
 }
 
 void CCrazyflie::enableGyroscopeLogging() {
@@ -401,9 +402,9 @@ void CCrazyflie::disableMagnetometerLogging() {
 void CCrazyflie::enableAltimeterLogging() {
 	m_tocLogs->registerLoggingBlock("altimeter", 1000);
 	m_tocLogs->startLogging("baro.asl", "altimeter");
-	m_tocLogs->startLogging("alti.aslLong", "altimeter");
-	m_tocLogs->startLogging("alti.pressure", "altimeter");
-	m_tocLogs->startLogging("alti.temperature", "altimeter");
+	m_tocLogs->startLogging("baro.aslLong", "altimeter");
+	m_tocLogs->startLogging("baro.pressure", "altimeter");
+	m_tocLogs->startLogging("baro.temperature", "altimeter");
 	m_tocLogs->startLogging("flightmode.althold", "altimeter");
 }
 
@@ -411,13 +412,13 @@ float CCrazyflie::asl() {
 	return this->sensorDoubleValue("baro.asl");
 }
 float CCrazyflie::aslLong() {
-	return this->sensorDoubleValue("alti.aslLong");
+	return this->sensorDoubleValue("baro.aslLong");
 }
 float CCrazyflie::pressure() {
-	return this->sensorDoubleValue("alti.pressure");
+	return this->sensorDoubleValue("baro.pressure");
 }
 float CCrazyflie::temperature() {
-	return this->sensorDoubleValue("alti.temperature");
+	return this->sensorDoubleValue("baro.temperature");
 }
 float CCrazyflie::althold() {
 	return this->sensorDoubleValue("flightmode.althold");

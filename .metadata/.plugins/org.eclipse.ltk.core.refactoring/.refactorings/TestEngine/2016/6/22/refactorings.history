@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename resource &apos;TestEngine/test/gamepad.cpp&apos; to &apos;GamePadTest.cpp&apos;" description="Rename resource &apos;gamepad.cpp&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="test/gamepad.cpp" name="GamePadTest.cpp" stamp="1465063245617" updateReferences="true"/>
+</session>

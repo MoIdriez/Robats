@@ -5,15 +5,25 @@
  *      Author: midries
  */
 #include <csignal>
+#include <thread>
 #include <iostream>
 #include "GamePad.h"
 #include "CrazyEngine.h"
 
-CrazyEngine::CrazyEngine(main_function mFunc) : g_bGoon(false), mainFunc(mFunc), landingFunc(NULL) {}
+CrazyEngine::CrazyEngine(bool* isCycle) : g_bGoon(false), isCycle(isCycle), cf(NULL) {
+	isCycle = false;
+}
+
+CCrazyflie* CrazyEngine::getCrazyFlie() {
+	return cf;
+}
+
+void CrazyEngine::runOnThread() {
+	std::thread([=] { run(); }).detach();
+}
 
 void CrazyEngine::run() {
 	int nThrust = 10001;
-
 	std::string strRadioURI = "radio://0/10/250K";
 
 	std::cout << "Opening radio URI '" << strRadioURI << "'" << std::endl;
@@ -51,13 +61,18 @@ void CrazyEngine::run() {
 			bDongleNotConnectedNotified = false;
 			bDongleConnected = true;
 
-			CCrazyflie *cflieCopter = new CCrazyflie(crRadio);
-			cflieCopter->setSendSetpoints(true);
-			cflieCopter->setThrust(nThrust);
+			cf = new CCrazyflie(crRadio);
+			cf->setSendSetpoints(true);
+			cf->setThrust(nThrust);
+
+//			int count = 0;
+//			double sum = 0;
 
 			while (g_bGoon && bDongleConnected) {
-				if (cflieCopter->cycle()) {
-					if (cflieCopter->copterInRange()) {
+				if (cf->cycle()) {
+
+					if (cf->copterInRange()) {
+						*isCycle = true;
 						if (!bCopterWasInRange || !bRangeStateChangedNotified) {
 							// Event triggered when the copter first comes in range.
 							std::cout << "In range" << std::endl;
@@ -70,7 +85,6 @@ void CrazyEngine::run() {
 						}
 
 						// Loop body for when the copter is in range continuously
-						mainFunc(cflieCopter);
 					} else {
 						if (bCopterWasInRange || !bRangeStateChangedNotified) {
 							// Event triggered when the copter leaves the range.
@@ -83,30 +97,27 @@ void CrazyEngine::run() {
 						// Loop body for when the copter is not in range
 					}
 				} else {
+					isCycle = false;
 					std::cerr << "Connection to radio dongle lost."
 							<< std::endl;
 
 					bDongleConnected = false;
 				}
 			}
-
+			isCycle = false;
 			if (!g_bGoon) {
 				// NOTE(winkler): Here would be the perfect place to initiate a
 				// landing sequence (i.e. ramping down the altitude of the
 				// copter). Right now, this is a dummy branch.
 			}
 
-			delete cflieCopter;
+			delete cf;
 		}
 	}
 
 	std::cout << "Cleaning up" << std::endl;
 	delete crRadio;
 
-}
-
-void CrazyEngine::setLandingFunction(landing_function lFunc) {
-	landingFunc = lFunc;
 }
 
 void CrazyEngine::stop() {

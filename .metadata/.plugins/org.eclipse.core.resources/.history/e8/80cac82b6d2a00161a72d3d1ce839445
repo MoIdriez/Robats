@@ -1,0 +1,12 @@
+#include "AutoFlight.h"
+#include "CCrazyflie.h"
+#include "CrazyEngine.h"
+
+bool hover() {
+
+}
+
+void hoverFunc(CCrazyflie* cflieCopter) {
+	AutoFlight *af = new AutoFlight();
+
+}

@@ -1,0 +1,5 @@
+==== THINGS TO DO IN RANDOM ORDER ====
+
+1) Fix or create new PID (or rate change) controller for the drone to stay up and straight
+2) Fix or create new PID (or rate change) controller for the drone to hold altitude
+3) Stream drone data to matlab for plotting

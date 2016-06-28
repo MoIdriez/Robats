@@ -20,7 +20,16 @@ test/main.o: ../test/main.cpp \
  /home/midries/Projects/robats/TestEngine/external/include/gtest/gtest-test-part.h \
  /home/midries/Projects/robats/TestEngine/external/include/gtest/gtest-typed-test.h \
  /home/midries/Projects/robats/TestEngine/external/include/gtest/gtest_pred_impl.h \
- /home/midries/Projects/robats/Robats/include/Counter.h
+ ../test/PrintGamePad.cpp \
+ /home/midries/Projects/robats/Robats/include/GamePad.h \
+ /home/midries/Projects/robats/Robats/include/CCrazyflie.h \
+ /home/midries/Projects/robats/Robats/include/CCrazyRadio.h \
+ /home/midries/Projects/robats/Robats/include/CCRTPPacket.h \
+ /home/midries/Projects/robats/Robats/include/CTOC.h \
+ /home/midries/Projects/robats/Robats/include/CrazyEngine.h \
+ /home/midries/Projects/robats/Robats/include/CCrazyflie.h \
+ ../test/CSVCrazyFlie.cpp ../test/SimpleHover.cpp ../test/SimpleFly.cpp \
+ ../test/SimpleBalance.cpp
 
 /home/midries/Projects/robats/TestEngine/external/include/gtest/gtest.h:
 
@@ -64,4 +73,26 @@ test/main.o: ../test/main.cpp \
 
 /home/midries/Projects/robats/TestEngine/external/include/gtest/gtest_pred_impl.h:
 
-/home/midries/Projects/robats/Robats/include/Counter.h:
+../test/PrintGamePad.cpp:
+
+/home/midries/Projects/robats/Robats/include/GamePad.h:
+
+/home/midries/Projects/robats/Robats/include/CCrazyflie.h:
+
+/home/midries/Projects/robats/Robats/include/CCrazyRadio.h:
+
+/home/midries/Projects/robats/Robats/include/CCRTPPacket.h:
+
+/home/midries/Projects/robats/Robats/include/CTOC.h:
+
+/home/midries/Projects/robats/Robats/include/CrazyEngine.h:
+
+/home/midries/Projects/robats/Robats/include/CCrazyflie.h:
+
+../test/CSVCrazyFlie.cpp:
+
+../test/SimpleHover.cpp:
+
+../test/SimpleFly.cpp:
+
+../test/SimpleBalance.cpp:

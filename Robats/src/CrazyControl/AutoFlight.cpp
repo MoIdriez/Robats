@@ -1,59 +1,46 @@
-#include <iostream>
-#include <cmath>
 #include "AutoFlight.h"
+#include <valarray>
 
-AutoFlight::AutoFlight() {}
+AutoFlight::AutoFlight( ) {
+//	pid = new PID(mscount, 60000, 0, 1, 1, 1);
+}
 AutoFlight::~AutoFlight() {}
 
-void AutoFlight::setTargetAlt(double targetAltitude) { targetAlt = targetAltitude; prev = clock(); }
+double AutoFlight::getTargetAlt() { return targetAlt; }
 
-double AutoFlight::cycle(double curAlt, double curThrust) {
-	cur = clock();
-	if (this->diff(cur, prev)) {
-		return this->thrustchange(curAlt);
-		double changeThrust = this->thrustchange(curAlt);
-		return curThrust + changeThrust;
-	}
-	return curThrust;
+void AutoFlight::setTargetAlt(double targetAltitude) {
+	b = new Balance(targetAlt + 2.0, targetAlt,1);
+	targetAlt = targetAltitude;
+//	prev = clock();
 }
 
+//double AutoFlight::thrustchange(double curAlt) {
+//	cur = clock();
+//	if (this->diff(cur, prev)) {
+//		prev = cur;
+//		double r = pid->calculate(targetAlt, curAlt);
+//		return r;
+//	}
+//	return 0;
+//}
+
+// basically doing a running average. Keep in mind the higher the mean size the slower the response
 double AutoFlight::thrustchange(double curAlt){
-	// do we actually care about small changes?
-	if (std::abs(targetAlt - curAlt) > altThreshold){
-
-		// firstly we obtain the error value
-		double er = targetAlt - curAlt;
-
-		// to obtain the proportional term we multiply kp with the error value
-		double pt = kp * er;
-
-		// accumulated error is used in the integration to calculate the average error
-		itemp += er;
-
-		// setting some limits to the error rate
-		if (itemp > iMax)
-		{itemp = iMax;}
-		else if (itemp < iMin)
-		{itemp = iMin;}
-
-		// for the integral error we multiply ki with the accumulated integral value
-		double it = ki * itemp;
-
-		// calculating the derivative term
-		double dt = kd * (dtemp - er);
-
-		// setting the error rate to the historical error value
-		dtemp = er;
-
-		// this is just application specific
-		return ttemp + pt + it + dt;
+	if (buffersize == MEANSIZE) {
+		buffersize = 0;
+		std::valarray<double> r (buffer,MEANSIZE);
+		double alt = r.sum() / MEANSIZE;
+		return b->calculate(alt);
 	}
+	buffer[buffersize] = curAlt;
+	buffersize++;
+
 	return 0;
 }
 
-bool AutoFlight::diff(clock_t clock1,clock_t clock2)
+bool AutoFlight::diff(clock_t cur,clock_t prev)
 {
-    double diffticks=clock1-clock2;
+    double diffticks=cur-prev;
     double diffms=(diffticks)/(CLOCKS_PER_SEC/1000);
     return diffms > mscount;
 }

@@ -6,6 +6,7 @@
  */
 
 #include "GamePad.h"
+#include <iostream>
 #include <stdio.h>
 #include <sys/types.h>
 #include <sys/stat.h>
@@ -18,6 +19,8 @@ GamePad::GamePad() {
 	gamepad_fd = open(GAMEPAD_DEVNAME, O_RDONLY | O_NONBLOCK); /* read write for force feedback? */
 	if (gamepad_fd < 0)
 		throw "Couldn't open gamepad";
+	else
+		std::cout << "Opened gamepad" << std::endl;
 }
 
 int GamePad::readValues(struct gp_values *gpv) {
@@ -48,8 +51,14 @@ int GamePad::readValues(struct gp_values *gpv) {
 			}
 		} else if (gpe.type == GP_EVENT_BUTTON) {
 			switch (gpe.number) {
-			case ALTHOLD:
-				gpv->althold = gpe.value;
+			case L1:
+				gpv->l1 = gpe.value;
+				break;
+			case R1:
+				gpv->r1 = gpe.value;
+				break;
+			case X:
+				gpv->x = gpe.value;
 				break;
 			default:
 				break;

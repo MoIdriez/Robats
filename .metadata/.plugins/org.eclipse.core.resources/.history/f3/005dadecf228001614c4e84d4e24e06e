@@ -1,5 +1,0 @@
-#include "TestCounter.h"
-
-int TestCounter::Increment() {
-      return mCounter++;
-}

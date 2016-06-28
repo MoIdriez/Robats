@@ -1,6 +1,8 @@
 src/RobatsEngine.o: ../src/RobatsEngine.cpp \
  /home/midries/Projects/robats/Robats/include/GamePad.h \
  /home/midries/Projects/robats/Robats/include/AutoFlight.h \
+ /home/midries/Projects/robats/Robats/include/PID.h \
+ /home/midries/Projects/robats/Robats/include/Balance.h \
  /home/midries/Projects/robats/Robats/include/CCrazyflie.h \
  /home/midries/Projects/robats/Robats/include/CCrazyRadio.h \
  /home/midries/Projects/robats/Robats/include/CCRTPPacket.h \
@@ -10,6 +12,10 @@ src/RobatsEngine.o: ../src/RobatsEngine.cpp \
 /home/midries/Projects/robats/Robats/include/GamePad.h:
 
 /home/midries/Projects/robats/Robats/include/AutoFlight.h:
+
+/home/midries/Projects/robats/Robats/include/PID.h:
+
+/home/midries/Projects/robats/Robats/include/Balance.h:
 
 /home/midries/Projects/robats/Robats/include/CCrazyflie.h:
 

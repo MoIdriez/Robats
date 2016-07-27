@@ -13,7 +13,9 @@
 % 
 % Assuming 0 degrees is pointing up and 90 degrees is pointing to the left.
 % I obtained the data by slowly moving it around the fixed point from 0 degrees to 90 degrees.
-% Format: Milliseconds, Sonar, AccX, AccY, AccZ, GyrX, GyrY, GyrZ6,650,-2348,96,15704,-466,195,1066,297,0,0,0,0,0,0
+% Format: Milliseconds, Sonar, AccX, AccY, AccZ, GyrX, GyrY, GyrZ
+6,650,-2348,96,15704,-466,195,106
+6,297,0,0,0,0,0,0
 9,297,0,0,0,0,0,0
 11,297,-2176,768,15328,-533,4241,-772
 15,294,-2016,712,15320,-17,6199,-1704

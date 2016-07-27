@@ -1,0 +1,19 @@
+13:54:34 **** Incremental Build of configuration Debug for project ArduinoExperiments ****
+make all 
+Building file: ../src/SonarExpirement.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/SonarExpirement.d" -MT"src/SonarExpirement.o" -o "src/SonarExpirement.o" "../src/SonarExpirement.cpp"
+../src/SonarExpirement.cpp: In function ‘int main(int, char**)’:
+../src/SonarExpirement.cpp:23:19: warning: deprecated conversion from string constant to ‘char*’ [-Wwrite-strings]
+  char *portname = "/dev/ttyACM1";
+                   ^
+Finished building: ../src/SonarExpirement.cpp
+ 
+Building target: ArduinoExperiments
+Invoking: GCC C++ Linker
+g++  -o "ArduinoExperiments"  ./src/ArduinoExperiments.o ./src/SonarExpirement.o   
+Finished building target: ArduinoExperiments
+ 
+
+13:54:35 Build Finished (took 373ms)
+
